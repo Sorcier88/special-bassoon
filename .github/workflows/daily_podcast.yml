@@ -33,16 +33,15 @@ jobs:
     - name: Run Script
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # AJOUT CRUCIAL : On passe les cookies au script
+        YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
       run: python podcast_gen.py
       
-    - name: Commit Changes
-      if: always() # S'exécute même si le script Python plante
+    - name: Commit and Push Changes
+      if: always() 
       run: |
         git config --global user.name 'Bot'
         git config --global user.email 'bot@noreply.github.com'
-        # On s'assure que le fichier de log existe pour éviter l'erreur fatal
         touch downloaded_log.txt
-        # On ajoute tous les changements (XML et logs)
         git add .
-        # On commit seulement s'il y a des changements
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update RSS" && git push)
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update RSS and Logs" && git push)
