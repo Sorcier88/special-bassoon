@@ -25,206 +25,221 @@ def get_or_create_release(repo):
         return repo.create_git_release(tag=RELEASE_TAG, name="Audio Files", message="Stockage MP3", draft=False, prerelease=False)
 
 def cleanup_files(vid_id):
-    """Nettoie tous les fichiers temporaires (mp3, jpg, webp, json) liés à un ID"""
-    for f in glob.glob(f"{vid_id}.*"):
+    """Nettoie tous les fichiers temporaires"""
+    for f in glob.glob(f"{vid_id}*"):
         try:
             os.remove(f)
         except:
             pass
 
+def upload_asset(release, filename):
+    """Upload un fichier vers la Release GitHub et retourne son URL"""
+    if not os.path.exists(filename):
+        return None
+        
+    print(f"Upload de {filename}...")
+    
+    # Vérifier si l'asset existe déjà
+    for asset in release.get_assets():
+        if asset.name == filename:
+            return asset.browser_download_url
+            
+    # Sinon on upload
+    try:
+        asset = release.upload_asset(filename)
+        return asset.browser_download_url
+    except Exception as e:
+        print(f"Erreur upload {filename}: {e}")
+        return None
+
 def run():
     total_downloads_session = 0
 
-    # 0. Gestion Cookies
-    cookies_env = os.environ.get('YOUTUBE_COOKIES')
-    if cookies_env:
-        print("Cookies chargés.")
-        with open(COOKIE_FILE, 'w') as f:
-            f.write(cookies_env)
-    
-    # 1. Chargement Config
-    if not os.path.exists(CONFIG_FILE):
-        print(f"Erreur: {CONFIG_FILE} introuvable.")
-        return
-    with open(CONFIG_FILE, 'r') as f:
-        playlists_config = json.load(f)
-
-    # 2. GitHub
     try:
-        g = Github(os.environ['GITHUB_TOKEN'])
-        repo = g.get_repo(REPO_NAME)
-        release = get_or_create_release(repo)
-    except Exception as e:
-        print(f"Erreur GitHub: {e}")
-        return
-
-    # 3. Historique
-    downloaded_ids = []
-    if os.path.exists(LOG_FILE):
-        with open(LOG_FILE, "r") as f:
-            downloaded_ids = f.read().splitlines()
-
-    # 4. Options yt-dlp (Mise à jour pour métadonnées et thumbnails)
-    ydl_opts = {
-        'format': 'bestaudio/best',
-        'outtmpl': '%(id)s.%(ext)s',
-        # Télécharger la miniature pour l'incruster
-        'writethumbnail': True, 
-        'postprocessors': [
-            # 1. Convertir en MP3
-            {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'},
-            # 2. Incruster la miniature dans le fichier MP3
-            {'key': 'EmbedThumbnail'},
-            # 3. Ajouter les métadonnées (Titre, Auteur, Description) dans le fichier MP3
-            {'key': 'FFmpegMetadata', 'add_metadata': True}, 
-        ],
-        'quiet': False,
-        'ignoreerrors': True,
-        'no_warnings': True,
-        'sleep_interval': 5,
-        'max_sleep_interval': 15
-    }
-    if os.path.exists(COOKIE_FILE):
-        ydl_opts['cookiefile'] = COOKIE_FILE
-
-    # 5. Boucle Playlists
-    for item in playlists_config:
-        if total_downloads_session >= MAX_DOWNLOADS_PER_RUN:
-            print("--- Limite journalière atteinte. ---")
-            break
-
-        rss_filename = item.get('filename')
-        playlist_url = item.get('url')
-        custom_title = item.get('podcast_name')
-        custom_image = item.get('cover_image')
-        custom_author = item.get('podcast_author') # NOUVEAU
+        # 0. Gestion Cookies
+        cookies_env = os.environ.get('YOUTUBE_COOKIES')
+        if cookies_env:
+            print("Cookies chargés.")
+            with open(COOKIE_FILE, 'w') as f:
+                f.write(cookies_env)
         
-        if not rss_filename or not playlist_url: continue
+        # 1. Chargement Config
+        if not os.path.exists(CONFIG_FILE):
+            print(f"Erreur: {CONFIG_FILE} introuvable.")
+            return
+        with open(CONFIG_FILE, 'r') as f:
+            playlists_config = json.load(f)
 
-        print(f"\n--- Analyse : {rss_filename} ---")
-        fg = FeedGenerator()
-        fg.load_extension('podcast')
-        
-        # Charger RSS existant ou créer
-        rss_loaded = False
-        if os.path.exists(rss_filename):
-            try: 
-                fg.parse_file(rss_filename)
-                rss_loaded = True
-            except: 
-                print("Fichier RSS existant corrompu ou illisible, création d'un nouveau.")
-        
-        if not rss_loaded:
-            fg.title(f'Podcast {rss_filename}')
-            fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
-            fg.description('Auto-generated')
-
-        # Configuration Podcast Global
-        if custom_image:
-            fg.podcast.itunes_image(custom_image)
-            fg.image(url=custom_image, title=custom_title if custom_title else f'Podcast {rss_filename}', link=f'https://github.com/{REPO_NAME}')
-        
-        # NOUVEAU : Configuration de l'auteur
-        if custom_author:
-            fg.author({'name': custom_author})
-            fg.podcast.itunes_author(custom_author)
-
+        # 2. GitHub
         try:
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                try:
-                    info = ydl.extract_info(playlist_url, download=False)
-                except Exception as e:
-                    print(f"Erreur lecture playlist: {e}")
-                    fg.rss_file(rss_filename)
-                    continue
-
-                if not info or 'entries' not in info: continue
-
-                # Titre du Podcast
-                if custom_title:
-                    fg.title(custom_title)
-                else:
-                    fg.title(info.get('title', f'Podcast {rss_filename}'))
-
-                for entry in info['entries']:
-                    if total_downloads_session >= MAX_DOWNLOADS_PER_RUN: break
-                    if not entry: continue
-                    vid_id = entry['id']
-
-                    if vid_id in downloaded_ids: continue
-
-                    print(f"Traitement ({total_downloads_session + 1}/{MAX_DOWNLOADS_PER_RUN}) : {entry.get('title', vid_id)}")
-
-                    try:
-                        # Téléchargement + Conversion + Incrustation
-                        ydl.download([entry['webpage_url']])
-                        mp3_filename = f"{vid_id}.mp3"
-                        
-                        if not os.path.exists(mp3_filename):
-                            print("Echec DL.")
-                            cleanup_files(vid_id) # Nettoyage si échec partiel
-                            continue
-
-                        # Upload GitHub
-                        asset_exists = False
-                        for asset in release.get_assets():
-                            if asset.name == mp3_filename:
-                                asset_exists = True
-                                download_url = asset.browser_download_url
-                                break
-                        
-                        if not asset_exists:
-                            asset = release.upload_asset(mp3_filename)
-                            download_url = asset.browser_download_url
-                        
-                        # --- AJOUT AU FLUX RSS ---
-                        fe = fg.add_entry()
-                        fe.id(vid_id)
-                        # Titre de la vidéo comme titre d'épisode
-                        fe.title(entry['title']) 
-                        # Description de la vidéo comme description d'épisode
-                        fe.description(entry.get('description', 'Pas de description'))
-                        
-                        # Date de publication : Date de la vidéo ou maintenant par défaut
-                        upload_date_str = entry.get('upload_date')
-                        if upload_date_str:
-                            try:
-                                # yt-dlp renvoie YYYYMMDD, on le convertit en objet datetime UTC
-                                pub_date = datetime.datetime.strptime(upload_date_str, '%Y%m%d').replace(tzinfo=datetime.timezone.utc)
-                                fe.pubDate(pub_date)
-                            except:
-                                fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
-                        else:
-                            fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
-
-                        fe.enclosure(download_url, 0, 'audio/mpeg')
-                        
-                        # Auteur pour l'épisode spécifique aussi
-                        if custom_author:
-                            fe.podcast.itunes_author(custom_author)
-
-                        # Sauvegarde Log
-                        with open(LOG_FILE, "a") as log:
-                            log.write(f"{vid_id}\n")
-                        downloaded_ids.append(vid_id)
-                        
-                        # Nettoyage fichiers locaux (MP3 + JPG/WEBP thumbnails)
-                        cleanup_files(vid_id)
-                        
-                        total_downloads_session += 1
-                        
-                    except Exception as e:
-                        print(f"Erreur vidéo {vid_id}: {e}")
-                        cleanup_files(vid_id)
-
+            g = Github(os.environ['GITHUB_TOKEN'])
+            repo = g.get_repo(REPO_NAME)
+            release = get_or_create_release(repo)
         except Exception as e:
-            print(f"Erreur playlist: {e}")
+            print(f"Erreur GitHub: {e}")
+            return
 
-        fg.rss_file(rss_filename)
-        print(f"Sauvegarde XML {rss_filename}")
+        # 3. Historique
+        downloaded_ids = []
+        if os.path.exists(LOG_FILE):
+            with open(LOG_FILE, "r") as f:
+                downloaded_ids = f.read().splitlines()
 
-    if os.path.exists(COOKIE_FILE):
-        os.remove(COOKIE_FILE)
+        # 4. Options yt-dlp
+        ydl_opts = {
+            'format': 'bestaudio/best',
+            'outtmpl': '%(id)s.%(ext)s',
+            'writethumbnail': True, 
+            'postprocessors': [
+                # Convertir la miniature en JPG (compatible Podcast)
+                {'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'},
+                {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'},
+                {'key': 'EmbedThumbnail'},
+                {'key': 'FFmpegMetadata', 'add_metadata': True}, 
+            ],
+            'quiet': False,
+            'ignoreerrors': True,
+            'no_warnings': True,
+            'sleep_interval': 5,
+            'max_sleep_interval': 15
+        }
+        if os.path.exists(COOKIE_FILE):
+            ydl_opts['cookiefile'] = COOKIE_FILE
+
+        # 5. Boucle Playlists
+        for item in playlists_config:
+            if total_downloads_session >= MAX_DOWNLOADS_PER_RUN:
+                break
+
+            rss_filename = item.get('filename')
+            playlist_url = item.get('url')
+            custom_title = item.get('podcast_name')
+            custom_image = item.get('cover_image')
+            custom_author = item.get('podcast_author')
+            
+            if not rss_filename or not playlist_url: continue
+
+            print(f"\n--- Analyse : {rss_filename} ---")
+            fg = FeedGenerator()
+            fg.load_extension('podcast')
+            
+            # Gestion RSS existant
+            rss_loaded = False
+            if os.path.exists(rss_filename):
+                try: 
+                    fg.parse_file(rss_filename)
+                    rss_loaded = True
+                except: pass
+            
+            if not rss_loaded:
+                fg.title(f'Podcast {rss_filename}')
+                fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
+                fg.description('Auto-generated')
+
+            if custom_image:
+                fg.podcast.itunes_image(custom_image)
+                fg.image(url=custom_image, title=custom_title, link=f'https://github.com/{REPO_NAME}')
+            
+            if custom_author:
+                fg.author({'name': custom_author})
+                fg.podcast.itunes_author(custom_author)
+
+            try:
+                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                    try:
+                        info = ydl.extract_info(playlist_url, download=False)
+                    except Exception as e:
+                        print(f"Erreur lecture playlist: {e}")
+                        fg.rss_file(rss_filename)
+                        continue
+
+                    if not info or 'entries' not in info: continue
+
+                    if custom_title:
+                        fg.title(custom_title)
+                    else:
+                        fg.title(info.get('title', f'Podcast {rss_filename}'))
+
+                    for entry in info['entries']:
+                        if total_downloads_session >= MAX_DOWNLOADS_PER_RUN: break
+                        if not entry: continue
+                        vid_id = entry['id']
+
+                        if vid_id in downloaded_ids: continue
+
+                        print(f"Traitement : {entry.get('title', vid_id)}")
+
+                        try:
+                            ydl.download([entry['webpage_url']])
+                            
+                            mp3_filename = f"{vid_id}.mp3"
+                            # yt-dlp convertit la miniature en .jpg grâce à l'option FFmpegThumbnailsConvertor
+                            jpg_filename = f"{vid_id}.jpg" 
+                            
+                            if not os.path.exists(mp3_filename):
+                                cleanup_files(vid_id)
+                                continue
+
+                            # 1. Upload MP3
+                            mp3_url = upload_asset(release, mp3_filename)
+                            if not mp3_url:
+                                cleanup_files(vid_id)
+                                continue
+
+                            # 2. Upload Image (Miniature)
+                            thumb_url = upload_asset(release, jpg_filename)
+                            
+                            # 3. Création entrée RSS
+                            fe = fg.add_entry()
+                            fe.id(vid_id)
+                            fe.title(entry['title']) 
+                            fe.description(entry.get('description', 'Pas de description'))
+                            
+                            # Date
+                            upload_date_str = entry.get('upload_date')
+                            if upload_date_str:
+                                try:
+                                    pub_date = datetime.datetime.strptime(upload_date_str, '%Y%m%d').replace(tzinfo=datetime.timezone.utc)
+                                    fe.pubDate(pub_date)
+                                except:
+                                    fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
+                            else:
+                                fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
+
+                            fe.enclosure(mp3_url, 0, 'audio/mpeg')
+                            
+                            # --- IMAGE SPÉCIFIQUE À L'ÉPISODE ---
+                            # Si on a réussi à uploader la miniature, on l'ajoute au RSS
+                            if thumb_url:
+                                fe.podcast.itunes_image(thumb_url)
+                            elif custom_image:
+                                # Sinon on remet l'image par défaut pour être sûr
+                                fe.podcast.itunes_image(custom_image)
+
+                            if custom_author:
+                                fe.podcast.itunes_author(custom_author)
+
+                            with open(LOG_FILE, "a") as log:
+                                log.write(f"{vid_id}\n")
+                            downloaded_ids.append(vid_id)
+                            
+                            cleanup_files(vid_id)
+                            total_downloads_session += 1
+                            
+                        except Exception as e:
+                            print(f"Erreur traitement {vid_id}: {e}")
+                            cleanup_files(vid_id)
+
+            except Exception as e:
+                print(f"Erreur globale: {e}")
+
+            fg.rss_file(rss_filename)
+            print(f"Sauvegarde XML {rss_filename}")
+
+    finally:
+        if os.path.exists(COOKIE_FILE):
+            os.remove(COOKIE_FILE)
+            print("Nettoyage sécurité effectué.")
 
 if __name__ == "__main__":
     run()
