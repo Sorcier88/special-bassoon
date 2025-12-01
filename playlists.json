@@ -5,5 +5,19 @@
         "podcast_name": "Threads horreur",
         "podcast_author": "Squeezie",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/squeezie.png"
-    }
+    },
+    {
+        "filename": "squeezie_histoire.xml",
+        "url": "hhttps://youtube.com/playlist?list=PLTYUE9O6WCrin42VsDN7JaZV0rpSOn2j2", 
+        "podcast_name": "Histoires",
+        "podcast_author": "Squeezie",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/squeezie.png"
+    },
+    {
+        "filename": "42.xml",
+        "url": "hhttps://youtube.com/playlist?list=PLTYUE9O6WCrin42VsDN7JaZV0rpSOn2j2", 
+        "podcast_name": "42 - La réponse à presque tout",
+        "podcast_author": "Arte",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.png"
+    },
 ]
