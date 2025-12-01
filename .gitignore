@@ -1,0 +1,20 @@
+# Ignorer le fichier de cookies (CRITIQUE)
+cookies.txt
+
+# Ignorer les fichiers média temporaires (MP3, images, vidéos)
+*.mp3
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.part
+*.ytdl
+*.json
+
+# Ignorer les caches Python
+__pycache__/
+*.pyc
+
+# On garde playlists.json car c'est votre config, 
+# mais vous pouvez le décommenter ci-dessous si vous voulez le cacher aussi
+# playlists.json
