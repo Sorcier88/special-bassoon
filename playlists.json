@@ -8,16 +8,30 @@
     },
     {
         "filename": "squeezie_histoire.xml",
-        "url": "hhttps://youtube.com/playlist?list=PLTYUE9O6WCrin42VsDN7JaZV0rpSOn2j2", 
+        "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrin42VsDN7JaZV0rpSOn2j2", 
         "podcast_name": "Histoires",
         "podcast_author": "Squeezie",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/squeezie.png"
     },
     {
         "filename": "42.xml",
-        "url": "hhttps://youtube.com/playlist?list=PLTYUE9O6WCrin42VsDN7JaZV0rpSOn2j2", 
+        "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrin42VsDN7JaZV0rpSOn2j2", 
         "podcast_name": "42 - La réponse à presque tout",
         "podcast_author": "Arte",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.png"
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg"
     },
+    {
+        "filename": "critique_cine_jdg.xml",
+        "url": "https://youtube.com/playlist?list=PLWmL9Ldoef0unq3ycK7rITliRZWmp_IDx", 
+        "podcast_name": "Critiques Ciné",
+        "podcast_author": "Bazar du Grenier",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg"
+    },
+    {
+        "filename": "stream_vf.xml",
+        "url": "https://youtube.com/playlist?list=PL97dAgQRZAgtgXB9oVob-STeZW0t5_PoS", 
+        "podcast_name": "STrEAM VF",
+        "podcast_author": "Donald Reignoux",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/donald_reignoux.jpg"
+    }
 ]
