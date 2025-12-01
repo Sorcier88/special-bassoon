@@ -106,10 +106,15 @@ def run():
         fg.load_extension('podcast')
         
         # Charger RSS existant ou créer
+        rss_loaded = False
         if os.path.exists(rss_filename):
-            try: fg.parse_file(rss_filename)
-            except: pass
-        else:
+            try: 
+                fg.parse_file(rss_filename)
+                rss_loaded = True
+            except: 
+                print("Fichier RSS existant corrompu ou illisible, création d'un nouveau.")
+        
+        if not rss_loaded:
             fg.title(f'Podcast {rss_filename}')
             fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
             fg.description('Auto-generated')
