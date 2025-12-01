@@ -12,6 +12,7 @@ REPO_NAME = os.environ['GITHUB_REPOSITORY']
 RELEASE_TAG = "audio-storage"
 LOG_FILE = "downloaded_log.txt"
 CONFIG_FILE = "playlists.json"
+COOKIE_FILE = "cookies.txt" # Fichier temporaire
 
 def get_or_create_release(repo):
     try:
@@ -20,16 +21,23 @@ def get_or_create_release(repo):
         return repo.create_git_release(tag=RELEASE_TAG, name="Audio Files", message="Stockage MP3", draft=False, prerelease=False)
 
 def run():
-    # 1. Chargement de la configuration
+    # 0. Création du fichier cookies depuis le Secret
+    cookies_env = os.environ.get('YOUTUBE_COOKIES')
+    if cookies_env:
+        print("Cookies trouvés, création du fichier d'authentification...")
+        with open(COOKIE_FILE, 'w') as f:
+            f.write(cookies_env)
+    else:
+        print("ATTENTION: Pas de cookies trouvés dans les Secrets. Risque d'échec élevé.")
+
+    # 1. Chargement Config
     if not os.path.exists(CONFIG_FILE):
-        print(f"Erreur : Le fichier {CONFIG_FILE} est introuvable.")
         return
 
     with open(CONFIG_FILE, 'r') as f:
         try:
             playlists_config = json.load(f)
-        except json.JSONDecodeError:
-            print(f"Erreur : Le fichier {CONFIG_FILE} est mal formé (Erreur de syntaxe JSON).")
+        except:
             return
 
     # 2. Connexion GitHub
@@ -38,7 +46,7 @@ def run():
         repo = g.get_repo(REPO_NAME)
         release = get_or_create_release(repo)
     except Exception as e:
-        print(f"Erreur connexion GitHub: {e}")
+        print(f"Erreur GitHub: {e}")
         return
 
     # 3. Chargement Historique
@@ -47,61 +55,51 @@ def run():
         with open(LOG_FILE, "r") as f:
             downloaded_ids = f.read().splitlines()
 
-    # 4. Configuration YT-DLP (Renforcée Anti-Bot)
+    # 4. Configuration YT-DLP (Mode Authentifié)
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': '%(id)s.%(ext)s',
         'postprocessors': [{'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}],
         'quiet': False,
-        'ignoreerrors': True, # Continue même si erreur
+        'ignoreerrors': True,
         'no_warnings': True,
-        'force_ipv4': True,   # Force IPv4 (souvent moins bloqué par Google)
-        'extractor_args': {
-            'youtube': {
-                'player_client': ['ios', 'web_embedded'], # Masque le script en iPhone ou Web
-            }
-        },
-        'sleep_interval': 15,    # Pause min
-        'max_sleep_interval': 40 # Pause max
+        'sleep_interval': 5,
+        'max_sleep_interval': 15
     }
 
-    # 5. Boucle sur les playlists
+    # Si le fichier cookie a été créé, on l'ajoute aux options
+    if os.path.exists(COOKIE_FILE):
+        ydl_opts['cookiefile'] = COOKIE_FILE
+
+    # 5. Boucle principale
     for item in playlists_config:
         rss_filename = item.get('filename')
         playlist_url = item.get('url')
         
-        if not rss_filename or not playlist_url:
-            print("Configuration invalide pour une entrée (filename ou url manquant).")
-            continue
+        if not rss_filename or not playlist_url: continue
 
         print(f"\n--- Traitement : {rss_filename} ---")
-
         fg = FeedGenerator()
         fg.load_extension('podcast')
         
-        # Charger RSS existant
         if os.path.exists(rss_filename):
             try: fg.parse_file(rss_filename)
             except: pass
         else:
             fg.title(f'Podcast {rss_filename}')
             fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
-            fg.description('Auto-generated Podcast')
+            fg.description('Auto-generated')
 
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                # Tentative d'extraction des infos
                 try:
                     info = ydl.extract_info(playlist_url, download=False)
                 except Exception as e:
-                    print(f"Erreur d'accès à la playlist (Blocage possible): {e}")
-                    # On sauvegarde le RSS tel quel pour ne pas le perdre
+                    print(f"Erreur playlist (Cookies invalides ou autre): {e}")
                     fg.rss_file(rss_filename)
                     continue
 
-                if not info or 'entries' not in info:
-                    print("Playlist vide ou illisible.")
-                    continue
+                if not info or 'entries' not in info: continue
 
                 fg.title(info.get('title', f'Podcast {rss_filename}'))
 
@@ -109,21 +107,18 @@ def run():
                     if not entry: continue
                     vid_id = entry['id']
 
-                    if vid_id in downloaded_ids:
-                        continue
+                    if vid_id in downloaded_ids: continue
 
                     print(f"Nouveau : {entry.get('title', vid_id)}")
 
                     try:
-                        # Téléchargement
                         ydl.download([entry['webpage_url']])
                         mp3_filename = f"{vid_id}.mp3"
                         
                         if not os.path.exists(mp3_filename):
-                            print("Fichier non téléchargé (vidéo privée ou bloquée).")
+                            print("Echec téléchargement.")
                             continue
 
-                        # Upload
                         asset_exists = False
                         for asset in release.get_assets():
                             if asset.name == mp3_filename:
@@ -132,11 +127,10 @@ def run():
                                 break
                         
                         if not asset_exists:
-                            print("Upload vers GitHub...")
+                            print("Upload...")
                             asset = release.upload_asset(mp3_filename)
                             download_url = asset.browser_download_url
 
-                        # Mise à jour RSS
                         fe = fg.add_entry()
                         fe.id(vid_id)
                         fe.title(entry['title'])
@@ -144,23 +138,25 @@ def run():
                         fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
                         fe.enclosure(download_url, 0, 'audio/mpeg')
 
-                        # Log
                         with open(LOG_FILE, "a") as log:
                             log.write(f"{vid_id}\n")
                             downloaded_ids.append(vid_id)
                         
-                        # Nettoyage & Pause
                         os.remove(mp3_filename)
-                        time.sleep(random.randint(10, 20))
 
                     except Exception as e:
                         print(f"Erreur téléchargement {vid_id}: {e}")
 
         except Exception as eGlobal:
-            print(f"Erreur critique playlist : {eGlobal}")
+            print(f"Erreur critique : {eGlobal}")
 
         fg.rss_file(rss_filename)
         print(f"Sauvegarde {rss_filename}")
+
+    # NETTOYAGE CRITIQUE : Suppression du fichier cookies
+    if os.path.exists(COOKIE_FILE):
+        os.remove(COOKIE_FILE)
+        print("Cookies temporaires supprimés.")
 
 if __name__ == "__main__":
     run()
