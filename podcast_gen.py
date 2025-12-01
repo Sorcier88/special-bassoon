@@ -8,14 +8,11 @@ from feedgen.feed import FeedGenerator
 
 # --- CONFIGURATION (Remettez vos playlists ici) ---
 PLAYLISTS_CONFIG = [
-    {
-        "filename": "42.xml",
-        "url": "https://youtube.com/playlist?list=PLCwXWOyIR22s1vddGJB3NNRSI45jEy_sE"
-    },
+    
     {
         "filename": "squeezie_horreur.xml",
         "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrjvZmJp2fXTWOgypGvByxMv"
-    },
+    }
 ]
 
 # --- NE RIEN TOUCHER EN DESSOUS ---
