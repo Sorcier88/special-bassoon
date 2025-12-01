@@ -13,7 +13,7 @@ PLAYLISTS_CONFIG = [
     },
     {
         "filename": "squeezie_horreur.xml",
-        "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrjvZmJp2fXTWOgypGvByxMv
+        "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrjvZmJp2fXTWOgypGvByxMv"
     },
     # Vous pouvez copier-coller ce bloc {} pour ajouter d'autres playlists
 ]
