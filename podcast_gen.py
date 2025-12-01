@@ -13,8 +13,7 @@ RELEASE_TAG = "audio-storage"
 CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
-# SÉCURITÉ : Nombre max de téléchargements PAR PLAYLIST (et non plus au total)
-# Cela garantit que toutes les playlists avancent, même si la première est très chargée.
+# SÉCURITÉ : Nombre max de téléchargements PAR PLAYLIST
 MAX_DOWNLOADS_PER_PLAYLIST = 3
 
 def get_or_create_release(repo):
@@ -24,6 +23,7 @@ def get_or_create_release(repo):
         return repo.create_git_release(tag=RELEASE_TAG, name="Audio Files", message="Stockage MP3", draft=False, prerelease=False)
 
 def cleanup_files(vid_id):
+    # Nettoyage large de tous les fichiers commençant par l'ID
     for f in glob.glob(f"{vid_id}*"):
         try: os.remove(f)
         except: pass
@@ -31,9 +31,12 @@ def cleanup_files(vid_id):
 def upload_asset(release, filename):
     if not os.path.exists(filename): return None
     print(f"Upload de {filename}...")
+    
+    # Vérifie si l'asset existe déjà pour éviter le ré-upload inutile
     for asset in release.get_assets():
         if asset.name == filename:
             return asset.browser_download_url
+            
     try:
         asset = release.upload_asset(filename)
         return asset.browser_download_url
@@ -64,7 +67,7 @@ def run():
             print(f"Erreur GitHub: {e}")
             return
 
-        # 4. Options yt-dlp pour le TÉLÉCHARGEMENT
+        # 4. Options yt-dlp
         ydl_opts_download = {
             'format': 'bestaudio/best',
             'outtmpl': '%(id)s.%(ext)s',
@@ -96,8 +99,6 @@ def run():
 
             print(f"\n=== Traitement Playlist : {rss_filename} ===")
             
-            # GESTION DU LOG SÉPARÉ (Ex: log_tech.xml.txt)
-            # On crée un fichier log unique pour cette playlist spécifique
             current_log_file = f"log_{rss_filename}.txt"
             downloaded_ids = []
             if os.path.exists(current_log_file):
@@ -108,7 +109,7 @@ def run():
             missing_entries = []
             scan_title = None 
             
-            print(f"Recherche des nouveaux épisodes (Log: {current_log_file})...")
+            print(f"Scan rapide...")
             with yt_dlp.YoutubeDL({'extract_flat': True, 'quiet': True, 'ignoreerrors': True}) as ydl_scan:
                 try:
                     info_scan = ydl_scan.extract_info(playlist_url, download=False)
@@ -124,15 +125,13 @@ def run():
 
             print(f"Vidéos manquantes trouvées : {len(missing_entries)}")
             
-            # Sélection du lot à traiter (MAX_DOWNLOADS_PER_PLAYLIST)
-            # On prend les 3 premiers manquants pour CETTE playlist
+            # Lot à traiter
             batch_to_process = missing_entries[:MAX_DOWNLOADS_PER_PLAYLIST]
             
             # PRÉPARATION RSS
             fg = FeedGenerator()
             fg.load_extension('podcast')
             
-            # Chargement existant ou création
             rss_loaded = False
             if os.path.exists(rss_filename):
                 try: 
@@ -145,7 +144,7 @@ def run():
                 fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
                 fg.description('Auto-generated')
 
-            # --- APPLICATION DES INFO PERSONNALISÉES ---
+            # --- METADATA GLOBALES ---
             final_podcast_title = custom_title if custom_title else (scan_title if scan_title else f'Podcast {rss_filename}')
             fg.title(final_podcast_title)
 
@@ -157,9 +156,9 @@ def run():
                 fg.author({'name': custom_author})
                 fg.podcast.itunes_author(custom_author)
 
-            # PHASE 2 : TÉLÉCHARGEMENT DU LOT
+            # PHASE 2 : TÉLÉCHARGEMENT
             if batch_to_process:
-                print(f"Téléchargement de {len(batch_to_process)} vidéos pour cette playlist...")
+                print(f"Téléchargement de {len(batch_to_process)} vidéos...")
                 
                 with yt_dlp.YoutubeDL(ydl_opts_download) as ydl:
                     for entry in batch_to_process:
@@ -169,11 +168,20 @@ def run():
                         print(f"-> {entry.get('title', vid_id)}")
 
                         try:
-                            # Full Metadata + DL
                             info = ydl.extract_info(vid_url, download=True)
                             
                             mp3_filename = f"{vid_id}.mp3"
-                            jpg_filename = f"{vid_id}.jpg" 
+                            
+                            # RECHERCHE INTELLIGENTE DE LA MINIATURE
+                            # On cherche tout fichier image commençant par l'ID (jpg, jpeg, png, webp)
+                            thumb_files = glob.glob(f"{vid_id}.*")
+                            image_extensions = ['.jpg', '.jpeg', '.png', '.webp']
+                            jpg_filename = None
+                            
+                            for f in thumb_files:
+                                if any(f.lower().endswith(ext) for ext in image_extensions):
+                                    jpg_filename = f
+                                    break
                             
                             if not os.path.exists(mp3_filename):
                                 cleanup_files(vid_id)
@@ -184,8 +192,13 @@ def run():
                                 cleanup_files(vid_id)
                                 continue
 
-                            thumb_url = upload_asset(release, jpg_filename)
-                            
+                            # Upload de la miniature si trouvée
+                            thumb_url = None
+                            if jpg_filename:
+                                thumb_url = upload_asset(release, jpg_filename)
+                            else:
+                                print(f"Aucune miniature trouvée pour {vid_id}")
+
                             # Création épisode RSS
                             fe = fg.add_entry()
                             fe.id(vid_id)
@@ -204,14 +217,16 @@ def run():
 
                             fe.enclosure(mp3_url, 0, 'audio/mpeg')
                             
-                            if thumb_url: fe.podcast.itunes_image(thumb_url)
-                            elif custom_image: fe.podcast.itunes_image(custom_image)
+                            # Gestion Image Épisode
+                            if thumb_url: 
+                                fe.podcast.itunes_image(thumb_url)
+                            # Si pas de miniature spécifique, on NE met PAS l'image custom ici 
+                            # pour laisser l'app de podcast décider (souvent elle prendra l'image ID3 ou la cover globale)
+                            
                             if custom_author: fe.podcast.itunes_author(custom_author)
 
-                            # LOG SPÉCIFIQUE À LA PLAYLIST
                             with open(current_log_file, "a") as log:
                                 log.write(f"{vid_id}\n")
-                            # Pas besoin d'append à downloaded_ids car on reload à chaque tour de boucle
                             
                             cleanup_files(vid_id)
                             
