@@ -1,11 +1,12 @@
 import os
 import datetime
 import yt_dlp
+import time
+import random
 from github import Github
 from feedgen.feed import FeedGenerator
 
-# --- CONFIGURATION DE VOS FLUX ---
-# Pour chaque playlist, choisissez un nom de fichier (ex: tech.xml) et collez l'URL
+# --- CONFIGURATION (Remettez vos playlists ici) ---
 PLAYLISTS_CONFIG = [
     {
         "filename": "42.xml",
@@ -15,7 +16,6 @@ PLAYLISTS_CONFIG = [
         "filename": "squeezie_horreur.xml",
         "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrjvZmJp2fXTWOgypGvByxMv"
     },
-    # Vous pouvez copier-coller ce bloc {} pour ajouter d'autres playlists
 ]
 
 # --- NE RIEN TOUCHER EN DESSOUS ---
@@ -34,107 +34,107 @@ def run():
     repo = g.get_repo(REPO_NAME)
     release = get_or_create_release(repo)
 
-    # Chargement de l'historique global pour éviter les doublons
     downloaded_ids = []
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, "r") as f:
             downloaded_ids = f.read().splitlines()
 
+    # --- CONFIGURATION RENFORCÉE ---
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': '%(id)s.%(ext)s',
         'postprocessors': [{'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}],
-        'quiet': True,
-        'ignoreerrors': True
+        'quiet': False, # On veut voir les logs
+        'ignoreerrors': True, # IMPORTANT: Continue même si erreur 429 ou vidéo privée
+        'no_warnings': True,
+        # L'astuce magique : Se faire passer pour un client Android
+        'extractor_args': {'youtube': {'player_client': ['android', 'ios']}},
+        # Pause aléatoire entre 10 et 30 secondes pour ne pas énerver YouTube
+        'sleep_interval': 10,
+        'max_sleep_interval': 30
     }
 
-    # Boucle sur chaque configuration de playlist
     for item in PLAYLISTS_CONFIG:
         rss_filename = item['filename']
         playlist_url = item['url']
         
-        print(f"\n--- Traitement du flux : {rss_filename} ---")
+        print(f"\n--- Traitement : {rss_filename} ---")
 
-        # Préparation du générateur RSS
         fg = FeedGenerator()
         fg.load_extension('podcast')
         
-        # Si le fichier XML existe déjà, on le charge pour garder l'historique
         if os.path.exists(rss_filename):
             try: fg.parse_file(rss_filename)
             except: pass
         else:
-            # Sinon on crée les métadonnées de base
             fg.title(f'Podcast {rss_filename}')
             fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
-            fg.description('Généré automatiquement via GitHub Actions')
+            fg.description('Auto-generated')
 
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            # Récupération des infos de la playlist
-            info = ydl.extract_info(playlist_url, download=False)
-            
-            if not info or 'entries' not in info:
-                print(f"Playlist inaccessible ou vide : {playlist_url}")
-                continue
-
-            # On met à jour le titre du podcast avec le vrai titre de la Playlist YouTube
-            current_title = info.get('title', f'Podcast {rss_filename}')
-            fg.title(current_title)
-
-            for entry in info['entries']:
-                if not entry: continue
-                vid_id = entry['id']
-
-                # Si la vidéo est déjà dans l'historique global, on saute
-                if vid_id in downloaded_ids:
+        try:
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                info = ydl.extract_info(playlist_url, download=False)
+                
+                if not info or 'entries' not in info:
+                    print("Erreur lecture playlist (429 possible). On réessaiera demain.")
                     continue
 
-                print(f"Nouveau téléchargement : {entry['title']}")
+                fg.title(info.get('title', f'Podcast {rss_filename}'))
 
-                try:
-                    # 1. Télécharger le MP3
-                    ydl.download([entry['webpage_url']])
-                    mp3_filename = f"{vid_id}.mp3"
-                    
-                    # 2. Envoyer vers GitHub Releases (Stockage)
-                    print("Upload vers GitHub Releases...")
-                    
-                    # Vérification si le fichier existe déjà dans la Release (cas rare)
-                    asset_exists = False
-                    for asset in release.get_assets():
-                        if asset.name == mp3_filename:
-                            asset_exists = True
+                for entry in info['entries']:
+                    if not entry: continue # Vidéo privée ou supprimée renvoie None
+                    vid_id = entry['id']
+
+                    if vid_id in downloaded_ids:
+                        continue
+
+                    print(f"Téléchargement : {entry['title']}")
+
+                    try:
+                        ydl.download([entry['webpage_url']])
+                        mp3_filename = f"{vid_id}.mp3"
+                        
+                        # Vérif si le fichier est bien là (en cas d'erreur silencieuse)
+                        if not os.path.exists(mp3_filename):
+                            print("Échec téléchargement fichier.")
+                            continue
+
+                        # Upload GitHub
+                        asset_exists = False
+                        for asset in release.get_assets():
+                            if asset.name == mp3_filename:
+                                asset_exists = True
+                                download_url = asset.browser_download_url
+                                break
+                        
+                        if not asset_exists:
+                            asset = release.upload_asset(mp3_filename)
                             download_url = asset.browser_download_url
-                            break
-                    
-                    if not asset_exists:
-                        asset = release.upload_asset(mp3_filename)
-                        download_url = asset.browser_download_url
 
-                    # 3. Ajouter l'épisode au RSS
-                    fe = fg.add_entry()
-                    fe.id(vid_id)
-                    fe.title(entry['title'])
-                    fe.description(entry.get('description', 'Pas de description'))
-                    fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
-                    # C'est ici que se crée le lien magique pour l'appli de podcast
-                    fe.enclosure(download_url, 0, 'audio/mpeg')
+                        fe = fg.add_entry()
+                        fe.id(vid_id)
+                        fe.title(entry['title'])
+                        fe.description(entry.get('description', '-'))
+                        fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
+                        fe.enclosure(download_url, 0, 'audio/mpeg')
 
-                    # 4. Mettre à jour le Log local
-                    with open(LOG_FILE, "a") as log:
-                        log.write(f"{vid_id}\n")
-                        downloaded_ids.append(vid_id)
-                    
-                    # Supprimer le fichier mp3 du serveur de traitement (le runner)
-                    if os.path.exists(mp3_filename):
+                        with open(LOG_FILE, "a") as log:
+                            log.write(f"{vid_id}\n")
+                            downloaded_ids.append(vid_id)
+                        
                         os.remove(mp3_filename)
+                        
+                        # Petite pause de sécurité supplémentaire
+                        time.sleep(random.randint(5, 10))
 
-                except Exception as e:
-                    print(f"Erreur sur {vid_id}: {e}")
+                    except Exception as e:
+                        print(f"Erreur sur {vid_id}: {e}")
 
-        # Sauvegarde du fichier XML spécifique à cette playlist
+        except Exception as eGlobal:
+            print(f"Erreur critique sur la playlist : {eGlobal}")
+
         fg.rss_file(rss_filename)
-        print(f"Fichier {rss_filename} mis à jour.")
+        print(f"Sauvegarde {rss_filename}")
 
 if __name__ == "__main__":
     run()
