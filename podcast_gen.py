@@ -68,13 +68,18 @@ def run():
             return
 
         # 4. Options yt-dlp
+        # On ajoute les options 'Anti-Bot' pour simuler un mobile Android
+        # C'est la meilleure méthode pour éviter l'erreur 'Sign in' sur les serveurs cloud.
         ydl_opts_download = {
             'format': 'bestaudio/best',
             'outtmpl': '%(id)s.%(ext)s',
             'writethumbnail': True,
-            # RETRAIT DU GEO-BYPASS QUI CAUSE L'ERREUR 'SIGN IN'
-            # On laisse le script échouer naturellement sur les vidéos bloquées
-            # et on gère l'exception plus bas.
+            'force_ipv4': True, # Aide souvent contre les blocages Google
+            'extractor_args': {
+                'youtube': {
+                    'player_client': ['android', 'web'], # Masque le script en appli Android
+                }
+            },
             'postprocessors': [
                 {'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'},
                 {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'},
@@ -114,8 +119,18 @@ def run():
             
             print(f"Scan rapide...")
             
-            # Correction: Ajout des cookies au scan aussi
-            scan_opts = {'extract_flat': True, 'quiet': True, 'ignoreerrors': True}
+            # Correction: Ajout des options anti-bot au scan aussi
+            scan_opts = {
+                'extract_flat': True, 
+                'quiet': True, 
+                'ignoreerrors': True,
+                'force_ipv4': True,
+                'extractor_args': {
+                    'youtube': {
+                        'player_client': ['android', 'web'],
+                    }
+                }
+            }
             if os.path.exists(COOKIE_FILE):
                 scan_opts['cookiefile'] = COOKIE_FILE
 
@@ -244,12 +259,12 @@ def run():
                             
                         except Exception as e:
                             print(f"Erreur traitement {vid_id}: {e}")
-                            # GESTION DES ERREURS DE GÉO-BLOCAGE
-                            # Si l'erreur mentionne un problème de pays ou d'indisponibilité,
-                            # on marque la vidéo comme traitée pour l'ignorer à l'avenir.
+                            # GESTION DES ERREURS DE GÉO-BLOCAGE ET SIGN IN
+                            # Si l'erreur mentionne un blocage majeur, on marque la vidéo comme traitée
+                            # pour éviter que le script ne re-bloque dessus indéfiniment.
                             err_str = str(e).lower()
-                            if "country" in err_str or "unavailable" in err_str or "private" in err_str:
-                                print(f"Vidéo bloquée/indisponible ({vid_id}) - Ajout à l'historique pour ignorer.")
+                            if "country" in err_str or "unavailable" in err_str or "private" in err_str or "sign in" in err_str:
+                                print(f"Vidéo problématique ({vid_id}) - Ajout à l'historique pour ignorer.")
                                 with open(current_log_file, "a") as log:
                                     log.write(f"{vid_id}\n")
                             
