@@ -71,7 +71,10 @@ def run():
         ydl_opts_download = {
             'format': 'bestaudio/best',
             'outtmpl': '%(id)s.%(ext)s',
-            'writethumbnail': True, 
+            'writethumbnail': True,
+            # RETRAIT DU GEO-BYPASS QUI CAUSE L'ERREUR 'SIGN IN'
+            # On laisse le script échouer naturellement sur les vidéos bloquées
+            # et on gère l'exception plus bas.
             'postprocessors': [
                 {'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'},
                 {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'},
@@ -110,7 +113,13 @@ def run():
             scan_title = None 
             
             print(f"Scan rapide...")
-            with yt_dlp.YoutubeDL({'extract_flat': True, 'quiet': True, 'ignoreerrors': True}) as ydl_scan:
+            
+            # Correction: Ajout des cookies au scan aussi
+            scan_opts = {'extract_flat': True, 'quiet': True, 'ignoreerrors': True}
+            if os.path.exists(COOKIE_FILE):
+                scan_opts['cookiefile'] = COOKIE_FILE
+
+            with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
                 try:
                     info_scan = ydl_scan.extract_info(playlist_url, download=False)
                     if info_scan:
@@ -170,10 +179,16 @@ def run():
                         try:
                             info = ydl.extract_info(vid_url, download=True)
                             
+                            # Si info est None, c'est que le téléchargement a échoué (souvent Géo-blocage ou autre)
+                            if not info:
+                                print(f"Echec info pour {vid_id} (Probable erreur ou blocage).")
+                                # IMPORTANT: On ne marque PAS comme vu ici si c'est une erreur temporaire
+                                # Mais si c'est géré par l'exception ci-dessous, ça sera marqué.
+                                continue
+
                             mp3_filename = f"{vid_id}.mp3"
                             
                             # RECHERCHE INTELLIGENTE DE LA MINIATURE
-                            # On cherche tout fichier image commençant par l'ID (jpg, jpeg, png, webp)
                             thumb_files = glob.glob(f"{vid_id}.*")
                             image_extensions = ['.jpg', '.jpeg', '.png', '.webp']
                             jpg_filename = None
@@ -217,11 +232,8 @@ def run():
 
                             fe.enclosure(mp3_url, 0, 'audio/mpeg')
                             
-                            # Gestion Image Épisode
                             if thumb_url: 
                                 fe.podcast.itunes_image(thumb_url)
-                            # Si pas de miniature spécifique, on NE met PAS l'image custom ici 
-                            # pour laisser l'app de podcast décider (souvent elle prendra l'image ID3 ou la cover globale)
                             
                             if custom_author: fe.podcast.itunes_author(custom_author)
 
@@ -232,6 +244,15 @@ def run():
                             
                         except Exception as e:
                             print(f"Erreur traitement {vid_id}: {e}")
+                            # GESTION DES ERREURS DE GÉO-BLOCAGE
+                            # Si l'erreur mentionne un problème de pays ou d'indisponibilité,
+                            # on marque la vidéo comme traitée pour l'ignorer à l'avenir.
+                            err_str = str(e).lower()
+                            if "country" in err_str or "unavailable" in err_str or "private" in err_str:
+                                print(f"Vidéo bloquée/indisponible ({vid_id}) - Ajout à l'historique pour ignorer.")
+                                with open(current_log_file, "a") as log:
+                                    log.write(f"{vid_id}\n")
+                            
                             cleanup_files(vid_id)
 
             fg.rss_file(rss_filename)
