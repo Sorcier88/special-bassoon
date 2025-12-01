@@ -23,7 +23,6 @@ def get_or_create_release(repo):
         return repo.create_git_release(tag=RELEASE_TAG, name="Audio Files", message="Stockage MP3", draft=False, prerelease=False)
 
 def cleanup_files(vid_id):
-    # Nettoyage large de tous les fichiers commençant par l'ID
     for f in glob.glob(f"{vid_id}*"):
         try: os.remove(f)
         except: pass
@@ -31,12 +30,9 @@ def cleanup_files(vid_id):
 def upload_asset(release, filename):
     if not os.path.exists(filename): return None
     print(f"Upload de {filename}...")
-    
-    # Vérifie si l'asset existe déjà pour éviter le ré-upload inutile
     for asset in release.get_assets():
         if asset.name == filename:
             return asset.browser_download_url
-            
     try:
         asset = release.upload_asset(filename)
         return asset.browser_download_url
@@ -46,12 +42,19 @@ def upload_asset(release, filename):
 
 def run():
     try:
-        # 0. Cookies
+        # 0. Récupération des Secrets (Cookies & Proxy)
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
+        proxy_url = os.environ.get('YOUTUBE_PROXY') # Nouveau secret
+        
         if cookies_env:
             print("Cookies chargés.")
             with open(COOKIE_FILE, 'w') as f:
                 f.write(cookies_env)
+        
+        if proxy_url:
+            print("Proxy configuré : OUI")
+        else:
+            print("Proxy configuré : NON (Risque de blocage géographique/bot)")
         
         # 1. Config
         if not os.path.exists(CONFIG_FILE): return
@@ -67,35 +70,22 @@ def run():
             print(f"Erreur GitHub: {e}")
             return
 
-        # 4. Options yt-dlp
-        # On ajoute les options 'Anti-Bot' pour simuler un mobile Android
-        # C'est la meilleure méthode pour éviter l'erreur 'Sign in' sur les serveurs cloud.
-        ydl_opts_download = {
-            'format': 'bestaudio/best',
-            'outtmpl': '%(id)s.%(ext)s',
-            'writethumbnail': True,
-            'force_ipv4': True, # Aide souvent contre les blocages Google
-            'extractor_args': {
-                'youtube': {
-                    'player_client': ['android', 'web'], # Masque le script en appli Android
-                }
-            },
-            'postprocessors': [
-                {'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'},
-                {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'},
-                {'key': 'EmbedThumbnail'},
-                {'key': 'FFmpegMetadata', 'add_metadata': True}, 
-            ],
+        # 3. Configuration de base YT-DLP
+        base_opts = {
             'quiet': False,
             'ignoreerrors': True,
             'no_warnings': True,
-            'sleep_interval': 5,
-            'max_sleep_interval': 15
+            # On retire le spoofing Android pour être plus standard avec le proxy
+            # 'force_ipv4': True, 
         }
-        if os.path.exists(COOKIE_FILE):
-            ydl_opts_download['cookiefile'] = COOKIE_FILE
 
-        # 5. Boucle Playlists
+        # Ajout du Proxy et des Cookies s'ils existent
+        if proxy_url:
+            base_opts['proxy'] = proxy_url
+        if os.path.exists(COOKIE_FILE):
+            base_opts['cookiefile'] = COOKIE_FILE
+
+        # 4. Boucle Playlists
         for item in playlists_config:
             rss_filename = item.get('filename')
             playlist_url = item.get('url')
@@ -119,21 +109,10 @@ def run():
             
             print(f"Scan rapide...")
             
-            # Correction: Ajout des options anti-bot au scan aussi
-            scan_opts = {
-                'extract_flat': True, 
-                'quiet': True, 
-                'ignoreerrors': True,
-                'force_ipv4': True,
-                'extractor_args': {
-                    'youtube': {
-                        'player_client': ['android', 'web'],
-                    }
-                }
-            }
-            if os.path.exists(COOKIE_FILE):
-                scan_opts['cookiefile'] = COOKIE_FILE
-
+            # Configuration spécifique Scan (hérite du proxy/cookie)
+            scan_opts = base_opts.copy()
+            scan_opts['extract_flat'] = True
+            
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
                 try:
                     info_scan = ydl_scan.extract_info(playlist_url, download=False)
@@ -145,11 +124,11 @@ def run():
                                     missing_entries.append(entry)
                 except Exception as e:
                     print(f"Erreur scan: {e}")
+                    # Si le scan échoue (ex: proxy mort), on passe à la playlist suivante
                     continue
 
             print(f"Vidéos manquantes trouvées : {len(missing_entries)}")
             
-            # Lot à traiter
             batch_to_process = missing_entries[:MAX_DOWNLOADS_PER_PLAYLIST]
             
             # PRÉPARATION RSS
@@ -168,14 +147,13 @@ def run():
                 fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
                 fg.description('Auto-generated')
 
-            # --- METADATA GLOBALES ---
+            # Metadata
             final_podcast_title = custom_title if custom_title else (scan_title if scan_title else f'Podcast {rss_filename}')
             fg.title(final_podcast_title)
 
             if custom_image:
                 fg.podcast.itunes_image(custom_image)
                 fg.image(url=custom_image, title=final_podcast_title, link=f'https://github.com/{REPO_NAME}')
-            
             if custom_author:
                 fg.author({'name': custom_author})
                 fg.podcast.itunes_author(custom_author)
@@ -184,7 +162,23 @@ def run():
             if batch_to_process:
                 print(f"Téléchargement de {len(batch_to_process)} vidéos...")
                 
-                with yt_dlp.YoutubeDL(ydl_opts_download) as ydl:
+                # Configuration spécifique Téléchargement
+                dl_opts = base_opts.copy()
+                dl_opts.update({
+                    'format': 'bestaudio/best',
+                    'outtmpl': '%(id)s.%(ext)s',
+                    'writethumbnail': True,
+                    'postprocessors': [
+                        {'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'},
+                        {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'},
+                        {'key': 'EmbedThumbnail'},
+                        {'key': 'FFmpegMetadata', 'add_metadata': True}, 
+                    ],
+                    'sleep_interval': 5,
+                    'max_sleep_interval': 15
+                })
+
+                with yt_dlp.YoutubeDL(dl_opts) as ydl:
                     for entry in batch_to_process:
                         vid_id = entry['id']
                         vid_url = entry.get('url') or entry.get('webpage_url') or f"https://www.youtube.com/watch?v={vid_id}"
@@ -194,20 +188,16 @@ def run():
                         try:
                             info = ydl.extract_info(vid_url, download=True)
                             
-                            # Si info est None, c'est que le téléchargement a échoué (souvent Géo-blocage ou autre)
                             if not info:
-                                print(f"Echec info pour {vid_id} (Probable erreur ou blocage).")
-                                # IMPORTANT: On ne marque PAS comme vu ici si c'est une erreur temporaire
-                                # Mais si c'est géré par l'exception ci-dessous, ça sera marqué.
+                                print(f"Echec info {vid_id}")
                                 continue
 
                             mp3_filename = f"{vid_id}.mp3"
                             
-                            # RECHERCHE INTELLIGENTE DE LA MINIATURE
+                            # Recherche miniature
                             thumb_files = glob.glob(f"{vid_id}.*")
                             image_extensions = ['.jpg', '.jpeg', '.png', '.webp']
                             jpg_filename = None
-                            
                             for f in thumb_files:
                                 if any(f.lower().endswith(ext) for ext in image_extensions):
                                     jpg_filename = f
@@ -222,14 +212,11 @@ def run():
                                 cleanup_files(vid_id)
                                 continue
 
-                            # Upload de la miniature si trouvée
                             thumb_url = None
                             if jpg_filename:
                                 thumb_url = upload_asset(release, jpg_filename)
-                            else:
-                                print(f"Aucune miniature trouvée pour {vid_id}")
 
-                            # Création épisode RSS
+                            # Ajout RSS
                             fe = fg.add_entry()
                             fe.id(vid_id)
                             fe.title(info.get('title', entry.get('title', vid_id)))
@@ -246,10 +233,7 @@ def run():
                                 fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
 
                             fe.enclosure(mp3_url, 0, 'audio/mpeg')
-                            
-                            if thumb_url: 
-                                fe.podcast.itunes_image(thumb_url)
-                            
+                            if thumb_url: fe.podcast.itunes_image(thumb_url)
                             if custom_author: fe.podcast.itunes_author(custom_author)
 
                             with open(current_log_file, "a") as log:
@@ -259,15 +243,13 @@ def run():
                             
                         except Exception as e:
                             print(f"Erreur traitement {vid_id}: {e}")
-                            # GESTION DES ERREURS DE GÉO-BLOCAGE ET SIGN IN
-                            # Si l'erreur mentionne un blocage majeur, on marque la vidéo comme traitée
-                            # pour éviter que le script ne re-bloque dessus indéfiniment.
                             err_str = str(e).lower()
-                            if "country" in err_str or "unavailable" in err_str or "private" in err_str or "sign in" in err_str:
-                                print(f"Vidéo problématique ({vid_id}) - Ajout à l'historique pour ignorer.")
+                            # On ne marque PLUS comme traité en cas de "Sign in"
+                            # Car avec un proxy valide, ça devrait marcher. Si ça échoue, on réessaie demain.
+                            if "country" in err_str or "unavailable" in err_str:
+                                print(f"Vraiment indisponible géographiquement (malgré proxy). Ignoré.")
                                 with open(current_log_file, "a") as log:
                                     log.write(f"{vid_id}\n")
-                            
                             cleanup_files(vid_id)
 
             fg.rss_file(rss_filename)
