@@ -1,6 +1,9 @@
 [
     {
         "filename": "squeezie_horreur.xml",
-        "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrjvZmJp2fXTWOgypGvByxMv"
+        "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrjvZmJp2fXTWOgypGvByxMv", 
+        "podcast_name": "Threads horreur",
+        "podcast_author": "Squeezie",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/squeezie.png"
     }
 ]
