@@ -100,9 +100,9 @@ def process_video(entry, ydl, release, fg, custom_image, custom_author, current_
 
 def run():
     try:
-        # 0. Setup Cookies & Proxy
+        # 0. Setup
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
-        proxy_url = os.environ.get('YOUTUBE_PROXY') # Fourni par le Workflow (Tor local)
+        proxy_url = os.environ.get('YOUTUBE_PROXY')
         
         if cookies_env:
             print("Cookies chargés.")
@@ -112,7 +112,6 @@ def run():
         if proxy_url:
             print(f"Mode TOR activé: {proxy_url}")
         
-        # 1. Config
         if not os.path.exists(CONFIG_FILE): return
         with open(CONFIG_FILE, 'r') as f: playlists_config = json.load(f)
 
@@ -128,7 +127,7 @@ def run():
             'quiet': False, 
             'ignoreerrors': True, 
             'no_warnings': True, 
-            'socket_timeout': 30, # Tor est lent
+            'socket_timeout': 60, # Augmenté pour Tor
         }
         if proxy_url: base_opts['proxy'] = proxy_url
         if os.path.exists(COOKIE_FILE): base_opts['cookiefile'] = COOKIE_FILE
@@ -168,16 +167,14 @@ def run():
             print(f"Manquants : {len(missing_entries)}")
             batch_to_process = missing_entries[:MAX_DOWNLOADS_PER_PLAYLIST]
 
-            # SETUP RSS
+            # SETUP RSS (inchangé)
             fg = FeedGenerator(); fg.load_extension('podcast')
             rss_loaded = False
             if os.path.exists(rss_filename):
                 try: fg.parse_file(rss_filename); rss_loaded = True
                 except: pass
             if not rss_loaded:
-                fg.title(f'Podcast {rss_filename}')
-                fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
-                fg.description('Auto-generated')
+                fg.title(f'Podcast {rss_filename}'); fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate'); fg.description('Auto-generated')
 
             final_title = custom_title if custom_title else f'Podcast {rss_filename}'
             fg.title(final_title)
@@ -186,10 +183,12 @@ def run():
 
             # SETUP DOWNLOAD
             dl_opts = base_opts.copy()
+            # J'ai retiré 'player_client' pour éviter le conflit avec vos cookies Desktop
             dl_opts.update({
                 'format': 'bestaudio/best', 'outtmpl': '%(id)s.%(ext)s', 'writethumbnail': True,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
-                'sleep_interval': 5, 'max_sleep_interval': 15
+                'sleep_interval': 10, # Pause plus longue entre les vidéos
+                'max_sleep_interval': 30
             })
             if sb_categories: dl_opts['sponsorblock_remove'] = sb_categories
 
@@ -203,24 +202,29 @@ def run():
                     try:
                         success = process_video(entry, ydl, release, fg, custom_image, custom_author, current_log_file)
                         if not success:
-                            # Echec : on ajoute à la retry list pour plus tard
                             retry_list.append(entry)
                     except Exception as e:
                         err_str = str(e).lower()
-                        # Si erreur FATALE (Deleted/Private), on loggue tout de suite pour ne plus voir
-                        if "private video" in err_str or "deleted" in err_str or "account associated with this video has been terminated" in err_str:
+                        # Si erreur SIGN IN, on fait une PAUSE d'urgence
+                        if "sign in" in err_str or "confirm you’re not a bot" in err_str:
+                            print(f"!!! ALERTE BOT ({vid_id}) !!! Pause de 60s pour changer d'IP Tor...")
+                            time.sleep(60) # On espère que Tor change de circuit ou que YT se calme
+                            retry_list.append(entry)
+                        
+                        elif "private video" in err_str or "deleted" in err_str:
                             print(f"VIDEO HS ({vid_id}). Blacklist.")
                             with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
                         else:
-                            print(f"Erreur ({vid_id}): {e}. Retry plus tard.")
+                            print(f"Erreur temporaire ({vid_id}): {e}.")
                             retry_list.append(entry)
                     
                     cleanup_files(vid_id)
 
             # --- PASSE 2 (RETRY) ---
             if retry_list:
-                print(f"\n--- PASSE 2 : Retry ({len(retry_list)} vidéos) après pause ---")
-                time.sleep(45) # Pause plus longue pour laisser Tor respirer
+                print(f"\n--- PASSE 2 : Retry ({len(retry_list)} vidéos) ---")
+                # On force une bonne pause avant de recommencer
+                time.sleep(45)
 
                 with yt_dlp.YoutubeDL(dl_opts) as ydl:
                     for entry in retry_list:
@@ -229,15 +233,10 @@ def run():
                         try:
                             success = process_video(entry, ydl, release, fg, custom_image, custom_author, current_log_file)
                             if not success:
-                                print(f"Echec final pour aujourd'hui.")
+                                print(f"Echec final pour aujourd'hui (Sign in ou autre).")
                         except Exception as e:
-                            # Même logique
-                            err_str = str(e).lower()
-                            if "private video" in err_str or "deleted" in err_str:
-                                print(f"VIDEO HS (Retry). Blacklist.")
-                                with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
-                            else:
-                                print(f"Toujours en erreur. Abandon.")
+                            # Si ça plante encore ici, on abandonne pour ce run
+                            print(f"Toujours bloqué ({e}). Sera retenté au prochain lancement.")
                         cleanup_files(vid_id)
 
             fg.rss_file(rss_filename)
