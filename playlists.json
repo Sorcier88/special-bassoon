@@ -4,14 +4,16 @@
         "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrjvZmJp2fXTWOgypGvByxMv", 
         "podcast_name": "Threads horreur",
         "podcast_author": "Squeezie",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/squeezie.png"
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/squeezie.png",
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     },
     {
         "filename": "squeezie_histoire.xml",
         "url": "https://youtube.com/playlist?list=PLTYUE9O6WCrin42VsDN7JaZV0rpSOn2j2", 
         "podcast_name": "Histoires",
         "podcast_author": "Squeezie",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/squeezie.png"
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/squeezie.png",
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     },
     {
         "filename": "42.xml",
