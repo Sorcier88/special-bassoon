@@ -1,4 +1,4 @@
-name: Update Podcasts
+name: Update Podcasts (Tor + OAuth2)
 
 on:
   schedule:
@@ -29,12 +29,31 @@ jobs:
       run: |
         sudo apt-get install -y ffmpeg
         pip install -r requirements.txt
+
+    # --- INSTALLATION ET CONFIGURATION DE TOR (BELGIQUE) ---
+    - name: Install and Configure Tor (Belgium Exit)
+      run: |
+        sudo apt-get install -y tor
+        # Configuration pour sortir UNIQUEMENT en Belgique ({BE})
+        echo "ExitNodes {BE}" | sudo tee -a /etc/tor/torrc
+        echo "StrictNodes 1" | sudo tee -a /etc/tor/torrc
+        echo "CircuitBuildTimeout 30" | sudo tee -a /etc/tor/torrc
+        echo "KeepalivePeriod 60" | sudo tee -a /etc/tor/torrc
+        echo "NumEntryGuards 8" | sudo tee -a /etc/tor/torrc
         
-    - name: Run Script
+        sudo service tor start
+        echo "Attente du démarrage de Tor..."
+        sleep 60
+        echo "Vérification de l'IP via Tor..."
+        curl --socks5 127.0.0.1:9050 https://ifconfig.me || echo "Echec curl test"
+
+    - name: Run Script via Tor
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # AJOUT CRUCIAL : On passe les cookies au script
-        YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
+        # ON PASSE LE CACHE OAUTH2 (Base64)
+        YOUTUBE_OAUTH_CACHE_B64: ${{ secrets.YOUTUBE_OAUTH_CACHE_B64 }}
+        # ON FORCE LE PROXY SUR LE PORT LOCAL DE TOR
+        YOUTUBE_PROXY: "socks5://127.0.0.1:9050"
       run: python podcast_gen.py
       
     - name: Commit and Push Changes
