@@ -14,7 +14,7 @@ CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
 # SÉCURITÉ
-MAX_DOWNLOADS_PER_PLAYLIST = 2
+MAX_DOWNLOADS_PER_PLAYLIST = 5
 
 def get_or_create_release(repo):
     try:
