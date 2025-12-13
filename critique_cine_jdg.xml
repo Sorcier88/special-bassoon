@@ -1,17 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg</url><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Fri, 12 Dec 2025 14:43:33 +0000</lastBuildDate><itunes:author>Bazar du Grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg"/><item><title>CRITIQUE: AQUAMAN 2 - L'ENTERREMENT DU DCEU</title><description>Et voila, à l'heure ou Aquaman 2 va disparaître des cinémas , une petite critique à la bourre et surtout un bilan de cette aventure rocambolesque du DCEU après 15 (!) films -et un 16ème qui ne sortira probablement jamais...
-
-Timestamps
-00:00 Intro
-02:22 No Spoil
-12:51 Spoil</description><guid isPermaLink="false">nbapwiLI7tQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/nbapwiLI7tQ.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate><itunes:author>Bazar du Grenier</itunes:author></item><item><title>CRITIQUE: DUNE, DEUXIÈME PARTIE</title><description>Petite critique du dernier phénomène de la S.F. sablonnée.
-
-Timestamps
-0:00 Intro
-1:17 No Spoil
-11:18 Spoil</description><guid isPermaLink="false">SnXc02jzpKI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/SnXc02jzpKI.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><itunes:author>Bazar du Grenier</itunes:author></item><item><title>[Critique Ciné] MADAME WEB</title><description>Un nouveau Spider-Man ? Oui ! Mais sans l'homme araignée. Alors que vaut vraiment Madame Web ?
-
-Timestamps
-0:00 Intro
-1:32 No Spoil
-17:37 Spoil</description><guid isPermaLink="false">dlVn9V78NAk</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/dlVn9V78NAk.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate><itunes:author>Bazar du Grenier</itunes:author></item></channel></rss>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg</url><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sat, 13 Dec 2025 04:28:01 +0000</lastBuildDate><itunes:author>Bazar du Grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg"/></channel></rss>
