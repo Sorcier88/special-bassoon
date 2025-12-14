@@ -13,8 +13,12 @@ RELEASE_TAG = "audio-storage"
 CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
-# SÉCURITÉ
-MAX_DOWNLOADS_PER_PLAYLIST = 5
+# OBJECTIF : Nombre de fichiers à télécharger par jour
+TARGET_SUCCESS_PER_PLAYLIST = 3
+
+# PLAGE D'ANALYSE : On regarde les X premières vidéos manquantes pour trouver nos 3 élus.
+# Si les 20 premières sont privées/bloquées, on s'arrête pour aujourd'hui.
+SEARCH_WINDOW_SIZE = 20
 
 def get_or_create_release(repo):
     try:
@@ -40,14 +44,18 @@ def upload_asset(release, filename):
         print(f"Erreur upload {filename}: {e}")
         return None
 
-def process_video(entry, ydl, release, fg, custom_image, custom_author, current_log_file):
+def process_video_download(entry, ydl, release, fg, custom_image, custom_author, current_log_file):
+    """Tente le téléchargement complet d'une vidéo"""
     vid_id = entry['id']
     vid_url = f"https://www.youtube.com/watch?v={vid_id}"
-    print(f"-> {entry.get('title', vid_id)}")
+    print(f"-> Traitement : {entry.get('title', vid_id)}")
 
     # 1. Téléchargement
     info = ydl.extract_info(vid_url, download=True)
-    if not info: return False 
+    
+    # Si yt-dlp renvoie None sans lever d'exception (cas rare de blocage silencieux)
+    if not info: 
+        raise Exception("Echec silencieux (Info vide)")
 
     mp3_filename = f"{vid_id}.mp3"
     
@@ -61,12 +69,12 @@ def process_video(entry, ydl, release, fg, custom_image, custom_author, current_
             break
     
     if not os.path.exists(mp3_filename):
-        return False
+        raise Exception("Fichier MP3 non généré")
 
     # 2. Upload
     mp3_url = upload_asset(release, mp3_filename)
     if not mp3_url:
-        return False
+        raise Exception("Echec Upload GitHub")
 
     thumb_url = None
     if jpg_filename:
@@ -100,7 +108,7 @@ def process_video(entry, ydl, release, fg, custom_image, custom_author, current_
 
 def run():
     try:
-        # 0. Setup
+        # 0. Setup Cookies & Proxy
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
         proxy_url = os.environ.get('YOUTUBE_PROXY')
         
@@ -124,10 +132,7 @@ def run():
 
         # Options YT-DLP de base
         base_opts = {
-            'quiet': False, 
-            'ignoreerrors': True, 
-            'no_warnings': True, 
-            'socket_timeout': 60, # Augmenté pour Tor
+            'quiet': False, 'ignoreerrors': True, 'no_warnings': True, 'socket_timeout': 60,
         }
         if proxy_url: base_opts['proxy'] = proxy_url
         if os.path.exists(COOKIE_FILE): base_opts['cookiefile'] = COOKIE_FILE
@@ -149,10 +154,10 @@ def run():
             if os.path.exists(current_log_file):
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
-            # SCAN
+            # SCAN DES MANQUANTS
             missing_entries = []
             scan_opts = base_opts.copy(); scan_opts['extract_flat'] = True
-            print("Scan rapide via Tor...")
+            print("Scan rapide des manquants...")
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
                 try:
                     info_scan = ydl_scan.extract_info(playlist_url, download=False)
@@ -164,10 +169,12 @@ def run():
                     print(f"Erreur scan: {e}")
                     continue
 
-            print(f"Manquants : {len(missing_entries)}")
-            batch_to_process = missing_entries[:MAX_DOWNLOADS_PER_PLAYLIST]
+            print(f"Total manquants : {len(missing_entries)}")
+            
+            # On prend une fenêtre large (20 vidéos) pour chercher nos 3 succès
+            batch_to_process = missing_entries[:SEARCH_WINDOW_SIZE]
 
-            # SETUP RSS (inchangé)
+            # SETUP RSS
             fg = FeedGenerator(); fg.load_extension('podcast')
             rss_loaded = False
             if os.path.exists(rss_filename):
@@ -181,62 +188,82 @@ def run():
             if custom_image: fg.podcast.itunes_image(custom_image); fg.image(url=custom_image, title=final_title, link=f'https://github.com/{REPO_NAME}')
             if custom_author: fg.author({'name': custom_author}); fg.podcast.itunes_author(custom_author)
 
-            # SETUP DOWNLOAD
+            # SETUP DOWNLOAD OPTION
             dl_opts = base_opts.copy()
-            # J'ai retiré 'player_client' pour éviter le conflit avec vos cookies Desktop
             dl_opts.update({
                 'format': 'bestaudio/best', 'outtmpl': '%(id)s.%(ext)s', 'writethumbnail': True,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
-                'sleep_interval': 10, # Pause plus longue entre les vidéos
-                'max_sleep_interval': 30
+                'sleep_interval': 5, 'max_sleep_interval': 15
             })
             if sb_categories: dl_opts['sponsorblock_remove'] = sb_categories
 
-            retry_list = []
+            success_count = 0
+            retry_queue = [] # Liste pour la passe 2
 
-            # --- PASSE 1 ---
-            print("--- PASSE 1 : Téléchargement ---")
+            # --- PASSE 1 : TENTATIVE GLISSANTE ---
+            print(f"--- PASSE 1 : Recherche de {TARGET_SUCCESS_PER_PLAYLIST} succès ---")
+            
             with yt_dlp.YoutubeDL(dl_opts) as ydl:
                 for entry in batch_to_process:
+                    # Si on a atteint l'objectif, on arrête tout de suite
+                    if success_count >= TARGET_SUCCESS_PER_PLAYLIST:
+                        print("Objectif atteint pour aujourd'hui.")
+                        break
+
                     vid_id = entry['id']
+                    
                     try:
-                        success = process_video(entry, ydl, release, fg, custom_image, custom_author, current_log_file)
-                        if not success:
-                            retry_list.append(entry)
+                        process_video_download(entry, ydl, release, fg, custom_image, custom_author, current_log_file)
+                        print("   [OK]")
+                        success_count += 1
+                        cleanup_files(vid_id)
+
                     except Exception as e:
                         err_str = str(e).lower()
-                        # Si erreur SIGN IN, on fait une PAUSE d'urgence
-                        if "sign in" in err_str or "confirm you’re not a bot" in err_str:
-                            print(f"!!! ALERTE BOT ({vid_id}) !!! Pause de 60s pour changer d'IP Tor...")
-                            time.sleep(60) # On espère que Tor change de circuit ou que YT se calme
-                            retry_list.append(entry)
-                        
-                        elif "private video" in err_str or "deleted" in err_str:
-                            print(f"VIDEO HS ({vid_id}). Blacklist.")
-                            with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
-                        else:
-                            print(f"Erreur temporaire ({vid_id}): {e}.")
-                            retry_list.append(entry)
-                    
-                    cleanup_files(vid_id)
+                        print(f"   [ECHEC] {e}")
 
-            # --- PASSE 2 (RETRY) ---
-            if retry_list:
-                print(f"\n--- PASSE 2 : Retry ({len(retry_list)} vidéos) ---")
-                # On force une bonne pause avant de recommencer
-                time.sleep(45)
+                        # ANALYSE DE L'ERREUR
+                        
+                        # CAS 1 : Vidéo Privée / Pas dispo
+                        # LOGIQUE : On saute, on ne met PAS en retry, on passe à la suivante de la liste pour compléter le quota.
+                        if "private video" in err_str:
+                            print("   -> Privée. On glisse à la suivante.")
+                        
+                        # CAS 2 : Vidéo Supprimée (Mort définitive)
+                        # LOGIQUE : Blacklist immédiate.
+                        elif "deleted" in err_str or "account associated with this video has been terminated" in err_str:
+                            print("   -> Supprimée. Blacklist.")
+                            with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
+
+                        # CAS 3 : Erreur Tor / Sign in / Geo
+                        # LOGIQUE : C'est une erreur "bête". On met en RETRY pour la passe 2.
+                        # Et on continue quand même à la suivante pour essayer d'avancer.
+                        else:
+                            print("   -> Erreur technique (Tor/Sign-in). Ajout File Retry.")
+                            retry_queue.append(entry)
+
+                        cleanup_files(vid_id)
+
+            # --- PASSE 2 : RETRY DES ERREURS TECHNIQUES ---
+            # On ne lance la passe 2 que si on n'a pas atteint l'objectif ET qu'il y a des retries
+            if retry_queue and success_count < TARGET_SUCCESS_PER_PLAYLIST:
+                print(f"\n--- PASSE 2 : Retry ({len(retry_queue)} vidéos) après pause ---")
+                time.sleep(45) # Pause pour laisser Tor changer d'IP
 
                 with yt_dlp.YoutubeDL(dl_opts) as ydl:
-                    for entry in retry_list:
+                    for entry in retry_queue:
+                        if success_count >= TARGET_SUCCESS_PER_PLAYLIST: break
+                        
                         vid_id = entry['id']
                         print(f"Retry -> {vid_id}")
                         try:
-                            success = process_video(entry, ydl, release, fg, custom_image, custom_author, current_log_file)
-                            if not success:
-                                print(f"Echec final pour aujourd'hui (Sign in ou autre).")
+                            process_video_download(entry, ydl, release, fg, custom_image, custom_author, current_log_file)
+                            print("   [OK] Rattrapage réussi !")
+                            success_count += 1
                         except Exception as e:
-                            # Si ça plante encore ici, on abandonne pour ce run
-                            print(f"Toujours bloqué ({e}). Sera retenté au prochain lancement.")
+                            print(f"   [ECHEC FINAL] {e}")
+                            # Si ça rate encore, tant pis. On ne loggue pas, ça sera retenté demain.
+                        
                         cleanup_files(vid_id)
 
             fg.rss_file(rss_filename)
