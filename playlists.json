@@ -41,6 +41,7 @@
         "url": "https://www.youtube.com/@Laurence_Boccolini/videos", 
         "podcast_name": "Sillage",
         "podcast_author": "Laurence Boccolini",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/laurence_boccolini.jpg"
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/laurence_boccolini.jpg",
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
