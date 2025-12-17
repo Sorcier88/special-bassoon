@@ -1,29 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 16 Dec 2025 04:54:03 +0000</lastBuildDate><itunes:author>Arte</itunes:author><item><title>Vivons-nous dans un trou noir ? | 42, la réponse à presque tout | ARTE</title><description>Rediffusion disponible jusqu'au 18/09/2026
-Les trous noirs peuvent nous dire beaucoup de choses sur la formation de l’univers. L'astrophysicien Nikodem Poplawski est ainsi convaincu que notre univers n’est pas né du fameux big bang, mais d’un "grand rebond" (big bounce). Suivant sa théorie, la genèse de notre univers pourrait bien être due à un trou noir. À moins que nous ne vivions carrément dans un trou noir ?&#13;
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Wed, 17 Dec 2025 04:56:21 +0000</lastBuildDate><itunes:author>Arte</itunes:author><item><title>Qu’y avait-il avant le big bang ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 15/11/2028 
+Galaxies, étoiles, planètes… L’Univers et tout ce qui le compose ont-ils toujours existé ? Ou bien un big bang a-t-il donné naissance à toutes les merveilles du monde observable ? Et, dans ce cas, qu’est-ce qui a déclenché le boum originel ?&#13;
 &#13;
-Série documentaire scientifique (Allemagne, 2021, 27mn)&#13;
-#espace #univers #arte 
-
----
-Sources et liens complémentaires : 
-
-1. Vivons-nous vraiment dans un trou noir ?
-Un rapport de Nikodem Poplawski :
-https://www.insidescience.org/news/every-black-hole-contains-new-universe (source en anglais)
-L’explication « toute simple » :
-http://www.nikodempoplawski.com/ULA2020.pdf (source en anglais et espagnol)
-
-2.. La théorie sous-jacente
-Big Bang ...ou bien Big Bounce ?https://www.pbs.org/wgbh/nova/article/big-bounce/ (source en anglais)
-
-3. Comment nous percevons les trous noirs
-L’explication scientifique derrière le projet Event Horizon :https://eventhorizontelescope.org/science (source en anglais)
-Une carte répertoriant 25 000 trous noirs :
-https://www.universiteitleiden.nl/en/news/2021/02/astronomers-publish-map-showing-25000-supermassive-black-holes (source en anglais)
-La découverte de « notre » trou noir :
-https://www.spektrum.de/news/am-ende-der-zeit/1779216 (source en allemand)
----
+Série documentaire scientifique (Allemagne, 2025, 27mn)&#13;
+#bigbang #astronomie #arte 
 &#13;
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
@@ -31,16 +11,4 @@ Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnH
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">SDR_Di6ac9I</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/SDR_Di6ac9I.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item><item><title>Les cryptomonnaies sont-elles le futur ? (2021) | 42 - La réponse à presque tout | ARTE</title><description>Rediffusion disponible jusqu'au 11/09/2028
-Les cryptomonnaies divisent les esprits : si les économistes mettaient en garde contre les risques d’une bulle, les adeptes du bitcoin voyaient là une révolution. Gros plan sur ce système monétaire alternatif.&#13;
-&#13;
-Série documentaire scientifique (Allemagne, 2021, 29mn)&#13;
-#bitcoin #finances #arte 
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">YbMsx2ERqBk</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/YbMsx2ERqBk.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item></channel></rss>
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">grFczC5bYRY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/grFczC5bYRY.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item></channel></rss>
