@@ -1,77 +1,100 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 23 Dec 2025 04:35:10 +0000</lastBuildDate><itunes:author>Arte</itunes:author><item><title>Comment l’eau peut-elle créer la vie ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 03/05/2028
-Les recherches sur l'eau révèlent une substance singulière et mystérieuse présente partout dans l’univers. Mais c’est sur la planète Terre que l’eau déploie toute son énergie. Certains chercheurs considèrent que l’eau est prédestinée à créer la vie du fait de ses nombreuses propriétés insolites. En quoi cette super-substance est-elle unique ? Serait-elle le berceau universel de la vie ?&#13;
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 23 Dec 2025 15:08:35 +0000</lastBuildDate><itunes:author>Arte</itunes:author><item><title>Peut-on désactiver les addictions ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 24/05/2028
+Pour l’instant, une personne dépendante peut certes devenir abstinente, mais elle ne guérira pas totalement et définitivement de son addiction. Les avancées scientifiques permettront-elles de faire émerger des solutions, comme des vaccins ou des interventions chirurgicales ?&#13;
 &#13;
-Série documentaire scientifique (Allemagne, 2025, 29mn)&#13;
-&#13;#science #magazine #arte 
-
-Photo de miniature par Michaela (Pixabay)
+Série documentaire scientifique (Allemagne, 2025, 28mn)&#13;
+&#13;#drogue #science #arte 
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">ZE9Eb7kJmI4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/ZE9Eb7kJmI4.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item><item><title>La géo-ingénierie va-t-elle sauver le climat ? | 42 - La réponse à presque tout | ARTE</title><description>Rediffusion disponible jusqu'au 21/07/2025
-Pour agir face au dérèglement climatique, certains étudient la possibilité de refroidir la Terre ou de récupérer notre CO2. Cela s’appelle la géo-ingénierie, une discipline qui englobe des interventions plus ou moins farfelues.&#13;
-&#13;Photo de la miniature par DragonDash (Pixabay)
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">Sexea1QaTXo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Sexea1QaTXo.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item><item><title>Comment survivre à tant de poison ? | 42 - La réponse à presque tout | ARTE</title><description>Rediffusion disponible jusqu'au 20/05/2026
+La chimie rend nos pulls plus doux, notre monde plus coloré, et elle peut même sauver des vies. Le revers de la médaille : nous avons libéré tellement de produits chimiques toxiques que nous avons causé des dommages existentiels à notre écosystème. Et ces substances sont de plus en plus nombreuses. Où sont les limites ?&#13;
+&#13;
+Série documentaire scientifique (Allemagne, 2023, 28mn)&#13;
+&#13;Photo de la miniature par Arek Socha (Pixabay).
+#poison #science #arte 
 
-Série documentaire scientifique (Allemagne, 2021, 25mn)&#13;
-&#13;#Géoingénierie #Climat #ARTE
+---
+Sources et les liens :
 
-----------
-Sources et liens complémentaires 🧐
+1. Les limites planétaires
 
-1. Qu’est-ce que la géo-ingénierie?
-https://www.geomar.de/news/article/climate-engineering-reicht-nicht-aus-um-klimaziele-zu-erreichen
-(Source en allemand)
+Qu’est-ce-qu’on entend par « limites planétaires ? » https://www.scinexx.de/news/geowissen/planetare-belastungsgrenze-fuer-schadstoffe-ueberschritten/
 
-2. La captation du CO2 dans l’atmosphère
-- Le rapport du GIEC sur le climat propose différentes alternatives pour atteindre nos objectifs climatiques. Sans récupérer le CO2 dans l’atmosphère, cela s’annonce compliqué
-https://www.ipcc.ch/report/ar6/wg1/
-(Source en anglais)
-- Une solution technique pour filtrer le CO2 dans l’air
-https://climeworks.com/news/climeworks-launches-orca
-(Source en anglais)
-- L’altération artificielle des roches – Une véritable option ?  
-https://www.sciencemediacenter.de/alle-angebote/research-in-context/details/news/potenzial-von-negativen-emissionen-durch-gesteinsverwitterung/
-(Source en allemand)
+L’étude : https://pubs.acs.org/doi/10.1021/acs.est.1c04158
 
-3. La gestion du rayonnement solaire : du dioxyde de soufre dans l'atmosphère ?
-- La proposition de géo-ingénierie la plus controversée à l’heure actuelle
-https://www.mpg.de/16569676/geoengineering 
-(Source en allemand)
-- Les organisations environnementales s’opposent aux expériences de terrain
-https://www.geoengineeringmonitor.org/
-(Source en anglais)
+2. Couleurs et toxicité
 
-4. Nos lieux de tournage
-- Munich
-https://www.cas.uni-muenchen.de/ueber_cas/das_haus/index.html 
-- Kiel
-https://www.geomar.de/
-- Hambourg
-https://www.jura.uni-hamburg.de/die-fakultaet/zbr/medien-und-recherche.html
-- Boston
-https://cssh.northeastern.edu/faculty/jennie-stephens/
-----------
+Les pigments en bref (le blanc, le vert et le orange) https://blog.colornavigator.net/dangerous-colors
+
+La sombre histoire du blanc de céruse http://www.farbimpulse.de/Weisse-Farbe-mit-dunklen-Seiten.bleiwei.0.html
+
+Le vert de Scheele, un pigment à base d‘arsenic https://www.seilnacht.com/Lexikon/schweinf.html
+
+Des tapisseries à base de vert de Scheele https://www.baublatt.ch/baupraxis/buchtipp-gefaehrlich-schoen-der-tapeten-gruener-todeshauch-24750
+
+Le vert de Schweinfurt, concentré de pigment à base d’arsenic, connu aussi comme vert de Paris, vert arsenical, arsénite de cuivre ou vert anglais
+
+https://www.dguv.de/medien/ifa/de/pub/grl/pdf/2019_017.pdf
+
+https://www.chemie.de/lexikon/Schweinfurter_Gr%C3%BCn.html
+
+3. Rachel Carson et l‘écotoxicologie
+
+Chronique de la radio Deutschlandfunk pour les 60 ans du livre Printemps silencieux https://www.deutschlandfunk.de/rachel-carson-stumme-fruehling-ddt-100.html
+
+https://www.rachelcarson.org/
+
+https://www.carsoncenter.uni-muenchen.de/about_rcc/archive/mission/rachel_carson_bio/index.html
+
+https://www.spektrum.de/lexikon/biologie/oekotoxikologie/47504
+
+https://sns.uba.de/umthes/de/concepts/_00018519.html
+
+4. Sciences participatives
+
+Le combat des Navajos contre la pollution https://www.yesmagazine.org/environment/2022/07/15/navajo-nation-citizen-science-pollution
+
+Max Liboiron sur le colonialisme et les sciences participatives
+
+https://www.youtube.com/watch?v=PjfnVez4zVc
+
+https://www.buergerschaffenwissen.de/
+
+https://www.bmbf.de/bmbf/de/ueber-uns/wissenschaftskommunikation-und-buergerbeteiligung/buergerbeteiligung/citizen-science/citizen-science_node.html
+
+https://www.citizen-science-germany.de/
+
+https://eu-citizen.science/
+
+5. Les accords internationaux sur la gestion des produits toxiques
+
+« Convention de Bâle sur le contrôle des mouvements transfrontières de déchets dangereux et de leur élimination » https://www.bmuv.de/gesetz/basler-uebereinkommen-ueber-die-kontrolle-der-grenzueberschreitenden-verbringung-gefaehrlicher-abfaelle-und-ihrer-entsorgung
+
+« Convention de Stockholm sur les polluants organiques persistants » https://www.bvl.bund.de/DE/Arbeitsbereiche/04_Pflanzenschutzmittel/03_Antragsteller/13_Rechtsvorschriften/03_intern_abk/03_pop/psm_intern_abk_pop_node.html
+
+« Convention de Rotterdam sur les produits chimiques ou pesticides dangereux » https://www.bmuv.de/themen/gesundheit-chemikalien/chemikalien/rotterdamer-uebereinkommen-pic
+
+6. La pilule contraceptive et autres médicaments : effets néfastes sur l‘environnement https://www.pharmazeutische-zeitung.de/arzneistoffe-im-abwasser/ https://www.bmuv.de/richtig-entsorgen-wirkt/welche-auswirkungen-haben-medikamente-auf-die-umwelt/umweltauswirkungen-unterschiedlicher-medikamente https://www.bund.net/fileadmin/user_upload_bund/publikationen/bund/position/position_arzneimittel.pdf Medikamente, Hormone, Endokrine Disruptorenhttps://www.globalnature.org › bausteine.net https://www.nationalgeographic.de/umwelt/2022/03/hormone-im-leitungswasser-deutsche-forscher-entwickeln-neues-filterverfahren 
+---
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">aIB52KKfvP8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/aIB52KKfvP8.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item><item><title>Faut-il échouer pour réussir ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 13/09/2028
-Les revers et autres fiascos laissent souvent un goût amer, et pourtant, ils peuvent aider à mieux rebondir. Les chercheurs savent aujourd’hui que les avancées scientifiques et techniques sont le fruit de tâtonnements. En psychologie, il est admis que l’échec rend plus résilient. Alors, faut-il échouer plus souvent pour réussir sur le long terme ?&#13;
-Photo de miniature par KoolShooters  : https://www.pexels.com/fr-fr/photo/2-femmes-assises-sur-un-banc-en-bois-marron-6076504/
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">6exBo_dbJXA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/6exBo_dbJXA.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item><item><title>Sommes-nous trop curieux? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 31/05/2028
+La curiosité est à la base de l’essor de l’humanité. Pourtant, à en croire l’adage, elle serait un vilain défaut. Alors, est-elle un vice ou une vertu ? Et pourquoi cette perception ambivalente ? Les médias et les algorithmes savent exploiter notre soif de nouveauté pour nous abreuver sans cesse de contenus. Pouvons-nous y faire quelque chose ? Serions-nous trop curieux ?&#13;
 &#13;
-Série documentaire scientifique (Allemagne, 2025, 27mn)&#13;
-#science #recherche #arte 
-&#13;
+Série documentaire (Allemagne, 2025, 28mn)&#13;
+&#13;#science #arte 
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">_N54rOqXyOc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/_N54rOqXyOc.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 05 Sep 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item></channel></rss>
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">rzCcjjLtBo8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/rzCcjjLtBo8.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item></channel></rss>
