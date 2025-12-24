@@ -1,100 +1,116 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 23 Dec 2025 15:08:35 +0000</lastBuildDate><itunes:author>Arte</itunes:author><item><title>Peut-on désactiver les addictions ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 24/05/2028
-Pour l’instant, une personne dépendante peut certes devenir abstinente, mais elle ne guérira pas totalement et définitivement de son addiction. Les avancées scientifiques permettront-elles de faire émerger des solutions, comme des vaccins ou des interventions chirurgicales ?&#13;
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Wed, 24 Dec 2025 04:30:05 +0000</lastBuildDate><itunes:author>Arte</itunes:author><item><title>Notre évolution s’accélère-t-elle ? | 42, la réponse à presque tout | ARTE</title><description>Rediffusion disponible jusqu'au 08/07/2026
+D’étranges changements sont à l’œuvre dans la nature : la taille des poulpes se réduit, le corps des oiseaux ou des lézards subit des transformations radicales et des éléphanteaux naissent sans défenses. Comment ces évolutions morphologiques s’expliquent-elles ? Et dans quelle mesure l’humanité en est-elle responsable ?&#13;
 &#13;
-Série documentaire scientifique (Allemagne, 2025, 28mn)&#13;
-&#13;#drogue #science #arte 
+Ces étranges transformations, qui s´opèrent en quelques années, voire en quelques semaines, apparaissent en effet à une époque où une seule espèce, le genre humain, imprime sa marque sur notre planète.&#13;
 &#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+---
+Liens vers les sources : 
 
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">Sexea1QaTXo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Sexea1QaTXo.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item><item><title>Comment survivre à tant de poison ? | 42 - La réponse à presque tout | ARTE</title><description>Rediffusion disponible jusqu'au 20/05/2026
-La chimie rend nos pulls plus doux, notre monde plus coloré, et elle peut même sauver des vies. Le revers de la médaille : nous avons libéré tellement de produits chimiques toxiques que nous avons causé des dommages existentiels à notre écosystème. Et ces substances sont de plus en plus nombreuses. Où sont les limites ?&#13;
-&#13;
-Série documentaire scientifique (Allemagne, 2023, 28mn)&#13;
-&#13;Photo de la miniature par Arek Socha (Pixabay).
-#poison #science #arte 
+1. Plus d’informations sur le calmar géant en voie de rétrécissement…
+…le projet de recherche ainsi que l’étude de l’Université Stanford
+https://news.stanford.edu/2019/07/17/researchers-solve-mystery-disappearing-jumbo-squid/ 
+https://academic.oup.com/icesjms/article/76/7/2413/5533276 
+… et encore plus de précisions sur le calmar géant qui a rétréci, les lézards qui ont résisté aux ouragans et bien d’autres réactions intéressantes de la nature au changement climatique dans le livre de Thor Hanson
+https://www.penguinrandomhouse.de/Buch/Von-schrumpfenden-Tintenfischen-und-windfesten-Eidechsen/Thor-Hanson/Koesel/e604301.rhd
+
+2. Informations sur le comportement migratoire de la fauvette à tête noire et son évolution…
+…disponibles grâce au projet de recherche de Miriam Liedvogel et son équipe …
+https://www.mpg.de/19272303/vogelzug-moenchsgrasmuecken 
+…dans cette vidéo elle nous parle du rôle que jouent les gènes des oiseaux migrateurs dans leur comportement migratoire.
+https://www.youtube.com/watch?v=PbUl2vdutLM&amp;t=130s 
+
+3.Pour en savoir plus sur l'incroyable histoire des lézards qui, après deux ouragans, ont développé de plus gros coussinets sous les orteils
+…vous pouvez lire l’étude de Colin Donihue 
+https://www.researchgate.net/publication/340976230_Hurricane_effects_on_Neotropical_lizards_span_geographic_and_phylogenetic_scales 
+
+4. Des exemples d’évolution accélérée 
+…à commencer par les éléphants sans défenses 
+https://www.nationalgeographic.de/tiere/2018/11/evolution-mehr-elefanten-ohne-stosszaehne-durch-wilderei
+https://www.tagesspiegel.de/wissen/immer-mehr-elefanten-werden-ohne-stosszahne-geboren-5990881.html
+… en passant par les moutons à cornes en Amérique du Nord, dont les cornes sont de plus en plus petites en raison de la chasse aux trophées
+https://www.sueddeutsche.de/wissen/evolution-das-ueberleben-der-schwaechsten-1.367365
+… jusqu'à l'espèce de moustique qui vit dans le métro de Londres. https://www.sueddeutsche.de/wissen/evolution-muecken-in-der-u-bahn-1.4202161
+
+5.A propos de nature intacte, de taux d'extinction et de l‘état de la biodiversité...
+... c'est ainsi que le Conseil mondial de la biodiversité des Nations Unies voit la situation 
+https://www.de-ipbes.de/de/Globales-IPBES-Assessment-zu-Biodiversitat-und-Okosystemleistungen-1934.html 
+et voici combien d'espaces naturels intacts il y a encore dans le monde.
+https://www.deutschlandfunknova.de/nachrichten/unberuehrte-natur-die-letzte-wildnis-in-der-hand-weniger
+https://www.science.lu/de/70-prozent-der-letzten-wildnis-auf-der-erde-auf-nur-fuenf-staaten-verteilt
+Références musicales :  
+Camille Saint Saëns – Karneval der Tiere - Das Aquarium 
+Camille Saint Saëns – Karneval der Tiere – Das Vogelhaus
+Gustavo Santaolalla – Kat’s gut
 
 ---
-Sources et les liens :
 
-1. Les limites planétaires
+Série documentaire scientifique (Allemagne, 2023, 25mn)&#13;
+&#13;#evolution #science #arte 
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
-Qu’est-ce-qu’on entend par « limites planétaires ? » https://www.scinexx.de/news/geowissen/planetare-belastungsgrenze-fuer-schadstoffe-ueberschritten/
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">VgttVqonvEs</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/VgttVqonvEs.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item><item><title>Nos leurres font-ils notre bonheur ? | 42, la réponse à presque tout | ARTE</title><description>Rediffusion disponible jusqu'au 16/09/2026
+Dès notre plus jeune âge, on nous inculque que ce n’est pas bien de mentir. Pourtant, l’apprentissage du mensonge est une étape normale et nécessaire du développement psychique. Et si le mensonge rendait notre monde meilleur ?&#13;
+&#13;
+Au cours de l’évolution, le mensonge pourrait avoir aiguillonné l’intelligence humaine. De quoi y voir un avantage, et non un signe de déchéance morale. Car le mensonge n’est pas toujours source de division : il peut favoriser la concorde et permettre la coopération.&#13;
+&#13;
+Photo de miniature: Roland Schwerdhöfer (Pixabay)
+Série documentaire scientifique (Allemagne, 2023, 27mn)&#13;
+&#13;#Mensonges #Bonheur #Arte
 
-L’étude : https://pubs.acs.org/doi/10.1021/acs.est.1c04158
-
-2. Couleurs et toxicité
-
-Les pigments en bref (le blanc, le vert et le orange) https://blog.colornavigator.net/dangerous-colors
-
-La sombre histoire du blanc de céruse http://www.farbimpulse.de/Weisse-Farbe-mit-dunklen-Seiten.bleiwei.0.html
-
-Le vert de Scheele, un pigment à base d‘arsenic https://www.seilnacht.com/Lexikon/schweinf.html
-
-Des tapisseries à base de vert de Scheele https://www.baublatt.ch/baupraxis/buchtipp-gefaehrlich-schoen-der-tapeten-gruener-todeshauch-24750
-
-Le vert de Schweinfurt, concentré de pigment à base d’arsenic, connu aussi comme vert de Paris, vert arsenical, arsénite de cuivre ou vert anglais
-
-https://www.dguv.de/medien/ifa/de/pub/grl/pdf/2019_017.pdf
-
-https://www.chemie.de/lexikon/Schweinfurter_Gr%C3%BCn.html
-
-3. Rachel Carson et l‘écotoxicologie
-
-Chronique de la radio Deutschlandfunk pour les 60 ans du livre Printemps silencieux https://www.deutschlandfunk.de/rachel-carson-stumme-fruehling-ddt-100.html
-
-https://www.rachelcarson.org/
-
-https://www.carsoncenter.uni-muenchen.de/about_rcc/archive/mission/rachel_carson_bio/index.html
-
-https://www.spektrum.de/lexikon/biologie/oekotoxikologie/47504
-
-https://sns.uba.de/umthes/de/concepts/_00018519.html
-
-4. Sciences participatives
-
-Le combat des Navajos contre la pollution https://www.yesmagazine.org/environment/2022/07/15/navajo-nation-citizen-science-pollution
-
-Max Liboiron sur le colonialisme et les sciences participatives
-
-https://www.youtube.com/watch?v=PjfnVez4zVc
-
-https://www.buergerschaffenwissen.de/
-
-https://www.bmbf.de/bmbf/de/ueber-uns/wissenschaftskommunikation-und-buergerbeteiligung/buergerbeteiligung/citizen-science/citizen-science_node.html
-
-https://www.citizen-science-germany.de/
-
-https://eu-citizen.science/
-
-5. Les accords internationaux sur la gestion des produits toxiques
-
-« Convention de Bâle sur le contrôle des mouvements transfrontières de déchets dangereux et de leur élimination » https://www.bmuv.de/gesetz/basler-uebereinkommen-ueber-die-kontrolle-der-grenzueberschreitenden-verbringung-gefaehrlicher-abfaelle-und-ihrer-entsorgung
-
-« Convention de Stockholm sur les polluants organiques persistants » https://www.bvl.bund.de/DE/Arbeitsbereiche/04_Pflanzenschutzmittel/03_Antragsteller/13_Rechtsvorschriften/03_intern_abk/03_pop/psm_intern_abk_pop_node.html
-
-« Convention de Rotterdam sur les produits chimiques ou pesticides dangereux » https://www.bmuv.de/themen/gesundheit-chemikalien/chemikalien/rotterdamer-uebereinkommen-pic
-
-6. La pilule contraceptive et autres médicaments : effets néfastes sur l‘environnement https://www.pharmazeutische-zeitung.de/arzneistoffe-im-abwasser/ https://www.bmuv.de/richtig-entsorgen-wirkt/welche-auswirkungen-haben-medikamente-auf-die-umwelt/umweltauswirkungen-unterschiedlicher-medikamente https://www.bund.net/fileadmin/user_upload_bund/publikationen/bund/position/position_arzneimittel.pdf Medikamente, Hormone, Endokrine Disruptorenhttps://www.globalnature.org › bausteine.net https://www.nationalgeographic.de/umwelt/2022/03/hormone-im-leitungswasser-deutsche-forscher-entwickeln-neues-filterverfahren 
 ---
+Liens vers les sources :
+
+1. Mentir fait partie de la condition humaine, contrairement au fait de reconnaître d’avoir menti
+
+... le mensonge pourrait avoir donné des ailes à l'esprit de l'homme ... https://www.faz.net/aktuell/wissen/lug-und-trug-triebfedern-der-evolution-14571647.html
+
+…permettant non seulement de diviser la société, mais aussi de la maintenir unie https://royalsocietypublishing.org/doi/10.1098/rsif.2015.0798
+
+... aussi parce que les "mensonges blancs", mensonges a priori inoffensifs, ne doivent pas nuire aux autres, mais les aider ... https://pubmed.ncbi.nlm.nih.gov/25773019/
+
+.. apprendre à mentir fait en outre partie de notre développement intellectuel normal ... https://www.lesoleil.com/2019/10/13/vos-enfants-mentent-cest-signe-dun-bon-developpement-423082084fc92f132a78c9a1123bc09e
+
+... malgré une vie d'entraînement et de pratique du mensonge ... https://pure.uva.nl/ws/files/2474422/175865_1_s2.0_S0001691815300184_main.pdf
+
+... nous sommes quand même nuls pour détecter les mensonges https://journals.sagepub.com/doi/10.1207/s15327957pspr1003_2
+
+2. Il suffit donc de continuer à mentir ? Bien sûr que non.
+
+... De nombreux mensonges restent nocifs et égoïstes et ils sont plus fréquents en raison d’internet https://www.weforum.org/agenda/2021/11/lying-psychology-digital-age/
+
+... quel est le lien entre les mensonges et les algorithmes ? https://www.niemanlab.org/2022/04/algorithms-lies-and-social-media/
+
+3. Et pourquoi le mensonge du Père Noël contribuerait-il à guérir le cancer ? https://www.washingtonpost.com/posteverything/wp/2014/12/24/believing-in-santa-claus-could-help-your-kids-develop-a-cure-for-cancer/
+
+4. Un peu de lecture sur les mensonges :
+
+On peut écrire des livres sur le mensonge sous divers angles :
+
+· Angle philosophique : Bettina Stangneth - Lügen lesen
+
+· Angle anecdotique : Aja Raden - The Truth About Lies
+
+· Angle de l’évolution biologique : Volker Sommer - Lob der Lüge
+
+Références musicales :
+
+TC: 00:00 - David Rieu: Poulets á Gogo
+TC: 02:18 - André Charlier, Daniel Diaz: All Shot Up
+TC: 06:25 - Paul Martin Pritchard: Run Don't Walk 2
+TC: 13:07 et
+TC: 23:37 - Tortoza: Earth Lullabyund TC: 23:37
+TC: 17:36 - Nikitch: Classic Element
+TC: 20:39 - Depeche Mode: Lie to me
+TC: 22:14 - Edge Of Sanity: Of Darksome Origin 
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">6exBo_dbJXA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/6exBo_dbJXA.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item><item><title>Sommes-nous trop curieux? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 31/05/2028
-La curiosité est à la base de l’essor de l’humanité. Pourtant, à en croire l’adage, elle serait un vilain défaut. Alors, est-elle un vice ou une vertu ? Et pourquoi cette perception ambivalente ? Les médias et les algorithmes savent exploiter notre soif de nouveauté pour nous abreuver sans cesse de contenus. Pouvons-nous y faire quelque chose ? Serions-nous trop curieux ?&#13;
-&#13;
-Série documentaire (Allemagne, 2025, 28mn)&#13;
-&#13;#science #arte 
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">rzCcjjLtBo8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/rzCcjjLtBo8.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item></channel></rss>
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">4AioOp6p4J4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/4AioOp6p4J4.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item></channel></rss>
