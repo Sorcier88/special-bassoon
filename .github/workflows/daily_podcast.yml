@@ -15,7 +15,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-        fetch-depth: 0 # Important pour éviter les conflits git
+        fetch-depth: 0
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -36,17 +36,24 @@ jobs:
     - name: Install and Configure Tor (Belgium Exit)
       run: |
         sudo apt-get install -y tor
+        # Configuration stricte pour la Belgique
         echo "ExitNodes {BE}" | sudo tee -a /etc/tor/torrc
         echo "StrictNodes 1" | sudo tee -a /etc/tor/torrc
-        echo "CircuitBuildTimeout 30" | sudo tee -a /etc/tor/torrc
+        # Optimisation pour éviter les timeouts
+        echo "CircuitBuildTimeout 60" | sudo tee -a /etc/tor/torrc
         echo "KeepalivePeriod 60" | sudo tee -a /etc/tor/torrc
         echo "NumEntryGuards 8" | sudo tee -a /etc/tor/torrc
+        echo "ClientOnly 1" | sudo tee -a /etc/tor/torrc
         
         sudo service tor start
-        echo "Attente du démarrage de Tor..."
+        
+        echo "Démarrage de Tor... (Pause 60s)"
         sleep 60
-        echo "Vérification IP Tor..."
-        curl --socks5 127.0.0.1:9050 https://ifconfig.me || echo "Echec curl"
+        
+        # VERIFICATION ROBUSTE
+        # On essaie un autre service qui bloque moins Tor
+        echo "Test de connexion..."
+        curl -s --socks5 127.0.0.1:9050 -L -A "Mozilla/5.0" https://icanhazip.com || echo "Test IP échoué (mais Tor tourne peut-être)"
 
     - name: Run Script via Tor
       env:
@@ -55,26 +62,16 @@ jobs:
         YOUTUBE_PROXY: "socks5://127.0.0.1:9050"
       run: python podcast_gen.py
       
-    # --- SECTION GIT CORRIGÉE ---
     - name: Commit and Push Changes
       if: always() 
       run: |
         git config --global user.name 'Bot'
         git config --global user.email 'bot@noreply.github.com'
-        
-        # On ajoute tout ce que le script a généré
         git add .
-        
-        # On vérifie s'il y a des choses à sauvegarder
         if git diff --staged --quiet; then
           echo "Rien à commiter."
         else
           git commit -m "Update RSS and Logs"
-          
-          # LA CORRECTION EST ICI :
-          # On récupère les dernières modifs distantes avant de pousser
           git pull --rebase origin main
-          
-          # Et maintenant on peut pousser sans erreur
           git push
         fi
