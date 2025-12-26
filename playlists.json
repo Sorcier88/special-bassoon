@@ -47,9 +47,16 @@
     {
 "filename": "fabien_old_thread.xml",
         "url": "https://youtube.com/playlist?list=PLUD1bIh6qJDObs3OZWbvVVAw5JkbZqi4G", 
-        "podcast_name": "Old Thread ",
+        "podcast_name": "Old Thread",
         "podcast_author": "Fabien Olicard",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/olicard_old_thread.jpg",
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+{
+"filename": "les_thermes_jdg.xml",
+        "url": "https://youtube.com/playlist?list=PLWmL9Ldoef0telMzLTgc6dS8XAodBP-Hi", 
+        "podcast_name": "Les thermes",
+        "podcast_author": "Bazar du grenier",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg"
     }
 ]
