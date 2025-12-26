@@ -29,11 +29,18 @@ def cleanup_files(vid_id):
         except: pass
 
 def upload_asset(release, filename):
+    """Upload un fichier. S'il existe déjà, on le SUPPRIME pour forcer la mise à jour."""
     if not os.path.exists(filename): return None
     print(f"Upload de {filename}...")
+    
+    # Vérification et SUPPRESSION de l'ancien fichier (corrompu ou ancien)
     for asset in release.get_assets():
         if asset.name == filename:
-            return asset.browser_download_url
+            print(f"   -> Ancienne version trouvée. Suppression...")
+            asset.delete_asset()
+            break
+            
+    # Upload du nouveau
     try:
         asset = release.upload_asset(filename)
         return asset.browser_download_url
@@ -46,8 +53,7 @@ def process_video_download(entry, ydl, release, fg, custom_image, custom_author,
     vid_url = f"https://www.youtube.com/watch?v={vid_id}"
     print(f"-> Traitement : {entry.get('title', vid_id)}")
 
-    # 1. Téléchargement
-    # Si un fragment manque, yt-dlp lèvera une exception grâce aux nouvelles options
+    # 1. Téléchargement (Avec vérification intégrité stricte)
     info = ydl.extract_info(vid_url, download=True)
     
     if not info: 
@@ -55,6 +61,7 @@ def process_video_download(entry, ydl, release, fg, custom_image, custom_author,
 
     mp3_filename = f"{vid_id}.mp3"
     
+    # Recherche miniature
     thumb_files = glob.glob(f"{vid_id}.*")
     image_extensions = ['.jpg', '.jpeg', '.png', '.webp']
     jpg_filename = None
@@ -62,11 +69,11 @@ def process_video_download(entry, ydl, release, fg, custom_image, custom_author,
         if any(f.lower().endswith(ext) for ext in image_extensions):
             jpg_filename = f; break
     
-    # Vérification ultime de la taille du fichier (évite les fichiers de 0ko)
-    if not os.path.exists(mp3_filename) or os.path.getsize(mp3_filename) < 1024:
+    # Vérification taille (Si < 10ko, c'est sûrement un fichier corrompu)
+    if not os.path.exists(mp3_filename) or os.path.getsize(mp3_filename) < 10000:
         raise Exception("Fichier MP3 invalide ou trop petit")
 
-    # 2. Upload
+    # 2. Upload (Avec écrasement automatique grâce à la modif)
     mp3_url = upload_asset(release, mp3_filename)
     if not mp3_url:
         raise Exception("Echec Upload GitHub")
@@ -103,7 +110,7 @@ def process_video_download(entry, ydl, release, fg, custom_image, custom_author,
 
 def run():
     try:
-        # 0. Setup Cookies & Proxy
+        # 0. Setup
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
         proxy_url = os.environ.get('YOUTUBE_PROXY')
         
@@ -125,7 +132,7 @@ def run():
         except Exception as e:
             print(f"Erreur GitHub: {e}"); return
 
-        # Options YT-DLP de base
+        # Options YT-DLP
         base_opts = {
             'quiet': False, 'ignoreerrors': True, 'no_warnings': True, 'socket_timeout': 60,
         }
@@ -158,14 +165,14 @@ def run():
                     info_scan = ydl_scan.extract_info(playlist_url, download=False)
                     if info_scan and 'entries' in info_scan:
                         for entry in info_scan['entries']:
+                            # Si l'ID a été retiré du fichier log manuellement, il sera détecté ici comme "manquant"
                             if entry and entry.get('id') and entry['id'] not in downloaded_ids:
                                 missing_entries.append(entry)
                 except Exception as e: 
                     print(f"Erreur scan: {e}")
                     continue
 
-            print(f"Total manquants : {len(missing_entries)}")
-            
+            print(f"Total à traiter : {len(missing_entries)}")
             batch_to_process = missing_entries[:SEARCH_WINDOW_SIZE]
 
             # SETUP RSS (inchangé)
@@ -186,15 +193,10 @@ def run():
             dl_opts = base_opts.copy()
             dl_opts.update({
                 'format': 'bestaudio/best', 'outtmpl': '%(id)s.%(ext)s', 'writethumbnail': True,
+                # Intégrité stricte activée
+                'retries': 20, 'fragment_retries': 20, 'skip_unavailable_fragments': False, 'abort_on_unavailable_fragment': True,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
-                'sleep_interval': 10, 'max_sleep_interval': 30,
-                
-                # --- NOUVEAU : SECURITÉ INTÉGRITÉ ---
-                'retries': 20,                # Réessayer 20 fois en cas d'erreur réseau
-                'fragment_retries': 20,       # Réessayer 20 fois chaque fragment
-                'skip_unavailable_fragments': False, # INTERDICTION de sauter un fragment
-                'abort_on_unavailable_fragment': True, # Plante si un fragment manque (sera catché par le script)
-                'keep_fragments': False,
+                'sleep_interval': 10, 'max_sleep_interval': 30
             })
             if sb_categories: dl_opts['sponsorblock_remove'] = sb_categories
 
@@ -203,7 +205,6 @@ def run():
 
             # --- PASSE 1 ---
             print(f"--- PASSE 1 : Recherche de {TARGET_SUCCESS_PER_PLAYLIST} succès ---")
-            
             with yt_dlp.YoutubeDL(dl_opts) as ydl:
                 for entry in batch_to_process:
                     if success_count >= TARGET_SUCCESS_PER_PLAYLIST:
@@ -211,38 +212,30 @@ def run():
                         break
 
                     vid_id = entry['id']
-                    
                     try:
                         process_video_download(entry, ydl, release, fg, custom_image, custom_author, current_log_file)
                         print("   [OK]")
                         success_count += 1
                         cleanup_files(vid_id)
-
                     except Exception as e:
                         err_str = str(e).lower()
                         print(f"   [ECHEC] {e}")
-
-                        # ANALYSE
-                        if "private video" in err_str:
-                            print("   -> Privée. On glisse.")
-                        elif "deleted" in err_str or "account associated with this video has been terminated" in err_str:
+                        if "private video" in err_str: print("   -> Privée. On glisse.")
+                        elif "deleted" in err_str: 
                             print("   -> Supprimée. Blacklist.")
                             with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
                         else:
-                            print("   -> Erreur technique (Intégrité/Tor). Retry queue.")
+                            print("   -> Erreur technique. Retry queue.")
                             retry_queue.append(entry)
-
                         cleanup_files(vid_id)
 
             # --- PASSE 2 : RETRY ---
             if retry_queue and success_count < TARGET_SUCCESS_PER_PLAYLIST:
-                print(f"\n--- PASSE 2 : Retry ({len(retry_queue)} vidéos) ---")
+                print(f"\n--- PASSE 2 : Retry après pause ---")
                 time.sleep(45)
-
                 with yt_dlp.YoutubeDL(dl_opts) as ydl:
                     for entry in retry_queue:
                         if success_count >= TARGET_SUCCESS_PER_PLAYLIST: break
-                        
                         vid_id = entry['id']
                         print(f"Retry -> {vid_id}")
                         try:
@@ -251,7 +244,6 @@ def run():
                             success_count += 1
                         except Exception as e:
                             print(f"   [ECHEC FINAL] {e}")
-                        
                         cleanup_files(vid_id)
 
             fg.rss_file(rss_filename)
@@ -262,5 +254,3 @@ def run():
 
 if __name__ == "__main__":
     run()
-
-
