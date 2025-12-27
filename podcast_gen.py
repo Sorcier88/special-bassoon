@@ -14,7 +14,7 @@ CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
 # OBJECTIF : Nombre de SUCCÈS voulus par playlist
-TARGET_SUCCESS_PER_PLAYLIST = 3
+TARGET_SUCCESS_PER_PLAYLIST = 2
 SEARCH_WINDOW_SIZE = 20
 
 def get_or_create_release(repo):
