@@ -1,14 +1,71 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sun, 28 Dec 2025 21:18:36 +0000</lastBuildDate><itunes:author>Arte</itunes:author><item><title>Allons-nous manquer d’électricité ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible en rediffusion jusqu'au 29/07/2026
-Notre système électrique est en pleine mutation : les énergies renouvelables doivent remplacer les combustibles fossiles, tandis que le réseau subit la recrudescence des catastrophes naturelles et des cyberattaques. Sans oublier qu’au niveau mondial, la demande en kilowatts augmente cinq fois plus vite que la population. Pourrions-nous un jour manquer d’électricité ?&#13;
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Mon, 29 Dec 2025 13:55:43 +0000</lastBuildDate><itunes:author>Arte</itunes:author><item><title>Le hasard existe-t-il ? |  42 - La réponse à presque tout | ARTE</title><description>Rediffusion disponible jusqu'au 27/05/2026
+Nous pensons à une personne - soudain, elle nous appelle. Une personne est frappée par la foudre - pas une fois, mais sept fois au cours de sa vie. La probabilité est de 1 sur 5 quintillions, c'est-à-dire un 5 avec 30 zéros. Tout cela n'est-il que le fruit du hasard ? Ou notre vie suit-elle un plan préétabli, qui pourrait même être calculé à l'aide des sciences naturelles ?&#13;
 &#13;
-Série documentaire scientifique (Allemagne, 2023, 27mn)&#13;
-#énergie #science #arte 
-&#13;
+Liens vers les sources : 
+
+1. Informations sur et de la part de nos protagonistes
+Katharina Schmack, spécialiste en neurosciences, Institut Francis Crick, Londres : 
+https://www.crick.ac.uk/research/find-a-researcher/katharina-schmack
+https://www.storiesofwin.org/profiles/2022/4/26/dr-katharina-schmack
+Stefan Klein, auteur: 
+https://www.stefanklein.info/
+Livre sur le hasard de Stefan Klein :
+https://www.fischerverlage.de/buch/stefan-klein-alles-zufall-9783596030835
+Critiques du livre :
+https://www.perlentaucher.de/buch/stefan-klein/alles-zufall.html
+Interview de Stefan Klein:
+https://www.srf.ch/kultur/gesellschaft-religion/alles-was-neu-ist-verdanken-wir-zufaellen
+Nicolas Gauvrit, mathématicien et psychologue:
+https://paris-reasoning.eu/members/regular/nicolas-gauvrit/
+https://timeworldevent.com/2021/en/intervenants/detail/nicolas-gauvrit
+Libby Heaney, spécialiste de la physique quantique et artiste
+
+Oeuvres artistiques :
+http://libbyheaney.co.uk/
+https://1e9.community/t/dieser-garten-der-lueste-entstand-mit-quantendaten/16973
+https://www.facebook.com/watch/?v=899567030825015
+
+2. Informations générales et passionnantes sur le hasard :
+https://www.zeit.de/zeit-wissen/2023/01/zufall-wahrscheinlichkeiten-quantenmechanik-forschung-weltbild
+https://www.itwm.fraunhofer.de/de/abteilungen/mf/aktuelles/blog-streuspanne/zufall.html
+
+3. Le facteur du hasard en biologie :
+https://www.spektrum.de/lexikon/biologie/zufall-in-der-biologie/72005
+
+4. Le hasard vu par la philosophie :
+https://philosophie-neu.de/der-begriff-zufall-2/ 
+
+5. Que penser des fausses coïncidences Lincoln-Kennedy ?
+https://eu.usatoday.com/story/news/factcheck/2020/06/06/fact-check-1964-lincoln-kennedy-comparisons-only-partly-accurate/5311926002/
+
+6. Le cerveau joue-t-il aux dés ? :
+https://www.wissenschaft.de/erde-umwelt/forscher-im-gehirn-waltet-der-zufall/
+https://www.newscientist.com/letter/mg23130842-800-2-we-can-see-brains-randomising-choice/
+https://www.researchgate.net/publication/305741872_The_random_dot_tachistogram_A_novel_task_that_elucidates_the_functional_architecture_of_decision
+
+7. Sélection de références musicales :
+“La valse d'Améle - Version orchestre” von Yann Tiersen
+“Le moulin” von Yann Tiersen
+“Theme From True Romance” (You're So Cool) von Hans Zimmer
+“One Shy Morning” von Amon Tobin
+“This Is Not The End” von Gui Boratto
+“Emerald Rush” von Jon Hopkins
+“Dark Baroque Pizzicato Violin” von Rafael Krux
+“Cutup Piano + Xylophone” von Fridge
+“Herman's Malt” von Jeff Russo
+“Arose” von Thomas Newman
+“Doors and Distance” von Antonio Sanchez
+“Come Together”, “Here Comes The Sun”, “Help” von den Beatles
+“East London Street (Drums Only Version)” von Hidden Orchestra
+“Cyanide Sisters” von Com Truise
+
+Série documentaire scientifique (Allemagne, 2023, 25mn)&#13;
+&#13;#mathématique #science #arte 
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">CgoPNKm23XM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/CgoPNKm23XM.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item></channel></rss>
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">jcFsFit8vYs</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/jcFsFit8vYs.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate><itunes:author>Arte</itunes:author></item></channel></rss>
