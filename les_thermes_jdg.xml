@@ -1,19 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg</url><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 30 Dec 2025 04:56:39 +0000</lastBuildDate><itunes:author>Bazar du grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg"/><item><title>LES TERMES #7 avec  @Alphacast_fr</title><description>Et voila l'épisode 7 avec comme invité Alphacast et toujours en backup @lesadpanda . Comme d'habitude une conversation à bâtons rompus sur de nombreux sujets d'actualité.
-
-Timestamps 
-00:00:00 Intro
-00:03:05 Fallout, la série
-00:29:58 Adaptations de JV
-00:38:58 Warhammer 40k
-00:48:45 Jeux du moment
-01:06:42 Le Point Catch
-01:14:11 Les jeux du moment pt2
-01:19:33 JDR
-01:35:08 Ghostbusters
-01:39:36 Le point Ciné
-01:42:51 Le point Séries
-
-(ndNico j'ai fait ce que j'ai pu c'est assez décousu^^)</description><guid isPermaLink="false">zqPmSeULOJY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/zqPmSeULOJY.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><itunes:author>Bazar du grenier</itunes:author></item><item><title>LES TERMES #5 avec  @EdwardRetroDecouverte  et Fabrice Colson !</title><description>Hé oui les termes qui reviennent si vite, et avec comme invités Edward et son acolyte Fabrice Colson aka Mr Pichon.
-Chaîne Twitch d'edward: https://www.twitch.tv/edward_retrodecouverte
-Chaîne Twitch de Fabrice: https://www.twitch.tv/fabdcolson</description><guid isPermaLink="false">y3n4yOsc4Ic</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/y3n4yOsc4Ic.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate><itunes:author>Bazar du grenier</itunes:author></item></channel></rss>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg</url><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Wed, 31 Dec 2025 04:41:45 +0000</lastBuildDate><itunes:author>Bazar du grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg"/></channel></rss>
