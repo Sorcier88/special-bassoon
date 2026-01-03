@@ -1,23 +1,64 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg</url><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sat, 03 Jan 2026 11:59:05 +0000</lastBuildDate><itunes:author>Bazar du grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg"/><item><title>LES TERMES #15 avec Davy Mourier et Souillon</title><description>Dispo en podcast toutes plateformes ici https://www.buzzsprout.com/2029308 
-Pour cet épisode un peu spécial autour de la BD, deux invités prestigieux :
-Souillon, auteur et illustrateur de la BD Maliki @MalikiOfficiel bientôt adaptée en jeu vidéo que vous pourrez retrouver sur Switch et PC.
-Davy Mourier, auteur et illustrateur de la BD La Petite Mort, adaptée par @slashanim  et présentateur de @badnews2 
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Auto-generated</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg</url><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sat, 03 Jan 2026 20:17:11 +0000</lastBuildDate><itunes:author>Bazar du grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg"/><item><title>LES TERMES #17 avec Alan Reynaud et Guillaume Broche de @sandfallgames (PAS DE SPOIL DEDANS)​</title><description>Lien de la discussion SPOILERS : https://youtu.be/i9rBGOMdJCk
+Disponible en podcast ici https://www.buzzsprout.com/2029308
+Énorme honneur de recevoir sur le plateau des Termes Alan et Guillaume du Sandfall interactive, auteurs du phénoménal Clair Obscur : Expédition 33. Merci encore à eux pour leur visite !
 
-Timecode : 
-00:00:00 Intro
-00:00:23 Présentation des Invités
-00:05:01 Quel rayon au supermarché, BD ou JV ?
-00:07:01 Vous lisiez quoi quand vous étiez petit ?
-00:15:45 Les débuts en dessin
-00:24:55 Études en illustration
-00:31:34 David Mourier : Son parcours
-00:36:09 Dessiner quand on est jeune
-00:39:40 Maliki : jeux vidéo ou animation
-00:42:16 La petite mort
-00:47:00 Vivre de la BD
-00:56:28 La place de l'IA
-01:17:54 Maliki : Poison Of The Past
-01:22:11 Limitations de la télé
-01:27:47 Un jeu La Petite Mort ?
-01:32:21 Les recommandations</description><guid isPermaLink="false">2-Vpob3D__0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/2-Vpob3D__0.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><itunes:author>Bazar du grenier</itunes:author></item></channel></rss>
+Timestamps:
+00:00:00 INTRO
+00:02:15 Pas de spoil ! (garanti)
+00:02:43 expedition 33 ou clairobscur?
+00:03:32 Guillame et Alan dans Sandfall
+00:10:05 Intervenants exterieurs
+00:11:11 l'équipe-fonctionnement
+00:17:38 AA vs AAA
+00:19:52 Open World?
+00:23:36 Succès et conséquences
+00:28:27 note metacritic et gages
+00:30:57 GOTY
+00:34:00 3ème voie
+00:37:47 rayonnement de clairobscur?
+00:41:18 e33 chez ubi?
+00:43:18 suite, dlc?
+00:44:57 crunch?
+00:50:41 anecdotes dev et baguettes
+00:52:41 inspirations
+00:58:56 décisions difficiles?
+01:00:36 temps de jeu/durée de vie
+01:03:50 vieilles itérations du jeu
+01:06:00 métiers du jv
+01:14:51 paysage vidéoludique du moment
+01:18:25 expedition 33 the movie
+01:19:37 concerts e33?
+01:21:34 teaser partie spoil
+01:23:26 st seiya
+01:27:44 mangasses
+01:32:04 influences du jeu
+01:34:02 jeux du moment?
+01:36:20 recos diverses</description><guid isPermaLink="false">hARc2aQ54MU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/hARc2aQ54MU.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate><itunes:author>Bazar du grenier</itunes:author></item><item><title>LES TERMES #16 avec Mcfly et Carlito</title><description>Disponible sur les plateformes de podcast https://www.buzzsprout.com/2029308 
+Nouvel épisode des Thermes avec Mcfly Et Carlito, on y reviens nottament avec eux preque 6ans après sur le sujet de la vidéo "Youtube m'ennuie" et on compare nos points de vues sur Youtube. merci à eux d'avoir supporté l'ingestion d'une grande quantité de beurre salé.
+
+Timecodes:
+00:00:00 INTRO
+00:03:15 McFly and Carlito Origins
+00:12:47 Fonctionnement des duos
+00:19:37 La fin?
+00:22:03 feat and fun
+00:27:12 la traversée de la corse
+00:28:49 feat Manu
+00:33:40 burn out
+00:35:44 Youtube m'ennuie?
+00:51:53 après le burn-out
+00:59:41 webedia
+01:02:14 le long terme
+01:09:08 un gros projet?
+01:11:38 twitch
+01:15:42 youtube l'ennuie 2025 edition
+01:23:50 X/Twitter
+01:24:54 re-twitch
+01:27:52 enfants des 90's
+01:30:14 top dessin animé 90's
+01:40:59 JV old school
+01:44:18 passion pokemon
+01:45:18 souvenirs de sonic
+01:48:57 recos
+01:59:04 des bisous</description><guid isPermaLink="false">7jYGNkGZxgY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/7jYGNkGZxgY.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate><itunes:author>Bazar du grenier</itunes:author></item></channel></rss>
