@@ -58,5 +58,27 @@
         "podcast_name": "Les thermes",
         "podcast_author": "Bazar du grenier",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg"
+    },
+    {
+"filename": "argent_magique.xml",
+        "url": "https://youtube.com/playlist?list=PLv1KZC6gJTFlBEZs3MuUFTS3I3pIUUIWL", 
+        "podcast_name": "Argent magique",
+        "podcast_author": "STUPMEDIA",
+        "podcast_description": "\"L'économie, c'est compliqué, on n'y comprend rien, donc on s'est dit qu'on allait faire une nouvelle émission pour essayer d'y voir plus clair.\" \nUne série qui décortique les discours économiques et la manière dont ils sont mis en scène dans les médias, avec Gilles de la chaîne Heu?reka, et Marino de la chaîne Stupid Economics.",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png", 
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+    {
+"filename": "argent_magique.xml",
+        "url": "https://youtube.com/playlist?list=PLzzeaLH6aE_FdaD6A5ctQnyuVd31O5i8A", 
+        "comment": "Saison 2 d'Argent magique"
+    }, 
+    {
+    "filename": "critique_a_chaud.xml",
+        "url": "https://youtube.com/playlist?list=PLjD0-qqs79FKFvxDu2fO_uXJgYgxEtyLA", 
+        "podcast_name": "Critique à Chaud",
+        "podcast_author": "Ecran large",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/ecran_large.png", 
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
