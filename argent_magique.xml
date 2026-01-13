@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link><description>"L'économie, c'est compliqué, on n'y comprend rien, donc on s'est dit qu'on allait faire une nouvelle émission pour essayer d'y voir plus clair." 
-Une série qui décortique les discours économiques et la manière dont ils sont mis en scène dans les médias, avec Gilles de la chaîne Heu?reka, et Marino de la chaîne Stupid Economics.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png</url><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 13 Jan 2026 07:18:53 +0000</lastBuildDate><itunes:author>STUPMEDIA</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png"/><item><title>QUI VA REMBOURSER LA DETTE ? (SPOILER ALERT : PAS VOS ENFANTS) - Avec @StupidEco et @Heu7reka</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+Une série qui décortique les discours économiques et la manière dont ils sont mis en scène dans les médias, avec Gilles de la chaîne Heu?reka, et Marino de la chaîne Stupid Economics.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png</url><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 13 Jan 2026 17:51:28 +0000</lastBuildDate><itunes:author>STUPMEDIA</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png"/><item><title>À DÉFAUT DE MANGER LES RICHES, TAXONS-LES - AVEC @Heu7reka et @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-La France est de plus en plus endettée. Est ce que nous risquons de faire faillite ? Qu’est ce que ça veut dire au juste “rembourser” la dette de la France ? Dans ce nouvel épisode de argent magique avec @Stupid_Eco et @Heu7reka nous expliquons qu’est-ce que la dette française, et comment nous devrions l’utiliser.
+Les grandes fortunes peuvent-elles fuir comme des anguilles ? Pourquoi tolère-t-on à ce point une imposition inégalitaire et peut-on mieux faire ? Dans ce nouvel épisode de Argent Magique nous tentons de répondre à toutes ces questions avec @Heu7reka et @StupidEco.
 
 Journalistes : Marino et Heu?reka
 Co-auteur : Arnaud Gantier (Stupid Economics)
@@ -24,12 +24,13 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 
 #Economie
-#Dette
-#France</description><guid isPermaLink="false">-N3KDE5yEJ8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/-N3KDE5yEJ8.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate></item><item><title>HÉRITAGE : COMMENT LES RICHES FONT SÉCESSION, AVEC L'AIDE DES POLITIQUES</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#Taxer
+#Riches</description><guid isPermaLink="false">9uRjO8AwVOE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/9uRjO8AwVOE.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate></item><item><title>QUI VEUT TUER LES SERVICES PUBLICS ? - AVEC @Heu7reka et @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-Dans une société que l’on dit de plus en plus individualiste, le rôle de la famille dans le destin économique des personnes n’a jamais pris autant d’importance. Est-ce que nous ne serions pas en train de devenir, de plus en plus, une “société d'héritiers” ? Plus que ça, au vu des empires économiques qui grandissent et qui se transmettent au sein de quelques familles, ne serions nous pas en train de devenir une “société de dynasties” ? Dans ce nouvel épisode de Argent Magique avec ​⁠@StupidEco et ​⁠@Heu7reka nous expliquent quelles sont les implications de cette nouvelle répartition des richesses sur notre société et sur nos institutions.
+Nos services publics sont en danger ! En France, le discours public menaçant de couper la bureaucratie inutile, les fonctionnaires fainéants ou les institutions inefficaces se font de plus en plus présents, et possiblement de plus en plus populaires alors que certaines études montrent que les français sont de moins en moins satisfaits par leurs services publics.
+Alors, devrions-nous suivre la voix de Trump et de Milei, et réduire la place du public dans notre économie ? Réponse dans ce nouvel épisode de Argent magique avec Heu7reka et StupidEco.
 
-Enquête du monde sur les successions d’industries françaises : https://www.lemonde.fr/les-heritiers/
+Rapport sur l’état des services publics par Nos Services Publics : https://nosservicespublics.fr/rapport-etat-services-publics-2024
 
 Journalistes : Marino et Heu?reka
 Co-auteur : Arnaud Gantier (Stupid Economics)
@@ -37,8 +38,8 @@ Réalisation : Valentin Levetti
 Montage : Ace Modey
 Production : https://stup.media/
 Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret, Margaux Simon
-Directeur du développement des collaborations extérieures : Mathias Enthoven
+Graphisme : Morgane Sabouret
+Directeur des programmes : Mathias Enthoven
 Co-directrice de la rédaction : Soumaya Benaïssa
 Directeur de la publication : Denis Robert
 
@@ -51,5 +52,5 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 
 #Economie
-#Heritage
-#politique</description><guid isPermaLink="false">b9ujfnDd7ZQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/b9ujfnDd7ZQ.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate></item></channel></rss>
+#ServicesPublics
+#France</description><guid isPermaLink="false">cDE7jYzGzgU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cDE7jYzGzgU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate></item></channel></rss>
