@@ -1,14 +1,41 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link><description>"L'économie, c'est compliqué, on n'y comprend rien, donc on s'est dit qu'on allait faire une nouvelle émission pour essayer d'y voir plus clair." 
-Une série qui décortique les discours économiques et la manière dont ils sont mis en scène dans les médias, avec Gilles de la chaîne Heu?reka, et Marino de la chaîne Stupid Economics.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png</url><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 13 Jan 2026 17:51:28 +0000</lastBuildDate><itunes:author>STUPMEDIA</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png"/><item><title>À DÉFAUT DE MANGER LES RICHES, TAXONS-LES - AVEC @Heu7reka et @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+Une série qui décortique les discours économiques et la manière dont ils sont mis en scène dans les médias, avec Gilles de la chaîne Heu?reka, et Marino de la chaîne Stupid Economics.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png</url><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Wed, 14 Jan 2026 09:58:57 +0000</lastBuildDate><itunes:author>STUPMEDIA</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png"/><item><title>L'ARGENT MAGIQUE : LA SOLUTION À TOUS NOS PROBLÈMES ? AVEC @Heu7reka &amp; @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-Les grandes fortunes peuvent-elles fuir comme des anguilles ? Pourquoi tolère-t-on à ce point une imposition inégalitaire et peut-on mieux faire ? Dans ce nouvel épisode de Argent Magique nous tentons de répondre à toutes ces questions avec @Heu7reka et @StupidEco.
+"L'économie, c'est compliqué, on n'y comprend rien, donc on s'est dit qu'on allait faire une nouvelle émission pour essayer d'y voir plus clair." Argent magique, c'est la nouvelle émission d'économie de Blast en partenariat avec Gilles de la chaîne @Heu7reka, et Marino de la chaîne @StupidEco.
+"L'argent magique, justement, c'est le sujet de ce premier épisode. C'est quoi au juste l'argent magique ? Est-ce que ça existe vraiment ? Qui serait en mesure de l'utiliser ? Et pourquoi cette magie et la plus grosse hypocrisie économique de ces dernières années ?"
 
-Journalistes : Marino et Heu?reka
+Journalistes : Marino et Heu?reka 
 Co-auteur : Arnaud Gantier (Stupid Economics)
 Réalisation : Valentin Levetti
 Montage : Ace Modey
-Production : https://stup.media/
+Production : Stup.media
+Son : Baptiste Veilhan
+Graphisme : Morgane Sabouret
+Directeur des programmes : Mathias Enthoven
+Rédaction en chef : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Economie 
+#ArgentMagique
+#Macron</description><guid isPermaLink="false">NCUvUtPlxB4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/NCUvUtPlxB4.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate></item><item><title>LA FRANCE EST-ELLE EN DÉCROCHAGE ÉCONOMIQUE TOTAL ? AVEC @Heu7reka &amp; @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+La France est-elle en plein décrochage économique ? L'Europe est-elle complètement dépassée par les USA, la Chine, etc. ? Et l'Allemagne, est-ce toujours un exemple ? 
+Le PIB est-il un bon indicateur de santé économique ? On tente de répondre à toutes ces questions dans ce nouvel épisode de Argent magique avec @Heu7reka et @StupidEco.
+
+Journalistes : Marino et Heu?reka 
+Co-auteur : Arnaud Gantier (Stupid Economics)
+Réalisation : Valentin Levetti
+Montage : Ace Modey
+Production : Stup.media
 Son : Baptiste Veilhan
 Graphisme : Morgane Sabouret
 Directeur des programmes : Mathias Enthoven
@@ -24,33 +51,5 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 
 #Economie
-#Taxer
-#Riches</description><guid isPermaLink="false">9uRjO8AwVOE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/9uRjO8AwVOE.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate></item><item><title>QUI VEUT TUER LES SERVICES PUBLICS ? - AVEC @Heu7reka et @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-Nos services publics sont en danger ! En France, le discours public menaçant de couper la bureaucratie inutile, les fonctionnaires fainéants ou les institutions inefficaces se font de plus en plus présents, et possiblement de plus en plus populaires alors que certaines études montrent que les français sont de moins en moins satisfaits par leurs services publics.
-Alors, devrions-nous suivre la voix de Trump et de Milei, et réduire la place du public dans notre économie ? Réponse dans ce nouvel épisode de Argent magique avec Heu7reka et StupidEco.
-
-Rapport sur l’état des services publics par Nos Services Publics : https://nosservicespublics.fr/rapport-etat-services-publics-2024
-
-Journalistes : Marino et Heu?reka
-Co-auteur : Arnaud Gantier (Stupid Economics)
-Réalisation : Valentin Levetti
-Montage : Ace Modey
-Production : https://stup.media/
-Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret
-Directeur des programmes : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-
-#Economie
-#ServicesPublics
-#France</description><guid isPermaLink="false">cDE7jYzGzgU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cDE7jYzGzgU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate></item></channel></rss>
+#France
+#ArgentMagique</description><guid isPermaLink="false">pJf2aNW341U</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/pJf2aNW341U.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate></item></channel></rss>
