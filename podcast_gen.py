@@ -14,7 +14,7 @@ CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
 # OBJECTIF : Nombre de SUCCÈS voulus par FICHIER RSS (Flux)
-TARGET_SUCCESS_PER_FEED = 2
+TARGET_SUCCESS_PER_FEED = 3
 SEARCH_WINDOW_SIZE = 20
 
 def get_or_create_release(repo):
@@ -122,8 +122,20 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # Options de base
-        base_opts = {'quiet': False, 'ignoreerrors': True, 'no_warnings': True, 'socket_timeout': 60}
+        # Options de base (Scan)
+        base_opts = {
+            'quiet': False, 
+            'ignoreerrors': True, 
+            'no_warnings': True, 
+            'socket_timeout': 60,
+            # NOUVEAU : On désactive le cache pour forcer des liens frais
+            'cachedir': False,
+            # NOUVEAU : On se fait passer pour un navigateur classique
+            'http_headers': {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+            }
+        }
         if proxy_url: base_opts['proxy'] = proxy_url
         if os.path.exists(COOKIE_FILE): base_opts['cookiefile'] = COOKIE_FILE
 
@@ -173,7 +185,6 @@ def run():
                     try:
                         info = ydl_scan.extract_info(url, download=False)
                         if info:
-                            # Métadonnées auto
                             if not auto_title: 
                                 auto_title = info.get('title')
                                 print(f"      [INFO] Titre détecté : {auto_title}")
@@ -221,7 +232,9 @@ def run():
             dl_opts = base_opts.copy()
             dl_opts.update({
                 'format': 'bestaudio/best', 'outtmpl': '%(id)s.%(ext)s', 'writethumbnail': True,
-                'retries': 20, 'fragment_retries': 20, 'skip_unavailable_fragments': False, 'abort_on_unavailable_fragment': True,
+                # Options Robustesse 403
+                'retries': 20, 'fragment_retries': 20, 
+                'skip_unavailable_fragments': False, 'abort_on_unavailable_fragment': True,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
                 'sleep_interval': 10, 'max_sleep_interval': 30
             })
@@ -258,7 +271,8 @@ def run():
                             print("      -> Vidéo Supprimée. Ajout à la Blacklist définitive.")
                             with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
                         else:
-                            print("      -> Erreur Technique (Tor/Sign-in/Réseau). Ajout file d'attente Retry.")
+                            # 403 Forbidden tombe ici
+                            print("      -> Erreur Technique (403/Tor/Sign-in). Ajout file d'attente Retry.")
                             retry_queue.append(entry)
                         
                         cleanup_files(vid_id)
@@ -290,3 +304,5 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+
