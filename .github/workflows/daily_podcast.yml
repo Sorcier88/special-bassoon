@@ -27,19 +27,19 @@ jobs:
       with:
         python-version: '3.10'
         
-    - name: Install Libraries
+    - name: Install Libraries (Bleeding Edge)
       run: |
         sudo apt-get install -y ffmpeg
-        pip install -r requirements.txt
+        # INSTALLATION VERSION MASTER (Pour corriger erreur 403)
+        pip install https://github.com/yt-dlp/yt-dlp/archive/master.zip
+        pip install feedgen PyGithub requests
 
     # --- TOR BELGIQUE ---
     - name: Install and Configure Tor (Belgium Exit)
       run: |
         sudo apt-get install -y tor
-        # Configuration stricte pour la Belgique
         echo "ExitNodes {BE}" | sudo tee -a /etc/tor/torrc
         echo "StrictNodes 1" | sudo tee -a /etc/tor/torrc
-        # Optimisation pour éviter les timeouts
         echo "CircuitBuildTimeout 60" | sudo tee -a /etc/tor/torrc
         echo "KeepalivePeriod 60" | sudo tee -a /etc/tor/torrc
         echo "NumEntryGuards 8" | sudo tee -a /etc/tor/torrc
@@ -50,10 +50,8 @@ jobs:
         echo "Démarrage de Tor... (Pause 60s)"
         sleep 60
         
-        # VERIFICATION ROBUSTE
-        # On essaie un autre service qui bloque moins Tor
         echo "Test de connexion..."
-        curl -s --socks5 127.0.0.1:9050 -L -A "Mozilla/5.0" https://icanhazip.com || echo "Test IP échoué (mais Tor tourne peut-être)"
+        curl -s --socks5 127.0.0.1:9050 -L -A "Mozilla/5.0" https://icanhazip.com || echo "Test IP échoué"
 
     - name: Run Script via Tor
       env:
@@ -75,3 +73,5 @@ jobs:
           git pull --rebase origin main
           git push
         fi
+
+
