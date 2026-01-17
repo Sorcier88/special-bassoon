@@ -94,7 +94,7 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 def run():
     try:
         # 0. Setup
-        print("--- Démarrage du script (Mode iOS + Format Fix) ---")
+        print("--- Démarrage du script (Mode iOS + Format Universel) ---")
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
         proxy_url = os.environ.get('YOUTUBE_PROXY')
         
@@ -120,7 +120,7 @@ def run():
             'cachedir': False,
             'extractor_args': {
                 'youtube': {
-                    'player_client': ['ios'],
+                    'player_client': ['ios'], # On garde iOS pour éviter les 403
                 }
             }
         }
@@ -195,8 +195,9 @@ def run():
             # DOWNLOAD
             dl_opts = base_opts.copy()
             dl_opts.update({
-                # CORRECTION ICI : On autorise la vidéo si l'audio seul manque
-                'format': 'bestaudio/bestvideo+bestaudio/best', 
+                # CORRECTION MAJEURE : On demande le meilleur format dispo, point final.
+                # yt-dlp gèrera la conversion si c'est de la vidéo.
+                'format': 'best', 
                 'outtmpl': '%(id)s.%(ext)s', 
                 'writethumbnail': True,
                 'retries': 20, 'fragment_retries': 20, 
