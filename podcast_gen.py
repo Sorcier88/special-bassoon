@@ -94,7 +94,7 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 def run():
     try:
         # 0. Setup
-        print("--- Démarrage du script (Mode iOS + Format Universel) ---")
+        print("--- Démarrage du script (Version Standard) ---")
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
         proxy_url = os.environ.get('YOUTUBE_PROXY')
         
@@ -111,18 +111,13 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # Options de base
+        # Options de base (Scan)
+        # RETOUR AUX PARAMÈTRES PAR DÉFAUT (Pas de camouflage)
         base_opts = {
             'quiet': False, 
             'ignoreerrors': True, 
             'no_warnings': True, 
             'socket_timeout': 60,
-            'cachedir': False,
-            'extractor_args': {
-                'youtube': {
-                    'player_client': ['ios'], # On garde iOS pour éviter les 403
-                }
-            }
         }
         if proxy_url: base_opts['proxy'] = proxy_url
         if os.path.exists(COOKIE_FILE): base_opts['cookiefile'] = COOKIE_FILE
@@ -195,12 +190,13 @@ def run():
             # DOWNLOAD
             dl_opts = base_opts.copy()
             dl_opts.update({
-                # CORRECTION MAJEURE : On demande le meilleur format dispo, point final.
-                # yt-dlp gèrera la conversion si c'est de la vidéo.
-                'format': 'best', 
+                # FORMAT SOUPLE : Audio OU Meilleure vidéo disponible
+                'format': 'bestaudio/best', 
                 'outtmpl': '%(id)s.%(ext)s', 
                 'writethumbnail': True,
-                'retries': 20, 'fragment_retries': 20, 
+                # Options Robustesse Réseau (Tor)
+                'retries': 20, 
+                'fragment_retries': 20, 
                 'skip_unavailable_fragments': False, 
                 'abort_on_unavailable_fragment': True,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
