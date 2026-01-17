@@ -94,7 +94,7 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 def run():
     try:
         # 0. Setup
-        print("--- Démarrage du script (Mode iOS + Format 'Best') ---")
+        print("--- Démarrage du script (Mode Web Embedded) ---")
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
         proxy_url = os.environ.get('YOUTUBE_PROXY')
         
@@ -118,10 +118,10 @@ def run():
             'no_warnings': True, 
             'socket_timeout': 60,
             'cachedir': False,
-            # IDENTITÉ iOS (Indispensable pour contourner l'erreur 403)
+            # STRATÉGIE "EMBEDDED" : Évite 403 et assure les formats
             'extractor_args': {
                 'youtube': {
-                    'player_client': ['ios'],
+                    'player_client': ['web_embedded', 'web'],
                 }
             }
         }
@@ -196,9 +196,8 @@ def run():
             # DOWNLOAD
             dl_opts = base_opts.copy()
             dl_opts.update({
-                # FORMAT CORRIGÉ : On prend le meilleur format (audio ou video)
-                # FFmpeg extraira l'audio à l'étape suivante.
-                'format': 'best', 
+                # LISTE DE PRÉFÉRENCE ROBUSTE
+                'format': 'bestaudio/best/worstvideo+bestaudio', 
                 'outtmpl': '%(id)s.%(ext)s', 
                 'writethumbnail': True,
                 'retries': 20, 'fragment_retries': 20, 
