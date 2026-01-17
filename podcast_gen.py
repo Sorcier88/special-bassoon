@@ -94,7 +94,7 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 def run():
     try:
         # 0. Setup
-        print("--- Démarrage du script (Mode iOS pur) ---")
+        print("--- Démarrage du script (Mode iOS + Format Fix) ---")
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
         proxy_url = os.environ.get('YOUTUBE_PROXY')
         
@@ -112,23 +112,21 @@ def run():
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
         # Options de base
-        # J'ai retiré 'http_headers' pour laisser le client iOS définir ses propres headers
         base_opts = {
             'quiet': False, 
             'ignoreerrors': True, 
             'no_warnings': True, 
             'socket_timeout': 60,
-            'cachedir': False, # Important contre 403
+            'cachedir': False,
             'extractor_args': {
                 'youtube': {
-                    'player_client': ['ios'], # On reste sur iOS car c'est le seul qui passe le 403
+                    'player_client': ['ios'],
                 }
             }
         }
         if proxy_url: base_opts['proxy'] = proxy_url
         if os.path.exists(COOKIE_FILE): base_opts['cookiefile'] = COOKIE_FILE
 
-        # Regroupement
         grouped_feeds = {}
         for item in raw_config:
             fname = item.get('filename')
@@ -197,8 +195,13 @@ def run():
             # DOWNLOAD
             dl_opts = base_opts.copy()
             dl_opts.update({
-                'format': 'bestaudio/best', 'outtmpl': '%(id)s.%(ext)s', 'writethumbnail': True,
-                'retries': 20, 'fragment_retries': 20, 'skip_unavailable_fragments': False, 'abort_on_unavailable_fragment': True,
+                # CORRECTION ICI : On autorise la vidéo si l'audio seul manque
+                'format': 'bestaudio/bestvideo+bestaudio/best', 
+                'outtmpl': '%(id)s.%(ext)s', 
+                'writethumbnail': True,
+                'retries': 20, 'fragment_retries': 20, 
+                'skip_unavailable_fragments': False, 
+                'abort_on_unavailable_fragment': True,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
                 'sleep_interval': 10, 'max_sleep_interval': 30
             })
