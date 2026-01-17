@@ -14,8 +14,8 @@ CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
 # OBJECTIF : Nombre de SUCCÈS voulus par FICHIER RSS
-TARGET_SUCCESS_PER_FEED = 2
-SEARCH_WINDOW_SIZE = 15
+TARGET_SUCCESS_PER_FEED = 3
+SEARCH_WINDOW_SIZE = 20
 
 def get_or_create_release(repo):
     try:
@@ -257,12 +257,12 @@ def run():
             retry_queue = []
 
             print(f"--- PHASE DOWNLOAD ---")
-            # Pour la boucle principale, on utilise la fonction process_video_download qui gère ses propres ydl
+            # Pour la boucle principale, on passe les bons arguments
             for entry in batch_to_process:
                 if success_count >= TARGET_SUCCESS_PER_FEED: break
                 vid_id = entry['id']
                 try:
-                    process_video_download(entry, None, release, fg, current_log_file, base_opts)
+                    process_video_download(entry, release, fg, current_log_file, base_opts)
                     print("   [GLOBAL SUCCÈS]")
                     success_count += 1
                     cleanup_files(vid_id)
@@ -289,7 +289,7 @@ def run():
                     vid_id = entry['id']
                     print(f"Retry -> {vid_id}")
                     try:
-                        process_video_download(entry, None, release, fg, current_log_file, base_opts)
+                        process_video_download(entry, release, fg, current_log_file, base_opts)
                         print("   [GLOBAL SUCCÈS RETRY]")
                         success_count += 1
                     except: pass
