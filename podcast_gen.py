@@ -43,17 +43,31 @@ def upload_asset(release, filename):
         print(f"      -> Erreur upload: {e}")
         return None
 
-def attempt_download(entry, ydl_opts, release, fg, current_log_file):
-    """Fonction atomique de téléchargement"""
+def attempt_download_with_client(entry, client_name, base_opts, release, fg, current_log_file):
+    """Essaie de télécharger avec un client spécifique (ios, android, web)"""
     vid_id = entry['id']
     vid_url = f"https://www.youtube.com/watch?v={vid_id}"
     
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    # Configuration spécifique pour ce client
+    current_opts = base_opts.copy()
+    current_opts.update({
+        'extractor_args': {'youtube': {'player_client': [client_name]}},
+        'format': 'best', # On prend le meilleur format dispo pour ce client
+    })
+
+    print(f"   [ESSAI] Client : {client_name}...")
+
+    with yt_dlp.YoutubeDL(current_opts) as ydl:
+        # Téléchargement
         info = ydl.extract_info(vid_url, download=True)
         if not info: raise Exception("Info vide")
 
         mp3_filename = f"{vid_id}.mp3"
         
+        # Vérification fichier
+        if not os.path.exists(mp3_filename) or os.path.getsize(mp3_filename) < 10000:
+            raise Exception("Fichier non généré ou trop petit")
+
         # Recherche miniature
         thumb_files = glob.glob(f"{vid_id}.*")
         image_extensions = ['.jpg', '.jpeg', '.png', '.webp']
@@ -61,10 +75,8 @@ def attempt_download(entry, ydl_opts, release, fg, current_log_file):
         for f in thumb_files:
             if any(f.lower().endswith(ext) for ext in image_extensions):
                 jpg_filename = f; break
-        
-        if not os.path.exists(mp3_filename) or os.path.getsize(mp3_filename) < 10000:
-            raise Exception("Fichier invalide")
 
+        # Upload
         mp3_url = upload_asset(release, mp3_filename)
         if not mp3_url: raise Exception("Echec Upload")
 
@@ -74,12 +86,10 @@ def attempt_download(entry, ydl_opts, release, fg, current_log_file):
         # RSS
         fe = fg.add_entry()
         fe.id(vid_id)
-        title = info.get('title') if info else entry.get('title', vid_id)
-        desc = info.get('description') if info else entry.get('description', '')
-        fe.title(title)
-        fe.description(desc)
+        fe.title(info.get('title', entry.get('title', vid_id)))
+        fe.description(info.get('description', ''))
         
-        upload_date_str = info.get('upload_date') if info else None
+        upload_date_str = info.get('upload_date')
         if upload_date_str:
             try: fe.pubDate(datetime.datetime.strptime(upload_date_str, '%Y%m%d').replace(tzinfo=datetime.timezone.utc))
             except: fe.pubDate(datetime.datetime.now(datetime.timezone.utc))
@@ -95,15 +105,16 @@ def attempt_download(entry, ydl_opts, release, fg, current_log_file):
 def run():
     try:
         # 0. Setup
-        print("--- Démarrage (Stratégie Cookie Fallback) ---")
+        print("--- Démarrage (Stratégie Multi-Identités) ---")
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
         proxy_url = os.environ.get('YOUTUBE_PROXY')
         
-        has_cookies = False
         if cookies_env:
             print("Cookies chargés.")
             with open(COOKIE_FILE, 'w') as f: f.write(cookies_env)
-            has_cookies = True
+        else:
+            print("ERREUR CRITIQUE: Pas de cookies. Le script va échouer.")
+            return # Sans cookies + Tor = Echec assuré
         
         if not os.path.exists(CONFIG_FILE): return
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
@@ -114,22 +125,19 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # CONFIGURATION YT-DLP ULTIME
-        # On utilise 'best' pour prendre n'importe quoi qui ressemble à une vidéo/audio
-        # On utilise le client 'android' par défaut qui est le plus robuste
+        # CONFIGURATION DE BASE
         base_opts = {
             'quiet': False, 
             'ignoreerrors': True,
             'no_warnings': True, 
             'socket_timeout': 60,
-            'cachedir': False,
-            'format': 'best', # Format le plus permissif possible
+            'cachedir': False, # Important !
             'outtmpl': '%(id)s.%(ext)s', 
             'writethumbnail': True,
             'retries': 10, 'fragment_retries': 10, 
             'skip_unavailable_fragments': False, 
             'abort_on_unavailable_fragment': True,
-            'extractor_args': {'youtube': {'player_client': ['android']}}, # Android est souvent le plus stable
+            'cookiefile': COOKIE_FILE, # ON GARDE LES COOKIES PARTOUT
             'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
         }
         if proxy_url: base_opts['proxy'] = proxy_url
@@ -154,11 +162,11 @@ def run():
             if os.path.exists(current_log_file):
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
-            # SCAN (Avec Cookies si dispo)
+            # SCAN (Utilisation de 'web' pour le scan car souvent plus fiable pour lister)
             missing_entries = []
             scan_opts = base_opts.copy()
             scan_opts['extract_flat'] = True
-            if has_cookies: scan_opts['cookiefile'] = COOKIE_FILE
+            scan_opts['extractor_args'] = {'youtube': {'player_client': ['web']}}
             
             print("--- Scan ---")
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
@@ -184,7 +192,6 @@ def run():
                 except: pass
             
             final_title = custom_title if custom_title else f'Podcast {filename}'
-            
             if not rss_loaded:
                 fg.title(final_title); fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate'); fg.description('Auto')
             else:
@@ -194,6 +201,12 @@ def run():
             if custom_author: fg.author({'name': custom_author}); fg.podcast.itunes_author(custom_author)
 
             # DOWNLOAD LOOP
+            # CLIENTS A TESTER DANS L'ORDRE
+            clients_to_try = ['ios', 'web', 'android', 'tv']
+            
+            sb_categories = main_config.get('sponsorblock_categories')
+            if sb_categories: base_opts['sponsorblock_remove'] = sb_categories
+
             success_count = 0
             
             for entry in batch_to_process:
@@ -201,47 +214,37 @@ def run():
                 vid_id = entry['id']
                 print(f"-> Traitement : {entry.get('title', vid_id)}")
                 
-                # --- TENTATIVE 1 : AVEC COOKIES (Si dispo) ---
-                try:
-                    print("   [ESSAI 1] Avec Cookies...")
-                    current_opts = base_opts.copy()
-                    if has_cookies: current_opts['cookiefile'] = COOKIE_FILE
-                    
-                    if main_config.get('sponsorblock_categories'):
-                        current_opts['sponsorblock_remove'] = main_config.get('sponsorblock_categories')
-
-                    attempt_download(entry, current_opts, release, fg, current_log_file)
-                    print("   [SUCCÈS] Mode Authentifié.")
+                downloaded = False
+                
+                # ON TESTE LES CLIENTS UN PAR UN
+                for client in clients_to_try:
+                    try:
+                        attempt_download_with_client(entry, client, base_opts, release, fg, current_log_file)
+                        print(f"   [SUCCÈS] Client gagnant : {client}")
+                        downloaded = True
+                        break # Sort de la boucle des clients, passe à la vidéo suivante
+                    except Exception as e:
+                        print(f"   [ECHEC {client}] {e}")
+                        # Analyse rapide : Si c'est une erreur fatale (Deleted), inutile de tester les autres
+                        if "deleted" in str(e).lower() or "account associated" in str(e).lower():
+                            print("      -> Vidéo Supprimée. Stop.")
+                            with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
+                            break # Sort de la boucle des clients
+                        
+                        # Si c'est "Private", on stop aussi
+                        if "private" in str(e).lower():
+                            print("      -> Vidéo Privée. Skip.")
+                            break
+                        
+                        # Si c'est technique (403, Format, Sign in), on continue au client suivant
+                        time.sleep(2) # Petite pause
+                
+                if downloaded:
                     success_count += 1
                     cleanup_files(vid_id)
-                    continue # On passe à la vidéo suivante
-                except Exception as e:
-                    print(f"   [ECHEC 1] {e}")
-                    # Si c'est une erreur fatale (Deleted), on arrête là
-                    if "deleted" in str(e).lower() or "account associated" in str(e).lower():
-                        print("      -> Vidéo Supprimée. Blacklist.")
-                        with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
-                        cleanup_files(vid_id)
-                        continue
-
-                # --- TENTATIVE 2 : SANS COOKIES (Anonyme via Tor) ---
-                print("   [ESSAI 2] Mode Anonyme (Sans Cookies)...")
-                try:
-                    # On retire explicitement le fichier cookie
-                    current_opts = base_opts.copy()
-                    if 'cookiefile' in current_opts: del current_opts['cookiefile']
-                    
-                    if main_config.get('sponsorblock_categories'):
-                        current_opts['sponsorblock_remove'] = main_config.get('sponsorblock_categories')
-
-                    attempt_download(entry, current_opts, release, fg, current_log_file)
-                    print("   [SUCCÈS] Mode Anonyme.")
-                    success_count += 1
-                except Exception as e:
-                    print(f"   [ECHEC TOTAL] {e}")
-                    # Si erreur Private ici, on skip simplement
-                
-                cleanup_files(vid_id)
+                else:
+                    print(f"   [ABANDON] Aucun client n'a fonctionné pour {vid_id}.")
+                    cleanup_files(vid_id)
 
             fg.rss_file(filename)
             print(f"Sauvegarde XML {filename}")
