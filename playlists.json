@@ -21,7 +21,8 @@
         "podcast_name": "42 - La réponse à presque tout",
         "podcast_author": "Arte",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg",
-        "force_tor" : true
+        "force_tor" : true, 
+        "tor_exit_nodes": "BE,FR,DE,LU"
     },
     {
         "filename": "critique_cine_jdg.xml",
