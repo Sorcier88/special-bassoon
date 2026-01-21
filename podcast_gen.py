@@ -4,6 +4,7 @@ import datetime
 import yt_dlp
 import time
 import glob
+import subprocess
 from github import Github
 from feedgen.feed import FeedGenerator
 from stem import Signal
@@ -19,19 +20,41 @@ COOKIE_FILE = "cookies.txt"
 TARGET_SUCCESS_PER_FEED = 2
 SEARCH_WINDOW_SIZE = 20
 
+def get_tor_ip():
+    """Récupère l'IP actuelle vue à travers Tor pour vérification."""
+    try:
+        # On utilise curl car c'est plus fiable pour tester le SOCKS5 système
+        result = subprocess.check_output(
+            ["curl", "-s", "--socks5", "127.0.0.1:9050", "https://api.ipify.org"], 
+            timeout=10
+        ).decode("utf-8").strip()
+        return result
+    except Exception:
+        return "Inconnue (Timeout/Erreur)"
+
 def renew_tor_ip():
     """Force Tor à changer de circuit (nouvelle IP) via le ControlPort."""
+    print("   [TOR] --- Tentative de rotation d'IP ---")
+    old_ip = get_tor_ip()
+    print(f"   [TOR] IP Actuelle : {old_ip}")
+    
     try:
-        print("   [TOR] Demande de nouvelle identité...")
-        # Connexion au ControlPort (nécessite CookieAuth configuré dans le YAML)
+        # Connexion au ControlPort
         with Controller.from_port(port=9051) as controller:
             controller.authenticate()
             controller.signal(Signal.NEWNYM)
-        print("   [TOR] Circuit renouvelé. Pause 15s pour stabilisation...")
+            
+        print("   [TOR] Signal envoyé. Stabilisation (15s)...")
         time.sleep(15)
+        
+        new_ip = get_tor_ip()
+        print(f"   [TOR] Nouvelle IP : {new_ip}")
+        
+        if old_ip == new_ip and old_ip != "Inconnue (Timeout/Erreur)":
+            print("   [TOR WARN] L'IP n'a pas changé ! (Peut-être peu de noeuds disponibles en BE)")
+            
     except Exception as e:
-        print(f"   [TOR ERROR] Impossible de renouveler l'IP : {e}")
-        # On attend quand même un peu si le control port échoue
+        print(f"   [TOR ERROR] Echec rotation : {e}")
         time.sleep(10)
 
 def get_or_create_release(repo):
@@ -66,7 +89,6 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
     print(f"-> Traitement : {entry.get('title', vid_id)}")
 
     # 1. Téléchargement
-    # Note: L'exception sera levée ici si 403
     info = ydl.extract_info(vid_url, download=True)
     if not info: raise Exception("Echec silencieux (Info vide)")
 
@@ -117,10 +139,11 @@ def run():
         # 0. Setup
         print("--- Démarrage du script ---")
         cookies_env = os.environ.get('YOUTUBE_COOKIES')
-        proxy_url = os.environ.get('YOUTUBE_PROXY')
         
-        # GESTION COOKIES : On évite de les utiliser sauf si nécessaire
-        # car Cookies + Tor = 403 garanti souvent.
+        # Le proxy URL global (ex: socks5://127.0.0.1:9050)
+        global_proxy_url = os.environ.get('YOUTUBE_PROXY')
+        
+        # GESTION COOKIES
         use_cookies = False
         if cookies_env:
             print("Cookies présents en ENV.")
@@ -129,8 +152,6 @@ def run():
         else:
             print("INFO: Pas de cookies.")
 
-        if proxy_url: print(f"Mode TOR activé: {proxy_url}")
-        
         if not os.path.exists(CONFIG_FILE): 
             print(f"Erreur: {CONFIG_FILE} introuvable.")
             return
@@ -143,21 +164,17 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # Options yt-dlp optimisées Anti-Ban
+        # Options de base (Communes)
         base_opts = {
             'quiet': False, 
             'ignoreerrors': True, 
             'no_warnings': True, 
             'socket_timeout': 30,
-            # IMPORTANT : Impersonate browser requests
             'nocheckcertificate': True,
-            'extractor_args': {'youtube': {'player_client': ['android', 'web']}},
+            # On simule un client Android pour éviter les blocs "Browser"
+            'extractor_args': {'youtube': {'player_client': ['android', 'ios']}},
         }
         
-        if proxy_url: base_opts['proxy'] = proxy_url
-        
-        # On n'active les cookies que si vraiment nécessaire, ou on teste sans d'abord
-        # Pour ce fix, on les met si présents, mais voir note plus bas
         if use_cookies and os.path.exists(COOKIE_FILE): 
             base_opts['cookiefile'] = COOKIE_FILE
 
@@ -179,12 +196,26 @@ def run():
             if os.path.exists(current_log_file):
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
-            # 1. SCAN (Sans téléchargement lourd)
+            # --- CONFIGURATION PROXY "A LA CARTE" ---
+            # Si "force_tor": true est dans le JSON, on active le proxy.
+            # Sinon, on reste en connexion directe (plus fiable pour les vidéos non géobloquées)
+            feed_needs_tor = main_config.get('force_tor', False)
+            
+            feed_dl_opts = base_opts.copy()
+            
+            if feed_needs_tor and global_proxy_url:
+                print(f"   [CONFIG] Mode TOR activé pour ce podcast (force_tor=True).")
+                feed_dl_opts['proxy'] = global_proxy_url
+            else:
+                print(f"   [CONFIG] Mode DIRECT (Pas de proxy).")
+                # On s'assure qu'aucun proxy n'est défini
+                if 'proxy' in feed_dl_opts: del feed_dl_opts['proxy']
+
+            # 1. SCAN (Scan léger)
             missing_entries = []
             auto_title, auto_description = None, None
             
-            # Pour le scan, on évite les cookies pour réduire le risque de flag
-            scan_opts = base_opts.copy()
+            scan_opts = feed_dl_opts.copy()
             scan_opts['extract_flat'] = True
             
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
@@ -205,7 +236,7 @@ def run():
             print(f"Vidéos manquantes : {len(missing_entries)}")
             batch_to_process = missing_entries[:SEARCH_WINDOW_SIZE]
 
-            # 2. SETUP RSS (Code existant simplifié pour focus debug)
+            # 2. SETUP RSS
             fg = FeedGenerator(); fg.load_extension('podcast')
             rss_loaded = False
             if os.path.exists(filename):
@@ -221,13 +252,13 @@ def run():
                 fg.podcast.itunes_image(main_config['cover_image'])
                 fg.image(url=main_config['cover_image'], title=final_title, link=f'https://github.com/{REPO_NAME}')
 
-            # 3. DOWNLOAD AVEC ROTATION IP
-            dl_opts = base_opts.copy()
+            # 3. DOWNLOAD
+            # On configure les options de téléchargement finales
+            dl_opts = feed_dl_opts.copy()
             dl_opts.update({
                 'format': 'bestaudio/best', 
                 'outtmpl': '%(id)s.%(ext)s', 
                 'writethumbnail': True,
-                # Réduction des retries internes car on gère nous-même la rotation IP
                 'retries': 3, 
                 'fragment_retries': 3, 
                 'skip_unavailable_fragments': False,
@@ -239,43 +270,47 @@ def run():
 
             success_count = 0
             
-            # On instancie yt-dlp UNE FOIS par vidéo pour permettre la rotation de config/IP entre temps si besoin
             for entry in batch_to_process:
                 if success_count >= TARGET_SUCCESS_PER_FEED: break
                 
                 vid_id = entry['id']
                 attempts = 0
-                max_attempts = 3 # Tentatives globales avec changement d'IP
+                max_attempts = 3 if feed_needs_tor else 1 # Retry uniquement utile si on est sous Tor
                 
                 while attempts < max_attempts:
                     try:
-                        print(f"DL Tentative {attempts+1}/{max_attempts} pour {vid_id}...")
+                        if attempts > 0: print(f"   [RETRY] Tentative {attempts+1}...")
+                        
                         with yt_dlp.YoutubeDL(dl_opts) as ydl:
                             process_video_download(entry, ydl, release, fg, current_log_file)
                         
                         print("   [SUCCÈS]")
                         success_count += 1
                         cleanup_files(vid_id)
-                        break # Sortie du While
+                        break 
                         
                     except Exception as e:
                         err_str = str(e).lower()
                         print(f"   [ERREUR] {e}")
-                        
                         cleanup_files(vid_id)
                         
-                        # Gestion intelligente des erreurs
-                        if "403" in err_str or "forbidden" in err_str:
-                            print("      -> ERREUR 403 DÉTECTÉE. L'IP EST PROBABLEMENT BANNIE.")
-                            renew_tor_ip() # On change d'IP
+                        # LOGIQUE D'ABANDON OU DE RETRY
+                        
+                        # Cas 1 : Vidéo Privée -> STOP IMMEDIAT pour cette vidéo
+                        if "private video" in err_str:
+                            print("      -> Vidéo PRIVÉE détectée. ABANDON DÉFINITIF pour cette exécution.")
+                            break # Sort du while, passe à la vidéo suivante dans le 'for'
+
+                        # Cas 2 : Erreur Bot/403 ET on est sous Tor -> Rotation IP + Retry
+                        elif feed_needs_tor and ("403" in err_str or "forbidden" in err_str or "bot" in err_str):
+                            print("      -> Blocage détecté sous Tor. Rotation d'IP...")
+                            renew_tor_ip()
                             attempts += 1
-                        elif "sign in" in err_str or "private" in err_str:
-                            print("      -> Vidéo privée ou login requis. Skip.")
-                            break # On abandonne cette vidéo
+                            
+                        # Cas 3 : Autres erreurs (Réseau, etc)
                         else:
-                            # Autre erreur (réseau, etc), on réessaie une fois
-                            time.sleep(5)
                             attempts += 1
+                            time.sleep(5)
 
             fg.rss_file(filename)
             print(f"XML {filename} mis à jour.")
