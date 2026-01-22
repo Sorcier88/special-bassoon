@@ -2,7 +2,6 @@ import os
 import json
 import datetime
 import yt_dlp
-from yt_dlp.utils import DownloadError
 import time
 import glob
 import subprocess
@@ -21,52 +20,59 @@ COOKIE_FILE = "cookies.txt"
 TARGET_SUCCESS_PER_FEED = 2
 SEARCH_WINDOW_SIZE = 20
 
-def get_tor_ip():
-    """Récupère l'IP actuelle et le PAYS via Tor (debug)."""
+def get_tor_info():
+    """Récupère l'IP actuelle et le PAYS via Tor."""
     try:
-        # Utilisation de ip-api via HTTP (tunnelé Tor) pour avoir le pays
+        # Utilisation de ip-api via HTTP (tunnelé Tor)
         result = subprocess.check_output(
             ["curl", "-s", "--socks5", "127.0.0.1:9050", "http://ip-api.com/json"], 
-            timeout=15
+            timeout=20
         ).decode("utf-8").strip()
         data = json.loads(result)
         return f"{data.get('query')} [{data.get('countryCode')}]"
     except Exception:
-        return "IP Inconnue (Erreur/Timeout)"
+        return "IP Inconnue"
 
-def set_tor_exit_nodes(country_codes):
+def configure_tor_nodes(country_codes=None):
     """
-    Configure dynamiquement les noeuds de sortie Tor.
-    country_codes : str (ex: "BE" ou "BE,FR,CH")
+    Configure les noeuds de sortie.
+    Si country_codes est None -> Reset vers "N'importe quel pays".
+    Si country_codes est "BE,FR" -> Force ces pays.
     """
-    if not country_codes: return
-    print(f"   [TOR CONFIG] Modification des noeuds de sortie -> {country_codes}")
     try:
+        # Connexion sans auth (configuré dans le YAML avec CookieAuthentication 0)
         with Controller.from_port(port=9051) as controller:
-            controller.authenticate()
-            # Format Tor : {BE},{FR}
-            nodes_formatted = ",".join([f"{{{c.strip()}}}" for c in country_codes.split(',')])
-            controller.set_conf('ExitNodes', nodes_formatted)
-            # On force le changement de circuit immédiatement
+            controller.authenticate() # Pas de mot de passe nécessaire
+            
+            if country_codes:
+                print(f"   [TOR CONFIG] Restriction géographique -> {country_codes}")
+                nodes_formatted = ",".join([f"{{{c.strip()}}}" for c in country_codes.split(',')])
+                controller.set_conf('ExitNodes', nodes_formatted)
+                controller.set_conf('StrictNodes', '1')
+            else:
+                print(f"   [TOR CONFIG] Reset géographique (Monde entier)")
+                controller.reset_conf('ExitNodes')
+                controller.reset_conf('StrictNodes')
+
+            # Force le changement de circuit pour appliquer
             controller.signal(Signal.NEWNYM)
-            print("   [TOR CONFIG] Application réussie. Stabilisation (10s)...")
+            print("   [TOR] Circuit renouvelé. Stabilisation (10s)...")
             time.sleep(10)
+            
     except Exception as e:
-        print(f"   [TOR ERROR] Impossible de changer la config : {e}")
+        print(f"   [TOR ERROR] Erreur config Tor : {e}")
+        # On ne bloque pas le script, on essaie quand même
 
 def renew_tor_ip():
-    """Force Tor à changer de circuit."""
-    print("   [TOR] --- Rotation d'IP demandée ---")
+    """Force simplement une nouvelle IP (sans changer la config pays)."""
+    print("   [TOR] --- Rotation d'IP ---")
     try:
         with Controller.from_port(port=9051) as controller:
             controller.authenticate()
             controller.signal(Signal.NEWNYM)
-        print("   [TOR] Signal envoyé. Stabilisation (10s)...")
         time.sleep(10)
-        print(f"   [TOR] Nouvelle identité : {get_tor_ip()}")
     except Exception as e:
-        print(f"   [TOR ERROR] Echec rotation : {e}")
-        time.sleep(5)
+        print(f"   [TOR ERROR] : {e}")
 
 def get_or_create_release(repo):
     try:
@@ -99,14 +105,9 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
     vid_url = f"https://www.youtube.com/watch?v={vid_id}"
     print(f"-> Traitement : {entry.get('title', vid_id)}")
 
-    # 1. Téléchargement
-    # Note: L'option ignoreerrors=False dans dl_opts est CRUCIALE ici
-    # pour que yt-dlp lève une vraie exception (PrivateVideo, etc)
     info = ydl.extract_info(vid_url, download=True)
-    
     mp3_filename = f"{vid_id}.mp3"
     
-    # Recherche miniature
     thumb_files = glob.glob(f"{vid_id}.*")
     image_extensions = ['.jpg', '.jpeg', '.png', '.webp']
     jpg_filename = None
@@ -117,17 +118,12 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
     if not os.path.exists(mp3_filename) or os.path.getsize(mp3_filename) < 10000:
         raise Exception("Fichier MP3 invalide ou trop petit")
 
-    # 2. Upload
     mp3_url = upload_asset(release, mp3_filename)
     if not mp3_url: raise Exception("Echec Upload GitHub MP3")
 
     thumb_url = None
-    if jpg_filename: 
-        thumb_url = upload_asset(release, jpg_filename)
-    else:
-        print("   [INFO] Pas de miniature spécifique trouvée.")
+    if jpg_filename: thumb_url = upload_asset(release, jpg_filename)
 
-    # 3. RSS
     fe = fg.add_entry()
     fe.id(vid_id)
     fe.title(info.get('title', entry.get('title', vid_id)))
@@ -142,26 +138,15 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
     fe.enclosure(mp3_url, 0, 'audio/mpeg')
     if thumb_url: fe.podcast.itunes_image(thumb_url)
 
-    # Log succès
     with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
     return True
 
 def run():
     try:
-        print("--- Démarrage du script (Version Senior Fix) ---")
-        cookies_env = os.environ.get('YOUTUBE_COOKIES')
-        global_proxy_url = os.environ.get('YOUTUBE_PROXY')
+        print("--- Démarrage du script (Tor Intégral) ---")
+        global_proxy_url = os.environ.get('YOUTUBE_PROXY') # Doit être socks5://127.0.0.1:9050
         
-        use_cookies = False
-        if cookies_env:
-            print("Cookies présents (Attention aux conflits Tor).")
-            with open(COOKIE_FILE, 'w') as f: f.write(cookies_env)
-            use_cookies = True
-
-        if not os.path.exists(CONFIG_FILE): 
-            print(f"Erreur: {CONFIG_FILE} introuvable.")
-            return
-        
+        if not os.path.exists(CONFIG_FILE): return
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
         
         try:
@@ -170,26 +155,23 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # Options de base
+        # Options de base : TOR PAR DÉFAUT POUR TOUT LE MONDE
+        # Cela évite le blocage "Datacenter IP" de GitHub Actions
         base_opts = {
             'quiet': False, 
             'no_warnings': True, 
             'socket_timeout': 30,
             'nocheckcertificate': True,
             'extractor_args': {'youtube': {'player_client': ['android', 'ios']}},
+            'proxy': global_proxy_url 
         }
-        if use_cookies and os.path.exists(COOKIE_FILE): 
-            base_opts['cookiefile'] = COOKIE_FILE
 
-        # Regroupement
         grouped_feeds = {}
         for item in raw_config:
             fname = item.get('filename')
-            if not fname: continue
             if fname not in grouped_feeds: grouped_feeds[fname] = []
             grouped_feeds[fname].append(item)
 
-        # --- TRAITEMENT PAR FLUX ---
         for filename, sources in grouped_feeds.items():
             print(f"\n=== FLUX : {filename} ===")
             main_config = sources[0]
@@ -199,59 +181,47 @@ def run():
             if os.path.exists(current_log_file):
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
-            # --- CONFIGURATION RESEAU & PAYS ---
-            feed_needs_tor = main_config.get('force_tor', False)
+            # --- GESTION GÉO TOR ---
+            # On vérifie si on a besoin d'un pays spécifique
             tor_exit_nodes = main_config.get('tor_exit_nodes') # Ex: "BE,FR"
             
-            feed_dl_opts = base_opts.copy()
-            
-            if feed_needs_tor and global_proxy_url:
-                print(f"   [CONFIG] Mode TOR activé.")
-                feed_dl_opts['proxy'] = global_proxy_url
-                
-                # RECONFIGURATION DYNAMIQUE DES PAYS TOR
-                if tor_exit_nodes:
-                    set_tor_exit_nodes(tor_exit_nodes)
-                    print(f"   [DEBUG] IP actuelle après config : {get_tor_ip()}")
-                else:
-                    # Reset vers Belgique par défaut si non spécifié mais Tor requis
-                    # set_tor_exit_nodes("BE") 
-                    pass 
+            if tor_exit_nodes:
+                configure_tor_nodes(tor_exit_nodes)
             else:
-                print(f"   [CONFIG] Mode DIRECT.")
-                if 'proxy' in feed_dl_opts: del feed_dl_opts['proxy']
+                # Si pas de pays spécifique, on reset (Monde entier)
+                # Important pour ne pas rester bloqué en Belgique si le flux précédent l'était
+                configure_tor_nodes(None)
 
-            # 1. SCAN (Léger)
+            print(f"   [DEBUG] IP utilisée : {get_tor_info()}")
+
+            # 1. SCAN
             missing_entries = []
             auto_title = None
             
-            scan_opts = feed_dl_opts.copy()
+            scan_opts = base_opts.copy()
             scan_opts['extract_flat'] = True
-            scan_opts['ignoreerrors'] = True # On ignore les erreurs au scan
+            scan_opts['ignoreerrors'] = True
             
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
                 for source in sources:
                     try:
                         info = ydl_scan.extract_info(source['url'], download=False)
-                        if info:
-                            if not auto_title: auto_title = info.get('title')
-                            if 'entries' in info:
-                                for entry in info['entries']:
-                                    if entry and entry.get('id') and entry['id'] not in downloaded_ids:
-                                        missing_entries.append(entry)
-                    except Exception as e:
-                        print(f"Scan Warning: {e}")
+                        if info and 'entries' in info:
+                            for entry in info['entries']:
+                                if entry and entry.get('id') and entry['id'] not in downloaded_ids:
+                                    missing_entries.append(entry)
+                    except Exception as e: print(f"Scan Warning: {e}")
 
             print(f"Vidéos manquantes : {len(missing_entries)}")
             batch_to_process = missing_entries[:SEARCH_WINDOW_SIZE]
 
-            # 2. RSS Setup (Simplifié)
+            # 2. RSS (Code standard inchangé)
             fg = FeedGenerator(); fg.load_extension('podcast')
             if os.path.exists(filename): 
                 try: fg.parse_file(filename)
                 except: pass
             
-            final_title = main_config.get('podcast_name') or auto_title or f'Podcast {filename}'
+            final_title = main_config.get('podcast_name') or f'Podcast {filename}'
             fg.title(final_title)
             fg.description(main_config.get('podcast_description') or 'Generated Feed')
             fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
@@ -260,12 +230,12 @@ def run():
                 fg.image(url=main_config['cover_image'], title=final_title, link=f'https://github.com/{REPO_NAME}')
 
             # 3. DOWNLOAD
-            dl_opts = feed_dl_opts.copy()
+            dl_opts = base_opts.copy()
             dl_opts.update({
                 'format': 'bestaudio/best', 
                 'outtmpl': '%(id)s.%(ext)s', 
                 'writethumbnail': True,
-                'ignoreerrors': False, # <--- IMPORTANT: On veut les VRAIES erreurs maintenant
+                'ignoreerrors': False,
                 'retries': 3,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
             })
@@ -279,7 +249,7 @@ def run():
                 
                 vid_id = entry['id']
                 attempts = 0
-                max_attempts = 3 if feed_needs_tor else 1
+                max_attempts = 3
                 
                 while attempts < max_attempts:
                     try:
@@ -292,44 +262,27 @@ def run():
                         cleanup_files(vid_id)
                         break 
                         
-                    except Exception as e: # On capture TOUT ici, y compris DownloadError
-                        # On nettoie le message d'erreur pour l'analyse
+                    except Exception as e:
                         err_str = str(e).lower()
-                        # Si c'est une DownloadError, le message est explicite
-                        
-                        print(f"   [ERREUR ANALYSE] {str(e)[:150]}...") # Log court
+                        print(f"   [ERREUR] {str(e)[:100]}...")
                         cleanup_files(vid_id)
                         
-                        # --- ANALYSE INTELLIGENTE DES ERREURS ---
+                        # LOGIQUE D'ERREUR
+                        if "private video" in err_str or "removed" in err_str:
+                            print("      -> Vidéo Inaccessible. Skip.")
+                            break
                         
-                        # 1. VIDEO PRIVÉE ou SUPPRIMÉE -> STOP
-                        if "private video" in err_str or "this video has been removed" in err_str:
-                            print("      -> Vidéo INACCESSIBLE (Privée/Supprimée). On passe à la suivante.")
-                            # On ajoute à l'historique pour ne plus la retenter demain
-                            # (Optionnel : décommenter la ligne suivante si tu veux ignorer définitivement)
-                            # with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
-                            break # Sort du While (Retry), passe à la video suivante
-                        
-                        # 2. GEO-BLOCAGE (Erreur pays)
-                        elif "not made this video available in your country" in err_str:
-                            print("      -> ERREUR PAYS détectée.")
-                            if feed_needs_tor:
-                                print("      -> Tentative de changement d'IP Tor...")
-                                renew_tor_ip()
-                                attempts += 1
-                            else:
-                                print("      -> Pas de Tor activé. Impossible de contourner.")
-                                break
+                        elif "country" in err_str:
+                            print("      -> Géo-blocage. Tentative nouvelle IP...")
+                            renew_tor_ip()
+                            attempts += 1
 
-                        # 3. BLOCAGE BOT / 403
-                        elif feed_needs_tor and ("403" in err_str or "forbidden" in err_str or "bot" in err_str or "sign in" in err_str):
-                            print("      -> Blocage Anti-Bot détecté. Rotation IP...")
+                        elif "403" in err_str or "bot" in err_str or "sign in" in err_str:
+                            print("      -> Détection Bot. Rotation IP...")
                             renew_tor_ip()
                             attempts += 1
                         
-                        # 4. AUTRE
                         else:
-                            print("      -> Erreur générique. Retry simple.")
                             time.sleep(5)
                             attempts += 1
 
