@@ -82,5 +82,13 @@
         "podcast_author": "Ecran large",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/ecran_large.png", 
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+    {
+"filename": "rhinocéros.xml",
+        "url": "https://youtube.com/playlist?list=PLv1KZC6gJTFkFmZmlejLN6qyV7gvcmXwd", 
+        "podcast_name": "RHINOCÉROS",
+        "podcast_author": "BLAST, Le souffle de l'info",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/rhinoceros.png", 
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
