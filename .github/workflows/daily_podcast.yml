@@ -31,36 +31,50 @@ jobs:
       run: |
         sudo apt-get install -y ffmpeg
         pip install stem
-        # Installation version Master de yt-dlp (CRITIQUE)
+        # Installation version Master de yt-dlp (CRITIQUE pour éviter bugs 403)
         pip install https://github.com/yt-dlp/yt-dlp/archive/master.zip
         pip install -r requirements.txt --upgrade
 
-    # --- TOR CONFIGURATION NEUTRE ---
-    - name: Install and Configure Tor (Open)
+    # --- TOR CONFIGURATION ROBUSTE ---
+    - name: Install and Configure Tor (Open Control)
       run: |
         sudo apt-get install -y tor
         
-        # On écrase le torrc pour être sûr d'avoir une config propre
-        # CookieAuthentication 0 = Pas de password pour le script Python (évite les erreurs de permission)
-        echo "ControlPort 9051" | sudo tee /etc/tor/torrc
-        echo "CookieAuthentication 0" | sudo tee -a /etc/tor/torrc
-        echo "SocksPort 9050" | sudo tee -a /etc/tor/torrc
+        # 1. Arrêter Tor avant de toucher à la config
+        sudo service tor stop || true
         
-        # Optimisations standard
-        echo "CircuitBuildTimeout 60" | sudo tee -a /etc/tor/torrc
-        echo "KeepalivePeriod 60" | sudo tee -a /etc/tor/torrc
-        echo "NumEntryGuards 8" | sudo tee -a /etc/tor/torrc
-        echo "ClientOnly 1" | sudo tee -a /etc/tor/torrc
+        # 2. Écrire une configuration PROPRE et COMPLETE
+        # On ouvre le ControlPort sur localhost sans mot de passe
+        sudo bash -c 'cat > /etc/tor/torrc << EOF
+        SocksPort 9050
+        ControlPort 9051
+        CookieAuthentication 0
+        HashedControlPassword ""
+        Log notice stdout
+        DataDirectory /var/lib/tor
+        RunAsDaemon 1
+        EOF'
         
-        # Démarrage
+        # 3. Réparer les permissions (souvent la cause des erreurs)
+        sudo chown -R debian-tor:debian-tor /var/lib/tor
+        sudo chmod 700 /var/lib/tor
+        
+        # 4. Redémarrer Tor proprement
         sudo service tor start
         
-        echo "Démarrage de Tor... (Pause 30s)"
-        sleep 30
+        echo "Démarrage de Tor... (Pause de sécurité 45s)"
+        sleep 45
         
-        # VERIFICATION
+        # 5. VERIFICATION CRITIQUE DU PORT DE CONTROLE
+        # On vérifie si le port 9051 est bien ouvert
+        if ! sudo netstat -tuln | grep ':9051'; then
+          echo "ERREUR FATALE: Le port 9051 n'est pas ouvert !"
+          sudo cat /var/log/syslog | grep Tor | tail -n 20
+          exit 1
+        fi
+        
         echo "Test de connexion Tor (IP Initiale)..."
-        curl -s --socks5 127.0.0.1:9050 https://api.ipify.org || echo "Tor n'est pas encore prêt."
+        curl -s --socks5 127.0.0.1:9050 https://api.ipify.org || echo "Attention: Tor lent au démarrage."
 
     - name: Run Script via Tor
       env:
