@@ -17,8 +17,8 @@ CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
 # OBJECTIF : Nombre de SUCCÈS voulus par FICHIER RSS (Flux)
-TARGET_SUCCESS_PER_FEED = 2
-SEARCH_WINDOW_SIZE = 20
+TARGET_SUCCESS_PER_FEED = 3
+SEARCH_WINDOW_SIZE = 30
 
 def get_tor_info():
     """Récupère l'IP actuelle et le PAYS via Tor."""
