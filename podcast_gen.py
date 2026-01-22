@@ -9,7 +9,6 @@ from github import Github
 from feedgen.feed import FeedGenerator
 from stem import Signal
 from stem.control import Controller
-from stem import SocketError
 
 # --- CONSTANTES ---
 REPO_NAME = os.environ['GITHUB_REPOSITORY']
@@ -155,7 +154,7 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 
 def run():
     try:
-        print("--- Démarrage du script (Tor Intégral V2) ---")
+        print("--- Démarrage du script (V3 - Smart Fallback) ---")
         global_proxy_url = os.environ.get('YOUTUBE_PROXY')
         
         if not os.path.exists(CONFIG_FILE): return
@@ -167,13 +166,12 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # Options de base : TOR PAR DÉFAUT
+        # Options de base
         base_opts = {
             'quiet': False, 
             'no_warnings': True, 
             'socket_timeout': 30,
             'nocheckcertificate': True,
-            'extractor_args': {'youtube': {'player_client': ['android', 'ios']}},
             'proxy': global_proxy_url 
         }
 
@@ -193,12 +191,11 @@ def run():
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
             # --- GESTION GÉO TOR ---
-            tor_exit_nodes = main_config.get('tor_exit_nodes') # Ex: "BE,FR"
-            
+            tor_exit_nodes = main_config.get('tor_exit_nodes')
             if tor_exit_nodes:
                 configure_tor_nodes(tor_exit_nodes)
             else:
-                configure_tor_nodes(None) # Reset monde entier
+                configure_tor_nodes(None)
 
             print(f"   [DEBUG] IP utilisée : {get_tor_info()}")
 
@@ -206,9 +203,11 @@ def run():
             missing_entries = []
             auto_title = None
             
+            # Pour le scan, on reste en mode 'android' pour la vitesse
             scan_opts = base_opts.copy()
             scan_opts['extract_flat'] = True
             scan_opts['ignoreerrors'] = True
+            scan_opts['extractor_args'] = {'youtube': {'player_client': ['android', 'ios']}}
             
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
                 for source in sources:
@@ -237,9 +236,11 @@ def run():
                 fg.podcast.itunes_image(main_config['cover_image'])
                 fg.image(url=main_config['cover_image'], title=final_title, link=f'https://github.com/{REPO_NAME}')
 
-            # 3. DOWNLOAD
-            dl_opts = base_opts.copy()
-            dl_opts.update({
+            # 3. DOWNLOAD AVEC STRATEGIE DYNAMIQUE
+            
+            # Config de base pour téléchargement
+            dl_opts_base = base_opts.copy()
+            dl_opts_base.update({
                 'format': 'bestaudio/best', 
                 'outtmpl': '%(id)s.%(ext)s', 
                 'writethumbnail': True,
@@ -247,9 +248,8 @@ def run():
                 'retries': 3,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
             })
-            
             if main_config.get('sponsorblock_categories'):
-                dl_opts['sponsorblock_remove'] = main_config.get('sponsorblock_categories')
+                dl_opts_base['sponsorblock_remove'] = main_config.get('sponsorblock_categories')
 
             success_count = 0
             for entry in batch_to_process:
@@ -257,11 +257,17 @@ def run():
                 
                 vid_id = entry['id']
                 attempts = 0
-                max_attempts = 3
+                max_attempts = 2 # On tente 2 fois max (1 fois mobile, 1 fois web)
+                
+                # Stratégie initiale : Mobile (Android)
+                current_client = ['android', 'ios']
                 
                 while attempts < max_attempts:
+                    dl_opts = dl_opts_base.copy()
+                    dl_opts['extractor_args'] = {'youtube': {'player_client': current_client}}
+                    
                     try:
-                        if attempts > 0: print(f"   [RETRY] Tentative {attempts+1}...")
+                        print(f"   [DL] Tentative {attempts+1} avec client {current_client[0]}...")
                         with yt_dlp.YoutubeDL(dl_opts) as ydl:
                             process_video_download(entry, ydl, release, fg, current_log_file)
                         
@@ -275,23 +281,30 @@ def run():
                         print(f"   [ERREUR] {str(e)[:100]}...")
                         cleanup_files(vid_id)
                         
-                        if "private video" in err_str or "removed" in err_str:
-                            print("      -> Vidéo Inaccessible. Skip.")
-                            break
+                        # --- ANALYSE ET REACTION ---
                         
-                        elif "country" in err_str:
-                            print("      -> Géo-blocage. Tentative nouvelle IP...")
+                        # Si erreur "Privée" ou "Sign in" -> C'est souvent un faux positif sur IP Tor
+                        if "private video" in err_str or "sign in" in err_str:
+                            if attempts == 0:
+                                print("      -> Faux positif suspecté (Mur de consentement/IP).")
+                                print("      -> ACTION : Rotation IP + Passage en mode WEB (Desktop).")
+                                renew_tor_ip()
+                                current_client = ['web'] # On passe en mode Desktop pour la 2eme tentative
+                                attempts += 1
+                                continue # On relance la boucle while
+                            else:
+                                print("      -> Echec définitif après fallback Web. Vidéo ignorée pour cette fois.")
+                                break
+                        
+                        elif "country" in err_str or "403" in err_str or "bot" in err_str:
+                            print("      -> Blocage. Rotation IP...")
                             renew_tor_ip()
-                            attempts += 1
-
-                        elif "403" in err_str or "bot" in err_str or "sign in" in err_str:
-                            print("      -> Détection Bot. Rotation IP...")
-                            renew_tor_ip()
+                            # On garde le même client ou on switch, ici on garde
                             attempts += 1
                         
                         else:
-                            time.sleep(5)
-                            attempts += 1
+                            # Autres erreurs
+                            break
 
             fg.rss_file(filename)
             print(f"XML {filename} mis à jour.")
