@@ -4,6 +4,7 @@ import datetime
 import yt_dlp
 import time
 import glob
+import random
 import subprocess
 from github import Github
 from feedgen.feed import FeedGenerator
@@ -154,7 +155,7 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 
 def run():
     try:
-        print("--- Démarrage du script (V3 - Smart Fallback) ---")
+        print("--- Démarrage du script (V4 - GDPR Bypass & Anti-Bot) ---")
         global_proxy_url = os.environ.get('YOUTUBE_PROXY')
         
         if not os.path.exists(CONFIG_FILE): return
@@ -166,13 +167,21 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # Options de base
+        # Options de base AMÉLIORÉES
         base_opts = {
             'quiet': False, 
             'no_warnings': True, 
             'socket_timeout': 30,
             'nocheckcertificate': True,
-            'proxy': global_proxy_url 
+            'proxy': global_proxy_url,
+            # 1. ASTUCE "CONSENT" : On force le cookie de consentement GDPR
+            # Cela résout souvent le problème de la vidéo "privée" en Europe (Tor BE/FR)
+            'http_headers': {
+                'Cookie': 'CONSENT=YES+cb.20210328-17-p0.en+FX+419; SOCS=CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiACGgYIgLCPpgY'
+            },
+            # 2. ANTI-BOT : Délais aléatoires entre les téléchargements
+            'sleep_interval': 20,       # Minimum 20 secondes
+            'max_sleep_interval': 45,   # Maximum 45 secondes
         }
 
         grouped_feeds = {}
@@ -182,7 +191,13 @@ def run():
             grouped_feeds[fname].append(item)
 
         for filename, sources in grouped_feeds.items():
-            print(f"\n=== FLUX : {filename} ===")
+            print(f"\n==========================================")
+            print(f"FLUX : {filename}")
+            print(f"==========================================")
+            
+            # Petite pause entre les playlists pour respirer
+            time.sleep(10)
+            
             main_config = sources[0]
             current_log_file = f"log_{filename}.txt"
             
@@ -203,10 +218,10 @@ def run():
             missing_entries = []
             auto_title = None
             
-            # Pour le scan, on reste en mode 'android' pour la vitesse
             scan_opts = base_opts.copy()
             scan_opts['extract_flat'] = True
             scan_opts['ignoreerrors'] = True
+            # Pour le scan, on reste léger
             scan_opts['extractor_args'] = {'youtube': {'player_client': ['android', 'ios']}}
             
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
@@ -222,7 +237,7 @@ def run():
             print(f"Vidéos manquantes : {len(missing_entries)}")
             batch_to_process = missing_entries[:SEARCH_WINDOW_SIZE]
 
-            # 2. RSS
+            # 2. RSS (Setup)
             fg = FeedGenerator(); fg.load_extension('podcast')
             if os.path.exists(filename): 
                 try: fg.parse_file(filename)
@@ -236,18 +251,17 @@ def run():
                 fg.podcast.itunes_image(main_config['cover_image'])
                 fg.image(url=main_config['cover_image'], title=final_title, link=f'https://github.com/{REPO_NAME}')
 
-            # 3. DOWNLOAD AVEC STRATEGIE DYNAMIQUE
-            
-            # Config de base pour téléchargement
+            # 3. DOWNLOAD
             dl_opts_base = base_opts.copy()
             dl_opts_base.update({
                 'format': 'bestaudio/best', 
                 'outtmpl': '%(id)s.%(ext)s', 
                 'writethumbnail': True,
                 'ignoreerrors': False,
-                'retries': 3,
+                'retries': 5, # Plus de retries internes
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
             })
+            
             if main_config.get('sponsorblock_categories'):
                 dl_opts_base['sponsorblock_remove'] = main_config.get('sponsorblock_categories')
 
@@ -257,9 +271,10 @@ def run():
                 
                 vid_id = entry['id']
                 attempts = 0
-                max_attempts = 2 # On tente 2 fois max (1 fois mobile, 1 fois web)
+                max_attempts = 2
                 
-                # Stratégie initiale : Mobile (Android)
+                # On commence par Android (plus rapide)
+                # Si échec "Privé" sous Tor -> on passera en Web
                 current_client = ['android', 'ios']
                 
                 while attempts < max_attempts:
@@ -267,13 +282,17 @@ def run():
                     dl_opts['extractor_args'] = {'youtube': {'player_client': current_client}}
                     
                     try:
-                        print(f"   [DL] Tentative {attempts+1} avec client {current_client[0]}...")
+                        print(f"   [DL] {vid_id} (Client: {current_client[0]})...")
                         with yt_dlp.YoutubeDL(dl_opts) as ydl:
                             process_video_download(entry, ydl, release, fg, current_log_file)
                         
                         print("   [SUCCÈS]")
                         success_count += 1
                         cleanup_files(vid_id)
+                        
+                        # Pause forcée ANTI-BOT supplémentaire après un succès
+                        print("   [ANTI-BOT] Pause de sécurité...")
+                        time.sleep(random.randint(10, 20))
                         break 
                         
                     except Exception as e:
@@ -281,30 +300,28 @@ def run():
                         print(f"   [ERREUR] {str(e)[:100]}...")
                         cleanup_files(vid_id)
                         
-                        # --- ANALYSE ET REACTION ---
-                        
-                        # Si erreur "Privée" ou "Sign in" -> C'est souvent un faux positif sur IP Tor
+                        # LOGIQUE DE FALLBACK
                         if "private video" in err_str or "sign in" in err_str:
                             if attempts == 0:
-                                print("      -> Faux positif suspecté (Mur de consentement/IP).")
-                                print("      -> ACTION : Rotation IP + Passage en mode WEB (Desktop).")
+                                print("      -> Suspicion 'Mur GDPR'. Passage en mode WEB + Nouvelle IP.")
                                 renew_tor_ip()
-                                current_client = ['web'] # On passe en mode Desktop pour la 2eme tentative
+                                current_client = ['web'] # Le client web + Cookie CONSENT marche souvent mieux pour ça
                                 attempts += 1
-                                continue # On relance la boucle while
+                                continue
                             else:
-                                print("      -> Echec définitif après fallback Web. Vidéo ignorée pour cette fois.")
+                                print("      -> Echec définitif (Vraiment privée ?).")
                                 break
                         
                         elif "country" in err_str or "403" in err_str or "bot" in err_str:
-                            print("      -> Blocage. Rotation IP...")
+                            print("      -> Blocage Bot/Geo. Rotation IP...")
                             renew_tor_ip()
-                            # On garde le même client ou on switch, ici on garde
+                            time.sleep(20) # On attend plus longtemps en cas de blocage
                             attempts += 1
                         
                         else:
-                            # Autres erreurs
-                            break
+                            # Autres erreurs (Réseau)
+                            time.sleep(10)
+                            attempts += 1
 
             fg.rss_file(filename)
             print(f"XML {filename} mis à jour.")
@@ -314,3 +331,5 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+
