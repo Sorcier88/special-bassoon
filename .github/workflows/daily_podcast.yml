@@ -1,4 +1,4 @@
-name: Update Podcasts (Tor + Git Fix)
+name: Update Podcasts (Tor Complete)
 
 on:
   schedule:
@@ -30,46 +30,42 @@ jobs:
     - name: Install Libraries
       run: |
         sudo apt-get install -y ffmpeg
-        # Installation explicite de stem pour piloter Tor
         pip install stem
-        # CRITIQUE : Toujours installer la version MASTER de yt-dlp pour les fix 403
+        # Installation version Master de yt-dlp (CRITIQUE)
         pip install https://github.com/yt-dlp/yt-dlp/archive/master.zip
         pip install -r requirements.txt --upgrade
 
-    # --- TOR BELGIQUE ---
-    - name: Install and Configure Tor (Belgium Exit)
+    # --- TOR CONFIGURATION NEUTRE ---
+    - name: Install and Configure Tor (Open)
       run: |
         sudo apt-get install -y tor
         
-        # Configuration Tor avec ControlPort pour le renouvellement d'IP
-        # On sécurise avec un mot de passe haché ou sans auth pour localhost (ici CookieAuthFile plus simple pour script)
-        echo "ControlPort 9051" | sudo tee -a /etc/tor/torrc
-        echo "CookieAuthentication 1" | sudo tee -a /etc/tor/torrc
+        # On écrase le torrc pour être sûr d'avoir une config propre
+        # CookieAuthentication 0 = Pas de password pour le script Python (évite les erreurs de permission)
+        echo "ControlPort 9051" | sudo tee /etc/tor/torrc
+        echo "CookieAuthentication 0" | sudo tee -a /etc/tor/torrc
+        echo "SocksPort 9050" | sudo tee -a /etc/tor/torrc
         
-        # Configuration Belgique
-        echo "ExitNodes {BE}" | sudo tee -a /etc/tor/torrc
-        echo "StrictNodes 1" | sudo tee -a /etc/tor/torrc
-        
-        # Optimisations
+        # Optimisations standard
         echo "CircuitBuildTimeout 60" | sudo tee -a /etc/tor/torrc
         echo "KeepalivePeriod 60" | sudo tee -a /etc/tor/torrc
         echo "NumEntryGuards 8" | sudo tee -a /etc/tor/torrc
         echo "ClientOnly 1" | sudo tee -a /etc/tor/torrc
-        echo "MaxCircuitDirtiness 600" | sudo tee -a /etc/tor/torrc
         
+        # Démarrage
         sudo service tor start
         
-        echo "Démarrage de Tor... (Pause 60s)"
-        sleep 60
+        echo "Démarrage de Tor... (Pause 30s)"
+        sleep 30
         
         # VERIFICATION
-        echo "Test de connexion..."
-        curl -s --socks5 127.0.0.1:9050 -L -A "Mozilla/5.0" https://icanhazip.com || echo "Test IP échoué (mais Tor tourne peut-être)"
+        echo "Test de connexion Tor (IP Initiale)..."
+        curl -s --socks5 127.0.0.1:9050 https://api.ipify.org || echo "Tor n'est pas encore prêt."
 
     - name: Run Script via Tor
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
+        # Note: On n'utilise plus les cookies ici pour éviter les conflits
         YOUTUBE_PROXY: "socks5://127.0.0.1:9050"
       run: python podcast_gen.py
       
