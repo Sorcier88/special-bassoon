@@ -9,6 +9,7 @@ from github import Github
 from feedgen.feed import FeedGenerator
 from stem import Signal
 from stem.control import Controller
+from stem import SocketError
 
 # --- CONSTANTES ---
 REPO_NAME = os.environ['GITHUB_REPOSITORY']
@@ -33,46 +34,57 @@ def get_tor_info():
     except Exception:
         return "IP Inconnue"
 
+def get_controller():
+    """Tente de récupérer une connexion au controleur Tor."""
+    try:
+        controller = Controller.from_port(port=9051)
+        controller.authenticate()  # Auth vide car CookieAuthentication=0
+        return controller
+    except Exception as e:
+        print(f"   [TOR FATAL] Impossible de se connecter au port 9051 : {e}")
+        return None
+
 def configure_tor_nodes(country_codes=None):
     """
     Configure les noeuds de sortie.
-    Si country_codes est None -> Reset vers "N'importe quel pays".
-    Si country_codes est "BE,FR" -> Force ces pays.
     """
-    try:
-        # Connexion sans auth (configuré dans le YAML avec CookieAuthentication 0)
-        with Controller.from_port(port=9051) as controller:
-            controller.authenticate() # Pas de mot de passe nécessaire
-            
-            if country_codes:
-                print(f"   [TOR CONFIG] Restriction géographique -> {country_codes}")
-                nodes_formatted = ",".join([f"{{{c.strip()}}}" for c in country_codes.split(',')])
-                controller.set_conf('ExitNodes', nodes_formatted)
-                controller.set_conf('StrictNodes', '1')
-            else:
-                print(f"   [TOR CONFIG] Reset géographique (Monde entier)")
-                controller.reset_conf('ExitNodes')
-                controller.reset_conf('StrictNodes')
+    controller = get_controller()
+    if not controller: return
 
-            # Force le changement de circuit pour appliquer
-            controller.signal(Signal.NEWNYM)
-            print("   [TOR] Circuit renouvelé. Stabilisation (10s)...")
-            time.sleep(10)
+    try:
+        if country_codes:
+            print(f"   [TOR CONFIG] Restriction géographique -> {country_codes}")
+            nodes_formatted = ",".join([f"{{{c.strip()}}}" for c in country_codes.split(',')])
+            controller.set_conf('ExitNodes', nodes_formatted)
+            controller.set_conf('StrictNodes', '1')
+        else:
+            print(f"   [TOR CONFIG] Reset géographique (Monde entier)")
+            controller.reset_conf('ExitNodes')
+            controller.reset_conf('StrictNodes')
+
+        # Force le changement de circuit pour appliquer
+        controller.signal(Signal.NEWNYM)
+        print("   [TOR] Circuit renouvelé. Stabilisation (10s)...")
+        time.sleep(10)
+        controller.close()
             
     except Exception as e:
         print(f"   [TOR ERROR] Erreur config Tor : {e}")
-        # On ne bloque pas le script, on essaie quand même
+        if controller: controller.close()
 
 def renew_tor_ip():
-    """Force simplement une nouvelle IP (sans changer la config pays)."""
+    """Force simplement une nouvelle IP."""
     print("   [TOR] --- Rotation d'IP ---")
+    controller = get_controller()
+    if not controller: return
+
     try:
-        with Controller.from_port(port=9051) as controller:
-            controller.authenticate()
-            controller.signal(Signal.NEWNYM)
+        controller.signal(Signal.NEWNYM)
         time.sleep(10)
+        controller.close()
     except Exception as e:
         print(f"   [TOR ERROR] : {e}")
+        if controller: controller.close()
 
 def get_or_create_release(repo):
     try:
@@ -143,8 +155,8 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 
 def run():
     try:
-        print("--- Démarrage du script (Tor Intégral) ---")
-        global_proxy_url = os.environ.get('YOUTUBE_PROXY') # Doit être socks5://127.0.0.1:9050
+        print("--- Démarrage du script (Tor Intégral V2) ---")
+        global_proxy_url = os.environ.get('YOUTUBE_PROXY')
         
         if not os.path.exists(CONFIG_FILE): return
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
@@ -155,8 +167,7 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # Options de base : TOR PAR DÉFAUT POUR TOUT LE MONDE
-        # Cela évite le blocage "Datacenter IP" de GitHub Actions
+        # Options de base : TOR PAR DÉFAUT
         base_opts = {
             'quiet': False, 
             'no_warnings': True, 
@@ -182,15 +193,12 @@ def run():
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
             # --- GESTION GÉO TOR ---
-            # On vérifie si on a besoin d'un pays spécifique
             tor_exit_nodes = main_config.get('tor_exit_nodes') # Ex: "BE,FR"
             
             if tor_exit_nodes:
                 configure_tor_nodes(tor_exit_nodes)
             else:
-                # Si pas de pays spécifique, on reset (Monde entier)
-                # Important pour ne pas rester bloqué en Belgique si le flux précédent l'était
-                configure_tor_nodes(None)
+                configure_tor_nodes(None) # Reset monde entier
 
             print(f"   [DEBUG] IP utilisée : {get_tor_info()}")
 
@@ -215,7 +223,7 @@ def run():
             print(f"Vidéos manquantes : {len(missing_entries)}")
             batch_to_process = missing_entries[:SEARCH_WINDOW_SIZE]
 
-            # 2. RSS (Code standard inchangé)
+            # 2. RSS
             fg = FeedGenerator(); fg.load_extension('podcast')
             if os.path.exists(filename): 
                 try: fg.parse_file(filename)
@@ -267,7 +275,6 @@ def run():
                         print(f"   [ERREUR] {str(e)[:100]}...")
                         cleanup_files(vid_id)
                         
-                        # LOGIQUE D'ERREUR
                         if "private video" in err_str or "removed" in err_str:
                             print("      -> Vidéo Inaccessible. Skip.")
                             break
