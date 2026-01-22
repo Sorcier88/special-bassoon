@@ -90,5 +90,21 @@
         "podcast_author": "BLAST, Le souffle de l'info",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/rhinoceros.png", 
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    }, 
+    {
+        "filename": "euroguessr.xml",
+        "url": "https://youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu", 
+        "podcast_name": "Euroguessr",
+        "podcast_author": "Arte",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/euroguessr.png",
+        "force_tor" : true, 
+        "tor_exit_nodes": "BE,FR,DE,LU"
+    },
+    {
+        "filename": "avecdessci.xml",
+        "url": "https://youtube.com/playlist?list=PLO6eUofceAVAFOAcHFMy6ADtsBFTbOM85", 
+        "podcast_name": "Avec des Sci - l'actu scientifique du mois",
+        "podcast_author": "Sci+",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/avec_des_sci.png"
     }
 ]
