@@ -1,86 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Thu, 22 Jan 2026 16:33:22 +0000</lastBuildDate><item><title>Pourquoi ne sommes-nous pas minuscules ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 09/06/2027
-Être grand et fort, est-ce forcément la clé de la réussite ? Pas vraiment : ce sont les créatures de petite taille qui semblent avoir les meilleures cartes. L’animal le plus dangereux au monde n'est autre que le moustique ! Ne serait-il donc pas préférable que l’espèce humaine soit de plus petite taille ?&#13;
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/42.jpeg</url><title>42 - La réponse à presque tout</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Fri, 23 Jan 2026 04:37:00 +0000</lastBuildDate><item><title>Perdons-nous le contrôle sur l’IA ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 16/06/2027
+Depuis des décennies, d’aucuns redoutent que les robots s’émancipent. Ce fantasme risque-t-il de devenir réalité ? Avec l'intelligence artificielle, les robots ont acquis des capacités qui, jusqu’ici, étaient l’apanage des humains : elles identifient nos émotions et réagissent en conséquence, se déplacent de manière autonome et apprennent de leurs erreurs. Pourraient-ils un jour nous tenir tête ?&#13;
 &#13;
-Série documentaire scientifique (Allemagne, 2024, 26mn)&#13;
-&#13;#sciences #magazine #arte 
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">9Nirh17W4IE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/9Nirh17W4IE.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate></item><item><title>Les océans seront-ils bientôt à l’arrêt ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 14/07/2027
-Le déclin notable de la circulation océanique depuis les années 1950 est très certainement lié aux activités humaines. Son arrêt complet pourrait provoquer un nouvel âge glaciaire d’ici quelques décennies. En quoi sommes-nous dépendants des courants ? Et qu’est-ce qui va changer en Europe ?&#13;
-&#13;
-C’est grâce aux courants marins que l’archipel d’Hawaï abrite l’incroyable biodiversité qui a fait sa richesse. En effet, ces phénomènes océaniques permettent aux animaux – comme les anguilles –, mais aussi aux marchandises et aux humains de parcourir des milliers de kilomètres.&#13;
-&#13;
-Série documentaire scientifique (Allemagne, 2024, 27mn)&#13;
-&#13;#oceans #reportage #arte 
-
-1. Les courants marins 
-
-... sont complexes et influencent notre climat...
-
-https://www.geomar.de/entdecken/ozean-und-klima/exkurse/meeresstroemungen
-
-
-... les scientifiques les étudient notamment en suivant les "débris flottants"... 
-
-https://beachcombersalert.org/RubberDuckies.html
-https://flotsametrics.com/
-https://pubmed.ncbi.nlm.nih.gov/21696778/
-
-
-2. Les animaux utilisent les courants marins ... 
-
-... pour se déplacer, exemple avec l’anguille commune : 
-https://www.geomar.de/news/article/das-schicksal-der-aale
-
-... ou les tortues de mer :
-https://www.geomar.de/news/article/einmal-gelernt-nie-vergessen
-
-... pas seulement pour se déplacer, mais aussi pour trouver de la nourriture. Les requins bleus "lisent" même les signaux subtils des courants et les suivent : 
-https://www.pnas.org/doi/10.1073/pnas.1903067116
-
-
-3. Allons-nous vers une nouvelle ère glaciaire en Europe? 
-
-Non - mais l'AMOC, l'Atlantic meridional overturning circulation (en français « circulation méridienne de retournement atlantique ») montre des signes de ralentissement et pourrait même s'arrêter - d'ici 2060. C'est du moins ce qu'affirment Susanne et Peter Ditlevsen de l'Université de Copenhague : https://www.nature.com/articles/s41467-023-39810-w
-
-....Des chercheurs néerlandais parviennent à une conclusion similaire : https://www.science.org/doi/10.1126/sciadv.adk1189
-
-Un rapport du GIEC de 2019 présente les choses un peu différemment : il prédit que l'AMOC s'affaiblirait certes au cours de ce siècle, mais que son effondrement complet était peu probable avant 2100.
-https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/
-
-La date de l'effondrement de l'AMOC est donc encore controversée. La plupart des experts s'accordent cependant à dire que le réchauffement de la planète constitue un problème majeur pour les courants marins. https://pubmed.ncbi.nlm.nih.gov/37866378/
-
-4. Comparaisons tirées de l'histoire de la Terre
-
-Il y a eu dans le passé plusieurs périodes où la température a beaucoup augmenté, entrainant paradoxalement un refroidissement de l'Europe du Nord. Une des raisons principales à cela : l'interruption du Gulf Stream à cause de l’arrêt de l'AMOC.
-
-Par exemple, il y a 1,12 million d'années :
-https://www.sciencedaily.com/releases/2023/08/230810141044.htm
-
-... ainsi qu'il y a 12 000 ans (le « Dryas récent ») : 
-https://www.nature.com/articles/s41467-018-04071-5
-
-
+Série documentaire scientifique (Allemagne, 2024, 30mn)&#13;
+&#13;#IA #science #arte 
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">PFtP8eIc6aU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/PFtP8eIc6aU.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate></item><item><title>Les aliens sont-ils comme nous ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 28/07/2027
-Pour de nombreux scientifiques, l’émergence d’organismes vivants ailleurs dans l’univers n’est qu’une question de temps. Mais la plupart l’envisagent sous une forme unicellulaire, à l’instar de la bactérie. Notre planète ferait-elle figure d’exception ? L’évolution humaine serait-elle le fruit du hasard ? Sous l’effet du temps, le vivant évolue-t-il nécessairement vers le complexe ?&#13;
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">HyoABbailQQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/HyoABbailQQ.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate></item><item><title>Avons-nous besoin d’avoir du pouvoir ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 02/06/2027
+Dès le bac à sable, les bambins savent qui est le chef. Et cette intuition nous guide tout au long de la vie, à l’école, au bureau comme en famille. L’expérience du pouvoir change la personnalité : les puissants prennent des risques inconsidérés, ils cèdent à leurs impulsions et manquent d’empathie. Certains sont même hermétiques à toute critique. C’est la porte ouverte aux conflits, voire aux guerres.&#13;
+&#13;
+Série documentaire scientifique (Allemagne, 2023, 30mn)&#13;
+&#13;#pouvoir #magazine #arte 
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">dZuZUSA_5AY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/dZuZUSA_5AY.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate></item><item><title>Espèces invasives : sont-elles si nocives ? | 42 - La réponse à presque tout | ARTE</title><description>Disponible jusqu'au 23/06/2027
+Ratons laveurs, moustiques tigres, écureuils gris... : ces animaux nuisibles détruisent les récoltes, transmettent des maladies mortelles, causent des dégâts qui se chiffrent à plusieurs milliards. Et les problèmes vont croissant. Mais certaines de ces espèces invasives ne seraient-elles pas finalement bénéfiques pour l’être humain et l’environnement ?&#13;
 &#13;
 Série documentaire scientifique (Allemagne, 2024, 25mn)&#13;
-&#13;#aliens #reportage #arte 
 &#13;
+&#13;#arte #42 #invasifs
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">wStxVs5UDdg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/wStxVs5UDdg.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate></item></channel></rss>
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">ggauqTeboCs</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/ggauqTeboCs.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate></item></channel></rss>
