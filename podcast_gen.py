@@ -5,6 +5,7 @@ import yt_dlp
 import time
 import glob
 import random
+import shutil
 import subprocess
 from github import Github
 from feedgen.feed import FeedGenerator
@@ -12,19 +13,18 @@ from stem import Signal
 from stem.control import Controller
 
 # --- CONSTANTES ---
-REPO_NAME = os.environ['GITHUB_REPOSITORY']
+REPO_NAME = os.environ.get('GITHUB_REPOSITORY', 'local-test')
 RELEASE_TAG = "audio-storage"
 CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
 # OBJECTIF : Nombre de SUCCÈS voulus par FICHIER RSS (Flux)
-TARGET_SUCCESS_PER_FEED = 3
-SEARCH_WINDOW_SIZE = 30
+TARGET_SUCCESS_PER_FEED = 2
+SEARCH_WINDOW_SIZE = 20
 
 def get_tor_info():
     """Récupère l'IP actuelle et le PAYS via Tor."""
     try:
-        # Utilisation de ip-api via HTTP (tunnelé Tor)
         result = subprocess.check_output(
             ["curl", "-s", "--socks5", "127.0.0.1:9050", "http://ip-api.com/json"], 
             timeout=20
@@ -35,19 +35,15 @@ def get_tor_info():
         return "IP Inconnue"
 
 def get_controller():
-    """Tente de récupérer une connexion au controleur Tor."""
     try:
         controller = Controller.from_port(port=9051)
-        controller.authenticate()  # Auth vide car CookieAuthentication=0
+        controller.authenticate() 
         return controller
     except Exception as e:
         print(f"   [TOR FATAL] Impossible de se connecter au port 9051 : {e}")
         return None
 
 def configure_tor_nodes(country_codes=None):
-    """
-    Configure les noeuds de sortie.
-    """
     controller = get_controller()
     if not controller: return
 
@@ -62,28 +58,22 @@ def configure_tor_nodes(country_codes=None):
             controller.reset_conf('ExitNodes')
             controller.reset_conf('StrictNodes')
 
-        # Force le changement de circuit pour appliquer
         controller.signal(Signal.NEWNYM)
-        print("   [TOR] Circuit renouvelé. Stabilisation (10s)...")
         time.sleep(10)
         controller.close()
-            
     except Exception as e:
         print(f"   [TOR ERROR] Erreur config Tor : {e}")
         if controller: controller.close()
 
 def renew_tor_ip():
-    """Force simplement une nouvelle IP."""
     print("   [TOR] --- Rotation d'IP ---")
     controller = get_controller()
     if not controller: return
-
     try:
         controller.signal(Signal.NEWNYM)
         time.sleep(10)
         controller.close()
-    except Exception as e:
-        print(f"   [TOR ERROR] : {e}")
+    except Exception:
         if controller: controller.close()
 
 def get_or_create_release(repo):
@@ -155,7 +145,7 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 
 def run():
     try:
-        print("--- Démarrage du script (V4 - GDPR Bypass & Anti-Bot) ---")
+        print("--- Démarrage du script (V6 - FIX DESC AUTO) ---")
         global_proxy_url = os.environ.get('YOUTUBE_PROXY')
         
         if not os.path.exists(CONFIG_FILE): return
@@ -167,21 +157,17 @@ def run():
             release = get_or_create_release(repo)
         except Exception as e: print(f"Erreur GitHub: {e}"); return
 
-        # Options de base AMÉLIORÉES
         base_opts = {
             'quiet': False, 
             'no_warnings': True, 
             'socket_timeout': 30,
             'nocheckcertificate': True,
             'proxy': global_proxy_url,
-            # 1. ASTUCE "CONSENT" : On force le cookie de consentement GDPR
-            # Cela résout souvent le problème de la vidéo "privée" en Europe (Tor BE/FR)
             'http_headers': {
                 'Cookie': 'CONSENT=YES+cb.20210328-17-p0.en+FX+419; SOCS=CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiACGgYIgLCPpgY'
             },
-            # 2. ANTI-BOT : Délais aléatoires entre les téléchargements
-            'sleep_interval': 20,       # Minimum 20 secondes
-            'max_sleep_interval': 45,   # Maximum 45 secondes
+            'sleep_interval': 15,
+            'max_sleep_interval': 30,
         }
 
         grouped_feeds = {}
@@ -194,9 +180,7 @@ def run():
             print(f"\n==========================================")
             print(f"FLUX : {filename}")
             print(f"==========================================")
-            
-            # Petite pause entre les playlists pour respirer
-            time.sleep(10)
+            time.sleep(5)
             
             main_config = sources[0]
             current_log_file = f"log_{filename}.txt"
@@ -205,51 +189,74 @@ def run():
             if os.path.exists(current_log_file):
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
-            # --- GESTION GÉO TOR ---
+            # --- GESTION TOR ---
             tor_exit_nodes = main_config.get('tor_exit_nodes')
-            if tor_exit_nodes:
-                configure_tor_nodes(tor_exit_nodes)
-            else:
-                configure_tor_nodes(None)
-
+            if tor_exit_nodes: configure_tor_nodes(tor_exit_nodes)
+            else: configure_tor_nodes(None)
             print(f"   [DEBUG] IP utilisée : {get_tor_info()}")
 
-            # 1. SCAN
+            # 1. RSS SETUP (Initialisation)
+            fg = FeedGenerator(); fg.load_extension('podcast')
+            existing_entries_count = 0
+            
+            if os.path.exists(filename):
+                try:
+                    fg.parse_file(filename)
+                    existing_entries_count = len(fg.entry())
+                    print(f"   [RSS OK] {existing_entries_count} épisodes chargés depuis l'historique.")
+                except Exception as e:
+                    print(f"   [RSS ERROR] CRITIQUE : Impossible de lire {filename} : {e}")
+                    print("   -> Backup du fichier corrompu.")
+                    shutil.copy(filename, filename + ".corrupted")
+
+            # 2. SCAN (Avec récupération métadonnées)
             missing_entries = []
             auto_title = None
+            auto_description = None
             
             scan_opts = base_opts.copy()
             scan_opts['extract_flat'] = True
             scan_opts['ignoreerrors'] = True
-            # Pour le scan, on reste léger
             scan_opts['extractor_args'] = {'youtube': {'player_client': ['android', 'ios']}}
             
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
                 for source in sources:
                     try:
                         info = ydl_scan.extract_info(source['url'], download=False)
-                        if info and 'entries' in info:
-                            for entry in info['entries']:
-                                if entry and entry.get('id') and entry['id'] not in downloaded_ids:
-                                    missing_entries.append(entry)
+                        if info:
+                            # --- RECUPERATION AUTO METADATA ---
+                            if not auto_title and info.get('title'):
+                                auto_title = info.get('title')
+                                print(f"      [INFO] Titre détecté : {auto_title}")
+                            if not auto_description and info.get('description'):
+                                auto_description = info.get('description')
+                                print(f"      [INFO] Description détectée.")
+                            
+                            if 'entries' in info:
+                                for entry in info['entries']:
+                                    if entry and entry.get('id') and entry['id'] not in downloaded_ids:
+                                        missing_entries.append(entry)
                     except Exception as e: print(f"Scan Warning: {e}")
 
             print(f"Vidéos manquantes : {len(missing_entries)}")
             batch_to_process = missing_entries[:SEARCH_WINDOW_SIZE]
 
-            # 2. RSS (Setup)
-            fg = FeedGenerator(); fg.load_extension('podcast')
-            if os.path.exists(filename): 
-                try: fg.parse_file(filename)
-                except: pass
-            
-            final_title = main_config.get('podcast_name') or f'Podcast {filename}'
+            # 2b. APPLICATION METADONNEES FINALES
+            # On applique maintenant qu'on a scanné
+            final_title = main_config.get('podcast_name') or auto_title or f'Podcast {filename}'
             fg.title(final_title)
-            fg.description(main_config.get('podcast_description') or 'Generated Feed')
+            
+            # Gestion description : JSON > Auto > Défaut
+            final_desc = main_config.get('podcast_description') or auto_description or 'Generated Feed'
+            fg.description(final_desc)
+            
             fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
             if main_config.get('cover_image'): 
                 fg.podcast.itunes_image(main_config['cover_image'])
                 fg.image(url=main_config['cover_image'], title=final_title, link=f'https://github.com/{REPO_NAME}')
+            if main_config.get('podcast_author'):
+                 fg.author({'name': main_config.get('podcast_author')})
+                 fg.podcast.itunes_author(main_config.get('podcast_author'))
 
             # 3. DOWNLOAD
             dl_opts_base = base_opts.copy()
@@ -258,7 +265,7 @@ def run():
                 'outtmpl': '%(id)s.%(ext)s', 
                 'writethumbnail': True,
                 'ignoreerrors': False,
-                'retries': 5, # Plus de retries internes
+                'retries': 5,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
             })
             
@@ -266,70 +273,67 @@ def run():
                 dl_opts_base['sponsorblock_remove'] = main_config.get('sponsorblock_categories')
 
             success_count = 0
+            changes_made = False
+            
             for entry in batch_to_process:
                 if success_count >= TARGET_SUCCESS_PER_FEED: break
-                
                 vid_id = entry['id']
                 attempts = 0
                 max_attempts = 2
-                
-                # On commence par Android (plus rapide)
-                # Si échec "Privé" sous Tor -> on passera en Web
                 current_client = ['android', 'ios']
                 
                 while attempts < max_attempts:
                     dl_opts = dl_opts_base.copy()
                     dl_opts['extractor_args'] = {'youtube': {'player_client': current_client}}
-                    
                     try:
-                        print(f"   [DL] {vid_id} (Client: {current_client[0]})...")
+                        print(f"   [DL] {vid_id}...")
                         with yt_dlp.YoutubeDL(dl_opts) as ydl:
-                            process_video_download(entry, ydl, release, fg, current_log_file)
-                        
+                            if process_video_download(entry, ydl, release, fg, current_log_file):
+                                changes_made = True
                         print("   [SUCCÈS]")
                         success_count += 1
                         cleanup_files(vid_id)
-                        
-                        # Pause forcée ANTI-BOT supplémentaire après un succès
-                        print("   [ANTI-BOT] Pause de sécurité...")
                         time.sleep(random.randint(10, 20))
                         break 
-                        
                     except Exception as e:
                         err_str = str(e).lower()
                         print(f"   [ERREUR] {str(e)[:100]}...")
                         cleanup_files(vid_id)
-                        
-                        # LOGIQUE DE FALLBACK
-                        if "private video" in err_str or "sign in" in err_str:
+                        if "private" in err_str or "sign in" in err_str:
                             if attempts == 0:
-                                print("      -> Suspicion 'Mur GDPR'. Passage en mode WEB + Nouvelle IP.")
                                 renew_tor_ip()
-                                current_client = ['web'] # Le client web + Cookie CONSENT marche souvent mieux pour ça
+                                current_client = ['web']
                                 attempts += 1
                                 continue
-                            else:
-                                print("      -> Echec définitif (Vraiment privée ?).")
-                                break
-                        
+                            else: break
                         elif "country" in err_str or "403" in err_str or "bot" in err_str:
-                            print("      -> Blocage Bot/Geo. Rotation IP...")
                             renew_tor_ip()
-                            time.sleep(20) # On attend plus longtemps en cas de blocage
+                            time.sleep(15)
                             attempts += 1
-                        
                         else:
-                            # Autres erreurs (Réseau)
-                            time.sleep(10)
+                            time.sleep(5)
                             attempts += 1
 
-            fg.rss_file(filename)
-            print(f"XML {filename} mis à jour.")
+            # 4. SAUVEGARDE SECURISEE
+            current_entries = len(fg.entry())
+            print(f"   [INFO] Total épisodes : {current_entries}")
+            
+            if changes_made or not os.path.exists(filename) or (auto_description and not main_config.get('podcast_description')):
+                # Condition de sauvegarde : Si changement, OU si fichier absent, OU si on a récupéré une description manquante
+                
+                if existing_entries_count > 5 and current_entries < 5:
+                    print("   [SECURITY ALERT] CHUTE DRASTIQUE D'EPISODES !")
+                    fg.rss_file(filename + ".DANGER_CHECK")
+                else:
+                    if os.path.exists(filename):
+                        shutil.copy(filename, filename + ".bak")
+                    fg.rss_file(filename)
+                    print(f"XML {filename} mis à jour avec succès.")
+            else:
+                print("Aucun changement majeur, pas d'écriture XML.")
 
     finally:
         if os.path.exists(COOKIE_FILE): os.remove(COOKIE_FILE)
 
 if __name__ == "__main__":
     run()
-
-
