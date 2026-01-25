@@ -17,6 +17,7 @@ REPO_NAME = os.environ.get('GITHUB_REPOSITORY', 'local-test')
 RELEASE_TAG = "audio-storage"
 CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
+LOG_DIR = "logs"  # Nouveau dossier pour les logs
 
 # CONFIGURATION STANDARD (Maintenance Quotidienne)
 DEFAULT_TARGET_SUCCESS = 2
@@ -144,14 +145,20 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
     fe.enclosure(mp3_url, 0, 'audio/mpeg')
     if thumb_url: fe.podcast.itunes_image(thumb_url)
 
+    # Ecriture dans le dossier logs/
     with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
     return True
 
 def run():
     try:
-        print("--- Démarrage du script (V7 - SMART REFILL) ---")
+        print("--- Démarrage du script (V8 - CLEAN LOGS & SMART REFILL) ---")
         global_proxy_url = os.environ.get('YOUTUBE_PROXY')
         
+        # Création automatique du dossier logs s'il n'existe pas
+        if not os.path.exists(LOG_DIR):
+            os.makedirs(LOG_DIR)
+            print(f"Dossier '{LOG_DIR}' créé.")
+
         if not os.path.exists(CONFIG_FILE): return
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
         
@@ -187,7 +194,8 @@ def run():
             time.sleep(5)
             
             main_config = sources[0]
-            current_log_file = f"log_{filename}.txt"
+            # Modification du chemin des logs : logs/log_nomdufichier.txt
+            current_log_file = os.path.join(LOG_DIR, f"log_{filename}.txt")
             
             downloaded_ids = []
             if os.path.exists(current_log_file):
@@ -214,7 +222,6 @@ def run():
                     shutil.copy(filename, filename + ".corrupted")
             
             # --- LOGIQUE SMART REFILL ---
-            # Si moins de 5 épisodes, on active le mode "Gros Remplissage"
             if existing_entries_count < 5:
                 print("   [AUTO-REFILL] Le flux est trop maigre (< 5 épisodes).")
                 print(f"   -> ACTIVATION MODE REMPLISSAGE (Cible: {REFILL_TARGET_SUCCESS} nouveaux, Scan: {REFILL_SEARCH_WINDOW})")
@@ -225,7 +232,7 @@ def run():
                 current_target = DEFAULT_TARGET_SUCCESS
                 current_window = DEFAULT_SEARCH_WINDOW
 
-            # 2. SCAN (Avec récupération métadonnées)
+            # 2. SCAN
             missing_entries = []
             auto_title = None
             auto_description = None
@@ -240,7 +247,6 @@ def run():
                     try:
                         info = ydl_scan.extract_info(source['url'], download=False)
                         if info:
-                            # --- RECUPERATION AUTO METADATA ---
                             if not auto_title and info.get('title'): auto_title = info.get('title')
                             if not auto_description and info.get('description'): auto_description = info.get('description')
                             
@@ -252,11 +258,10 @@ def run():
 
             print(f"Vidéos manquantes trouvées : {len(missing_entries)}")
             
-            # On découpe selon la fenêtre définie (Normale ou Refill)
             batch_to_process = missing_entries[:current_window]
             print(f"Vidéos retenues pour traitement : {len(batch_to_process)}")
 
-            # 2b. APPLICATION METADONNEES FINALES
+            # 2b. METADONNEES
             final_title = main_config.get('podcast_name') or auto_title or f'Podcast {filename}'
             fg.title(final_title)
             final_desc = main_config.get('podcast_description') or auto_description or 'Generated Feed'
@@ -288,7 +293,6 @@ def run():
             changes_made = False
             
             for entry in batch_to_process:
-                # On utilise la cible dynamique (2 ou 10 selon le mode)
                 if success_count >= current_target: 
                     print(f"Objectif atteint ({current_target} nouveaux épisodes). Arrêt.")
                     break
@@ -330,7 +334,7 @@ def run():
                             time.sleep(5)
                             attempts += 1
 
-            # 4. SAUVEGARDE SECURISEE
+            # 4. SAUVEGARDE
             current_entries = len(fg.entry())
             print(f"   [INFO] Total épisodes : {current_entries}")
             
