@@ -12,15 +12,19 @@ from feedgen.feed import FeedGenerator
 from stem import Signal
 from stem.control import Controller
 
-# --- CONSTANTES ---
+# --- CONSTANTES DE BASE ---
 REPO_NAME = os.environ.get('GITHUB_REPOSITORY', 'local-test')
 RELEASE_TAG = "audio-storage"
 CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 
-# OBJECTIF : Nombre de SUCCÈS voulus par FICHIER RSS (Flux)
-TARGET_SUCCESS_PER_FEED = 2
-SEARCH_WINDOW_SIZE = 20
+# CONFIGURATION STANDARD (Maintenance Quotidienne)
+DEFAULT_TARGET_SUCCESS = 2
+DEFAULT_SEARCH_WINDOW = 20
+
+# CONFIGURATION "REFILL" (Si le flux est vide/maigre)
+REFILL_TARGET_SUCCESS = 10   # On en télécharge 10 d'un coup
+REFILL_SEARCH_WINDOW = 100   # On regarde 100 vidéos en arrière
 
 def get_tor_info():
     """Récupère l'IP actuelle et le PAYS via Tor."""
@@ -145,7 +149,7 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 
 def run():
     try:
-        print("--- Démarrage du script (V6 - FIX DESC AUTO) ---")
+        print("--- Démarrage du script (V7 - SMART REFILL) ---")
         global_proxy_url = os.environ.get('YOUTUBE_PROXY')
         
         if not os.path.exists(CONFIG_FILE): return
@@ -195,7 +199,7 @@ def run():
             else: configure_tor_nodes(None)
             print(f"   [DEBUG] IP utilisée : {get_tor_info()}")
 
-            # 1. RSS SETUP (Initialisation)
+            # 1. RSS SETUP & DETECTION MODE REFILL
             fg = FeedGenerator(); fg.load_extension('podcast')
             existing_entries_count = 0
             
@@ -208,6 +212,18 @@ def run():
                     print(f"   [RSS ERROR] CRITIQUE : Impossible de lire {filename} : {e}")
                     print("   -> Backup du fichier corrompu.")
                     shutil.copy(filename, filename + ".corrupted")
+            
+            # --- LOGIQUE SMART REFILL ---
+            # Si moins de 5 épisodes, on active le mode "Gros Remplissage"
+            if existing_entries_count < 5:
+                print("   [AUTO-REFILL] Le flux est trop maigre (< 5 épisodes).")
+                print(f"   -> ACTIVATION MODE REMPLISSAGE (Cible: {REFILL_TARGET_SUCCESS} nouveaux, Scan: {REFILL_SEARCH_WINDOW})")
+                current_target = REFILL_TARGET_SUCCESS
+                current_window = REFILL_SEARCH_WINDOW
+            else:
+                print("   [MAINTENANCE] Flux sain.")
+                current_target = DEFAULT_TARGET_SUCCESS
+                current_window = DEFAULT_SEARCH_WINDOW
 
             # 2. SCAN (Avec récupération métadonnées)
             missing_entries = []
@@ -225,12 +241,8 @@ def run():
                         info = ydl_scan.extract_info(source['url'], download=False)
                         if info:
                             # --- RECUPERATION AUTO METADATA ---
-                            if not auto_title and info.get('title'):
-                                auto_title = info.get('title')
-                                print(f"      [INFO] Titre détecté : {auto_title}")
-                            if not auto_description and info.get('description'):
-                                auto_description = info.get('description')
-                                print(f"      [INFO] Description détectée.")
+                            if not auto_title and info.get('title'): auto_title = info.get('title')
+                            if not auto_description and info.get('description'): auto_description = info.get('description')
                             
                             if 'entries' in info:
                                 for entry in info['entries']:
@@ -238,15 +250,15 @@ def run():
                                         missing_entries.append(entry)
                     except Exception as e: print(f"Scan Warning: {e}")
 
-            print(f"Vidéos manquantes : {len(missing_entries)}")
-            batch_to_process = missing_entries[:SEARCH_WINDOW_SIZE]
+            print(f"Vidéos manquantes trouvées : {len(missing_entries)}")
+            
+            # On découpe selon la fenêtre définie (Normale ou Refill)
+            batch_to_process = missing_entries[:current_window]
+            print(f"Vidéos retenues pour traitement : {len(batch_to_process)}")
 
             # 2b. APPLICATION METADONNEES FINALES
-            # On applique maintenant qu'on a scanné
             final_title = main_config.get('podcast_name') or auto_title or f'Podcast {filename}'
             fg.title(final_title)
-            
-            # Gestion description : JSON > Auto > Défaut
             final_desc = main_config.get('podcast_description') or auto_description or 'Generated Feed'
             fg.description(final_desc)
             
@@ -276,7 +288,11 @@ def run():
             changes_made = False
             
             for entry in batch_to_process:
-                if success_count >= TARGET_SUCCESS_PER_FEED: break
+                # On utilise la cible dynamique (2 ou 10 selon le mode)
+                if success_count >= current_target: 
+                    print(f"Objectif atteint ({current_target} nouveaux épisodes). Arrêt.")
+                    break
+                
                 vid_id = entry['id']
                 attempts = 0
                 max_attempts = 2
@@ -319,8 +335,6 @@ def run():
             print(f"   [INFO] Total épisodes : {current_entries}")
             
             if changes_made or not os.path.exists(filename) or (auto_description and not main_config.get('podcast_description')):
-                # Condition de sauvegarde : Si changement, OU si fichier absent, OU si on a récupéré une description manquante
-                
                 if existing_entries_count > 5 and current_entries < 5:
                     print("   [SECURITY ALERT] CHUTE DRASTIQUE D'EPISODES !")
                     fg.rss_file(filename + ".DANGER_CHECK")
