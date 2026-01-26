@@ -20,8 +20,8 @@ COOKIE_FILE = "cookies.txt"
 LOG_DIR = "logs"  # Nouveau dossier pour les logs
 
 # CONFIGURATION STANDARD (Maintenance Quotidienne)
-DEFAULT_TARGET_SUCCESS = 2
-DEFAULT_SEARCH_WINDOW = 20
+DEFAULT_TARGET_SUCCESS = 5
+DEFAULT_SEARCH_WINDOW = 30
 
 # CONFIGURATION "REFILL" (Si le flux est vide/maigre)
 REFILL_TARGET_SUCCESS = 10   # On en télécharge 10 d'un coup
