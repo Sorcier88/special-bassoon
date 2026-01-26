@@ -106,5 +106,20 @@
         "podcast_name": "Avec des Sci - l'actu scientifique du mois",
         "podcast_author": "Sci+",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/avec_des_sci.png"
+    }, 
+    {
+        "filename": "populaire.xml",
+        "url": "https://youtube.com/playlist?list=PLAUm9TsAe7fBYZkKQByirhPovWa34JUAX", 
+        "podcast_name": "POPulaire",
+        "podcast_author": "Bolchegeek",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bolchegeek.jpg"
+    }, 
+    {
+        "filename": "hardisk_les_news.xml",
+        "url": "https://youtube.com/playlist?list=PLV8d03a7dTWwgjH-zoirpYNrSEqTKXynR", 
+        "podcast_name": "Les News !",
+        "podcast_author": "Hardisk",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/hardisk_tv.jpg",
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
