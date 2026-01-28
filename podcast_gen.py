@@ -20,12 +20,12 @@ COOKIE_FILE = "cookies.txt"
 LOG_DIR = "logs"  # Nouveau dossier pour les logs
 
 # CONFIGURATION STANDARD (Maintenance Quotidienne)
-DEFAULT_TARGET_SUCCESS = 5
+DEFAULT_TARGET_SUCCESS = 3
 DEFAULT_SEARCH_WINDOW = 30
 
 # CONFIGURATION "REFILL" (Si le flux est vide/maigre)
-REFILL_TARGET_SUCCESS = 10   # On en télécharge 10 d'un coup
-REFILL_SEARCH_WINDOW = 100   # On regarde 100 vidéos en arrière
+REFILL_TARGET_SUCCESS = 5   # On en télécharge 10 d'un coup
+REFILL_SEARCH_WINDOW = 50   # On regarde 100 vidéos en arrière
 
 def get_tor_info():
     """Récupère l'IP actuelle et le PAYS via Tor."""
