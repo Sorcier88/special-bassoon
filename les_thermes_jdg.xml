@@ -1,69 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link><description>L'émission Talk Talk ( Bla Bla ) du Bazar, ca parle de l'actu et ya régulièrement des invités!</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg</url><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Wed, 28 Jan 2026 22:04:46 +0000</lastBuildDate><itunes:author>Bazar du grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg"/><item><title>LES TERMES #15 avec Davy Mourier et Souillon</title><description>Dispo en podcast toutes plateformes ici https://www.buzzsprout.com/2029308 
-Pour cet épisode un peu spécial autour de la BD, deux invités prestigieux :
-Souillon, auteur et illustrateur de la BD Maliki @MalikiOfficiel bientôt adaptée en jeu vidéo que vous pourrez retrouver sur Switch et PC.
-Davy Mourier, auteur et illustrateur de la BD La Petite Mort, adaptée par @slashanim  et présentateur de @badnews2 
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link><description>L'émission Talk Talk ( Bla Bla ) du Bazar, ca parle de l'actu et ya régulièrement des invités!</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg</url><title>Les thermes</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Thu, 29 Jan 2026 07:10:18 +0000</lastBuildDate><itunes:author>Bazar du grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/les_thermes_jdg.jpg"/><item><title>LES TERMES #16 avec Mcfly et Carlito</title><description>Disponible sur les plateformes de podcast https://www.buzzsprout.com/2029308 
+Nouvel épisode des Thermes avec Mcfly Et Carlito, on y reviens nottament avec eux preque 6ans après sur le sujet de la vidéo "Youtube m'ennuie" et on compare nos points de vues sur Youtube. merci à eux d'avoir supporté l'ingestion d'une grande quantité de beurre salé.
 
-Timecode : 
-00:00:00 Intro
-00:00:23 Présentation des Invités
-00:05:01 Quel rayon au supermarché, BD ou JV ?
-00:07:01 Vous lisiez quoi quand vous étiez petit ?
-00:15:45 Les débuts en dessin
-00:24:55 Études en illustration
-00:31:34 David Mourier : Son parcours
-00:36:09 Dessiner quand on est jeune
-00:39:40 Maliki : jeux vidéo ou animation
-00:42:16 La petite mort
-00:47:00 Vivre de la BD
-00:56:28 La place de l'IA
-01:17:54 Maliki : Poison Of The Past
-01:22:11 Limitations de la télé
-01:27:47 Un jeu La Petite Mort ?
-01:32:21 Les recommandations</description><guid isPermaLink="false">2-Vpob3D__0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/2-Vpob3D__0.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate></item><item><title>LES TERMES #8 avec @lechefotaku  et petit Chef !</title><description>Et un épisode 8 en compagnie des @spatulebros  : @lechefotaku  et petit Chef ! Ce mois ci, on va pas vous mentir, la conversation va être un peu orientée manga... juste un petit peu.
-
-Timestamps : 
-00:00:00 Intro
-00:03:57 Le Chef Otaku
-00:07:48 Manga sur youtube
-00:14:47 Hype Manga
-00:24:08 One Piece
-00:46:00 Dragon Ball
-01:02:16 Enfance &amp; Animes
-01:09:50 Sujets Populaires vs Sujets Obscurs
-01:13:56 Isekai
-01:19:25 Projets du Chef Otaku</description><guid isPermaLink="false">b0sk6WQMCyg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/b0sk6WQMCyg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate></item><item><title>LES TERMES #5 avec  @EdwardRetroDecouverte  et Fabrice Colson !</title><description>Hé oui les termes qui reviennent si vite, et avec comme invités Edward et son acolyte Fabrice Colson aka Mr Pichon.
-Chaîne Twitch d'edward: https://www.twitch.tv/edward_retrodecouverte
-Chaîne Twitch de Fabrice: https://www.twitch.tv/fabdcolson</description><guid isPermaLink="false">y3n4yOsc4Ic</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/y3n4yOsc4Ic.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate></item><item><title>LES TERMES #2</title><description>Et voila le retour du talk réalisé dans les conditions du direct (on se rode encore un peu avant de le faire en live!). Ca blablate en passant du coca light. 
-On remercie les très sympathiques Pen India Ltd. qui bloquent la vidéo dans le monde entier pour avoir eu l'outrecuidance de passer le trailer de leur film "RRR". Désolés pour la qualité du visionnage.
-
-Chaine de Masahairo Sakurai  https://www.youtube.com/@sora_sakurai_en
-Timestamps
-00:00:00 Intro
-00:02:31 Anneaux de pouvoir/House of Dragons
-00:09:04 Primal
-00:16:24 Terrifier/Deadstream
-00:18:07 St Seya Live action
-00:22:53 Mario le film
-00:34:20 Essouflement modèle Marvel?
-00:52:20 RRR le blockbuster frais mais bloqué par les ayants droits
-00:57:44 Game awards
-01:00:38 David Lynch du vendredi
-01:01:24 Masahiro Sakurai le youtuber
-01:02:51 Adam Curtis
-01:06:53 Corporate Fred/ Outro</description><guid isPermaLink="false">m_-_ZCHXw0c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/m_-_ZCHXw0c.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate></item><item><title>[NOUVEAU] Les Termes #1</title><description>Et la voila la nouvelle émission bla-bla du Bazar! 100% Pédilive du Pédiluve!
-Pour la première on a choisi de la faire en Offline (et on à bien fait car ya eu quelques couacs) mais les prochaines on sera en direc' sur YT et on aura besoin de vous pour réagir.
-
-A la régie: Nicolas Sénac et Benjamin Senez.
-
-00:00 INTRO
-02:52 MARVEL/DC Jeux, Comics et Séries
-23:02 Bioware
-27:00 Friends
-32:10 Isekai
-38:17 Digression mangas
-42:38 SPOIL Dragon Ball Super
-43:40 DB, one Piece etc
-46:35 IA
-58:18 Metaverse
-01:06:46 Outro</description><guid isPermaLink="false">zVskiYKSVqY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/zVskiYKSVqY.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate></item></channel></rss>
+Timecodes:
+00:00:00 INTRO
+00:03:15 McFly and Carlito Origins
+00:12:47 Fonctionnement des duos
+00:19:37 La fin?
+00:22:03 feat and fun
+00:27:12 la traversée de la corse
+00:28:49 feat Manu
+00:33:40 burn out
+00:35:44 Youtube m'ennuie?
+00:51:53 après le burn-out
+00:59:41 webedia
+01:02:14 le long terme
+01:09:08 un gros projet?
+01:11:38 twitch
+01:15:42 youtube l'ennuie 2025 edition
+01:23:50 X/Twitter
+01:24:54 re-twitch
+01:27:52 enfants des 90's
+01:30:14 top dessin animé 90's
+01:40:59 JV old school
+01:44:18 passion pokemon
+01:45:18 souvenirs de sonic
+01:48:57 recos
+01:59:04 des bisous</description><guid isPermaLink="false">7jYGNkGZxgY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/7jYGNkGZxgY.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate></item><item><title>LES TERMES #14 avec @Gagzzz82 , Kevin Choteau  et Aymar Azaïzia</title><description>Kevin Choteau de chez Asobo Studio, GagzZz de Wolfeye Studios et Aymar Azaïzia de chez ubisoft
+Dispo en podcast ici https://www.buzzsprout.com/2029308
+Timecode:
+00:01:18 présentation des invités du plateau
+00:06:27 A quel points les développeurs peuvent s'exprimer sur un jeu?
+00:09:08 la communication est t'elle devenu plus dure avec les joueurs?
+00:12:40 est ce que les développeurs ont pris de la drogue?
+00:14:04 Comment on crée un jeu en 2025?
+00:22:50 Quelle position sur les jeux niche?
+00:27:27 Comment les investisseurs choisissent leurs placements?
+00:33:16 Parasiter le processus créatif.
+00:57:06 Arrivée et présentation de Aymar
+01:04:20 La PizzaGhetti 
+01:14:30 Quelle position pour Ubisoft en 2025?
+01:28:40 vers zéro prise de risque?
+01:39:54 les jeux AA, avenir du jeu vidéo?
+01:53:50 le rôle des réseaux sociaux dans le monde du jeu vidéo
+02:11:48 Comment les studios voient les influenceurs?
+02:13:10 A quel moment arrête t'on un projet?</description><guid isPermaLink="false">wRw7UHeHMJE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/wRw7UHeHMJE.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate></item></channel></rss>

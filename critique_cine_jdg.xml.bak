@@ -1,26 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg</url><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Wed, 28 Jan 2026 13:21:58 +0000</lastBuildDate><itunes:author>Bazar du Grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg"/><item><title>CRITIQUE: JURASSIC WORLD RENAISSANCE</title><description>Fred et Seb vous parlent du dernier film de la saga JURASSIC WORLD réalisé par Gareth Edwards.
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg</url><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Wed, 28 Jan 2026 21:12:11 +0000</lastBuildDate><itunes:author>Bazar du Grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg"/><item><title>CRITIQUE: Spider-Man : Across The Spider-Verse! (avec et sans spoils)</title><description>La suite du tant attendu film d'animation Spiderman!</description><guid isPermaLink="false">LC_QyRx-SAY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/LC_QyRx-SAY.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] The Flash!</title><description>Merci à Métal Hurlant d'avoir sponsorisé cette vidéo
+Pour vous abonner à Métal Hurlant ➡️ https://www.metalhurlant.com/@BazarDuGrenier
+Commander un numéro sur :
+Amazon : https://tinyurl.com/Metal-hurlant
+Fnac : https://tinyurl.com/MetalHurlant
+BDfugue : http://www.bdfugue.com/a/?ean=9782731658439&amp;ref=415
 
-Timestamp :
-00:00:00 INTRO
-00:00:50 NO SPOIL
-00:17:15 SPOIL</description><guid isPermaLink="false">LJfRCjBV278</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/LJfRCjBV278.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : LES 4 FANTASTIQUES PREMIERS PAS</title><description>Rattrapage des vacances, avec un petit mot sur le dernier Marvel avec l'omniprésent Pedro Pascal. Comme d'hab, avec et sans spoils.
-
+Dernier film du DCEU qui a connu plusieurs problème de production et d'acteur. Que vaut le film du héros qui utilise la force véloce?</description><guid isPermaLink="false">jR83olU9TmQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/jR83olU9TmQ.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate></item><item><title>[CRITIQUE] Indiana Jones et le Cadran de la destinée!</title><description>Cinquième aventure d'Indiana Jones au cinéma. Est ce l'heure de la retraite?</description><guid isPermaLink="false">cZIwj2XhYro</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cZIwj2XhYro.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate></item><item><title>(Critique ciné) Le Manoir Hanté!</title><description>Nouvelle adaptation de la célèbre attraction Disney qui fait suite (indirecte) au film avec Murphy. Faut t'il prendre un fastpass pour le voir?</description><guid isPermaLink="false">DpuW967BxfU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/DpuW967BxfU.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Les Tortues Ninja : Chaos chez les Mutants</title><description>Cowabunga ou NoWabunga?
 00:00 Intro
-01:23 No spoil
-14:48 Spoils</description><guid isPermaLink="false">zZ9ypLdTpb0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/zZ9ypLdTpb0.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate></item><item><title>[SERIE] CRITIQUE : ALIEN EARTH</title><description>Une toute première fois avec la critique de la série Alien: Earth créée par Noah Hawley des excellentes séries Legion et Fargo. Enfin un peu de frais dans l'univers faisandé d'Alien?
-
-Dispo en Podcast (Deezer spotify etc):
-https://www.buzzsprout.com/2029308
-
-00:00 Préambule
-07:42 NO SPOIL (enfin, pas trop)
-18:34 SPOIL</description><guid isPermaLink="false">j-iA9u7TsUU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/j-iA9u7TsUU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate></item><item><title>[Critique  Ciné] Running Man!</title><description>Le dernier film de Edgar Wright mérite t'il la désertion des spectateurs?</description><guid isPermaLink="false">l_qCoNF91Cc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/l_qCoNF91Cc.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - AVATAR : DE FEU ET DE CENDRES</title><description>Le retour du roi Jim, saura-il une fois de plus conquérir les salles obscures et engranger un milliard comme ses 3 derniers films ?
-
-Dispo en Podcast sur spotify  https://open.spotify.com/show/0mrRs1Wrk7hOiigkwObwnA
-et les autres plateformes https://www.buzzsprout.com/2029308
-
-Timestamps:
-00:00 Intro
-01:23 NO SPOIL
-12:12 SPOIL</description><guid isPermaLink="false">dfCxZa279eA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/dfCxZa279eA.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate></item></channel></rss>
+02:31 No Spoil
+15:45 Spoil</description><guid isPermaLink="false">0wvcHfnvNqw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/0wvcHfnvNqw.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate></item></channel></rss>
