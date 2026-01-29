@@ -7,28 +7,26 @@ import glob
 import random
 import shutil
 import subprocess
+import xml.etree.ElementTree as ET
 from github import Github
 from feedgen.feed import FeedGenerator
 from stem import Signal
 from stem.control import Controller
 
-# --- CONSTANTES DE BASE ---
+# --- CONSTANTES ---
 REPO_NAME = os.environ.get('GITHUB_REPOSITORY', 'local-test')
 RELEASE_TAG = "audio-storage"
 CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
-LOG_DIR = "logs"  # Nouveau dossier pour les logs
+LOG_DIR = "logs"
 
-# CONFIGURATION STANDARD (Maintenance Quotidienne)
+# CONFIGURATION
 DEFAULT_TARGET_SUCCESS = 3
 DEFAULT_SEARCH_WINDOW = 30
-
-# CONFIGURATION "REFILL" (Si le flux est vide/maigre)
-REFILL_TARGET_SUCCESS = 5   # On en télécharge 10 d'un coup
-REFILL_SEARCH_WINDOW = 50   # On regarde 100 vidéos en arrière
+REFILL_TARGET_SUCCESS = 5
+REFILL_SEARCH_WINDOW = 50
 
 def get_tor_info():
-    """Récupère l'IP actuelle et le PAYS via Tor."""
     try:
         result = subprocess.check_output(
             ["curl", "-s", "--socks5", "127.0.0.1:9050", "http://ip-api.com/json"], 
@@ -51,7 +49,6 @@ def get_controller():
 def configure_tor_nodes(country_codes=None):
     controller = get_controller()
     if not controller: return
-
     try:
         if country_codes:
             print(f"   [TOR CONFIG] Restriction géographique -> {country_codes}")
@@ -62,7 +59,6 @@ def configure_tor_nodes(country_codes=None):
             print(f"   [TOR CONFIG] Reset géographique (Monde entier)")
             controller.reset_conf('ExitNodes')
             controller.reset_conf('StrictNodes')
-
         controller.signal(Signal.NEWNYM)
         time.sleep(10)
         controller.close()
@@ -145,21 +141,67 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
     fe.enclosure(mp3_url, 0, 'audio/mpeg')
     if thumb_url: fe.podcast.itunes_image(thumb_url)
 
-    # Ecriture dans le dossier logs/
     with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
     return True
 
+# --- REPARATION XML ---
+def recover_entries_from_xml(filename, fg):
+    """Lit le XML ligne par ligne sans utiliser feedgen."""
+    count = 0
+    if not os.path.exists(filename): return 0
+    
+    try:
+        tree = ET.parse(filename)
+        root = tree.getroot()
+        channel = root.find('channel')
+        if channel is None: return 0
+
+        # On parcourt tous les items existants
+        for item in channel.findall('item'):
+            fe = fg.add_entry()
+            
+            # Récupération simple des champs texte
+            t = item.find('title'); 
+            if t is not None: fe.title(t.text)
+            
+            d = item.find('description'); 
+            if d is not None: fe.description(d.text)
+            
+            g = item.find('guid'); 
+            if g is not None: fe.id(g.text)
+            
+            p = item.find('pubDate'); 
+            if p is not None: fe.pubDate(p.text)
+            
+            # Récupération du MP3 (Enclosure)
+            enc = item.find('enclosure')
+            if enc is not None:
+                fe.enclosure(enc.get('url'), 0, enc.get('type'))
+            
+            # Récupération image iTunes (avec ou sans namespace)
+            # On essaie plusieurs manières car ElementTree est strict
+            itunes_ns = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+            img = item.find(f'{{{itunes_ns}}}image')
+            if img is not None:
+                fe.podcast.itunes_image(img.get('href'))
+
+            count += 1
+            
+        print(f"   [XML RESTORE] {count} anciens épisodes restaurés.")
+        return count
+
+    except Exception as e:
+        print(f"   [XML READ ERROR] Impossible de lire l'ancien fichier : {e}")
+        return 0
+
 def run():
     try:
-        print("--- Démarrage du script (V8 - CLEAN LOGS & SMART REFILL) ---")
+        print("--- Démarrage du script (VERSION V10 - FINAL REPAIR) ---")
         global_proxy_url = os.environ.get('YOUTUBE_PROXY')
         
-        # Création automatique du dossier logs s'il n'existe pas
-        if not os.path.exists(LOG_DIR):
-            os.makedirs(LOG_DIR)
-            print(f"Dossier '{LOG_DIR}' créé.")
-
+        if not os.path.exists(LOG_DIR): os.makedirs(LOG_DIR)
         if not os.path.exists(CONFIG_FILE): return
+        
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
         
         try:
@@ -174,11 +216,8 @@ def run():
             'socket_timeout': 30,
             'nocheckcertificate': True,
             'proxy': global_proxy_url,
-            'http_headers': {
-                'Cookie': 'CONSENT=YES+cb.20210328-17-p0.en+FX+419; SOCS=CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiACGgYIgLCPpgY'
-            },
-            'sleep_interval': 15,
-            'max_sleep_interval': 30,
+            'http_headers': {'Cookie': 'CONSENT=YES+cb.20210328-17-p0.en+FX+419; SOCS=CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiACGgYIgLCPpgY'},
+            'sleep_interval': 15, 'max_sleep_interval': 30,
         }
 
         grouped_feeds = {}
@@ -188,58 +227,43 @@ def run():
             grouped_feeds[fname].append(item)
 
         for filename, sources in grouped_feeds.items():
-            print(f"\n==========================================")
-            print(f"FLUX : {filename}")
-            print(f"==========================================")
+            print(f"\n=== FLUX : {filename} ===")
             time.sleep(5)
-            
             main_config = sources[0]
-            # Modification du chemin des logs : logs/log_nomdufichier.txt
             current_log_file = os.path.join(LOG_DIR, f"log_{filename}.txt")
             
             downloaded_ids = []
             if os.path.exists(current_log_file):
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
-            # --- GESTION TOR ---
+            # TOR
             tor_exit_nodes = main_config.get('tor_exit_nodes')
             if tor_exit_nodes: configure_tor_nodes(tor_exit_nodes)
             else: configure_tor_nodes(None)
-            print(f"   [DEBUG] IP utilisée : {get_tor_info()}")
+            print(f"   [DEBUG] IP: {get_tor_info()}")
 
-            # 1. RSS SETUP & DETECTION MODE REFILL
+            # 1. SETUP
             fg = FeedGenerator(); fg.load_extension('podcast')
             existing_entries_count = 0
             
+            # --- ICI LA CORRECTION CRITIQUE ---
+            # On n'utilise PLUS fg.parse_file(), on utilise notre fonction maison
             if os.path.exists(filename):
-                try:
-                    fg.parse_file(filename)
-                    existing_entries_count = len(fg.entry())
-                    print(f"   [RSS OK] {existing_entries_count} épisodes chargés depuis l'historique.")
-                except Exception as e:
-                    print(f"   [RSS ERROR] CRITIQUE : Impossible de lire {filename} : {e}")
-                    print("   -> Backup du fichier corrompu.")
-                    shutil.copy(filename, filename + ".corrupted")
-            
-            # --- LOGIQUE SMART REFILL ---
+                existing_entries_count = recover_entries_from_xml(filename, fg)
+
+            # MODE REFILL
             if existing_entries_count < 5:
-                print("   [AUTO-REFILL] Le flux est trop maigre (< 5 épisodes).")
-                print(f"   -> ACTIVATION MODE REMPLISSAGE (Cible: {REFILL_TARGET_SUCCESS} nouveaux, Scan: {REFILL_SEARCH_WINDOW})")
+                print("   [AUTO-REFILL] Mode Remplissage activé.")
                 current_target = REFILL_TARGET_SUCCESS
                 current_window = REFILL_SEARCH_WINDOW
             else:
-                print("   [MAINTENANCE] Flux sain.")
                 current_target = DEFAULT_TARGET_SUCCESS
                 current_window = DEFAULT_SEARCH_WINDOW
 
             # 2. SCAN
             missing_entries = []
-            auto_title = None
-            auto_description = None
-            
-            scan_opts = base_opts.copy()
-            scan_opts['extract_flat'] = True
-            scan_opts['ignoreerrors'] = True
+            auto_title, auto_description = None, None
+            scan_opts = base_opts.copy(); scan_opts.update({'extract_flat': True, 'ignoreerrors': True})
             scan_opts['extractor_args'] = {'youtube': {'player_client': ['android', 'ios']}}
             
             with yt_dlp.YoutubeDL(scan_opts) as ydl_scan:
@@ -247,26 +271,22 @@ def run():
                     try:
                         info = ydl_scan.extract_info(source['url'], download=False)
                         if info:
-                            if not auto_title and info.get('title'): auto_title = info.get('title')
-                            if not auto_description and info.get('description'): auto_description = info.get('description')
-                            
+                            if not auto_title: auto_title = info.get('title')
+                            if not auto_description: auto_description = info.get('description')
                             if 'entries' in info:
                                 for entry in info['entries']:
                                     if entry and entry.get('id') and entry['id'] not in downloaded_ids:
                                         missing_entries.append(entry)
-                    except Exception as e: print(f"Scan Warning: {e}")
+                    except Exception as e: print(f"Scan Warn: {e}")
 
-            print(f"Vidéos manquantes trouvées : {len(missing_entries)}")
-            
             batch_to_process = missing_entries[:current_window]
-            print(f"Vidéos retenues pour traitement : {len(batch_to_process)}")
+            print(f"   Vidéos à traiter : {len(batch_to_process)}")
 
-            # 2b. METADONNEES
+            # METADATA
             final_title = main_config.get('podcast_name') or auto_title or f'Podcast {filename}'
             fg.title(final_title)
             final_desc = main_config.get('podcast_description') or auto_description or 'Generated Feed'
             fg.description(final_desc)
-            
             fg.link(href=f'https://github.com/{REPO_NAME}', rel='alternate')
             if main_config.get('cover_image'): 
                 fg.podcast.itunes_image(main_config['cover_image'])
@@ -276,40 +296,27 @@ def run():
                  fg.podcast.itunes_author(main_config.get('podcast_author'))
 
             # 3. DOWNLOAD
-            dl_opts_base = base_opts.copy()
-            dl_opts_base.update({
-                'format': 'bestaudio/best', 
-                'outtmpl': '%(id)s.%(ext)s', 
-                'writethumbnail': True,
-                'ignoreerrors': False,
-                'retries': 5,
+            dl_opts = base_opts.copy()
+            dl_opts.update({
+                'format': 'bestaudio/best', 'outtmpl': '%(id)s.%(ext)s', 'writethumbnail': True,
+                'ignoreerrors': False, 'retries': 5,
                 'postprocessors': [{'key': 'FFmpegThumbnailsConvertor', 'format': 'jpg'}, {'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '128'}, {'key': 'EmbedThumbnail'}, {'key': 'FFmpegMetadata', 'add_metadata': True}],
             })
-            
-            if main_config.get('sponsorblock_categories'):
-                dl_opts_base['sponsorblock_remove'] = main_config.get('sponsorblock_categories')
+            if main_config.get('sponsorblock_categories'): dl_opts['sponsorblock_remove'] = main_config.get('sponsorblock_categories')
 
             success_count = 0
             changes_made = False
-            
             for entry in batch_to_process:
-                if success_count >= current_target: 
-                    print(f"Objectif atteint ({current_target} nouveaux épisodes). Arrêt.")
-                    break
-                
+                if success_count >= current_target: break
                 vid_id = entry['id']
                 attempts = 0
-                max_attempts = 2
                 current_client = ['android', 'ios']
-                
-                while attempts < max_attempts:
-                    dl_opts = dl_opts_base.copy()
+                while attempts < 2:
                     dl_opts['extractor_args'] = {'youtube': {'player_client': current_client}}
                     try:
                         print(f"   [DL] {vid_id}...")
                         with yt_dlp.YoutubeDL(dl_opts) as ydl:
-                            if process_video_download(entry, ydl, release, fg, current_log_file):
-                                changes_made = True
+                            if process_video_download(entry, ydl, release, fg, current_log_file): changes_made = True
                         print("   [SUCCÈS]")
                         success_count += 1
                         cleanup_files(vid_id)
@@ -317,41 +324,34 @@ def run():
                         break 
                     except Exception as e:
                         err_str = str(e).lower()
-                        print(f"   [ERREUR] {str(e)[:100]}...")
+                        print(f"   [ERR] {str(e)[:50]}...")
                         cleanup_files(vid_id)
                         if "private" in err_str or "sign in" in err_str:
                             if attempts == 0:
-                                renew_tor_ip()
-                                current_client = ['web']
-                                attempts += 1
-                                continue
+                                renew_tor_ip(); current_client = ['web']; attempts += 1; continue
                             else: break
                         elif "country" in err_str or "403" in err_str or "bot" in err_str:
-                            renew_tor_ip()
-                            time.sleep(15)
-                            attempts += 1
-                        else:
-                            time.sleep(5)
-                            attempts += 1
+                            renew_tor_ip(); time.sleep(15); attempts += 1
+                        else: time.sleep(5); attempts += 1
 
-            # 4. SAUVEGARDE
+            # 4. SAVE
             current_entries = len(fg.entry())
-            print(f"   [INFO] Total épisodes : {current_entries}")
+            print(f"   [INFO] Total: {current_entries}")
             
             if changes_made or not os.path.exists(filename) or (auto_description and not main_config.get('podcast_description')):
                 if existing_entries_count > 5 and current_entries < 5:
-                    print("   [SECURITY ALERT] CHUTE DRASTIQUE D'EPISODES !")
+                    print("   [ALERT] Chute brutale ! Backup DANGER_CHECK.")
                     fg.rss_file(filename + ".DANGER_CHECK")
                 else:
-                    if os.path.exists(filename):
-                        shutil.copy(filename, filename + ".bak")
+                    if os.path.exists(filename): shutil.copy(filename, filename + ".bak")
                     fg.rss_file(filename)
-                    print(f"XML {filename} mis à jour avec succès.")
-            else:
-                print("Aucun changement majeur, pas d'écriture XML.")
+                    print(f"XML mis à jour.")
+            else: print("Pas de changement.")
 
     finally:
         if os.path.exists(COOKIE_FILE): os.remove(COOKIE_FILE)
 
 if __name__ == "__main__":
     run()
+
+
