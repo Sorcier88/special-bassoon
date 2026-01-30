@@ -2,6 +2,7 @@ name: Update Podcasts (Tor Complete)
 
 on:
   schedule:
+    # Heures UTC : 4h, 12h, 20h
     - cron: '0 4,12,20 * * *'
   workflow_dispatch:
 
@@ -27,20 +28,25 @@ jobs:
       with:
         python-version: '3.10'
         
-    - name: Install Libraries
+    - name: Install System Dependencies & Tor
       run: |
-        sudo apt-get install -y ffmpeg
+        # FIX CRITIQUE 404 : Mise à jour de la liste des paquets avant installation
+        sudo apt-get update
+        
+        # Installation combinée de FFMPEG et TOR
+        sudo apt-get install -y ffmpeg tor
+
+    - name: Install Python Libraries
+      run: |
         pip install stem
         # Installation version Master de yt-dlp (CRITIQUE pour éviter bugs 403)
         pip install https://github.com/yt-dlp/yt-dlp/archive/master.zip
         pip install -r requirements.txt --upgrade
 
     # --- TOR CONFIGURATION ROBUSTE ---
-    - name: Install and Configure Tor (Open Control)
+    - name: Configure Tor (Open Control)
       run: |
-        sudo apt-get install -y tor
-        
-        # 1. Arrêter Tor avant de toucher à la config
+        # 1. Arrêter Tor (lancé auto par apt)
         sudo service tor stop || true
         
         # 2. Écrire une configuration PROPRE et COMPLETE
@@ -55,7 +61,7 @@ jobs:
         RunAsDaemon 1
         EOF'
         
-        # 3. Réparer les permissions (souvent la cause des erreurs)
+        # 3. Réparer les permissions
         sudo chown -R debian-tor:debian-tor /var/lib/tor
         sudo chmod 700 /var/lib/tor
         
@@ -65,8 +71,7 @@ jobs:
         echo "Démarrage de Tor... (Pause de sécurité 45s)"
         sleep 45
         
-        # 5. VERIFICATION CRITIQUE DU PORT DE CONTROLE
-        # On vérifie si le port 9051 est bien ouvert
+        # 5. VERIFICATION
         if ! sudo netstat -tuln | grep ':9051'; then
           echo "ERREUR FATALE: Le port 9051 n'est pas ouvert !"
           sudo cat /var/log/syslog | grep Tor | tail -n 20
@@ -79,7 +84,6 @@ jobs:
     - name: Run Script via Tor
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # Note: On n'utilise plus les cookies ici pour éviter les conflits
         YOUTUBE_PROXY: "socks5://127.0.0.1:9050"
       run: python podcast_gen.py
       
@@ -96,3 +100,5 @@ jobs:
           git pull --rebase origin main
           git push
         fi
+
+
