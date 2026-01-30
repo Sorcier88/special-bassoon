@@ -1,42 +1,88 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link><description>"L'économie, c'est compliqué, on n'y comprend rien, donc on s'est dit qu'on allait faire une nouvelle émission pour essayer d'y voir plus clair." 
-Une série qui décortique les discours économiques et la manière dont ils sont mis en scène dans les médias, avec Gilles de la chaîne Heu?reka, et Marino de la chaîne Stupid Economics.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png</url><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Thu, 29 Jan 2026 21:56:44 +0000</lastBuildDate><itunes:author>STUPMEDIA</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png"/><item><title>QUI VEUT TUER LES SERVICES PUBLICS ? - AVEC @Heu7reka et @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+Une série qui décortique les discours économiques et la manière dont ils sont mis en scène dans les médias, avec Gilles de la chaîne Heu?reka, et Marino de la chaîne Stupid Economics.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png</url><title>Argent magique</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Fri, 30 Jan 2026 06:30:26 +0000</lastBuildDate><itunes:author>STUPMEDIA</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/argent_magique.png"/><item><title>211 MILLIARD D'EUROS : un cadeau sans contrepartie ? [ARGENT MAGIQUE]</title><description>Le 8 juillet 2025, la conclusion de la commission d’enquête sur “l'utilisation des aides publiques aux grandes entreprises et à leurs sous-traitants” à été rendue publique. On y apprend que ces aides sont d’un moment de 211 milliards d’euros. 
 
-Nos services publics sont en danger ! En France, le discours public menaçant de couper la bureaucratie inutile, les fonctionnaires fainéants ou les institutions inefficaces se font de plus en plus présents, et possiblement de plus en plus populaires alors que certaines études montrent que les français sont de moins en moins satisfaits par leurs services publics.
-Alors, devrions-nous suivre la voix de Trump et de Milei, et réduire la place du public dans notre économie ? Réponse dans ce nouvel épisode de Argent magique avec Heu7reka et StupidEco.
+SOUTENIR LE COLLECTIF : 
+https://stup.media/don
 
-Rapport sur l’état des services publics par Nos Services Publics : https://nosservicespublics.fr/rapport-etat-services-publics-2024
+Cette série est financée uniquement par vous, merci infiniment : 
+https://fr.ulule.com/argentmagique/
 
-Journalistes : Marino et Heu?reka
+Journalistes : Marino et @Heu7reka 
+Co-auteur : Arnaud Gantier (Stupid Economics)
+Réalisation : Valentin Levetti
+Montage : @SplineLND  ​ 
+Production : https://stup.media/
+
+SOURCES :
+Un capitalisme sous perfusion  CLERSE / CGT
+https://ires.fr/wp-content/uploads/2023/02/AOCGT_Projet1De2019.pdf 
+Note d’analyse – France Stratégie
+https://www.strategie-plan.gouv.fr/files/files/Publications/2025/2025-07-17%20-%20NA%20157%20-%20Aides%20aux%20entreprises/HCSP-2025-NA157-Aides-entreprises-17juillet-11h.pdf 
+160 milliards d’aides publiques par an : un « pognon de dingue » pour les entreprises – Mediapart www.mediapart.fr/journal/economie-et-social/111022/160-milliards-d-aides-publiques-par-un-pognon-de-dingue-pour-les-entreprises
+211 milliards d’euros par an : les entreprises gavées aux aides publiques – Mediapart
+https://www.mediapart.fr/journal/economie-et-social/080725/211-milliards-d-euros-par-les-entreprises-gavees-aux-aides-publiques
+CMA CGM : Rodolphe Saadé défend bec et ongles son avantage fiscal indécent – Mediapart https://www.mediapart.fr/journal/economie-et-social/130525/cma-cgm-rodolphe-saade-defend-bec-et-ongles-son-avantage-fiscal-indecent
+L’Etat américain entre au capital d’Intel, à hauteur de 10 % – Le Monde
+https://www.lemonde.fr/economie/article/2025/08/22/donald-trump-affirme-qu-intel-a-accepte-de-ceder-10-de-ses-actions-a-l-etat-americain_6633553_3234.html
+« Les aides publiques peuvent-elles servir à verser des dividendes ? » : plongée dans six mois d’auditions de la commission d’enquête – Le Monde https://www.lemonde.fr/economie/article/2025/07/02/ce-que-les-entreprises-font-des-aides-publiques-on-ne-sait-pas-plongee-dans-six-mois-d-auditions-de-la-commission-d-enquete_6617356_3234.html
+La comparaison des aides publiques aux entreprises par la DG concurrence – Commission Européenne
+competition-policy.ec.europa.eu/state-aid/scoreboard/scoreboard-state-aid-data_en 
+Crédit d’impôt recherche et fiscalité des entreprises
+L’impact du CIR sur l’emploi dans la R&amp;D du secteur privé : une revue critique – OFCE
+https://ofce.sciences-po.fr/pdf/revue/05-175OFCE.pdf
+La conditionnalité du CIR au maintien de l’emploi : quelques clarifications – Blog OFCE
+https://ofce.sciences-po.fr/blog2024/fr/2025/20250115_ES/
+La face sombre du crédit d’impôt recherche – Le Monde
+https://lemonde.fr/economie/article/2025/01/09/la-face-sombre-du-credit-d-impot-recherche_6488932_3234.html
+Fipeco sur les crédits d’impôt en France – Fipeco www.fipeco.fr/fiche/Les-cr%C3%A9dits-dimp%C3%B4t
+Rapport IGF sur le CICE, le CIR et autres aides fiscales
+https://www.igf.finances.gouv.fr/files/live/sites/igf/files/contributed/Rapports%20de%20mission/2024/2023-M-105-03%20Rapport%20Aides%20aux%20entreprises.pdf 
+Industries
+Entre ArcelorMittal et la France, une histoire semée de crises – Le Monde https://lemonde.fr/economie/article/2025/05/12/entre-arcelormittal-et-la-france-une-histoire-semee-de-crises_6605525_3234.html
+Aux abois, les fabricants européens de batteries de voitures électriques demandent encore plus de subventions – Le Monde https://lemonde.fr/economie/article/2025/09/05/automobile-aux-abois-les-fabricants-europeens-de-batteries-demandent-encore-plus-de-subventions_6639039_3234.html
+Intel and Biden Admin Announce up to $8.5 Billion in Direct Funding Under the CHIPS Act – Intel Newsroom
+https://newsroom.intel.com/corporate/intel-and-biden-admin-announce-up-to-8-5-billion-in-direct-funding-under-the-chips-act 
+Les industriels européens du textile pressent l’UE d’agir contre les plateformes chinoises comme Shein – Le Monde https://lemonde.fr/economie/article/2025/09/15/les-industriels-europeens-du-textile-pressent-l-ue-d-agir-contre-les-plateformes-chinoises-comme-shein_6641258_3234.html
+Références économiques générales
+Bad Samaritans: The Myth of Free Trade and the Secret History of Capitalism 
+Notes IPP sur la TVA mai 2018 – Institut des Politiques Publiques
+https://ipp.eu/wp-content/uploads/2018/05/n32-notesIPP-mai2018.pdf
+Grande puissance agricole : Note de France Stratégie
+https://strategie-plan.gouv.fr/files/2025-05/sites_default_files_contenu_piece-jointe_2021_10_hcp_ouverture-n7-grande_puissance_agricole.pdf
+Viande brésilienne d’importation : le scandale de trop
+https://hautesaoneagricole.agri-info-nordest.fr/vie-professionnelle/viande-bresilienne-dimportation-le-scandale-de-trop 
+Le Général de Gaulle lance la guerre fiscale contre Monaco – France Inter
+https://radiofrance.fr/franceinter/podcasts/histoire-et-politique/en-1962-le-general-de-gaulle-lance-la-guerre-fiscale-contre-monaco-8440110
+
+#ArgentMagique</description><guid isPermaLink="false">kSA0IW7eyFA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/kSA0IW7eyFA.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate></item><item><title>Taxe Zucman : Ce qu’on ne vous dit pas ! [ARGENT MAGIQUE]</title><description>Comment est-ce que les ultra-riches arrivent à organiser leur fortune pour payer le moins d'impôt possible ? Et pourquoi la taxe Zucman pourrait être le premier pas vers l’équité fiscale en France ?
+
+SOUTENIR LE COLLECTIF : 
+https://stup.media/don
+
+Cette série est financée uniquement par vous, merci infiniment : 
+https://fr.ulule.com/argentmagique/
+
+Journalistes : Marino et ‪@Heu7reka 
+Co-auteur : Arnaud Gantier (@StupidEco )
+Réalisation : Valentin Levetti
+Montage : ‪@SplineLND   ​ 
+Production : https://stup.media/
+
+--
+LIEN DES SOURCES : 
+https://docs.google.com/document/d/1Cm0-nfNRnKZx0nPbUeUV8fXqoRnShPLvBMVWFXbSamg/edit?usp=sharing
+
+#argentmagique</description><guid isPermaLink="false">Q0kwriDkI3Y</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Q0kwriDkI3Y.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate></item><item><title>LA FRANCE EST-ELLE EN DÉCROCHAGE ÉCONOMIQUE TOTAL ? AVEC @Heu7reka &amp; @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+La France est-elle en plein décrochage économique ? L'Europe est-elle complètement dépassée par les USA, la Chine, etc. ? Et l'Allemagne, est-ce toujours un exemple ? 
+Le PIB est-il un bon indicateur de santé économique ? On tente de répondre à toutes ces questions dans ce nouvel épisode de Argent magique avec @Heu7reka et @StupidEco.
+
+Journalistes : Marino et Heu?reka 
 Co-auteur : Arnaud Gantier (Stupid Economics)
 Réalisation : Valentin Levetti
 Montage : Ace Modey
-Production : https://stup.media/
-Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret
-Directeur des programmes : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-
-#Economie
-#ServicesPublics
-#France</description><guid isPermaLink="false">cDE7jYzGzgU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cDE7jYzGzgU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate></item><item><title>QUI VA REMBOURSER LA DETTE ? (SPOILER ALERT : PAS VOS ENFANTS) - Avec @StupidEco et @Heu7reka</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-La France est de plus en plus endettée. Est ce que nous risquons de faire faillite ? Qu’est ce que ça veut dire au juste “rembourser” la dette de la France ? Dans ce nouvel épisode de argent magique avec @Stupid_Eco et @Heu7reka nous expliquons qu’est-ce que la dette française, et comment nous devrions l’utiliser.
-
-Journalistes : Marino et Heu?reka
-Co-auteur : Arnaud Gantier (Stupid Economics)
-Réalisation : Valentin Levetti
-Montage : Ace Modey
-Production : https://stup.media/
+Production : Stup.media
 Son : Baptiste Veilhan
 Graphisme : Morgane Sabouret
 Directeur des programmes : Mathias Enthoven
@@ -52,89 +98,8 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 
 #Economie
-#Dette
-#France</description><guid isPermaLink="false">-N3KDE5yEJ8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/-N3KDE5yEJ8.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate></item><item><title>HÉRITAGE : COMMENT LES RICHES FONT SÉCESSION, AVEC L'AIDE DES POLITIQUES</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-Dans une société que l’on dit de plus en plus individualiste, le rôle de la famille dans le destin économique des personnes n’a jamais pris autant d’importance. Est-ce que nous ne serions pas en train de devenir, de plus en plus, une “société d'héritiers” ? Plus que ça, au vu des empires économiques qui grandissent et qui se transmettent au sein de quelques familles, ne serions nous pas en train de devenir une “société de dynasties” ? Dans ce nouvel épisode de Argent Magique avec ​⁠@StupidEco et ​⁠@Heu7reka nous expliquent quelles sont les implications de cette nouvelle répartition des richesses sur notre société et sur nos institutions.
-
-Enquête du monde sur les successions d’industries françaises : https://www.lemonde.fr/les-heritiers/
-
-Journalistes : Marino et Heu?reka
-Co-auteur : Arnaud Gantier (Stupid Economics)
-Réalisation : Valentin Levetti
-Montage : Ace Modey
-Production : https://stup.media/
-Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret, Margaux Simon
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-
-#Economie
-#Heritage
-#politique</description><guid isPermaLink="false">b9ujfnDd7ZQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/b9ujfnDd7ZQ.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate></item><item><title>FIN DU NÉOLIBÉRALISME : VERS UN NOUVEAU CAPITALISME ?</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
-
-Comment expliquer que dans notre monde néolibéral, des puissances mondiales comme les États-Unis choisissent d’imposer des droits de douanes ? Que des porte-conteneurs remplis de marchandises se trouvent détruits en pleine mer ?
-Et si ces événements étaient les premiers signes que nous sortons du capitalisme néolibéral, pour entrer dans le capitalisme de la finitude ?
-Dans ce nouvel épisode de Argent Magique avec Stupid Economics, Marino et Heu?reka nous explorons la thèse de Arnaud Orain (“Le monde confisqué: Essai sur le capitalisme de la finitude”) qui propose de changer de grille de lecture.
-
-Journalistes : Marino et Heu?reka
-Co-auteur : Arnaud Gantier (Stupid Economics)
-Réalisation : Valentin Levetti
-Montage : Ace Modey
-Production : https://stup.media/
-Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret, Margaux Simon
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#économie
-#USA
-#capitalisme</description><guid isPermaLink="false">_q0avNwjWTM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/_q0avNwjWTM.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate></item><item><title>TRAVAIL : LES JEUNES SONT-ILS VRAIMENT DES "FEIGNASSES" ?</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
-
-On entend parfois que les jeunes n’aiment pas le travail, qu’ils ne veulent plus travailler. Or, les travaux sociologiques nous indiquent que les jeunes n’ont pas un rapport différent au travail que leur aînés. Alors, est-ce que ce ne serait pas plutôt le travail qui a changé ? C’est ce que nous proposons d’explorer dans ce nouvel épisode de Argent Magique avec Stupid Economics, Marino et Heu?reka.
-
-Journalistes : Marino et Heu?reka
-Co-auteur : Arnaud Gantier (Stupid Economics)
-Réalisation : Valentin Levetti
-Montage : Ace Modey
-Production : https://stup.media/
-Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret, Margaux Simon
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#travail 
-#pénibilité
-#économie</description><guid isPermaLink="false">Z-954wgwEDU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Z-954wgwEDU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate></item><item><title>IMMIGRATION : L'HYPOCRISIE SANS LIMITE DES PARTIS D'EXTRÊME DROITE - AVEC @Heu7reka &amp; @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#France
+#ArgentMagique</description><guid isPermaLink="false">pJf2aNW341U</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/pJf2aNW341U.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate></item><item><title>IMMIGRATION : L'HYPOCRISIE SANS LIMITE DES PARTIS D'EXTRÊME DROITE - AVEC @Heu7reka &amp; @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
 Malgré ce qui peut être affirmé sur certains plateaux, les immigrés ne sont pas juste un coût pour notre économie. Nos économies ont besoin de main d'œuvre et nos politiques le savent, c’est pour cela que Darmanin prend en compte la problématique des “métiers en tensions” dans sa loi immigration de 2024, afin de faciliter la régularisation des travailleurs étrangers dans ces filières qui peinent à recruter. Mais comment expliquer que malgré cette volonté affichée de simplification, les démarches restent complexes et pleines de d'incohérences pour ces travailleurs et travailleuses ? A qui servent réellement ces politiques qui préconisent les étrangers ? Quelles sont les motivations réelles des partis d'extrême droite “anti-immigration”? C’est ce que nous allons voir dans ce nouvel épisode de Argent Magique avec @Heu7reka et @StupidEco 
 
@@ -162,16 +127,96 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 Bluesky : https://bsky.app/profile/blast-info.fr
 
-#économie , #immigration , #politique</description><guid isPermaLink="false">3OdTK10ycDg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/3OdTK10ycDg.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate></item><item><title>LA FRANCE EST-ELLE EN DÉCROCHAGE ÉCONOMIQUE TOTAL ? AVEC @Heu7reka &amp; @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#économie , #immigration , #politique</description><guid isPermaLink="false">3OdTK10ycDg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/3OdTK10ycDg.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate></item><item><title>TRAVAIL : LES JEUNES SONT-ILS VRAIMENT DES "FEIGNASSES" ?</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
 
-La France est-elle en plein décrochage économique ? L'Europe est-elle complètement dépassée par les USA, la Chine, etc. ? Et l'Allemagne, est-ce toujours un exemple ? 
-Le PIB est-il un bon indicateur de santé économique ? On tente de répondre à toutes ces questions dans ce nouvel épisode de Argent magique avec @Heu7reka et @StupidEco.
+On entend parfois que les jeunes n’aiment pas le travail, qu’ils ne veulent plus travailler. Or, les travaux sociologiques nous indiquent que les jeunes n’ont pas un rapport différent au travail que leur aînés. Alors, est-ce que ce ne serait pas plutôt le travail qui a changé ? C’est ce que nous proposons d’explorer dans ce nouvel épisode de Argent Magique avec Stupid Economics, Marino et Heu?reka.
 
-Journalistes : Marino et Heu?reka 
+Journalistes : Marino et Heu?reka
 Co-auteur : Arnaud Gantier (Stupid Economics)
 Réalisation : Valentin Levetti
 Montage : Ace Modey
-Production : Stup.media
+Production : https://stup.media/
+Son : Baptiste Veilhan
+Graphisme : Morgane Sabouret, Margaux Simon
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#travail 
+#pénibilité
+#économie</description><guid isPermaLink="false">Z-954wgwEDU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Z-954wgwEDU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate></item><item><title>FIN DU NÉOLIBÉRALISME : VERS UN NOUVEAU CAPITALISME ?</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
+
+Comment expliquer que dans notre monde néolibéral, des puissances mondiales comme les États-Unis choisissent d’imposer des droits de douanes ? Que des porte-conteneurs remplis de marchandises se trouvent détruits en pleine mer ?
+Et si ces événements étaient les premiers signes que nous sortons du capitalisme néolibéral, pour entrer dans le capitalisme de la finitude ?
+Dans ce nouvel épisode de Argent Magique avec Stupid Economics, Marino et Heu?reka nous explorons la thèse de Arnaud Orain (“Le monde confisqué: Essai sur le capitalisme de la finitude”) qui propose de changer de grille de lecture.
+
+Journalistes : Marino et Heu?reka
+Co-auteur : Arnaud Gantier (Stupid Economics)
+Réalisation : Valentin Levetti
+Montage : Ace Modey
+Production : https://stup.media/
+Son : Baptiste Veilhan
+Graphisme : Morgane Sabouret, Margaux Simon
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#économie
+#USA
+#capitalisme</description><guid isPermaLink="false">_q0avNwjWTM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/_q0avNwjWTM.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate></item><item><title>HÉRITAGE : COMMENT LES RICHES FONT SÉCESSION, AVEC L'AIDE DES POLITIQUES</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+Dans une société que l’on dit de plus en plus individualiste, le rôle de la famille dans le destin économique des personnes n’a jamais pris autant d’importance. Est-ce que nous ne serions pas en train de devenir, de plus en plus, une “société d'héritiers” ? Plus que ça, au vu des empires économiques qui grandissent et qui se transmettent au sein de quelques familles, ne serions nous pas en train de devenir une “société de dynasties” ? Dans ce nouvel épisode de Argent Magique avec ​⁠@StupidEco et ​⁠@Heu7reka nous expliquent quelles sont les implications de cette nouvelle répartition des richesses sur notre société et sur nos institutions.
+
+Enquête du monde sur les successions d’industries françaises : https://www.lemonde.fr/les-heritiers/
+
+Journalistes : Marino et Heu?reka
+Co-auteur : Arnaud Gantier (Stupid Economics)
+Réalisation : Valentin Levetti
+Montage : Ace Modey
+Production : https://stup.media/
+Son : Baptiste Veilhan
+Graphisme : Morgane Sabouret, Margaux Simon
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Economie
+#Heritage
+#politique</description><guid isPermaLink="false">b9ujfnDd7ZQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/b9ujfnDd7ZQ.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate></item><item><title>QUI VA REMBOURSER LA DETTE ? (SPOILER ALERT : PAS VOS ENFANTS) - Avec @StupidEco et @Heu7reka</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+La France est de plus en plus endettée. Est ce que nous risquons de faire faillite ? Qu’est ce que ça veut dire au juste “rembourser” la dette de la France ? Dans ce nouvel épisode de argent magique avec @Stupid_Eco et @Heu7reka nous expliquons qu’est-ce que la dette française, et comment nous devrions l’utiliser.
+
+Journalistes : Marino et Heu?reka
+Co-auteur : Arnaud Gantier (Stupid Economics)
+Réalisation : Valentin Levetti
+Montage : Ace Modey
+Production : https://stup.media/
 Son : Baptiste Veilhan
 Graphisme : Morgane Sabouret
 Directeur des programmes : Mathias Enthoven
@@ -187,5 +232,33 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 
 #Economie
-#France
-#ArgentMagique</description><guid isPermaLink="false">pJf2aNW341U</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/pJf2aNW341U.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate></item></channel></rss>
+#Dette
+#France</description><guid isPermaLink="false">-N3KDE5yEJ8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/-N3KDE5yEJ8.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate></item><item><title>QUI VEUT TUER LES SERVICES PUBLICS ? - AVEC @Heu7reka et @StupidEco</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+Nos services publics sont en danger ! En France, le discours public menaçant de couper la bureaucratie inutile, les fonctionnaires fainéants ou les institutions inefficaces se font de plus en plus présents, et possiblement de plus en plus populaires alors que certaines études montrent que les français sont de moins en moins satisfaits par leurs services publics.
+Alors, devrions-nous suivre la voix de Trump et de Milei, et réduire la place du public dans notre économie ? Réponse dans ce nouvel épisode de Argent magique avec Heu7reka et StupidEco.
+
+Rapport sur l’état des services publics par Nos Services Publics : https://nosservicespublics.fr/rapport-etat-services-publics-2024
+
+Journalistes : Marino et Heu?reka
+Co-auteur : Arnaud Gantier (Stupid Economics)
+Réalisation : Valentin Levetti
+Montage : Ace Modey
+Production : https://stup.media/
+Son : Baptiste Veilhan
+Graphisme : Morgane Sabouret
+Directeur des programmes : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Economie
+#ServicesPublics
+#France</description><guid isPermaLink="false">cDE7jYzGzgU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cDE7jYzGzgU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate></item></channel></rss>
