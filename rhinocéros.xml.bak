@@ -1,86 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>RHINOCÉROS</title><link>https://github.com/Sorcier88/special-bassoon</link><description>La nouvelle émission de Blast de critique des médias, animée par Usul et Lumi, à retrouver 3 fois par mois, le dimanche,  sur la chaîne YouTube de Blast !</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/rhinoceros.png</url><title>RHINOCÉROS</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Fri, 30 Jan 2026 06:41:38 +0000</lastBuildDate><itunes:author>BLAST, Le souffle de l'info</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/rhinoceros.png"/><item><title>🦏 INDÉPENDANCE DU SERVICE PUBLIC : LE DÉBUT DE LA FIN ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>RHINOCÉROS</title><link>https://github.com/Sorcier88/special-bassoon</link><description>La nouvelle émission de Blast de critique des médias, animée par Usul et Lumi, à retrouver 3 fois par mois, le dimanche,  sur la chaîne YouTube de Blast !</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/rhinoceros.png</url><title>RHINOCÉROS</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Fri, 30 Jan 2026 14:23:59 +0000</lastBuildDate><itunes:author>BLAST, Le souffle de l'info</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/rhinoceros.png"/><item><title>🦏 "ENTRISME FRÉRISTE" : L'OFFENSIVE COMPLOTISTE ET ISLAMOPHOBE</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
 
-"Alors, est ce que vous avez regardé le lancement de T18 ? Nous, on a regardé et puis on s'est dit qu'on n'allait pas vous en parler parce que quand même, on a un cœur. On va vous parler un petit peu de France Télé parce qu'il s'est passé plein de trucs. Et puis c'est moins cheap que T18. Un des grands changements annoncés pour la rentrée, c'est que Anne-Sophie Lapix va devoir lâcher la présentation du JT de 20 h de France 2. Le problème, c'est les raisons probables de son départ. Il semblerait qu'elle ait dû laisser sa place parce qu'elle était jugée trop dérangeante en interview, pas assez complaisante avec les politiques."
-
-Nouvel épisode de Rhinocéros, par Usul et Lumi.
-
-Chroniqueurs : Lumi, Usul
-Montage : Harkiadel
-Images : Hamza Benkirane
-Production : Red Pop
-Graphisme : Margaux Simon, Morgane Sabouret
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#Rhinocéros
-#Servicepublic
-#FranceTele</description><guid isPermaLink="false">AS_a36M-wFU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/AS_a36M-wFU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate></item><item><title>🦏 GAZA, IRAN, ETC. : POUR LES GRANDS MÉDIAS, ISRAËL A TOUS LES DROITS</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-"Aujourd'hui, on va vous parler de guerre, évidemment. On va vous parler de propagande de guerre. Israël bombarde toujours, Israël crée des famines, Israël tire sur des populations affamées qu'elle entend de toutes façons déporter. Le génocide se poursuit à Gaza. En plus, Israël a ouvert un nouveau front contre l'Iran avec l'appui des États-Unis. Pourtant, le vent semblait avoir tourné pour Israël. Ses partenaires européens commençaient à douter. Les Français avaient haussé le ton, tout comme les Anglais. Les Allemands eux-mêmes osaient émettre des critiques, c'est dire."
-
-Nouvel épisode de Rhinocéros, par Usul et Lumi.
-
-Chroniqueurs : Lumi, Usul
-Montage : Harkiadel
-Images : Hamza Benkirane
-Production : Red Pop
-Graphisme : Margaux Simon, Morgane Sabouret
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#Israel
-#Iran
-#Rhinocéros</description><guid isPermaLink="false">Xrok-hyhE9o</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Xrok-hyhE9o.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate></item><item><title>🦏 SARKOZY CONDAMNÉ : LES MÉDIAS MAINSTREAM ATTAQUENT LA PRESSE LIBRE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-"Sarkozy va aller en prison. La presse indépendante est attaquée de toutes parts. Les juges sont sous pression, la bourgeoisie est déchaînée. Évidemment, les médias de la droite sont sous le choc et à mon avis, c'est pas prêt de s'arrêter. Oui, parce qu'il y a eu la condamnation de Le Pen, là, donc c'est Sarko. Ensuite il y aura Dati, on a eu les dates de son procès aussi. Oui, puis il y a Zemmour qui est régulièrement condamné aussi. Non mais ils sont chiants ces juges ! Mais oui, pourquoi il y a des juges en fait, on ne peut plus faire de politique ?"
-
-Nouvel épisode de Rhinocéros, par Usul et Lumi.
-
-Chroniqueurs : Lumi, Usul
-Montage : Harkiadel
-Images : Hamza Benkirane
-Production : Red Pop
-Graphisme : Margaux Simon, Morgane Sabouret
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#Sarkozy
-#médias
-#Rhinocéros</description><guid isPermaLink="false">uFgmP0cZptM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/uFgmP0cZptM.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate></item><item><title>🦏 10 SEPTEMBRE ON BLOQUE TOUT ET C'EST NICOLAS QUI PAIE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-Ça y est, on est de retour ! C'est la rentrée, ça fait plaisir ! D'ailleurs, nos journalistes préférés sont aussi de retour, pour eux aussi c'est la rentrée. Ah oui, ils sont revenus en pleine forme à la radio, dans la presse et tout bronzés sur les plateaux de télévision. Bon, il y a quelques changements dans le paysage médiatique cette année. Alors c'est un peu les mêmes clampins que l'année dernière en fait, mais il y en a qui ont changé de chaîne. C'est vraiment une révolution. On a hâte de découvrir tous ces programmes innovants.
-D'abord, on va revenir sur les faits marquants de cet été. On va parler de Nicolas qui paye et de François Bayrou, des trucs qui se sont passés dans le monde politique pendant que tous ces journalistes passaient des vacances studieuses et sportives en Corse.
+Présenté comme "choc", le rapport sur l'entrisme des Frères musulmans ne s'avère pas si accablant que ça. Mais peu importe ce qu'il y a dans ce rapport, l'important c'était que sa médiatisation allait créer un moment. Un moment où on allait tous pouvoir ensemble, sereinement, discuter de comment on sauve la République en rendant les musulmans moins visibles dans l'espace public.
 
 Nouvel épisode de Rhinocéros, par Usul et Lumi.
 
@@ -103,34 +24,11 @@ Twitch : https://www.twitch.tv/blastinfo
 Bluesky : https://bsky.app/profile/blast-info.fr
 
 #Rhinocéros
-#rentrée
-#bayrou</description><guid isPermaLink="false">QKmQx6bVMf8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/QKmQx6bVMf8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate></item><item><title>🦏 DE FRANCE 2 À BFMTV : PANIQUE GÉNÉRALE FACE AU MOUVEMENT SOCIAL</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#Islamophobie
+#FreresMusulmans</description><guid isPermaLink="false">M7iFc2U4A6o</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/M7iFc2U4A6o.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate></item><item><title>🦏 DISSOLUTION, CENSURE : LES MÉDIAS PAVENT LA VOIE DU RN VERS L'ELYSÉE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-"Alors ça ne vous aura pas échappé, le pays est à feu et à sang. Des hordes de black blocs ont déferlé dans les rues. Nos restaurateurs sont inquiets. Nos forces de l'ordre sont mobilisées et tout va bien se passer à condition que vous restiez chez vous. Aujourd'hui, on va remonter un peu dans le temps et on va analyser le traitement médiatique de la journée du 10 septembre." Nouvel épisode de Rhinocéros, par Usul et Lumi.
-
-Chroniqueurs : Lumi, Usul
-Montage : Harkiadel
-Images : Hamza Benkirane
-Production : Red Pop
-Graphisme : Margaux Simon, Morgane Sabouret
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#Rhinocéros
-#BloquonsTout
-#10Septembre</description><guid isPermaLink="false">T-WZJg4p9xw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/T-WZJg4p9xw.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate></item><item><title>🦏 MÉDIAS, ÉDITION : POUR BARDELLA, BOLLORÉ PAIE SA TOURNÉE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-"Après le succès de « Ce que je veux », récit autocentré censé être le premier livre de la maturité pour celui qui nous est présenté comme l’héritier désigné de l’héritière Le Pen, Bardella nous propose dans « Ce que veulent les Français », de s’intéresser un peu à vous, les Français. Évidemment, la presse de droite et d’extrême droite était au taquet : Bardella a eu droit à son entretien dans Valeurs actuelles, deux jours avant il a écrit une tribune dans Le Figaro et il a bien sûr eu sa grande interview dans le Journal Du Dimanche. Et ça tombe bien puisque le JDD appartient à Bolloré, qui est aussi propriétaire de la maison d’édition Fayard, qui édite et publie ce nouveau livre. Donc tout ça c’est bien pratique, quand Fayard publie Bardella, on sait qu’on aura tout l’écosystème Bolloré pour matraquer pendant des jours sur le fait que la sortie du livre est un véritable événement politique et littéraire. Et quand Jordan met ses petites lunettes d’intellectuel et se rend sur un plateau de CNews, il sait qu’il sera accueilli quasiment comme un membre de la famille. Et quand on fait partie de la grande famille de Bolloré, on est sommé de parler du livre, même quand on ne l’a pas lu." 
+« "Qui peut encore battre le Rassemblement national ?". Vous avez certainement une sensation de déjà vu et en même temps, c'est normal, ça fait un bout de temps qu'on est dans la même situation. Macron qui n'a pas de majorité à l'Assemblée mais qui ne veut pas lâcher le pouvoir. Et s’il le lâche, attention c'est pour le RN. Oui, il aurait pu le lâcher pour la gauche, parce qu’on avait
+gagné quand même. Non non et non, ça c'est pas possible. Mais il acceptera l'alternance si c'est le RN parce qu'il est démocrate. »
 
 Nouvel épisode de Rhinocéros, par Usul et Lumi.
 
@@ -152,13 +50,11 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 Bluesky : https://bsky.app/profile/blast-info.fr
 
-#Rhinocéros
-#Bardella
-#Bolloré</description><guid isPermaLink="false">eB3XyKJpCiM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/eB3XyKJpCiM.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate></item><item><title>🦏 À LA TÉLÉVISION, LE FLIC SHOW PERMANENT</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#RN
+#Macron
+#Médias</description><guid isPermaLink="false">4M8reig_ewg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/4M8reig_ewg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate></item><item><title>🦏 LA "FRANCE ÉTERNELLE" : UNE FRANCE QUI SENT LE PÂTÉ</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-"Aujourd'hui on va parler des flics, des gendarmes, de nos forces de l'ordre de la République. Sujet sensible, sujet dangereux même. Mais nous, on va faire ça avec tact, évidemment. Et oui, pas comme ce gros bourrin de Pierre-Emmanuel Barré."
-
-Nouvel épisode de Rhinocéros, par Usul et Lumi.
+"Les Français, on est sous le choc du vol des bijoux parce qu'on est nostalgiques de quand on avait des familles royales qui pétaient la classe. Et alors là, comme d'hab, est-ce que ça nous fascine ou est-ce que ça fascine surtout les commentateurs, ces histoires de bijoux et de têtes couronnées ?". "La France éternelle", vue par Usul et Lumi, c'est dans le nouvel épisode de Rhinocéros.
 
 Chroniqueurs : Lumi, Usul
 Montage : Harkiadel
@@ -178,9 +74,85 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 Bluesky : https://bsky.app/profile/blast-info.fr
 
-#Médias
-#police
-#rhinocéros</description><guid isPermaLink="false">ciY0sDPPevo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/ciY0sDPPevo.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate></item><item><title>CONTRE L’AUDIOVISUEL PUBLIC : BOLLORÉ LÂCHE SA GROSSE COMMISSION</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#france
+#patrimoine
+#rhinocéros</description><guid isPermaLink="false">_OkGQhxXtH0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/_OkGQhxXtH0.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate></item><item><title>🦏 MUSK, TRUMP, ETC. : LA RÉVOLUTION TECHNOFASCISTE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+Un spectre hante l’occident et non ce n'est pas le spectre autistique. On est en train d’assister au retour du fascisme dans la première puissance du monde, c’est une révolution dont on mesurera sans doute l’importance très vite, mais passé l’état de sidération il faut voir tout ce que ça implique, aujourd’hui on va essayer de voir quelles pourraient être les conséquences de ce tournant historique.
+
+Nouvel épisode de Rhinocéros, par Usul et Lumi.
+
+Chroniqueurs : Lumi, Usul
+Montage : Harkiadel
+Images : Hamza Benkirane
+Production : Red Pop
+Graphisme : Morgane Sabouret
+Directeur des programmes : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Trump
+#Musk
+#Fascisme</description><guid isPermaLink="false">slNlQKG1qss</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/slNlQKG1qss.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate></item><item><title>🦏 ARTHUR, MERWANE BENLAZAR : TOUT N’EST PAS PERMIS SUR LE SERVICE PUBLIC</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+"L'affaire Arthur, l'affaire Benlazar, le retour du Bigdil... Tout est lié, figurez-vous. C'est lié parce qu'il y a unité de temps. Il y a une unité de lieu dans toutes les histoires qu'on va vous raconter aujourd'hui, il y a un moment où il se passe un truc sur le plateau de C à vous, le plateau d'Anne-Élisabeth Lemoine."
+
+Nouvel épisode de Rhinocéros, par Usul et Lumi.
+
+Chroniqueurs : Lumi, Usul
+Montage : Harkiadel
+Images : Hamza Benkirane
+Production : Red Pop
+Graphisme : Morgane Sabouret
+Directeur des programmes : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Rhinocéros
+#CaVous
+#Médias</description><guid isPermaLink="false">fJ--uy3q92E</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/fJ--uy3q92E.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate></item><item><title>🦏 STÉRIN : LES MILLIARDAIRES S'ORGANISENT POUR FAIRE GAGNER L'EXTRÊME DROITE</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
+
+« Aujourd’hui on va vous parler d’un milliardaire qui a décidé d’utiliser sa fortune pour faire triompher l’extrême droite en France. Et ce milliardaire ça n’est pas Bolloré, c’est un autre, Pierre-Edouard Stérin. Stérin, c’est le premier à formuler son projet d’une manière aussi claire et franche, mais derrière lui, c’est tout un groupe social qui s’ensauvage, et qui trépigne d’impatience. »
+
+Nouvel épisode de Rhinocéros, par Usul et Lumi.
+
+Chroniqueurs : Lumi, Usul
+Montage : Harkiadel
+Images : Hamza Benkirane
+Production : Red Pop
+Graphisme : Margaux Simon, Morgane Sabouret
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#Sterin
+#Rhinocéros
+#Medias</description><guid isPermaLink="false">g-VPcZ6ZUo8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/g-VPcZ6ZUo8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate></item><item><title>CONTRE L’AUDIOVISUEL PUBLIC : BOLLORÉ LÂCHE SA GROSSE COMMISSION</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
 "Alors on a presque tout regardé de la commission d'enquête sur l'audiovisuel public et on va vous raconter. Ah oui, pour nous, c'était vraiment la magie de Noël. Vous imaginez ? Des heures et des heures d'auditions à se mettre sous la dent ? Et le casting était super. Il y avait Delphine Ernotte, il y avait le comité d'éthique de France Télévisions, il y avait le mec de l’Arcom, le mec d'avant lui à l’Arcom. Bon, par contre,le seul petit défaut de cette commission d'enquête, c'est qu'elle est pilotée par l'extrême droite."
 
@@ -207,9 +179,86 @@ Bluesky : https://bsky.app/profile/blast-info.fr
 
 #Rhinocéros
 #Arcom
-#Médias</description><guid isPermaLink="false">m-kcG5Z3fgU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/m-kcG5Z3fgU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate></item><item><title>🦏 STÉRIN : LES MILLIARDAIRES S'ORGANISENT POUR FAIRE GAGNER L'EXTRÊME DROITE</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
+#Médias</description><guid isPermaLink="false">m-kcG5Z3fgU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/m-kcG5Z3fgU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate></item><item><title>🦏 À LA TÉLÉVISION, LE FLIC SHOW PERMANENT</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-« Aujourd’hui on va vous parler d’un milliardaire qui a décidé d’utiliser sa fortune pour faire triompher l’extrême droite en France. Et ce milliardaire ça n’est pas Bolloré, c’est un autre, Pierre-Edouard Stérin. Stérin, c’est le premier à formuler son projet d’une manière aussi claire et franche, mais derrière lui, c’est tout un groupe social qui s’ensauvage, et qui trépigne d’impatience. »
+"Aujourd'hui on va parler des flics, des gendarmes, de nos forces de l'ordre de la République. Sujet sensible, sujet dangereux même. Mais nous, on va faire ça avec tact, évidemment. Et oui, pas comme ce gros bourrin de Pierre-Emmanuel Barré."
+
+Nouvel épisode de Rhinocéros, par Usul et Lumi.
+
+Chroniqueurs : Lumi, Usul
+Montage : Harkiadel
+Images : Hamza Benkirane
+Production : Kathleen Brun - RED POP
+Graphisme : Margaux Simon, Morgane Sabouret
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#Médias
+#police
+#rhinocéros</description><guid isPermaLink="false">ciY0sDPPevo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/ciY0sDPPevo.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate></item><item><title>🦏 MÉDIAS, ÉDITION : POUR BARDELLA, BOLLORÉ PAIE SA TOURNÉE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+"Après le succès de « Ce que je veux », récit autocentré censé être le premier livre de la maturité pour celui qui nous est présenté comme l’héritier désigné de l’héritière Le Pen, Bardella nous propose dans « Ce que veulent les Français », de s’intéresser un peu à vous, les Français. Évidemment, la presse de droite et d’extrême droite était au taquet : Bardella a eu droit à son entretien dans Valeurs actuelles, deux jours avant il a écrit une tribune dans Le Figaro et il a bien sûr eu sa grande interview dans le Journal Du Dimanche. Et ça tombe bien puisque le JDD appartient à Bolloré, qui est aussi propriétaire de la maison d’édition Fayard, qui édite et publie ce nouveau livre. Donc tout ça c’est bien pratique, quand Fayard publie Bardella, on sait qu’on aura tout l’écosystème Bolloré pour matraquer pendant des jours sur le fait que la sortie du livre est un véritable événement politique et littéraire. Et quand Jordan met ses petites lunettes d’intellectuel et se rend sur un plateau de CNews, il sait qu’il sera accueilli quasiment comme un membre de la famille. Et quand on fait partie de la grande famille de Bolloré, on est sommé de parler du livre, même quand on ne l’a pas lu." 
+
+Nouvel épisode de Rhinocéros, par Usul et Lumi.
+
+Chroniqueurs : Lumi, Usul
+Montage : Harkiadel
+Images : Hamza Benkirane
+Production : Kathleen Brun - RED POP
+Graphisme : Margaux Simon, Morgane Sabouret
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#Rhinocéros
+#Bardella
+#Bolloré</description><guid isPermaLink="false">eB3XyKJpCiM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/eB3XyKJpCiM.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate></item><item><title>🦏 DE FRANCE 2 À BFMTV : PANIQUE GÉNÉRALE FACE AU MOUVEMENT SOCIAL</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+"Alors ça ne vous aura pas échappé, le pays est à feu et à sang. Des hordes de black blocs ont déferlé dans les rues. Nos restaurateurs sont inquiets. Nos forces de l'ordre sont mobilisées et tout va bien se passer à condition que vous restiez chez vous. Aujourd'hui, on va remonter un peu dans le temps et on va analyser le traitement médiatique de la journée du 10 septembre." Nouvel épisode de Rhinocéros, par Usul et Lumi.
+
+Chroniqueurs : Lumi, Usul
+Montage : Harkiadel
+Images : Hamza Benkirane
+Production : Red Pop
+Graphisme : Margaux Simon, Morgane Sabouret
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#Rhinocéros
+#BloquonsTout
+#10Septembre</description><guid isPermaLink="false">T-WZJg4p9xw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/T-WZJg4p9xw.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate></item><item><title>🦏 10 SEPTEMBRE ON BLOQUE TOUT ET C'EST NICOLAS QUI PAIE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+Ça y est, on est de retour ! C'est la rentrée, ça fait plaisir ! D'ailleurs, nos journalistes préférés sont aussi de retour, pour eux aussi c'est la rentrée. Ah oui, ils sont revenus en pleine forme à la radio, dans la presse et tout bronzés sur les plateaux de télévision. Bon, il y a quelques changements dans le paysage médiatique cette année. Alors c'est un peu les mêmes clampins que l'année dernière en fait, mais il y en a qui ont changé de chaîne. C'est vraiment une révolution. On a hâte de découvrir tous ces programmes innovants.
+D'abord, on va revenir sur les faits marquants de cet été. On va parler de Nicolas qui paye et de François Bayrou, des trucs qui se sont passés dans le monde politique pendant que tous ces journalistes passaient des vacances studieuses et sportives en Corse.
 
 Nouvel épisode de Rhinocéros, par Usul et Lumi.
 
@@ -231,11 +280,11 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 Bluesky : https://bsky.app/profile/blast-info.fr
 
-#Sterin
 #Rhinocéros
-#Medias</description><guid isPermaLink="false">g-VPcZ6ZUo8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/g-VPcZ6ZUo8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate></item><item><title>🦏 ARTHUR, MERWANE BENLAZAR : TOUT N’EST PAS PERMIS SUR LE SERVICE PUBLIC</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#rentrée
+#bayrou</description><guid isPermaLink="false">QKmQx6bVMf8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/QKmQx6bVMf8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate></item><item><title>🦏 SARKOZY CONDAMNÉ : LES MÉDIAS MAINSTREAM ATTAQUENT LA PRESSE LIBRE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-"L'affaire Arthur, l'affaire Benlazar, le retour du Bigdil... Tout est lié, figurez-vous. C'est lié parce qu'il y a unité de temps. Il y a une unité de lieu dans toutes les histoires qu'on va vous raconter aujourd'hui, il y a un moment où il se passe un truc sur le plateau de C à vous, le plateau d'Anne-Élisabeth Lemoine."
+"Sarkozy va aller en prison. La presse indépendante est attaquée de toutes parts. Les juges sont sous pression, la bourgeoisie est déchaînée. Évidemment, les médias de la droite sont sous le choc et à mon avis, c'est pas prêt de s'arrêter. Oui, parce qu'il y a eu la condamnation de Le Pen, là, donc c'est Sarko. Ensuite il y aura Dati, on a eu les dates de son procès aussi. Oui, puis il y a Zemmour qui est régulièrement condamné aussi. Non mais ils sont chiants ces juges ! Mais oui, pourquoi il y a des juges en fait, on ne peut plus faire de politique ?"
 
 Nouvel épisode de Rhinocéros, par Usul et Lumi.
 
@@ -243,8 +292,8 @@ Chroniqueurs : Lumi, Usul
 Montage : Harkiadel
 Images : Hamza Benkirane
 Production : Red Pop
-Graphisme : Morgane Sabouret
-Directeur des programmes : Mathias Enthoven
+Graphisme : Margaux Simon, Morgane Sabouret
+Directeur du développement des collaborations extérieures : Mathias Enthoven
 Co-directrice de la rédaction : Soumaya Benaïssa
 Directeur de la publication : Denis Robert
 
@@ -255,12 +304,13 @@ Instagram : https://www.instagram.com/blastofficiel/
 Mastodon : https://mamot.fr/web/@blast_info
 Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
 
-#Rhinocéros
-#CaVous
-#Médias</description><guid isPermaLink="false">fJ--uy3q92E</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/fJ--uy3q92E.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate></item><item><title>🦏 MUSK, TRUMP, ETC. : LA RÉVOLUTION TECHNOFASCISTE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#Sarkozy
+#médias
+#Rhinocéros</description><guid isPermaLink="false">uFgmP0cZptM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/uFgmP0cZptM.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate></item><item><title>🦏 GAZA, IRAN, ETC. : POUR LES GRANDS MÉDIAS, ISRAËL A TOUS LES DROITS</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-Un spectre hante l’occident et non ce n'est pas le spectre autistique. On est en train d’assister au retour du fascisme dans la première puissance du monde, c’est une révolution dont on mesurera sans doute l’importance très vite, mais passé l’état de sidération il faut voir tout ce que ça implique, aujourd’hui on va essayer de voir quelles pourraient être les conséquences de ce tournant historique.
+"Aujourd'hui, on va vous parler de guerre, évidemment. On va vous parler de propagande de guerre. Israël bombarde toujours, Israël crée des famines, Israël tire sur des populations affamées qu'elle entend de toutes façons déporter. Le génocide se poursuit à Gaza. En plus, Israël a ouvert un nouveau front contre l'Iran avec l'appui des États-Unis. Pourtant, le vent semblait avoir tourné pour Israël. Ses partenaires européens commençaient à douter. Les Français avaient haussé le ton, tout comme les Anglais. Les Allemands eux-mêmes osaient émettre des critiques, c'est dire."
 
 Nouvel épisode de Rhinocéros, par Usul et Lumi.
 
@@ -268,8 +318,8 @@ Chroniqueurs : Lumi, Usul
 Montage : Harkiadel
 Images : Hamza Benkirane
 Production : Red Pop
-Graphisme : Morgane Sabouret
-Directeur des programmes : Mathias Enthoven
+Graphisme : Margaux Simon, Morgane Sabouret
+Directeur du développement des collaborations extérieures : Mathias Enthoven
 Co-directrice de la rédaction : Soumaya Benaïssa
 Directeur de la publication : Denis Robert
 
@@ -280,7 +330,34 @@ Instagram : https://www.instagram.com/blastofficiel/
 Mastodon : https://mamot.fr/web/@blast_info
 Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
 
-#Trump
-#Musk
-#Fascisme</description><guid isPermaLink="false">slNlQKG1qss</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/slNlQKG1qss.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate></item></channel></rss>
+#Israel
+#Iran
+#Rhinocéros</description><guid isPermaLink="false">Xrok-hyhE9o</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Xrok-hyhE9o.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate></item><item><title>🦏 INDÉPENDANCE DU SERVICE PUBLIC : LE DÉBUT DE LA FIN ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+"Alors, est ce que vous avez regardé le lancement de T18 ? Nous, on a regardé et puis on s'est dit qu'on n'allait pas vous en parler parce que quand même, on a un cœur. On va vous parler un petit peu de France Télé parce qu'il s'est passé plein de trucs. Et puis c'est moins cheap que T18. Un des grands changements annoncés pour la rentrée, c'est que Anne-Sophie Lapix va devoir lâcher la présentation du JT de 20 h de France 2. Le problème, c'est les raisons probables de son départ. Il semblerait qu'elle ait dû laisser sa place parce qu'elle était jugée trop dérangeante en interview, pas assez complaisante avec les politiques."
+
+Nouvel épisode de Rhinocéros, par Usul et Lumi.
+
+Chroniqueurs : Lumi, Usul
+Montage : Harkiadel
+Images : Hamza Benkirane
+Production : Red Pop
+Graphisme : Margaux Simon, Morgane Sabouret
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#Rhinocéros
+#Servicepublic
+#FranceTele</description><guid isPermaLink="false">AS_a36M-wFU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/AS_a36M-wFU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate></item></channel></rss>
