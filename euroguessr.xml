@@ -1,55 +1,75 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Euroguessr</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Mêlez-vous de votre Union ! Présenté par Jean Massiet en compagnie de notamment Fibre Tigre et Mamapaprika, EuroGuessr est un live sur Twitch et YouTube qui aborde les grandes questions sociétales et politiques du moment sur l'Europe.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/euroguessr.png</url><title>Euroguessr</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sat, 31 Jan 2026 22:31:50 +0000</lastBuildDate><itunes:author>Arte</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/euroguessr.png"/><item><title>L’Europe unie pour dominer l’espace : mission impossible ? (Jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Euroguessr</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Mêlez-vous de votre Union ! Présenté par Jean Massiet en compagnie de notamment Fibre Tigre et Mamapaprika, EuroGuessr est un live sur Twitch et YouTube qui aborde les grandes questions sociétales et politiques du moment sur l'Europe.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/euroguessr.png</url><title>Euroguessr</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sun, 01 Feb 2026 07:12:55 +0000</lastBuildDate><itunes:author>Arte</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/euroguessr.png"/><item><title>EUROGUESSR 🇪🇺 présenté par @JeanMassiet ft. Laytho, Mila de Blois et Charlotte Lemay | REPLAY | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
 
-En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
+Invités : Laytho, Mila de Blois et Charlotte Lemay 
 
-Invités :
+Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux
 
-Hugo Lisoir
-Doctriz
-Galactic Chloé
+CHAPITRAGE :
+0:00 EuroGuessr (Talkshow)
+01:53:48 EuroZap
+02:00:56 EuroPartie (Jeu de rôle) 
 
-Retrouvez les autres épisodes de EuroPartie ici : https://www.youtube.com/watch?v=Py3N3xEfL0I&amp;list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
+Envie de plus d'Euroguessr ? Voir le replay sur les droits de douane et la guerre entre les Etats-Unis et l'Europe : https://youtube.com/live/VLiGR0an_WA
+
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
+Twitch : https://www.twitch.tv/artefr
+Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr
 TikTok : https://www.tiktok.com/@artefr/
-Bluesky : https://bsky.app/profile/artefr.bsky.social
-Discord : https://discord.gg/NY5g6Dap
-Twitch : https://www.twitch.tv/artefr
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">7hC9P41DV9g</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/7hC9P41DV9g.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Viande de labo, steaks végé… La PAC 2.0 va-t-elle changer nos assiettes ? (jeu de rôle) | EUROPARTIE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
+Twitter : https://twitter.com/ARTEfr
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">ckrk6VFqyyw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/ckrk6VFqyyw.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate></item><item><title>Énergie : l’Europe perd-t-elle le contrôle ? (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
 
 En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
 
-Invités : Mélanie en véganie, Aline Dessine, Bonne Pitance
+Invités :  @Lydia__am   @Antoine-vs-Science  et Laurianne (Cultureetbotanique)
 
-Pour (re)voir les épisodes de EuroPartie et Euroguessr 👉 youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
+Pour (re)voir les épisodes de EuroPartie et Euroguessr : https://www.youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
 
 Abonnez-vous à la chaîne ARTE ! / @arte  
 
 Suivez-nous sur les réseaux !
+
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
 Instagram : https://www.instagram.com/artefr
-TikTok : https://www.tiktok.com/@artefr/
-Bluesky : https://bsky.app/profile/artefr.bsky.social
-Discord : https://discord.gg/NY5g6Dap
+Tiktok : https://www.tiktok.com/@artefr
 Twitch : https://www.twitch.tv/artefr
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">qvgqaWQ0_5k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/qvgqaWQ0_5k.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Europe : le grand tournant démographique ? I EUROGUESSR</title><description>Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+Snapchat (FAQ) : https://story.snapchat.com/p/da34de3d-c1bc-45bc-abcb-66aa1a4becdf/1855045968582656</description><guid isPermaLink="false">cS1rgLIMyAs</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cS1rgLIMyAs.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate></item><item><title>Le numérique européen est-il déjà perdu ? (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
 
-Dans cette émission, on explore le thème du déclin démographique en Europe :
+En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
 
-Pourquoi les taux de natalité baissent ?
-Quelles politiques de soutien à la parentalité selon les pays ?
-Quel rôle jouent l’IVG, l’immigration et les choix des nouvelles générations qui refusent parfois d’avoir des enfants ?
+Invités : Adeline Chetail, Julien Paniac et Luciole
 
-EuroPartie – Jeu de rôle législatif
+Pour (re)voir les épisodes de EuroPartie et Euroguessr : https://www.youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
 
-En JDR, les participants imagineront et rédigeront une loi sur la réglementation des jouets pour enfants.
+Abonnez-vous à la chaîne ARTE ! / @arte  
 
-Les invités sont : 
+Suivez-nous sur les réseaux !
 
-Charlotte Meyer, journaliste
-Lâm Hua, streameur
-Poppielala, streameuse 
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+BlueSky : https://bsky.app/profile/artefr.bsky.social
+Instagram : https://www.instagram.com/artefr
+Tiktok : https://www.tiktok.com/@artefr
+Twitch : https://www.twitch.tv/artefr</description><guid isPermaLink="false">-VvnXzfn5aM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/-VvnXzfn5aM.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Mercosur, viande de labo et PAC : on en parle dans EuroGuessr (depuis Bruxelles)</title><description>Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+
+CHAPITRAGE : 
+
+00:00:00 EuroGuessr
+01:49:18 EuroZap
+01:56:12 EuroPartie
+
+Au menu de cet épisode d’EuroGuessr :
+Entre diplomatie commerciale, bouleversements alimentaires et crise agricole, l’Europe est à table… et les débats sont servis !
+
+🍖 Accord UE-Mercosur : après 25 ans de négociations, l’accord est (presque) prêt. Mais à quel prix ? On décrypte les enjeux économiques, sanitaires et politiques derrière l’importation massive de viande sud-américaine.
+
+🌱 Nourritures du futur : steak végé, viande de labo, nouvelles habitudes de consommation… Que mangera-t-on demain en Europe ? 
+
+🚜 Europartie (Jeu de rôle) : PAC et agriculture européenne : état des lieux d’un secteur en mutation, entre pressions économiques, transition écologique.
 
 Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux.
 
@@ -63,37 +83,69 @@ Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr 
 TikTok : https://www.tiktok.com/@artefr/ 
 Twitter : https://twitter.com/ARTEfr 
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">Py3N3xEfL0I</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Py3N3xEfL0I.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Jeu de rôle : EUROPARTIE Round 2 : L'union fait la force | Replay Live | ARTE</title><description>Mêlez-vous de votre Union ! Entre jeu de rôle et discussions, Jean Massiet et Fibre Tigre s’entourent de Climarx, Hugo Lisoir, Mamapaprika et TPK dans EUROPARTIE pour faire la part belle à la jeunesse européenne et à l'importance des élections à venir. 
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">noqWDhpJP1I</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/noqWDhpJP1I.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Viande de labo, steaks végé… La PAC 2.0 va-t-elle changer nos assiettes ? (jeu de rôle) | EUROPARTIE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
 
-Avec les éclairages de MEP Assistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens et Chiara Piotto, journaliste et correspondante parisienne pour Sky News Italy.
+🚜 Thème de cet épisode : PAC et agriculture européenne : état des lieux d’un secteur en mutation, entre pressions économiques, transition écologique.
 
-ARTE revient ce samedi 1 juin en direct du Théâtre de la concorde à Paris à partir de 16h, pour la deuxième manche d’EUROPARTIE 🇪🇺
+En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
 
-Pour voir la première édition avec Salomé Saqué, Swann Perissé, Lâm Hua, Malek Délégué et Charlie Danger : youtube.com/watch?v=EivkMcPT_N8&amp;t
+Invités : Aline Dessine, Melanie en Véganie, Bonne Pitance
+
+Pour (re)voir les épisodes de EuroPartie et Euroguessr :    • Euroguessr 🇪🇺  
+
+Abonnez-vous à la chaîne ARTE ! / @arte  
 
 Suivez-nous sur les réseaux !
-
-Twitch : https://www.twitch.tv/artefr
-Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr
 TikTok : https://www.tiktok.com/@artefr/
-Twitter : https://twitter.com/ARTEfr
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">6h6fz2VilWs</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/6h6fz2VilWs.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate></item><item><title>L’Europe se prépare à la guerre ? (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
-
-Invités : Laytho, Mila de Blois et Charlotte Lemay 
-
-Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux
-
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr
-Tiktok : https://www.tiktok.com/@artefr
+Bluesky : https://bsky.app/profile/artefr.bsky.social
+Discord : https://discord.gg/NY5g6Dap
 Twitch : https://www.twitch.tv/artefr
-Snapchat (FAQ) : https://story.snapchat.com/p/da34de3d-c1bc-45bc-abcb-66aa1a4becdf/1855045968582656</description><guid isPermaLink="false">P7cclK5Tw5c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/P7cclK5Tw5c.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Loup en danger / Roumanie aux urnes / Espagne dans le noir I EUROGUESSR I ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">_Tf05RhJtNQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/_Tf05RhJtNQ.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate></item><item><title>EUROGUESSR 🇪🇺 présenté par  @JeanMassiet  ft. Niemesia, Ken Bogard et Flonflon | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
 
-Invités : Lydia AM (@Lydia__am) Lauriane Haumont (Cultureetbotanique) et Antoine Salaün (@Antoine-vs-Science)
+Au programme : le nouveau manuel de survie européen, les étudiants serbes qui se mobilisent contre la corruption et un jeu de rôle spécial échanges commerciaux France / USA. 
 
-Au programme :  le Parlement européen en faveur d’un abaissement du niveau de protection du loup, les élections en Roumanie (premier tour), le Black-Out en Espagne (coupure d'électricité) et un jeu de rôle sur l'énergie en Europe.  
+Invités : Niemesia, Ken Bogard et Flonflon 
+
+Voir le jeu de rôle autour des droits de douane ! https://youtu.be/WaFQTlRJQHE?si=ZoSCHrt7_xMj72Vh
+
+Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux.
+
+Voir de précédents Euroguessr :
+Sur la fast-fashion : https://www.youtube.com/live/ckrk6VFqyyw?si=UNMhgHx_hKTyYI8z
+Sur l'intelligence artificielle : https://www.youtube.com/live/BsTeKdsh4Ms?si=pRqBYtRzIKpBeAKF
+Le premier avec avec Gastronogeek, Marie Palot et Scarabète : https://www.youtube.com/live/YAprcbXa-p4?si=P-Nd6uo7zNFfkVzS
+
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux ! 
+Twitch : https://www.twitch.tv/artefr 
+Bluesky : https://bsky.app/profile/artefr.bsky.social 
+Instagram : https://www.instagram.com/artefr 
+TikTok : https://www.tiktok.com/@artefr/ 
+Twitter : https://twitter.com/ARTEfr 
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">VLiGR0an_WA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/VLiGR0an_WA.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Europe vs USA : la guerre commerciale (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+
+Au programme de ce replay : jeu de rôle spécial échanges commerciaux France / USA. 
+Pour voir la première partie d'Euroguessr : https://youtube.com/live/VLiGR0an_WA
+
+Invités : Niemesia, Ken Bogard et Flonflon 
+
+Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux.
+
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux ! 
+Twitch : https://www.twitch.tv/artefr 
+Bluesky : https://bsky.app/profile/artefr.bsky.social 
+Instagram : https://www.instagram.com/artefr 
+TikTok : https://www.tiktok.com/@artefr/ 
+Twitter : https://twitter.com/ARTEfr 
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">WaFQTlRJQHE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/WaFQTlRJQHE.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺  Vont-ils reconnaitre l'Europe ? (ft Adeline Chetail, Julien Paniac et Luciole) | EUROGUESSR</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+
+Invités : Adeline Chetail, Julien Paniac et Luciole
+
+Au programme : les mesures de l'Europe pour sauvegarder les espaces maritimes et le jeu de rôle sera sur la souveraineté numérique
 
 Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux.
 
@@ -107,7 +159,46 @@ Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr 
 TikTok : https://www.tiktok.com/@artefr/ 
 Twitter : https://twitter.com/ARTEfr 
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">Xgbadmxn-ZQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Xgbadmxn-ZQ.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 🚀 L’Europe est-elle hors-jeu dans la conquête spatiale ? I EUROGUESSR</title><description>Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">llEj509W3UE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/llEj509W3UE.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Sauver les forêts européennes : mission impossible ? (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
+
+Pour (re)voir Euroguessr : https://www.youtube.com/watch?v=BsTeKdsh4Ms&amp;t=8750s
+Pour voir d'autres Europarties : https://www.youtube.com/watch?v=EivkMcPT_N8&amp;t=88s
+
+Invités : @YannToutCourt @mymyhaegel et @DefendIntelligence 
+
+Abonnez-vous à la chaîne ARTE ! / @arte  
+
+Suivez-nous sur les réseaux !
+
+Twitch : https://www.twitch.tv/artefr
+Bluesky : https://bsky.app/profile/artefr.bsky.social
+Instagram : https://www.instagram.com/artefr
+TikTok : https://www.tiktok.com/@artefr/
+Twitter : https://twitter.com/ARTEfr
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">w4Nf2HrqC7c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/w4Nf2HrqC7c.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate></item><item><title>On écrit une loi pour réglementer les jouets dangereux ! (Jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
+
+En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
+
+Invités :
+
+Charlotte Meyer, journaliste
+Lâm Hua, streameur
+Poppielala, streameuse
+
+Pour (re)voir les épisodes de EuroPartie et Euroguessr :  
+https://www.youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
+
+Abonnez-vous à la chaîne ARTE ! / @arte  
+
+Suivez-nous sur les réseaux !
+
+Suivez-nous sur les réseaux !
+Instagram : https://www.instagram.com/artefr
+TikTok : https://www.tiktok.com/@artefr/
+Bluesky : https://bsky.app/profile/artefr.bsky.social
+Discord : https://discord.gg/NY5g6Dap
+Twitch : https://www.twitch.tv/artefr
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">NxzHbhPLKHQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/NxzHbhPLKHQ.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 🚀 L’Europe est-elle hors-jeu dans la conquête spatiale ? I EUROGUESSR</title><description>Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
 
 Dans cette émission, on explore le thème de l'espace en Europe :
 
@@ -148,50 +239,11 @@ Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr 
 TikTok : https://www.tiktok.com/@artefr/ 
 Twitter : https://twitter.com/ARTEfr 
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">HuZZ_8JwD-I</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/HuZZ_8JwD-I.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate></item><item><title>On écrit une loi pour réglementer les jouets dangereux ! (Jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">HuZZ_8JwD-I</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/HuZZ_8JwD-I.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Loup en danger / Roumanie aux urnes / Espagne dans le noir I EUROGUESSR I ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
 
-En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
+Invités : Lydia AM (@Lydia__am) Lauriane Haumont (Cultureetbotanique) et Antoine Salaün (@Antoine-vs-Science)
 
-Invités :
-
-Charlotte Meyer, journaliste
-Lâm Hua, streameur
-Poppielala, streameuse
-
-Pour (re)voir les épisodes de EuroPartie et Euroguessr :  
-https://www.youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
-
-Abonnez-vous à la chaîne ARTE ! / @arte  
-
-Suivez-nous sur les réseaux !
-
-Suivez-nous sur les réseaux !
-Instagram : https://www.instagram.com/artefr
-TikTok : https://www.tiktok.com/@artefr/
-Bluesky : https://bsky.app/profile/artefr.bsky.social
-Discord : https://discord.gg/NY5g6Dap
-Twitch : https://www.twitch.tv/artefr
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">NxzHbhPLKHQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/NxzHbhPLKHQ.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Sauver les forêts européennes : mission impossible ? (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
-
-Pour (re)voir Euroguessr : https://www.youtube.com/watch?v=BsTeKdsh4Ms&amp;t=8750s
-Pour voir d'autres Europarties : https://www.youtube.com/watch?v=EivkMcPT_N8&amp;t=88s
-
-Invités : @YannToutCourt @mymyhaegel et @DefendIntelligence 
-
-Abonnez-vous à la chaîne ARTE ! / @arte  
-
-Suivez-nous sur les réseaux !
-
-Twitch : https://www.twitch.tv/artefr
-Bluesky : https://bsky.app/profile/artefr.bsky.social
-Instagram : https://www.instagram.com/artefr
-TikTok : https://www.tiktok.com/@artefr/
-Twitter : https://twitter.com/ARTEfr
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">w4Nf2HrqC7c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/w4Nf2HrqC7c.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺  Vont-ils reconnaitre l'Europe ? (ft Adeline Chetail, Julien Paniac et Luciole) | EUROGUESSR</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
-
-Invités : Adeline Chetail, Julien Paniac et Luciole
-
-Au programme : les mesures de l'Europe pour sauvegarder les espaces maritimes et le jeu de rôle sera sur la souveraineté numérique
+Au programme :  le Parlement européen en faveur d’un abaissement du niveau de protection du loup, les élections en Roumanie (premier tour), le Black-Out en Espagne (coupure d'électricité) et un jeu de rôle sur l'énergie en Europe.  
 
 Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux.
 
@@ -205,80 +257,49 @@ Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr 
 TikTok : https://www.tiktok.com/@artefr/ 
 Twitter : https://twitter.com/ARTEfr 
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">llEj509W3UE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/llEj509W3UE.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Europe vs USA : la guerre commerciale (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">Xgbadmxn-ZQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Xgbadmxn-ZQ.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate></item><item><title>L’Europe se prépare à la guerre ? (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
 
-Au programme de ce replay : jeu de rôle spécial échanges commerciaux France / USA. 
-Pour voir la première partie d'Euroguessr : https://youtube.com/live/VLiGR0an_WA
+Invités : Laytho, Mila de Blois et Charlotte Lemay 
 
-Invités : Niemesia, Ken Bogard et Flonflon 
+Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux
 
-Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux.
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr
+Tiktok : https://www.tiktok.com/@artefr
+Twitch : https://www.twitch.tv/artefr
+Snapchat (FAQ) : https://story.snapchat.com/p/da34de3d-c1bc-45bc-abcb-66aa1a4becdf/1855045968582656</description><guid isPermaLink="false">P7cclK5Tw5c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/P7cclK5Tw5c.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Jeu de rôle : EUROPARTIE Round 2 : L'union fait la force | Replay Live | ARTE</title><description>Mêlez-vous de votre Union ! Entre jeu de rôle et discussions, Jean Massiet et Fibre Tigre s’entourent de Climarx, Hugo Lisoir, Mamapaprika et TPK dans EUROPARTIE pour faire la part belle à la jeunesse européenne et à l'importance des élections à venir. 
 
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+Avec les éclairages de MEP Assistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens et Chiara Piotto, journaliste et correspondante parisienne pour Sky News Italy.
 
-Suivez-nous sur les réseaux ! 
-Twitch : https://www.twitch.tv/artefr 
-Bluesky : https://bsky.app/profile/artefr.bsky.social 
-Instagram : https://www.instagram.com/artefr 
-TikTok : https://www.tiktok.com/@artefr/ 
-Twitter : https://twitter.com/ARTEfr 
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">WaFQTlRJQHE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/WaFQTlRJQHE.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate></item><item><title>EUROGUESSR 🇪🇺 présenté par  @JeanMassiet  ft. Niemesia, Ken Bogard et Flonflon | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+ARTE revient ce samedi 1 juin en direct du Théâtre de la concorde à Paris à partir de 16h, pour la deuxième manche d’EUROPARTIE 🇪🇺
 
-Au programme : le nouveau manuel de survie européen, les étudiants serbes qui se mobilisent contre la corruption et un jeu de rôle spécial échanges commerciaux France / USA. 
-
-Invités : Niemesia, Ken Bogard et Flonflon 
-
-Voir le jeu de rôle autour des droits de douane ! https://youtu.be/WaFQTlRJQHE?si=ZoSCHrt7_xMj72Vh
-
-Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux.
-
-Voir de précédents Euroguessr :
-Sur la fast-fashion : https://www.youtube.com/live/ckrk6VFqyyw?si=UNMhgHx_hKTyYI8z
-Sur l'intelligence artificielle : https://www.youtube.com/live/BsTeKdsh4Ms?si=pRqBYtRzIKpBeAKF
-Le premier avec avec Gastronogeek, Marie Palot et Scarabète : https://www.youtube.com/live/YAprcbXa-p4?si=P-Nd6uo7zNFfkVzS
-
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux ! 
-Twitch : https://www.twitch.tv/artefr 
-Bluesky : https://bsky.app/profile/artefr.bsky.social 
-Instagram : https://www.instagram.com/artefr 
-TikTok : https://www.tiktok.com/@artefr/ 
-Twitter : https://twitter.com/ARTEfr 
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">VLiGR0an_WA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/VLiGR0an_WA.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Viande de labo, steaks végé… La PAC 2.0 va-t-elle changer nos assiettes ? (jeu de rôle) | EUROPARTIE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
-
-🚜 Thème de cet épisode : PAC et agriculture européenne : état des lieux d’un secteur en mutation, entre pressions économiques, transition écologique.
-
-En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
-
-Invités : Aline Dessine, Melanie en Véganie, Bonne Pitance
-
-Pour (re)voir les épisodes de EuroPartie et Euroguessr :    • Euroguessr 🇪🇺  
-
-Abonnez-vous à la chaîne ARTE ! / @arte  
+Pour voir la première édition avec Salomé Saqué, Swann Perissé, Lâm Hua, Malek Délégué et Charlie Danger : youtube.com/watch?v=EivkMcPT_N8&amp;t
 
 Suivez-nous sur les réseaux !
+
+Twitch : https://www.twitch.tv/artefr
+Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr
 TikTok : https://www.tiktok.com/@artefr/
-Bluesky : https://bsky.app/profile/artefr.bsky.social
-Discord : https://discord.gg/NY5g6Dap
-Twitch : https://www.twitch.tv/artefr
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">_Tf05RhJtNQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/_Tf05RhJtNQ.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Mercosur, viande de labo et PAC : on en parle dans EuroGuessr (depuis Bruxelles)</title><description>Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
+Twitter : https://twitter.com/ARTEfr
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">6h6fz2VilWs</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/6h6fz2VilWs.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate></item><item><title>🇪🇺 Europe : le grand tournant démographique ? I EUROGUESSR</title><description>Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
 
-CHAPITRAGE : 
+Dans cette émission, on explore le thème du déclin démographique en Europe :
 
-00:00:00 EuroGuessr
-01:49:18 EuroZap
-01:56:12 EuroPartie
+Pourquoi les taux de natalité baissent ?
+Quelles politiques de soutien à la parentalité selon les pays ?
+Quel rôle jouent l’IVG, l’immigration et les choix des nouvelles générations qui refusent parfois d’avoir des enfants ?
 
-Au menu de cet épisode d’EuroGuessr :
-Entre diplomatie commerciale, bouleversements alimentaires et crise agricole, l’Europe est à table… et les débats sont servis !
+EuroPartie – Jeu de rôle législatif
 
-🍖 Accord UE-Mercosur : après 25 ans de négociations, l’accord est (presque) prêt. Mais à quel prix ? On décrypte les enjeux économiques, sanitaires et politiques derrière l’importation massive de viande sud-américaine.
+En JDR, les participants imagineront et rédigeront une loi sur la réglementation des jouets pour enfants.
 
-🌱 Nourritures du futur : steak végé, viande de labo, nouvelles habitudes de consommation… Que mangera-t-on demain en Europe ? 
+Les invités sont : 
 
-🚜 Europartie (Jeu de rôle) : PAC et agriculture européenne : état des lieux d’un secteur en mutation, entre pressions économiques, transition écologique.
+Charlotte Meyer, journaliste
+Lâm Hua, streameur
+Poppielala, streameuse 
 
 Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux.
 
@@ -292,59 +313,38 @@ Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr 
 TikTok : https://www.tiktok.com/@artefr/ 
 Twitter : https://twitter.com/ARTEfr 
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">noqWDhpJP1I</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/noqWDhpJP1I.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Le numérique européen est-il déjà perdu ? (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">Py3N3xEfL0I</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Py3N3xEfL0I.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate></item><item><title>Viande de labo, steaks végé… La PAC 2.0 va-t-elle changer nos assiettes ? (jeu de rôle) | EUROPARTIE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
 
 En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
 
-Invités : Adeline Chetail, Julien Paniac et Luciole
+Invités : Mélanie en véganie, Aline Dessine, Bonne Pitance
 
-Pour (re)voir les épisodes de EuroPartie et Euroguessr : https://www.youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
+Pour (re)voir les épisodes de EuroPartie et Euroguessr 👉 youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
 
 Abonnez-vous à la chaîne ARTE ! / @arte  
 
 Suivez-nous sur les réseaux !
-
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-BlueSky : https://bsky.app/profile/artefr.bsky.social
-Instagram : https://www.instagram.com/artefr
-Tiktok : https://www.tiktok.com/@artefr
-Twitch : https://www.twitch.tv/artefr</description><guid isPermaLink="false">-VvnXzfn5aM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/-VvnXzfn5aM.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Énergie : l’Europe perd-t-elle le contrôle ? (jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
-
-En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
-
-Invités :  @Lydia__am   @Antoine-vs-Science  et Laurianne (Cultureetbotanique)
-
-Pour (re)voir les épisodes de EuroPartie et Euroguessr : https://www.youtube.com/playlist?list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
-
-Abonnez-vous à la chaîne ARTE ! / @arte  
-
-Suivez-nous sur les réseaux !
-
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr
-Tiktok : https://www.tiktok.com/@artefr
-Twitch : https://www.twitch.tv/artefr
-Snapchat (FAQ) : https://story.snapchat.com/p/da34de3d-c1bc-45bc-abcb-66aa1a4becdf/1855045968582656</description><guid isPermaLink="false">cS1rgLIMyAs</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cS1rgLIMyAs.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate></item><item><title>EUROGUESSR 🇪🇺 présenté par @JeanMassiet ft. Laytho, Mila de Blois et Charlotte Lemay | REPLAY | ARTE</title><description>🇪🇺 Mêlez-vous de votre Union ! Présenté par Jean Massiet, EuroGuessr aborde les grandes questions sociétales et politiques du moment sur l'Europe entre parties de Euroguessr et jeu de rôle autour de lois votées au Parlement européen. En compagnie de Fibre Tigre, Mamapaprika et Mepassistant. 
-
-Invités : Laytho, Mila de Blois et Charlotte Lemay 
-
-Avec les éclairages de MEP Assistant (Quentin Deschandelliers) : un professionnel de l'Europe, ancien assistant parlementaire, qui vulgarise la politique européenne sur Twitch pour expliquer son fonctionnement et ses enjeux
-
-CHAPITRAGE :
-0:00 EuroGuessr (Talkshow)
-01:53:48 EuroZap
-02:00:56 EuroPartie (Jeu de rôle) 
-
-Envie de plus d'Euroguessr ? Voir le replay sur les droits de douane et la guerre entre les Etats-Unis et l'Europe : https://youtube.com/live/VLiGR0an_WA
-
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Twitch : https://www.twitch.tv/artefr
-Bluesky : https://bsky.app/profile/artefr.bsky.social
 Instagram : https://www.instagram.com/artefr
 TikTok : https://www.tiktok.com/@artefr/
-Twitter : https://twitter.com/ARTEfr
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">ckrk6VFqyyw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/ckrk6VFqyyw.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate></item></channel></rss>
+Bluesky : https://bsky.app/profile/artefr.bsky.social
+Discord : https://discord.gg/NY5g6Dap
+Twitch : https://www.twitch.tv/artefr
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">qvgqaWQ0_5k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/qvgqaWQ0_5k.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate></item><item><title>L’Europe unie pour dominer l’espace : mission impossible ? (Jeu de rôle) | EUROPARTIE | ARTE</title><description>🇪🇺 Deuxième partie de l'émission EuroGuessr, Europartie se présente comme un jeu de rôle présenté par l’iconique Fibre Tigre, maître en la matière sur la plateforme de streaming. Le but de ce jeu ? Réunir plusieurs joueurs, des invités vidéastes et personnalités du web, et des personnes du public qui représenteront, chacun, un parti politique. Une loi leur sera soumise et ils devront proposer des modifications à cette loi afin qu’elle corresponde à leurs attentes et aux valeurs de leur parti. Cette mécanique de jeu met en lumière la complexité de la mise en place d’une nouvelle loi et les contraintes qu’elle impose.
+
+En compagnie de Fibre Tigre, Jean Massiet, Mamapaprika et Mepassistant (Quentin Deschandelliers), conseiller juridique à la Fédération des éditeurs européens. 
+
+Invités :
+
+Hugo Lisoir
+Doctriz
+Galactic Chloé
+
+Retrouvez les autres épisodes de EuroPartie ici : https://www.youtube.com/watch?v=Py3N3xEfL0I&amp;list=PLCwXWOyIR22v8RpAuKWJaxGXoRfmYTgPu
+
+Suivez-nous sur les réseaux !
+Instagram : https://www.instagram.com/artefr
+TikTok : https://www.tiktok.com/@artefr/
+Bluesky : https://bsky.app/profile/artefr.bsky.social
+Discord : https://discord.gg/NY5g6Dap
+Twitch : https://www.twitch.tv/artefr
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">7hC9P41DV9g</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/7hC9P41DV9g.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate></item></channel></rss>
