@@ -1,75 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg</url><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sun, 01 Feb 2026 05:57:58 +0000</lastBuildDate><itunes:author>Bazar du Grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg"/><item><title>[CRITIQUE] Doctor Strange in the Multiverse of Madness</title><description>Dernière sortie Marvel extrêmement attendue avec Sam Raimi au commande.
-Verdict?</description><guid isPermaLink="false">Zmo-PA4Y9AM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Zmo-PA4Y9AM.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - TOP GUN MAVERICK (Avec et Sans Spoilers)</title><description>Que penser de la dernière production grand spectacle de Tom Cruise?</description><guid isPermaLink="false">GkHxIIoFdtQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/GkHxIIoFdtQ.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: Les Chevaliers du Zodiaque (avec et avec spoils)</title><description>Evidemment qu'on allait le voir, et EVIDEMMENT que c'est pas bien! Mais à quel degré? Aussi nul que DB evolution? La réponse avec et avec spoils.
-
-Timestamps:
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg</url><title>Critiques Ciné</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sun, 01 Feb 2026 13:27:07 +0000</lastBuildDate><itunes:author>Bazar du Grenier</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bazar_jdg.jpg"/><item><title>CRITIQUE - BIRDS OF PREY (spoils à partir de 11:45)</title><description>On est allés voir Birds of Prey de Cathy Yan hier soir et on vous donne notre avis avec et sans spoils ! (vu en VF au cinéma Le Club de Fougères)</description><guid isPermaLink="false">33ynbdzpY_0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/33ynbdzpY_0.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - SONIC, Le Film (SPOILS à partir de 10:00)</title><description>On est allés voir Sonic le film de Jeff Flower au cinéma Le club de Fougères en VOST. Avis à chaud avec et sans spoils !</description><guid isPermaLink="false">GhnsNUmtoOw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/GhnsNUmtoOw.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - EN AVANT (spoils à partir de 11:51)</title><description>Critique d'en avant, le dernier Pixar réalisé par Dan Scanlon, vu au cinéma Le Club de Fougères, en VF. Le tout comme d'hab avec et sans spoils.</description><guid isPermaLink="false">6jx4Mp5iLRA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/6jx4Mp5iLRA.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate></item><item><title>CRITIQUE -  GHOSTBUSTERS (avec et sans spoilers!)</title><description>Belle avant première pour Ghostbusters l'héritage, qui sort officiellement le 1er décembre ! La critique toute fraîche avec et sans spoil (vu au cinéma Le Club à Fougères en VF).
 00:00 Intro
-01:53 Spoil mais pas trop
-18:07 Spoil</description><guid isPermaLink="false">smkEfqOuFwo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/smkEfqOuFwo.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate></item><item><title>(Critique ciné) Le Manoir Hanté!</title><description>Nouvelle adaptation de la célèbre attraction Disney qui fait suite (indirecte) au film avec Murphy. Faut t'il prendre un fastpass pour le voir?</description><guid isPermaLink="false">DpuW967BxfU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/DpuW967BxfU.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Les Tortues Ninja : Chaos chez les Mutants</title><description>Cowabunga ou NoWabunga?
+01:30 No Spoil
+11:52 Spoil</description><guid isPermaLink="false">DE7OZMqPsC4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/DE7OZMqPsC4.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - RESIDENT EVIL: Welcome to Racoon City (avec et sans Spoilers)</title><description>Film vu en 4DX, pour plus d'immersion, regardez cette critique en remuant sur votre siège et en vous aspergeant d'eau dès que Fred et Seb postillonnent. 
 00:00 Intro
-02:31 No Spoil
-15:45 Spoil</description><guid isPermaLink="false">0wvcHfnvNqw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/0wvcHfnvNqw.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Black Adam!</title><description>Un film de The Rock avec The Rock pour The Rock. Critique par Fred et Seb.</description><guid isPermaLink="false">aqDDhbqWFa0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/aqDDhbqWFa0.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: AQUAMAN 2 - L'ENTERREMENT DU DCEU</title><description>Et voila, à l'heure ou Aquaman 2 va disparaître des cinémas , une petite critique à la bourre et surtout un bilan de cette aventure rocambolesque du DCEU après 15 (!) films -et un 16ème qui ne sortira probablement jamais...
-
-Timestamps
+02:24 Sans Spoilers
+15:01 Avec Spoilers</description><guid isPermaLink="false">2Qv6wJLMOy4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/2Qv6wJLMOy4.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - THE BATMAN (Avec et Sans Spoilers)</title><description>Et voilà le DC Nouveau est arrivé ! C'est long mais c'est beau.
+Vu en avant-première et en VOST au cinéma Le Club de Fougères (merci encore pour cette belle séance!).
 00:00 Intro
-02:22 No Spoil
-12:51 Spoil</description><guid isPermaLink="false">nbapwiLI7tQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/nbapwiLI7tQ.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: DUNE, DEUXIÈME PARTIE</title><description>Petite critique du dernier phénomène de la S.F. sablonnée.
+03:23 No Spoil
+15:20 Spoil</description><guid isPermaLink="false">7bYmj5NibcQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/7bYmj5NibcQ.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: Alerte Rouge (Avec et sans spoil)</title><description>Un nouveau Pixar, ca se rate pas ! Malheureusement pas vu au cinéma, seulement dispo en VOD et c'est fort dommage parce que le film mérite la projection à l'instar de l'incroyable Soul.
 
-Timestamps
-0:00 Intro
-1:17 No Spoil
-11:18 Spoil</description><guid isPermaLink="false">SnXc02jzpKI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/SnXc02jzpKI.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] MADAME WEB</title><description>Un nouveau Spider-Man ? Oui ! Mais sans l'homme araignée. Alors que vaut vraiment Madame Web ?
+00:00 Intro
+01:56 No Spoil
+12:08 Spoil</description><guid isPermaLink="false">a6eAprzWPis</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/a6eAprzWPis.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - THOR: LOVE AND THUNDER (Avec et Sans Spoilers)</title><description>Le nouveau Thor réalisé par Taika Waititi qui est une tête d'affiche de cette fin de phase 4 ravivera il l'amour chez les fans de MARVEL ? (oui c'est une phrase à rallonge)
+Probablement pas pour nos deux Youteubeurs Fougerais, qui vous livrent içi leurs impressions mi figue, mi raisin !
 
-Timestamps
-0:00 Intro
-1:32 No Spoil
-17:37 Spoil</description><guid isPermaLink="false">dlVn9V78NAk</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/dlVn9V78NAk.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : DEADPOOL ET WOLVERINE</title><description>Le retour des critiques avec ÉVIDEMMENT un film de super-héros dopé aux multiverses et aux caméos improbables... comme un air de déjà-vu?
+00:00 INTRO
+01:01 NO SPOIL
+13:41 SPOIL</description><guid isPermaLink="false">mEnJukKsp_w</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/mEnJukKsp_w.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: LE VISITEUR DU FUTUR</title><description>Et voila, le film qui porte au cinéma la weeb série de François Descraques. Echec? Réussite? Entrepôt rempli de cartons? Passoire métallique sur la tête pour faire postapo ? Toutes les réponses dans cette critique.
+Film vu au cinéma Le Club de Fougères.
 
+00:00 Introduction/Disclaimer
+02:26 No Spoil
+12:47 Spoil</description><guid isPermaLink="false">3pzI039pSdY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/3pzI039pSdY.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate></item><item><title>Dragon Ball Super: Super Hero! [Critique Ciné]</title><description>le dernier film d'animation Dragon Ball Super est en salle! Fred et Seb s'ont ils en vie après la 4DX?</description><guid isPermaLink="false">AaMVfTLT-M8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/AaMVfTLT-M8.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Wakanda Forever - Black Panther</title><description>Wakanda Forever: Black Panther 2 le retour de la vengeance est sorti au cinéma, quel est l'avis de  Fred et Seb?</description><guid isPermaLink="false">0s_To29Y_zw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/0s_To29Y_zw.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Avatar 2: La voie de l'eau!</title><description>Evenement de cette fin d'année, Avatar 2 sera t'il à la hauteur de son prédécesseur au succès monstrueux, ou sera juste un pétard mouillé? L'avis des tauliers avec et sans spoils.
+00:00 Intro 
+02:40 No Spoil 
+14:54 Spoilers</description><guid isPermaLink="false">K1Rw_rlZG24</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/K1Rw_rlZG24.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Shazam! La rage des dieux!</title><description>Aurez vous envie de Skittles à la fin de cette critique?
+Sortie le 29 Mars 2023 en salle et très rapidement en VOD, que pensent Fred et Seb de ce nouvel opus de l'univers DC?</description><guid isPermaLink="false">36RdMyf-bgA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/36RdMyf-bgA.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: Spider-Man : Across The Spider-Verse! (avec et sans spoils)</title><description>La suite du tant attendu film d'animation Spiderman!</description><guid isPermaLink="false">LC_QyRx-SAY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/LC_QyRx-SAY.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] The Flash!</title><description>Merci à Métal Hurlant d'avoir sponsorisé cette vidéo
+Pour vous abonner à Métal Hurlant ➡️ https://www.metalhurlant.com/@BazarDuGrenier
+Commander un numéro sur :
+Amazon : https://tinyurl.com/Metal-hurlant
+Fnac : https://tinyurl.com/MetalHurlant
+BDfugue : http://www.bdfugue.com/a/?ean=9782731658439&amp;ref=415
+
+Dernier film du DCEU qui a connu plusieurs problème de production et d'acteur. Que vaut le film du héros qui utilise la force véloce?</description><guid isPermaLink="false">jR83olU9TmQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/jR83olU9TmQ.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate></item><item><title>[CRITIQUE] Indiana Jones et le Cadran de la destinée!</title><description>Cinquième aventure d'Indiana Jones au cinéma. Est ce l'heure de la retraite?</description><guid isPermaLink="false">cZIwj2XhYro</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cZIwj2XhYro.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : MINECRAFT, Le Film</title><description>Une nouvelle adaptation de jeu vidéo en film qui laisse un parfum de sel ou d'aigre-doux, au choix.</description><guid isPermaLink="false">Etua5LJKyAA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Etua5LJKyAA.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : 28 ANS PLUS TARD</title><description>Est-ce que « 28 ans plus tard », le nouveau chapitre signé Danny Boyle, réussit à rivaliser avec les deux premiers volets devenus cultes ? Entre retour aux sources et nouvelles idées, découvrez si ce troisième épisode vaut le détour. Préparez-vous, c’est reparti pour une virée apocalyptique !
+
+Timestamp :
 00:00:00 INTRO
-00:03:19 NO SPOIL
-00:18:56 SPOIL</description><guid isPermaLink="false">tcx28gTK-iQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/tcx28gTK-iQ.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - ANTMAN et la Guêpe: Quantumania! (Avec et sans Spoilers)</title><description>00:00 Intro
-02:33 No spoil
-15:48 Spoilers</description><guid isPermaLink="false">yJvxYp-Q6fo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/yJvxYp-Q6fo.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: SUPER MARIO BROS LE FILM (avec et sans Spoilers)</title><description>On cherchait vite un film pour ne pas voir Shazam 2 et voila que le nouveau Mario sort! Il aura fallu 30 ans pour oublier le premier opus ce qui semble approprié comme laps de temps.
-On passe le flim au crible avec et sans spoilers pour l'aérodynamisme.
-Vu au cinéma le Club de Fougères en VF.
+00:02:44 NO SPOIL
+00:11:22 SPOIL</description><guid isPermaLink="false">DbmcGOQPHzI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/DbmcGOQPHzI.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: JURASSIC WORLD RENAISSANCE</title><description>Fred et Seb vous parlent du dernier film de la saga JURASSIC WORLD réalisé par Gareth Edwards.
 
-Timestamps:
-00:00 Intro
-01:43 No Spoil
-15:54 Spoil</description><guid isPermaLink="false">YaBgew70Q-c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/YaBgew70Q-c.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - DONJONS ET DRAGONS L'HONNEUR DES VOLEURS (Avec et sans spoils)</title><description>Après une bande annonce qui faisait pas rêver et 3 films entre nanard et désespoir, ce nouvel opus tient-il ses promesses de représenter la licence légendaire de jeux de rôles? Réponse avec et sans spoils (vu au cinéma Le Club de Fougères en VOST).
-
-00:00 Intro
-03:16 No Spoil
-14:48 SPOIL</description><guid isPermaLink="false">JyuE_NEK7tI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/JyuE_NEK7tI.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : VICE-VERSA 2</title><description>Un nouveau Pixar, c'est toujours l'évènement, même si les dernières sorties n'ont pas été toutes de qualité (Buzz l'éclair par exemple).. La suite de Vice-versa remontera-elle le niveau?
-
-00:00:00 Intro
-00:01:53 NO SPOIL
-00:09:50 SPOIL</description><guid isPermaLink="false">v8ENsMdF_k0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/v8ENsMdF_k0.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: ALIEN: ROMULUS (AVEC et SANS spoil)</title><description>On vous parle d'Alien: Romulus pour voir si ce nouvel opus est à la hauteur ou s'il se contente de surfer sur la nostalgie.
-
+Timestamp :
 00:00:00 INTRO
-00:03:04 NO SPOIL
-00:16:34 SPOIL</description><guid isPermaLink="false">J1iw3cYaYiQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/J1iw3cYaYiQ.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: SONIC 3, LE FILM (AVEC et SANS spoil)</title><description>On vous parle du dernier opus de la saga SONIC! Le meilleur des 3?
-
-00:00:00 INTRO
-00:00:57 NO SPOIL
-00:13:45 SPOIL
-
-Dispo en podcast sur Spotify, Apple Podcasts etc : https://www.buzzsprout.com/2029308</description><guid isPermaLink="false">InRLf8WsBJA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/InRLf8WsBJA.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - JOKER : FOLIE A DEUX (Avec et sans spoils)</title><description>Réaction à chaud après visionnage de Joker 2 : Folie à deux, une suite pas vraiment désirée et visiblement pas désirable vu les chiffres catastrophiques. Comme d'hab, du no spoil, du spoil et des hot takes comme si il en pleuvait.
-
-00:00 Intro
-01:47 NO SPOIL
-16:46 SPOIL</description><guid isPermaLink="false">1it7kQz4cH4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/1it7kQz4cH4.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : LES 4 FANTASTIQUES PREMIERS PAS</title><description>Rattrapage des vacances, avec un petit mot sur le dernier Marvel avec l'omniprésent Pedro Pascal. Comme d'hab, avec et sans spoils.
-
-00:00 Intro
-01:23 No spoil
-14:48 Spoils</description><guid isPermaLink="false">zZ9ypLdTpb0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/zZ9ypLdTpb0.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate></item><item><title>[SERIE] CRITIQUE : ALIEN EARTH</title><description>Une toute première fois avec la critique de la série Alien: Earth créée par Noah Hawley des excellentes séries Legion et Fargo. Enfin un peu de frais dans l'univers faisandé d'Alien?
-
-Dispo en Podcast (Deezer spotify etc):
-https://www.buzzsprout.com/2029308
-
-00:00 Préambule
-07:42 NO SPOIL (enfin, pas trop)
-18:34 SPOIL</description><guid isPermaLink="false">j-iA9u7TsUU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/j-iA9u7TsUU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate></item><item><title>[Critique  Ciné] Running Man!</title><description>Le dernier film de Edgar Wright mérite t'il la désertion des spectateurs?</description><guid isPermaLink="false">l_qCoNF91Cc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/l_qCoNF91Cc.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - AVATAR : DE FEU ET DE CENDRES</title><description>Le retour du roi Jim, saura-il une fois de plus conquérir les salles obscures et engranger un milliard comme ses 3 derniers films ?
+00:00:50 NO SPOIL
+00:17:15 SPOIL</description><guid isPermaLink="false">LJfRCjBV278</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/LJfRCjBV278.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - AVATAR : DE FEU ET DE CENDRES</title><description>Le retour du roi Jim, saura-il une fois de plus conquérir les salles obscures et engranger un milliard comme ses 3 derniers films ?
 
 Dispo en Podcast sur spotify  https://open.spotify.com/show/0mrRs1Wrk7hOiigkwObwnA
 et les autres plateformes https://www.buzzsprout.com/2029308
@@ -77,43 +52,74 @@ et les autres plateformes https://www.buzzsprout.com/2029308
 Timestamps:
 00:00 Intro
 01:23 NO SPOIL
-12:12 SPOIL</description><guid isPermaLink="false">dfCxZa279eA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/dfCxZa279eA.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: JURASSIC WORLD RENAISSANCE</title><description>Fred et Seb vous parlent du dernier film de la saga JURASSIC WORLD réalisé par Gareth Edwards.
+12:12 SPOIL</description><guid isPermaLink="false">dfCxZa279eA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/dfCxZa279eA.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate></item><item><title>[Critique  Ciné] Running Man!</title><description>Le dernier film de Edgar Wright mérite t'il la désertion des spectateurs?</description><guid isPermaLink="false">l_qCoNF91Cc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/l_qCoNF91Cc.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate></item><item><title>[SERIE] CRITIQUE : ALIEN EARTH</title><description>Une toute première fois avec la critique de la série Alien: Earth créée par Noah Hawley des excellentes séries Legion et Fargo. Enfin un peu de frais dans l'univers faisandé d'Alien?
 
-Timestamp :
-00:00:00 INTRO
-00:00:50 NO SPOIL
-00:17:15 SPOIL</description><guid isPermaLink="false">LJfRCjBV278</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/LJfRCjBV278.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : 28 ANS PLUS TARD</title><description>Est-ce que « 28 ans plus tard », le nouveau chapitre signé Danny Boyle, réussit à rivaliser avec les deux premiers volets devenus cultes ? Entre retour aux sources et nouvelles idées, découvrez si ce troisième épisode vaut le détour. Préparez-vous, c’est reparti pour une virée apocalyptique !
+Dispo en Podcast (Deezer spotify etc):
+https://www.buzzsprout.com/2029308
 
-Timestamp :
-00:00:00 INTRO
-00:02:44 NO SPOIL
-00:11:22 SPOIL</description><guid isPermaLink="false">DbmcGOQPHzI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/DbmcGOQPHzI.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : MINECRAFT, Le Film</title><description>Une nouvelle adaptation de jeu vidéo en film qui laisse un parfum de sel ou d'aigre-doux, au choix.</description><guid isPermaLink="false">Etua5LJKyAA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Etua5LJKyAA.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate></item><item><title>[CRITIQUE] Indiana Jones et le Cadran de la destinée!</title><description>Cinquième aventure d'Indiana Jones au cinéma. Est ce l'heure de la retraite?</description><guid isPermaLink="false">cZIwj2XhYro</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/cZIwj2XhYro.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] The Flash!</title><description>Merci à Métal Hurlant d'avoir sponsorisé cette vidéo
-Pour vous abonner à Métal Hurlant ➡️ https://www.metalhurlant.com/@BazarDuGrenier
-Commander un numéro sur :
-Amazon : https://tinyurl.com/Metal-hurlant
-Fnac : https://tinyurl.com/MetalHurlant
-BDfugue : http://www.bdfugue.com/a/?ean=9782731658439&amp;ref=415
-
-Dernier film du DCEU qui a connu plusieurs problème de production et d'acteur. Que vaut le film du héros qui utilise la force véloce?</description><guid isPermaLink="false">jR83olU9TmQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/jR83olU9TmQ.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: Spider-Man : Across The Spider-Verse! (avec et sans spoils)</title><description>La suite du tant attendu film d'animation Spiderman!</description><guid isPermaLink="false">LC_QyRx-SAY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/LC_QyRx-SAY.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Shazam! La rage des dieux!</title><description>Aurez vous envie de Skittles à la fin de cette critique?
-Sortie le 29 Mars 2023 en salle et très rapidement en VOD, que pensent Fred et Seb de ce nouvel opus de l'univers DC?</description><guid isPermaLink="false">36RdMyf-bgA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/36RdMyf-bgA.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Avatar 2: La voie de l'eau!</title><description>Evenement de cette fin d'année, Avatar 2 sera t'il à la hauteur de son prédécesseur au succès monstrueux, ou sera juste un pétard mouillé? L'avis des tauliers avec et sans spoils.
-00:00 Intro 
-02:40 No Spoil 
-14:54 Spoilers</description><guid isPermaLink="false">K1Rw_rlZG24</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/K1Rw_rlZG24.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Wakanda Forever - Black Panther</title><description>Wakanda Forever: Black Panther 2 le retour de la vengeance est sorti au cinéma, quel est l'avis de  Fred et Seb?</description><guid isPermaLink="false">0s_To29Y_zw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/0s_To29Y_zw.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate></item><item><title>Dragon Ball Super: Super Hero! [Critique Ciné]</title><description>le dernier film d'animation Dragon Ball Super est en salle! Fred et Seb s'ont ils en vie après la 4DX?</description><guid isPermaLink="false">AaMVfTLT-M8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/AaMVfTLT-M8.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: LE VISITEUR DU FUTUR</title><description>Et voila, le film qui porte au cinéma la weeb série de François Descraques. Echec? Réussite? Entrepôt rempli de cartons? Passoire métallique sur la tête pour faire postapo ? Toutes les réponses dans cette critique.
-Film vu au cinéma Le Club de Fougères.
-
-00:00 Introduction/Disclaimer
-02:26 No Spoil
-12:47 Spoil</description><guid isPermaLink="false">3pzI039pSdY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/3pzI039pSdY.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - THOR: LOVE AND THUNDER (Avec et Sans Spoilers)</title><description>Le nouveau Thor réalisé par Taika Waititi qui est une tête d'affiche de cette fin de phase 4 ravivera il l'amour chez les fans de MARVEL ? (oui c'est une phrase à rallonge)
-Probablement pas pour nos deux Youteubeurs Fougerais, qui vous livrent içi leurs impressions mi figue, mi raisin !
-
-00:00 INTRO
-01:01 NO SPOIL
-13:41 SPOIL</description><guid isPermaLink="false">mEnJukKsp_w</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/mEnJukKsp_w.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: Alerte Rouge (Avec et sans spoil)</title><description>Un nouveau Pixar, ca se rate pas ! Malheureusement pas vu au cinéma, seulement dispo en VOD et c'est fort dommage parce que le film mérite la projection à l'instar de l'incroyable Soul.
+00:00 Préambule
+07:42 NO SPOIL (enfin, pas trop)
+18:34 SPOIL</description><guid isPermaLink="false">j-iA9u7TsUU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/j-iA9u7TsUU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : LES 4 FANTASTIQUES PREMIERS PAS</title><description>Rattrapage des vacances, avec un petit mot sur le dernier Marvel avec l'omniprésent Pedro Pascal. Comme d'hab, avec et sans spoils.
 
 00:00 Intro
-01:56 No Spoil
-12:08 Spoil</description><guid isPermaLink="false">a6eAprzWPis</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/a6eAprzWPis.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - THE BATMAN (Avec et Sans Spoilers)</title><description>Et voilà le DC Nouveau est arrivé ! C'est long mais c'est beau.
-Vu en avant-première et en VOST au cinéma Le Club de Fougères (merci encore pour cette belle séance!).
+01:23 No spoil
+14:48 Spoils</description><guid isPermaLink="false">zZ9ypLdTpb0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/zZ9ypLdTpb0.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - JOKER : FOLIE A DEUX (Avec et sans spoils)</title><description>Réaction à chaud après visionnage de Joker 2 : Folie à deux, une suite pas vraiment désirée et visiblement pas désirable vu les chiffres catastrophiques. Comme d'hab, du no spoil, du spoil et des hot takes comme si il en pleuvait.
+
 00:00 Intro
-03:23 No Spoil
-15:20 Spoil</description><guid isPermaLink="false">7bYmj5NibcQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/7bYmj5NibcQ.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate></item></channel></rss>
+01:47 NO SPOIL
+16:46 SPOIL</description><guid isPermaLink="false">1it7kQz4cH4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/1it7kQz4cH4.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: SONIC 3, LE FILM (AVEC et SANS spoil)</title><description>On vous parle du dernier opus de la saga SONIC! Le meilleur des 3?
+
+00:00:00 INTRO
+00:00:57 NO SPOIL
+00:13:45 SPOIL
+
+Dispo en podcast sur Spotify, Apple Podcasts etc : https://www.buzzsprout.com/2029308</description><guid isPermaLink="false">InRLf8WsBJA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/InRLf8WsBJA.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: ALIEN: ROMULUS (AVEC et SANS spoil)</title><description>On vous parle d'Alien: Romulus pour voir si ce nouvel opus est à la hauteur ou s'il se contente de surfer sur la nostalgie.
+
+00:00:00 INTRO
+00:03:04 NO SPOIL
+00:16:34 SPOIL</description><guid isPermaLink="false">J1iw3cYaYiQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/J1iw3cYaYiQ.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : VICE-VERSA 2</title><description>Un nouveau Pixar, c'est toujours l'évènement, même si les dernières sorties n'ont pas été toutes de qualité (Buzz l'éclair par exemple).. La suite de Vice-versa remontera-elle le niveau?
+
+00:00:00 Intro
+00:01:53 NO SPOIL
+00:09:50 SPOIL</description><guid isPermaLink="false">v8ENsMdF_k0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/v8ENsMdF_k0.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - DONJONS ET DRAGONS L'HONNEUR DES VOLEURS (Avec et sans spoils)</title><description>Après une bande annonce qui faisait pas rêver et 3 films entre nanard et désespoir, ce nouvel opus tient-il ses promesses de représenter la licence légendaire de jeux de rôles? Réponse avec et sans spoils (vu au cinéma Le Club de Fougères en VOST).
+
+00:00 Intro
+03:16 No Spoil
+14:48 SPOIL</description><guid isPermaLink="false">JyuE_NEK7tI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/JyuE_NEK7tI.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: SUPER MARIO BROS LE FILM (avec et sans Spoilers)</title><description>On cherchait vite un film pour ne pas voir Shazam 2 et voila que le nouveau Mario sort! Il aura fallu 30 ans pour oublier le premier opus ce qui semble approprié comme laps de temps.
+On passe le flim au crible avec et sans spoilers pour l'aérodynamisme.
+Vu au cinéma le Club de Fougères en VF.
+
+Timestamps:
+00:00 Intro
+01:43 No Spoil
+15:54 Spoil</description><guid isPermaLink="false">YaBgew70Q-c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/YaBgew70Q-c.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - ANTMAN et la Guêpe: Quantumania! (Avec et sans Spoilers)</title><description>00:00 Intro
+02:33 No spoil
+15:48 Spoilers</description><guid isPermaLink="false">yJvxYp-Q6fo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/yJvxYp-Q6fo.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE : DEADPOOL ET WOLVERINE</title><description>Le retour des critiques avec ÉVIDEMMENT un film de super-héros dopé aux multiverses et aux caméos improbables... comme un air de déjà-vu?
+
+00:00:00 INTRO
+00:03:19 NO SPOIL
+00:18:56 SPOIL</description><guid isPermaLink="false">tcx28gTK-iQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/tcx28gTK-iQ.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] MADAME WEB</title><description>Un nouveau Spider-Man ? Oui ! Mais sans l'homme araignée. Alors que vaut vraiment Madame Web ?
+
+Timestamps
+0:00 Intro
+1:32 No Spoil
+17:37 Spoil</description><guid isPermaLink="false">dlVn9V78NAk</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/dlVn9V78NAk.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: DUNE, DEUXIÈME PARTIE</title><description>Petite critique du dernier phénomène de la S.F. sablonnée.
+
+Timestamps
+0:00 Intro
+1:17 No Spoil
+11:18 Spoil</description><guid isPermaLink="false">SnXc02jzpKI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/SnXc02jzpKI.mp3" length="0" type="audio/mpeg"/><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: AQUAMAN 2 - L'ENTERREMENT DU DCEU</title><description>Et voila, à l'heure ou Aquaman 2 va disparaître des cinémas , une petite critique à la bourre et surtout un bilan de cette aventure rocambolesque du DCEU après 15 (!) films -et un 16ème qui ne sortira probablement jamais...
+
+Timestamps
+00:00 Intro
+02:22 No Spoil
+12:51 Spoil</description><guid isPermaLink="false">nbapwiLI7tQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/nbapwiLI7tQ.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Black Adam!</title><description>Un film de The Rock avec The Rock pour The Rock. Critique par Fred et Seb.</description><guid isPermaLink="false">aqDDhbqWFa0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/aqDDhbqWFa0.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate></item><item><title>[Critique Ciné] Les Tortues Ninja : Chaos chez les Mutants</title><description>Cowabunga ou NoWabunga?
+00:00 Intro
+02:31 No Spoil
+15:45 Spoil</description><guid isPermaLink="false">0wvcHfnvNqw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/0wvcHfnvNqw.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate></item><item><title>(Critique ciné) Le Manoir Hanté!</title><description>Nouvelle adaptation de la célèbre attraction Disney qui fait suite (indirecte) au film avec Murphy. Faut t'il prendre un fastpass pour le voir?</description><guid isPermaLink="false">DpuW967BxfU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/DpuW967BxfU.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE: Les Chevaliers du Zodiaque (avec et avec spoils)</title><description>Evidemment qu'on allait le voir, et EVIDEMMENT que c'est pas bien! Mais à quel degré? Aussi nul que DB evolution? La réponse avec et avec spoils.
+
+Timestamps:
+00:00 Intro
+01:53 Spoil mais pas trop
+18:07 Spoil</description><guid isPermaLink="false">smkEfqOuFwo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/smkEfqOuFwo.mp3" length="0" type="audio/mpeg"/><pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate></item><item><title>CRITIQUE - TOP GUN MAVERICK (Avec et Sans Spoilers)</title><description>Que penser de la dernière production grand spectacle de Tom Cruise?</description><guid isPermaLink="false">GkHxIIoFdtQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/GkHxIIoFdtQ.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate></item><item><title>[CRITIQUE] Doctor Strange in the Multiverse of Madness</title><description>Dernière sortie Marvel extrêmement attendue avec Sam Raimi au commande.
+Verdict?</description><guid isPermaLink="false">Zmo-PA4Y9AM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Zmo-PA4Y9AM.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate></item></channel></rss>
