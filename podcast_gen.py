@@ -7,6 +7,7 @@ import glob
 import random
 import shutil
 import subprocess
+import requests
 import xml.etree.ElementTree as ET
 from github import Github
 from feedgen.feed import FeedGenerator
@@ -88,20 +89,35 @@ def cleanup_files(vid_id):
         try: os.remove(f)
         except: pass
 
+# --- FONCTION UPLOAD BLINDÉE (RETRY) ---
 def upload_asset(release, filename):
     if not os.path.exists(filename): return None
-    print(f"   [UPLOAD] Envoi de {filename} vers GitHub...")
+    print(f"   [UPLOAD] Préparation envoi de {filename}...")
+    
+    # Nettoyage préventif
     for asset in release.get_assets():
         if asset.name == filename:
             print(f"      -> Ancienne version trouvée. Suppression...")
-            asset.delete_asset()
+            try: asset.delete_asset()
+            except: pass
             break
-    try:
-        asset = release.upload_asset(filename)
-        return asset.browser_download_url
-    except Exception as e:
-        print(f"      -> Erreur upload {filename}: {e}")
-        return None
+            
+    # Boucle de tentatives (5 essais max)
+    for attempt in range(1, 6):
+        try:
+            print(f"      -> Tentative d'upload {attempt}/5...")
+            asset = release.upload_asset(filename)
+            print("      -> Upload réussi !")
+            return asset.browser_download_url
+        except Exception as e:
+            print(f"      [ERREUR UPLOAD] {e}")
+            if attempt < 5:
+                wait_time = attempt * 10 # 10s, 20s, 30s...
+                print(f"      -> Pause de {wait_time}s avant retry...")
+                time.sleep(wait_time)
+            else:
+                print("      -> ECHEC FATAL après 5 tentatives.")
+                return None
 
 def process_video_download(entry, ydl, release, fg, current_log_file):
     vid_id = entry['id']
@@ -144,60 +160,46 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
     with open(current_log_file, "a") as log: log.write(f"{vid_id}\n")
     return True
 
-# --- REPARATION XML ---
 def recover_entries_from_xml(filename, fg):
-    """Lit le XML ligne par ligne sans utiliser feedgen."""
     count = 0
     if not os.path.exists(filename): return 0
-    
     try:
         tree = ET.parse(filename)
         root = tree.getroot()
         channel = root.find('channel')
         if channel is None: return 0
-
-        # On parcourt tous les items existants
         for item in channel.findall('item'):
             fe = fg.add_entry()
-            
-            # Récupération simple des champs texte
             t = item.find('title'); 
             if t is not None: fe.title(t.text)
-            
             d = item.find('description'); 
             if d is not None: fe.description(d.text)
-            
             g = item.find('guid'); 
             if g is not None: fe.id(g.text)
-            
             p = item.find('pubDate'); 
             if p is not None: fe.pubDate(p.text)
-            
-            # Récupération du MP3 (Enclosure)
             enc = item.find('enclosure')
-            if enc is not None:
-                fe.enclosure(enc.get('url'), 0, enc.get('type'))
-            
-            # Récupération image iTunes (avec ou sans namespace)
-            # On essaie plusieurs manières car ElementTree est strict
+            if enc is not None: fe.enclosure(enc.get('url'), 0, enc.get('type'))
             itunes_ns = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
             img = item.find(f'{{{itunes_ns}}}image')
-            if img is not None:
-                fe.podcast.itunes_image(img.get('href'))
-
+            if img is not None: fe.podcast.itunes_image(img.get('href'))
             count += 1
-            
         print(f"   [XML RESTORE] {count} anciens épisodes restaurés.")
         return count
-
     except Exception as e:
         print(f"   [XML READ ERROR] Impossible de lire l'ancien fichier : {e}")
         return 0
 
 def run():
     try:
-        print("--- Démarrage du script (VERSION V10 - FINAL REPAIR) ---")
-        global_proxy_url = os.environ.get('YOUTUBE_PROXY')
+        print("--- Démarrage du script (VERSION V11 - ROBUST UPLOAD) ---")
+        
+        # NETTOYAGE ENVIRONNEMENT (Pour éviter que PyGithub utilise Tor)
+        if 'HTTP_PROXY' in os.environ: del os.environ['HTTP_PROXY']
+        if 'HTTPS_PROXY' in os.environ: del os.environ['HTTPS_PROXY']
+        
+        # On garde le proxy Tor dans une variable séparée pour yt-dlp uniquement
+        global_proxy_url = "socks5://127.0.0.1:9050" 
         
         if not os.path.exists(LOG_DIR): os.makedirs(LOG_DIR)
         if not os.path.exists(CONFIG_FILE): return
@@ -205,6 +207,7 @@ def run():
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
         
         try:
+            # PyGithub utilisera la connexion directe (sans proxy)
             g = Github(os.environ['GITHUB_TOKEN'])
             repo = g.get_repo(REPO_NAME)
             release = get_or_create_release(repo)
@@ -245,9 +248,6 @@ def run():
             # 1. SETUP
             fg = FeedGenerator(); fg.load_extension('podcast')
             existing_entries_count = 0
-            
-            # --- ICI LA CORRECTION CRITIQUE ---
-            # On n'utilise PLUS fg.parse_file(), on utilise notre fonction maison
             if os.path.exists(filename):
                 existing_entries_count = recover_entries_from_xml(filename, fg)
 
@@ -353,5 +353,3 @@ def run():
 
 if __name__ == "__main__":
     run()
-
-
