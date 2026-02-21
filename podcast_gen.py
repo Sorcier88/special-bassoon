@@ -21,11 +21,23 @@ CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 LOG_DIR = "logs"
 
+# CHRONOMETRE ANTI-TIMEOUT
+MAX_RUNTIME_SECONDS = (5 * 3600) + (15 * 60)
+script_start_time = time.time()
+
 # CONFIGURATION
 DEFAULT_TARGET_SUCCESS = 5
 DEFAULT_SEARCH_WINDOW = 30
 REFILL_TARGET_SUCCESS = 10
 REFILL_SEARCH_WINDOW = 50
+
+def check_timeout():
+    elapsed = time.time() - script_start_time
+    if elapsed > MAX_RUNTIME_SECONDS:
+        print(f"\n[!!!] TEMPS LIMITE ATTEINT ({int(elapsed/60)} minutes).")
+        print("[!!!] Arrêt d'urgence pour sauvegarde.")
+        return True
+    return False
 
 def get_tor_info():
     try:
@@ -89,12 +101,10 @@ def cleanup_files(vid_id):
         try: os.remove(f)
         except: pass
 
-# --- FONCTION UPLOAD BLINDÉE (RETRY) ---
 def upload_asset(release, filename):
     if not os.path.exists(filename): return None
     print(f"   [UPLOAD] Préparation envoi de {filename}...")
     
-    # Nettoyage préventif
     for asset in release.get_assets():
         if asset.name == filename:
             print(f"      -> Ancienne version trouvée. Suppression...")
@@ -102,7 +112,6 @@ def upload_asset(release, filename):
             except: pass
             break
             
-    # Boucle de tentatives (5 essais max)
     for attempt in range(1, 6):
         try:
             print(f"      -> Tentative d'upload {attempt}/5...")
@@ -112,7 +121,7 @@ def upload_asset(release, filename):
         except Exception as e:
             print(f"      [ERREUR UPLOAD] {e}")
             if attempt < 5:
-                wait_time = attempt * 10 # 10s, 20s, 30s...
+                wait_time = attempt * 10
                 print(f"      -> Pause de {wait_time}s avant retry...")
                 time.sleep(wait_time)
             else:
@@ -162,7 +171,9 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
 
 def recover_entries_from_xml(filename, fg):
     count = 0
-    if not os.path.exists(filename): return 0
+    if not os.path.exists(filename): 
+        print(f"   [XML] Fichier {filename} inexistant. Démarrage de zéro.")
+        return 0
     try:
         tree = ET.parse(filename)
         root = tree.getroot()
@@ -184,21 +195,18 @@ def recover_entries_from_xml(filename, fg):
             img = item.find(f'{{{itunes_ns}}}image')
             if img is not None: fe.podcast.itunes_image(img.get('href'))
             count += 1
-        print(f"   [XML RESTORE] {count} anciens épisodes restaurés.")
+        print(f"   [XML RESTORE] {count} anciens épisodes restaurés depuis {filename}.")
         return count
     except Exception as e:
-        print(f"   [XML READ ERROR] Impossible de lire l'ancien fichier : {e}")
+        print(f"   [XML READ ERROR] Impossible de lire {filename} : {e}")
         return 0
 
 def run():
     try:
-        print("--- Démarrage du script (VERSION V11 - ROBUST UPLOAD) ---")
+        print("--- Démarrage du script (VERSION V13 - FIX SMART REFILL) ---")
         
-        # NETTOYAGE ENVIRONNEMENT (Pour éviter que PyGithub utilise Tor)
         if 'HTTP_PROXY' in os.environ: del os.environ['HTTP_PROXY']
         if 'HTTPS_PROXY' in os.environ: del os.environ['HTTPS_PROXY']
-        
-        # On garde le proxy Tor dans une variable séparée pour yt-dlp uniquement
         global_proxy_url = "socks5://127.0.0.1:9050" 
         
         if not os.path.exists(LOG_DIR): os.makedirs(LOG_DIR)
@@ -207,7 +215,6 @@ def run():
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
         
         try:
-            # PyGithub utilisera la connexion directe (sans proxy)
             g = Github(os.environ['GITHUB_TOKEN'])
             repo = g.get_repo(REPO_NAME)
             release = get_or_create_release(repo)
@@ -220,7 +227,7 @@ def run():
             'nocheckcertificate': True,
             'proxy': global_proxy_url,
             'http_headers': {'Cookie': 'CONSENT=YES+cb.20210328-17-p0.en+FX+419; SOCS=CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiACGgYIgLCPpgY'},
-            'sleep_interval': 15, 'max_sleep_interval': 30,
+            'sleep_interval': 10, 'max_sleep_interval': 25,
         }
 
         grouped_feeds = {}
@@ -230,8 +237,15 @@ def run():
             grouped_feeds[fname].append(item)
 
         for filename, sources in grouped_feeds.items():
-            print(f"\n=== FLUX : {filename} ===")
-            time.sleep(5)
+            
+            if check_timeout():
+                break
+
+            print(f"\n==========================================")
+            print(f"=== FLUX : {filename} ===")
+            print(f"==========================================")
+            time.sleep(2)
+            
             main_config = sources[0]
             current_log_file = os.path.join(LOG_DIR, f"log_{filename}.txt")
             
@@ -239,28 +253,31 @@ def run():
             if os.path.exists(current_log_file):
                 with open(current_log_file, "r") as f: downloaded_ids = f.read().splitlines()
 
-            # TOR
             tor_exit_nodes = main_config.get('tor_exit_nodes')
             if tor_exit_nodes: configure_tor_nodes(tor_exit_nodes)
             else: configure_tor_nodes(None)
             print(f"   [DEBUG] IP: {get_tor_info()}")
 
-            # 1. SETUP
             fg = FeedGenerator(); fg.load_extension('podcast')
-            existing_entries_count = 0
+            
+            # --- CORRECTION DE LA LOGIQUE REFILL ---
+            # Initialisation explicite à 0
+            existing_entries_count = 0 
+            
+            # Si le fichier existe, on tente de le lire
             if os.path.exists(filename):
                 existing_entries_count = recover_entries_from_xml(filename, fg)
-
-            # MODE REFILL
+            
+            # Application de la logique en fonction du résultat
             if existing_entries_count < 5:
-                print("   [AUTO-REFILL] Mode Remplissage activé.")
+                print(f"   [AUTO-REFILL] Seulement {existing_entries_count} épisodes. Activation Remplissage.")
                 current_target = REFILL_TARGET_SUCCESS
                 current_window = REFILL_SEARCH_WINDOW
             else:
+                print(f"   [MAINTENANCE] Flux sain avec {existing_entries_count} épisodes.")
                 current_target = DEFAULT_TARGET_SUCCESS
                 current_window = DEFAULT_SEARCH_WINDOW
 
-            # 2. SCAN
             missing_entries = []
             auto_title, auto_description = None, None
             scan_opts = base_opts.copy(); scan_opts.update({'extract_flat': True, 'ignoreerrors': True})
@@ -282,7 +299,6 @@ def run():
             batch_to_process = missing_entries[:current_window]
             print(f"   Vidéos à traiter : {len(batch_to_process)}")
 
-            # METADATA
             final_title = main_config.get('podcast_name') or auto_title or f'Podcast {filename}'
             fg.title(final_title)
             final_desc = main_config.get('podcast_description') or auto_description or 'Generated Feed'
@@ -295,7 +311,6 @@ def run():
                  fg.author({'name': main_config.get('podcast_author')})
                  fg.podcast.itunes_author(main_config.get('podcast_author'))
 
-            # 3. DOWNLOAD
             dl_opts = base_opts.copy()
             dl_opts.update({
                 'format': 'bestaudio/best', 'outtmpl': '%(id)s.%(ext)s', 'writethumbnail': True,
@@ -307,7 +322,11 @@ def run():
             success_count = 0
             changes_made = False
             for entry in batch_to_process:
+                if check_timeout():
+                    break
+                
                 if success_count >= current_target: break
+                
                 vid_id = entry['id']
                 attempts = 0
                 current_client = ['android', 'ios']
@@ -320,7 +339,7 @@ def run():
                         print("   [SUCCÈS]")
                         success_count += 1
                         cleanup_files(vid_id)
-                        time.sleep(random.randint(10, 20))
+                        time.sleep(random.randint(5, 15))
                         break 
                     except Exception as e:
                         err_str = str(e).lower()
@@ -331,12 +350,11 @@ def run():
                                 renew_tor_ip(); current_client = ['web']; attempts += 1; continue
                             else: break
                         elif "country" in err_str or "403" in err_str or "bot" in err_str:
-                            renew_tor_ip(); time.sleep(15); attempts += 1
+                            renew_tor_ip(); time.sleep(10); attempts += 1
                         else: time.sleep(5); attempts += 1
 
-            # 4. SAVE
             current_entries = len(fg.entry())
-            print(f"   [INFO] Total: {current_entries}")
+            print(f"   [INFO] Total dans ce flux : {current_entries}")
             
             if changes_made or not os.path.exists(filename) or (auto_description and not main_config.get('podcast_description')):
                 if existing_entries_count > 5 and current_entries < 5:
@@ -345,11 +363,13 @@ def run():
                 else:
                     if os.path.exists(filename): shutil.copy(filename, filename + ".bak")
                     fg.rss_file(filename)
-                    print(f"XML mis à jour.")
-            else: print("Pas de changement.")
+                    print(f"XML mis à jour avec succès.")
+            else: print("Pas de changement majeur pour ce flux.")
 
     finally:
         if os.path.exists(COOKIE_FILE): os.remove(COOKIE_FILE)
 
 if __name__ == "__main__":
     run()
+
+
