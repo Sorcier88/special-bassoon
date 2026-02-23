@@ -26,7 +26,7 @@ MAX_RUNTIME_SECONDS = (5 * 3600) + (15 * 60)
 script_start_time = time.time()
 
 # CONFIGURATION
-DEFAULT_TARGET_SUCCESS = 5
+DEFAULT_TARGET_SUCCESS = 3
 DEFAULT_SEARCH_WINDOW = 30
 REFILL_TARGET_SUCCESS = 10
 REFILL_SEARCH_WINDOW = 50
@@ -101,31 +101,34 @@ def cleanup_files(vid_id):
         try: os.remove(f)
         except: pass
 
+# --- NOUVELLE FONCTION UPLOAD AVEC GITHUB CLI (ULTRA ROBUSTE) ---
 def upload_asset(release, filename):
     if not os.path.exists(filename): return None
-    print(f"   [UPLOAD] Préparation envoi de {filename}...")
+    print(f"   [UPLOAD] Préparation envoi de {filename} via GitHub CLI...")
     
-    for asset in release.get_assets():
-        if asset.name == filename:
-            print(f"      -> Ancienne version trouvée. Suppression...")
-            try: asset.delete_asset()
-            except: pass
-            break
+    # URL statique prédictible de GitHub Releases
+    expected_url = f"https://github.com/{REPO_NAME}/releases/download/{RELEASE_TAG}/{filename}"
             
-    for attempt in range(1, 6):
+    for attempt in range(1, 4):
         try:
-            print(f"      -> Tentative d'upload {attempt}/5...")
-            asset = release.upload_asset(filename)
-            print("      -> Upload réussi !")
-            return asset.browser_download_url
-        except Exception as e:
-            print(f"      [ERREUR UPLOAD] {e}")
-            if attempt < 5:
+            print(f"      -> Tentative d'upload {attempt}/3...")
+            # Appel natif à l'outil 'gh' préinstallé sur le runner Ubuntu.
+            # L'option --clobber écrase automatiquement le fichier s'il existe (évite le nettoyage manuel).
+            cmd = ["gh", "release", "upload", RELEASE_TAG, filename, "--clobber"]
+            result = subprocess.run(cmd, check=True, capture_output=True, text=True)
+            
+            print("      -> Upload réussi avec succès !")
+            return expected_url
+            
+        except subprocess.CalledProcessError as e:
+            # Capturer l'erreur exacte du CLI
+            print(f"      [ERREUR UPLOAD CLI] {e.stderr.strip()}")
+            if attempt < 3:
                 wait_time = attempt * 10
                 print(f"      -> Pause de {wait_time}s avant retry...")
                 time.sleep(wait_time)
             else:
-                print("      -> ECHEC FATAL après 5 tentatives.")
+                print("      -> ECHEC FATAL après 3 tentatives.")
                 return None
 
 def process_video_download(entry, ydl, release, fg, current_log_file):
@@ -203,10 +206,12 @@ def recover_entries_from_xml(filename, fg):
 
 def run():
     try:
-        print("--- Démarrage du script (VERSION V13 - FIX SMART REFILL) ---")
+        print("--- Démarrage du script (VERSION V14 - ULTRA ROBUST UPLOAD) ---")
         
-        if 'HTTP_PROXY' in os.environ: del os.environ['HTTP_PROXY']
-        if 'HTTPS_PROXY' in os.environ: del os.environ['HTTPS_PROXY']
+        # Nettoyage profond des variables d'environnement proxy pour ne pas perturber les uploads
+        for k in ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy']:
+            if k in os.environ: del os.environ[k]
+            
         global_proxy_url = "socks5://127.0.0.1:9050" 
         
         if not os.path.exists(LOG_DIR): os.makedirs(LOG_DIR)
@@ -215,10 +220,11 @@ def run():
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
         
         try:
+            # On utilise PyGithub juste pour s'assurer que la Release "audio-storage" existe au départ
             g = Github(os.environ['GITHUB_TOKEN'])
             repo = g.get_repo(REPO_NAME)
             release = get_or_create_release(repo)
-        except Exception as e: print(f"Erreur GitHub: {e}"); return
+        except Exception as e: print(f"Erreur d'initialisation GitHub: {e}"); return
 
         base_opts = {
             'quiet': False, 
@@ -260,15 +266,10 @@ def run():
 
             fg = FeedGenerator(); fg.load_extension('podcast')
             
-            # --- CORRECTION DE LA LOGIQUE REFILL ---
-            # Initialisation explicite à 0
             existing_entries_count = 0 
-            
-            # Si le fichier existe, on tente de le lire
             if os.path.exists(filename):
                 existing_entries_count = recover_entries_from_xml(filename, fg)
             
-            # Application de la logique en fonction du résultat
             if existing_entries_count < 5:
                 print(f"   [AUTO-REFILL] Seulement {existing_entries_count} épisodes. Activation Remplissage.")
                 current_target = REFILL_TARGET_SUCCESS
@@ -371,5 +372,3 @@ def run():
 
 if __name__ == "__main__":
     run()
-
-
