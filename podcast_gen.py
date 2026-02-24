@@ -16,7 +16,6 @@ from stem.control import Controller
 
 # --- CONSTANTES ---
 REPO_NAME = os.environ.get('GITHUB_REPOSITORY', 'local-test')
-RELEASE_TAG = "audio-storage"
 CONFIG_FILE = "playlists.json"
 COOKIE_FILE = "cookies.txt"
 LOG_DIR = "logs"
@@ -90,39 +89,30 @@ def renew_tor_ip():
     except Exception:
         if controller: controller.close()
 
-def get_or_create_release(repo):
-    try:
-        return repo.get_release(RELEASE_TAG)
-    except:
-        return repo.create_git_release(tag=RELEASE_TAG, name="Audio Files", message="Stockage MP3", draft=False, prerelease=False)
-
 def cleanup_files(vid_id):
     for f in glob.glob(f"{vid_id}*"):
         try: os.remove(f)
         except: pass
 
-# --- NOUVELLE FONCTION UPLOAD AVEC GITHUB CLI (ULTRA ROBUSTE) ---
-def upload_asset(release, filename):
+# --- FONCTION UPLOAD AVEC STRATEGIE ROLLING RELEASE ---
+def upload_asset(filename, release_tag):
     if not os.path.exists(filename): return None
-    print(f"   [UPLOAD] Préparation envoi de {filename} via GitHub CLI...")
+    print(f"   [UPLOAD] Préparation envoi de {filename} dans l'archive '{release_tag}'...")
     
-    # URL statique prédictible de GitHub Releases
-    expected_url = f"https://github.com/{REPO_NAME}/releases/download/{RELEASE_TAG}/{filename}"
+    expected_url = f"https://github.com/{REPO_NAME}/releases/download/{release_tag}/{filename}"
             
     for attempt in range(1, 4):
         try:
-            print(f"      -> Tentative d'upload {attempt}/3...")
-            # Appel natif à l'outil 'gh' préinstallé sur le runner Ubuntu.
-            # L'option --clobber écrase automatiquement le fichier s'il existe (évite le nettoyage manuel).
-            cmd = ["gh", "release", "upload", RELEASE_TAG, filename, "--clobber"]
+            # On utilise --clobber pour écraser sans se poser de question si le fichier existe déjà
+            cmd = ["gh", "release", "upload", release_tag, filename, "--clobber"]
             result = subprocess.run(cmd, check=True, capture_output=True, text=True)
             
             print("      -> Upload réussi avec succès !")
             return expected_url
             
         except subprocess.CalledProcessError as e:
-            # Capturer l'erreur exacte du CLI
-            print(f"      [ERREUR UPLOAD CLI] {e.stderr.strip()}")
+            err_msg = e.stderr.strip() if e.stderr else str(e)
+            print(f"      [ERREUR UPLOAD CLI] {err_msg}")
             if attempt < 3:
                 wait_time = attempt * 10
                 print(f"      -> Pause de {wait_time}s avant retry...")
@@ -131,7 +121,7 @@ def upload_asset(release, filename):
                 print("      -> ECHEC FATAL après 3 tentatives.")
                 return None
 
-def process_video_download(entry, ydl, release, fg, current_log_file):
+def process_video_download(entry, ydl, release_tag, fg, current_log_file):
     vid_id = entry['id']
     vid_url = f"https://www.youtube.com/watch?v={vid_id}"
     print(f"-> Traitement : {entry.get('title', vid_id)}")
@@ -149,11 +139,11 @@ def process_video_download(entry, ydl, release, fg, current_log_file):
     if not os.path.exists(mp3_filename) or os.path.getsize(mp3_filename) < 10000:
         raise Exception("Fichier MP3 invalide ou trop petit")
 
-    mp3_url = upload_asset(release, mp3_filename)
+    mp3_url = upload_asset(mp3_filename, release_tag)
     if not mp3_url: raise Exception("Echec Upload GitHub MP3")
 
     thumb_url = None
-    if jpg_filename: thumb_url = upload_asset(release, jpg_filename)
+    if jpg_filename: thumb_url = upload_asset(jpg_filename, release_tag)
 
     fe = fg.add_entry()
     fe.id(vid_id)
@@ -206,9 +196,9 @@ def recover_entries_from_xml(filename, fg):
 
 def run():
     try:
-        print("--- Démarrage du script (VERSION V14 - ULTRA ROBUST UPLOAD) ---")
+        print("--- Démarrage du script (VERSION V15 - ROLLING STORAGE) ---")
         
-        # Nettoyage profond des variables d'environnement proxy pour ne pas perturber les uploads
+        # Nettoyage profond des variables d'environnement proxy pour ne pas perturber GitHub CLI
         for k in ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy']:
             if k in os.environ: del os.environ[k]
             
@@ -219,12 +209,21 @@ def run():
         
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
         
+        # --- CREATION DE LA RELEASE DU MOIS EN COURS ---
+        current_month = datetime.datetime.now().strftime('%Y-%m')
+        active_release_tag = f"storage-{current_month}"
+        
         try:
-            # On utilise PyGithub juste pour s'assurer que la Release "audio-storage" existe au départ
             g = Github(os.environ['GITHUB_TOKEN'])
             repo = g.get_repo(REPO_NAME)
-            release = get_or_create_release(repo)
-        except Exception as e: print(f"Erreur d'initialisation GitHub: {e}"); return
+            try:
+                repo.get_release(active_release_tag)
+            except:
+                print(f"Création de la nouvelle archive mensuelle : {active_release_tag}")
+                repo.create_git_release(tag=active_release_tag, name=f"Audio Files - {current_month}", message="Stockage MP3 mensuel automatique", draft=False, prerelease=False)
+        except Exception as e: 
+            print(f"Erreur initialisation GitHub: {e}")
+            return
 
         base_opts = {
             'quiet': False, 
@@ -336,7 +335,8 @@ def run():
                     try:
                         print(f"   [DL] {vid_id}...")
                         with yt_dlp.YoutubeDL(dl_opts) as ydl:
-                            if process_video_download(entry, ydl, release, fg, current_log_file): changes_made = True
+                            # On passe l'active_release_tag (ex: storage-2024-05) pour l'upload
+                            if process_video_download(entry, ydl, active_release_tag, fg, current_log_file): changes_made = True
                         print("   [SUCCÈS]")
                         success_count += 1
                         cleanup_files(vid_id)
