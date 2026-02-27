@@ -26,7 +26,7 @@ script_start_time = time.time()
 
 # CONFIGURATION
 DEFAULT_TARGET_SUCCESS = 5
-DEFAULT_SEARCH_WINDOW = 30
+DEFAULT_SEARCH_WINDOW = 40
 REFILL_TARGET_SUCCESS = 10
 REFILL_SEARCH_WINDOW = 50
 
@@ -94,7 +94,7 @@ def cleanup_files(vid_id):
         try: os.remove(f)
         except: pass
 
-# --- FONCTION UPLOAD AVEC STRATEGIE ROLLING RELEASE ---
+# --- FONCTION UPLOAD AVEC SECURITE NOM DE FICHIER ---
 def upload_asset(filename, release_tag):
     if not os.path.exists(filename): return None
     print(f"   [UPLOAD] Préparation envoi de {filename} dans l'archive '{release_tag}'...")
@@ -103,8 +103,11 @@ def upload_asset(filename, release_tag):
             
     for attempt in range(1, 4):
         try:
-            # On utilise --clobber pour écraser sans se poser de question si le fichier existe déjà
-            cmd = ["gh", "release", "upload", release_tag, filename, "--clobber"]
+            # FIX CRITIQUE : on ajoute ./ devant le fichier pour empêcher le CLI 
+            # de le confondre avec une option s'il commence par un tiret (-)
+            safe_filename = f"./{filename}"
+            cmd = ["gh", "release", "upload", release_tag, safe_filename, "--clobber"]
+            
             result = subprocess.run(cmd, check=True, capture_output=True, text=True)
             
             print("      -> Upload réussi avec succès !")
@@ -196,9 +199,8 @@ def recover_entries_from_xml(filename, fg):
 
 def run():
     try:
-        print("--- Démarrage du script (VERSION V15 - ROLLING STORAGE) ---")
+        print("--- Démarrage du script (VERSION V16 - FIX FILENAME FLAG) ---")
         
-        # Nettoyage profond des variables d'environnement proxy pour ne pas perturber GitHub CLI
         for k in ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy']:
             if k in os.environ: del os.environ[k]
             
@@ -209,7 +211,6 @@ def run():
         
         with open(CONFIG_FILE, 'r') as f: raw_config = json.load(f)
         
-        # --- CREATION DE LA RELEASE DU MOIS EN COURS ---
         current_month = datetime.datetime.now().strftime('%Y-%m')
         active_release_tag = f"storage-{current_month}"
         
@@ -335,7 +336,6 @@ def run():
                     try:
                         print(f"   [DL] {vid_id}...")
                         with yt_dlp.YoutubeDL(dl_opts) as ydl:
-                            # On passe l'active_release_tag (ex: storage-2024-05) pour l'upload
                             if process_video_download(entry, ydl, active_release_tag, fg, current_log_file): changes_made = True
                         print("   [SUCCÈS]")
                         success_count += 1
@@ -372,3 +372,5 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+
