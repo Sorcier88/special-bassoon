@@ -84,7 +84,7 @@
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     },
     {
-"filename": "rhinocéros.xml",
+    "filename": "rhinocéros.xml",
         "url": "https://youtube.com/playlist?list=PLv1KZC6gJTFkFmZmlejLN6qyV7gvcmXwd", 
         "podcast_name": "RHINOCÉROS",
         "podcast_author": "BLAST, Le souffle de l'info",
@@ -120,6 +120,14 @@
         "podcast_name": "Les News !",
         "podcast_author": "Hardisk",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/hardisk_tv.jpg",
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+    {
+    "filename": "contraste.xml",
+        "url": "https://youtube.com/playlist?list=PLv1KZC6gJTFkik7v2wmViUyFFyysvmbU1", 
+        "podcast_name": "CONTRASTE(S)",
+        "podcast_author": "BLAST, Le souffle de l'info",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contrastes.jpg", 
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
