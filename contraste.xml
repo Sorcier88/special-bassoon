@@ -1,2 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>CONTRASTE(S)</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Bienvenue dans Contraste(s), la nouvelle émission de Modiie et Ostpolitik. Leur but : vulgariser la sociologie et la science politique pour mieux comprendre notre société.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contrastes.jpg</url><title>CONTRASTE(S)</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sun, 12 Apr 2026 06:12:26 +0000</lastBuildDate><itunes:author>BLAST, Le souffle de l'info</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contrastes.jpg"/></channel></rss>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>CONTRASTE(S)</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Bienvenue dans Contraste(s), la nouvelle émission de Modiie et Ostpolitik. Leur but : vulgariser la sociologie et la science politique pour mieux comprendre notre société.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contrastes.jpg</url><title>CONTRASTE(S)</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sun, 12 Apr 2026 13:17:42 +0000</lastBuildDate><itunes:author>BLAST, Le souffle de l'info</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contrastes.jpg"/><item><title>AVOIR UNE VOITURE, EST-CE FORCÉMENT DE DROITE ?</title><description>Soutenez Blast,  média indépendant en accès libre grâce au soutien de ses abonnés : https://www.blast-info.fr/soutenir
+
+"La voiture, le vroum. C'est un sujet passionnant pour les sociologues, parce qu'un simple objet qui nous permet de nous déplacer concentre plein de problématiques économiques et sociales. La voiture, c'est un objet très politique pour tout le monde.
+Plus largement, la voiture charrie tout un tas de représentations symboliques. Autrement dit, l'automobile est attachée à plusieurs traits sociaux dans l'imaginaire collectif."
+
+Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#sociologie
+#voiture 
+#société</description><guid isPermaLink="false">tR6aujaUh_g</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/tR6aujaUh_g.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate></item></channel></rss>
