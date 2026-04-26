@@ -129,5 +129,21 @@
         "podcast_author": "BLAST, Le souffle de l'info",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contraste(s).jpg", 
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+    {
+    "filename": "dissolution.xml",
+        "url": "https://youtube.com/playlist?list=PLv1KZC6gJTFk4rM0HK83AunCISbN_wxJL", 
+        "podcast_name": "DISSOLUTION",
+        "podcast_author": "BLAST, Le souffle de l'info",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/dissolution.jpg", 
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    }, 
+    {
+    "filename": "la_débauche.xml",
+        "url": "https://youtube.com/playlist?list=PLv1KZC6gJTFmTpn9F6swgUqTKoE4aaJyP", 
+        "podcast_name": "LA DÉBAUCHE",
+        "podcast_author": "BLAST, Le souffle de l'info",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/débauche.jpg", 
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
