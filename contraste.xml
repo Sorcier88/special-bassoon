@@ -1,9 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>CONTRASTE(S)</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Bienvenue dans Contraste(s), la nouvelle émission de Modiie et Ostpolitik. Leur but : vulgariser la sociologie et la science politique pour mieux comprendre notre société.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contraste(s).png</url><title>CONTRASTE(S)</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Fri, 01 May 2026 07:01:17 +0000</lastBuildDate><itunes:author>BLAST, Le souffle de l'info</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contraste(s).png"/><item><title>POURQUOI LE PATRONAT N'AIME PAS LES SOCIOLOGUES ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>CONTRASTE(S)</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Bienvenue dans Contraste(s), la nouvelle émission de Modiie et Ostpolitik. Leur but : vulgariser la sociologie et la science politique pour mieux comprendre notre société.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contraste(s).png</url><title>CONTRASTE(S)</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Fri, 01 May 2026 13:36:42 +0000</lastBuildDate><itunes:author>BLAST, Le souffle de l'info</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/contraste(s).png"/><item><title>SOCIOLOGIE : UNE ARME POUR COMPRENDRE LE MONDE (ET NE PAS FINIR DE DROITE)</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-"Le travail, le fait de travailler, ça occupe quand même le quotidien de la grande majorité de la population française, à part les retraités. Soit vous travaillez, soit vous êtes étudiant et vous étudiez en vue de trouver un travail, soit vous êtes chômeur et vous êtes censé chercher du travail. Et pourtant, malgré son importance dans notre système capitaliste, le travail, on en parle peu ou mal dans les médias. Et c'est l'une des utilités de la sociologie. Elle permet de capter les évolutions du monde du travail sur le temps long. Oui, là on fait ce qu'on appelle de la socio-histoire, c'est à dire adopter une perspective sociologique sur des faits historiques."
-
-Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
+Dans ce nouvel épisode de Contraste(s), Ost et Modiie abordent la méthodologie en sciences sociales avec un focus sur l'enquête de Nora Bussigny, journaliste pour Le Point et Franc-Tireur. Son livre Les nouveaux inquisiteurs (septembre 2023) explore en immersion sous une fausse identité, durant un an, les milieux militants. Elle révèle des pratiques intrigantes : réunions en non-mixité, autodiagnostics médicaux et réconfort mutuel. Selon Bussigny, ces milieux se révèlent souvent sectaires et intolérants, malgré leur discours prônant la tolérance.
 
 Chroniqueurs : Ostpolitik, Modiie
 Montage : Camille Chastrusse
@@ -11,221 +9,6 @@ Son : Baptiste Veilhan
 Graphisme : Morgane Sabouret
 Production : Hicham Tragha
 Directeur des programmes : Mathias Enthoven
-Rédaction en chef : Soumaya Benaïssa
-Directeur de la rédaction : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-
-#Travail
-#Sociologie
-#Capitalisme</description><guid isPermaLink="false">VlnRnREgioY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/VlnRnREgioY.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate></item><item><title>AVOIR UNE VOITURE, EST-CE FORCÉMENT DE DROITE ?</title><description>Soutenez Blast,  média indépendant en accès libre grâce au soutien de ses abonnés : https://www.blast-info.fr/soutenir
-
-"La voiture, le vroum. C'est un sujet passionnant pour les sociologues, parce qu'un simple objet qui nous permet de nous déplacer concentre plein de problématiques économiques et sociales. La voiture, c'est un objet très politique pour tout le monde.
-Plus largement, la voiture charrie tout un tas de représentations symboliques. Autrement dit, l'automobile est attachée à plusieurs traits sociaux dans l'imaginaire collectif."
-
-Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Margaux Simon
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#sociologie
-#voiture 
-#société</description><guid isPermaLink="false">tR6aujaUh_g</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/tR6aujaUh_g.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate></item><item><title>POURQUOI TOUT LE MONDE S'EN FOUT DES VIEUX ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-« Les vieux, ils sont de plus en plus nombreux. Et pourtant, on ne les entend pas trop, on ne les voit pas trop, sauf quand c’est des hommes politiques ou alors dans des pubs pour des monte-escaliers le mardi à 15H. Aujourd’hui, on va essayer de décaler un petit peu le regard sur la vieillesse pour vous parler de la vie des vieux et de leur place dans la société. Parce que oui, pour la plupart des gens, c’est pas travail, EHPAD, mort, il y a quand même quelques années entre la retraite et la perte totale d’autonomie. » Alors, pourquoi tout le monde s’en fout des vieux ?
-
-Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Margaux Simon
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#sociologie
-#vieillesse
-#société</description><guid isPermaLink="false">8LamysnlmaQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/8LamysnlmaQ.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate></item><item><title>MORT DES CENTRES-VILLES : LA FAUTE AUX KEBABS ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-La mort du centre des villes petites et moyennes est un problème politique en France depuis au moins les années 70. L'extrême droite instrumentalise cette situation pour diffuser un discours sur "les blancs des campagnes" délaissés par l'Etat, en opposition aux populations immigrées des grandes villes qui bénéficieraient de largesses. La situation est bien évidemment plus complexe. Entre la construction de centre commerciaux, l'évolution des population de ces centre et le déclin du petit commerce, la mort des centre-ville est liée à plusieurs facteurs très différents et à des évolutions sociales déjà anciennes. En tout cas, ce n'est pas la faute des Kébabs.
-
-Nouvel épisode de Contrastes par Ostpolitik et Modiie.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Thibault Inglebert
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#centreville 
-#géographie 
-#desertification</description><guid isPermaLink="false">PuE2RdRwZCg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/PuE2RdRwZCg.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate></item><item><title>LA LUTTE DES CLASSES C’EST AUSSI DANS VOTRE ASSIETTE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-Pour ce dernier épisode de cette première saison de Contrastes, on va vous parler de l'alimentation, parce que figurez-vous que ce que vous mangez, c'est aussi une construction sociale. L'alimentation, ça concerne tout le monde, tout le monde mange. Vous commencez à avoir l'habitude si vous regardez tous les épisodes de Contrastes, mais comme le reste, notre alimentation est située socialement, et c'est de ça dont on va vous parler aujourd'hui. Parce que, malgré son importance, l'alimentation, c'est un thème qui est assez peu abordé dans l'espace médiatique. Pourtant, c'est un sujet qui est étudié par les sciences sociales depuis les années 1900. Aujourd'hui, c'est carrément devenu un champ de la recherche à part entière : la sociologie de l'alimentation. Quand on parle du vote, c'est la sociologie du vote, quand on parle de l'alimentation, c'est la sociologie de l'alimentation.
-Ils sont forts pour trouver des noms.
-
-Nouvel épisode de Contrastes par Ostpolitik et Modiie.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Thibault Inglebert
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#alimentation
-#sociologie
-#malbouffe</description><guid isPermaLink="false">RHIPGHG3KdA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/RHIPGHG3KdA.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate></item><item><title>POURQUOI LES GENS NE SAVENT PAS VOTER ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-Aujourd'hui, on va vous parler du vote et on va vous parler de politisation. Et pour ça, on va s'intéresser à une branche particulière de la sociologie qui s'appelle la sociologie du vote. Le vote est tellement central dans nos systèmes politiques occidentaux qu'on a carrément une branche de la sociologie qui est dédiée à ça. 
-Il est même plus que central, il est presque sacré dans nos démocraties libérales. 
-Alors qu'en vrai, le vote c'est un peu nul. En termes d'action politique, de participation à la vie publique, le vote, c'est le degré zéro, peut-être le degré un. 
-Mais alors pourquoi c'est aussi important ? Pourquoi on vote ? On va essayer de vous apporter des éléments de réponse dans cet épisode.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Margaux Simon
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#vote 
-#sociologie 
-#élections</description><guid isPermaLink="false">ChD7zN7FkAE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/ChD7zN7FkAE.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate></item><item><title>COMMENT LE PANTOUFLAGE DÉTRUIT LA DÉMOCRATIE</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
-
-"Alexis Kohler est parti après dix ans de bons et loyaux services à Macron. Mais ne vous en faites pas, il part vers de meilleurs horizons. Dans les prochaines semaines il rejoindra le groupe bancaire Société Générale. Et oui, la Société Générale : la banque, Jérôme Kerviel, tout ça quoi ! 
-Quand un homme au service de l'intérêt général se met à travailler pour une entreprise privée, c'est du pantouflage. Et c'est pas très compliqué de trouver des cas de pantouflage, dans les plus hautes sphères il y en a tout le temps. Je pense qu'avec cet exemple, vous avez une meilleure idée de ce qu'est le pantouflage. Mais question, d'où ça vient ? Et surtout, pourquoi ça a un nom aussi rigolo ?"
-
-Nouvel épisode de Contrastes par Ostpolitik et Modiie.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Marion Plantier
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Margaux Simon
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#Macron
-#Kohler
-#Pantouflage</description><guid isPermaLink="false">59OjZbGuoVI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/59OjZbGuoVI.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate></item><item><title>GENTRIFICATION : POURQUOI LES BOBOS VIENNENT VIVRE CHEZ LES PAUVRES ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-« Aujourd’hui, on va vous parler du concept de gentrification.
-Mais avant de se lancer dans le vif du sujet, faut peut être commencer par le définir ce sujet.
-La gentrification, à très gros traits, c’est quand des quartiers populaires s’embourgeoisent, et quand les pauvres en sont chassés.
-Si vous habitez dans une grande ville, vous avez forcément un exemple de gentrification en tête : La Croix rouge à Lyon, Montreuil en région parisienne etc »
-Nouvel épisode de Contrastes par Ostpolitik et Modiie.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Margaux Simon
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#gentrification
-#sociologie
-#quartiers</description><guid isPermaLink="false">cdOmvk26_o0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/cdOmvk26_o0.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate></item><item><title>LES SOCIOLOGUES DE DROITE EXISTENT-ILS VRAIMENT ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-"Vous le savez, les sociologues sont tous de gauche.
-Ils sont hirsutes, ils sentent la beuh, ils vivent en Ardèche et ils se nourrissent exclusivement de jus détox
-- Mais dans l’épisode d’aujourd’hui, on s’est dit qu’on allait bousculer un peu cette idée reçue.
-- En effet, d’après notre enquête, il existerait des sociologues de droite, qui sont glabres, sentent le cassoulet et habitent en Vendée".
-Nouvel épisode de Contrastes sur Blast.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan
-Graphisme : Margaux Simon
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
 Co-directrice de la rédaction : Soumaya Benaïssa
 Directeur de la publication : Denis Robert
 
@@ -238,129 +21,8 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 
 #Sociologie
-#Politique
-#Contrastes</description><guid isPermaLink="false">QU2CC7O4KQw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/QU2CC7O4KQw.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate></item><item><title>"IL Y A CEUX QUI RÉUSSISSENT ET CEUX QUI NE SONT RIEN"</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-Le 22 août dernier, Libération s'interrogeait sur le poids des héritages familiaux dans le sport, révélant que 70% des athlètes de haut niveau ont des parents sportifs. L'article cite des exemples comme Léon Marchand et les frères Lebrun, mettant en lumière l'impact de l'environnement familial. Ce constat fait débat, certains y voyant une remise en question du mérite individuel. Pourtant, cette réalité s'étend au-delà du sport : médecins, professeurs ou élèves de grandes écoles, les trajectoires familiales influencent largement les carrières.
-
-Pierre Bourdieu, sociologue influent, analyse ce phénomène dans ses travaux sur la reproduction sociale, notamment dans Les Héritiers. Il distingue différents types de capitaux (économique, culturel, social) pour expliquer pourquoi la société tend à reproduire les inégalités. Loin du mythe de l'ascenseur social, notre système fonctionnerait comme un "couloir social" qui perpétue les positions.
-
-Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
-
-Chroniqueurs : Ostpolitik, Modiie
-Réalisation et montage : Camille Chastrusse
-Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret
-Directeur des programmes : Hicham Tragha
-Rédaction en chef : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-
-#Bourdieu
-#Société
-#Sociologie</description><guid isPermaLink="false">Qcty61XGs2w</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/Qcty61XGs2w.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate></item><item><title>FRANCE, USA, HONGRIE : ILLIBÉRALISME, DANGER POUR LES DÉMOCRATIES ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-L'illibéralisme désigne des régimes qui, bien qu'électifs, restreignent les libertés et droits fondamentaux au nom de la stabilité ou des valeurs nationales. Emmanuel Macron a employé ce terme pour dénoncer la Hongrie et l'ancien gouvernement polonais, mais certains critiquent aussi son usage en France, notamment avec le 49.3 pour la réforme des retraites. Trump, Bolsonaro et d'autres dirigeants sont également qualifiés d'illibéraux. On explore ce concept et les débats qu'il suscite dans ce nouvel épisode de Contraste(s), par Ost et Modiie.
-
-Journalistes : Ostpolitik, Modiie
-Réalisation et montage : Camille Chastrusse
-Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret
-Production : Hicham Tragha
-Directeur des programmes : Mathias Enthoven
-Rédaction en chef : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-
-#Illibéralisme
-#Fascisme
-#Démocratie</description><guid isPermaLink="false">1uUevwWN_u0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/1uUevwWN_u0.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate></item><item><title>MACRON - BARNIER : LA POLITIQUE EST-ELLE UNE AFFAIRE DE PROFESSIONNELS ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-Ça ressemble aux Portraits, ça a les présentateurs des Portraits, ça a le goût des Portraits, mais ce n'est pas les Portraits. Bienvenue dans Contraste(s), la nouvelle émission de Modiie et Ostpolitik. Leur but : vulgariser la sociologie et la science politique pour mieux comprendre notre société.
-Dans ce premier épisode, ils vont essayer de vous mettre de bonne humeur en commençant par parler de Michel Barnier et de Macron.
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage et réalisation : Camille Chastrusse
-Son : Baptiste Veilhan
-Graphisme : Morgane Sabouret
-Production : Hicham Tragha
-Directeur des programmes : Mathias Enthoven
-Rédaction en chef : Soumaya Benaïssa
-Directeur de la rédaction : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-
-#Macron
-#Barnier
-#sciencepolitique</description><guid isPermaLink="false">9Cor6NP5qH4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/9Cor6NP5qH4.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate></item><item><title>POURQUOI TANT DE HAINE CONTRE LES ENFANTS ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-"Le 11 juin dernier, la Haute commissaire à L'enfance, Sarah El Haïry, a annoncé le lancement d'un label : Le choix des familles, une initiative visant à mettre en avant les hôtels, campings et restaurants qui accueillent et respectent les familles et plus particulièrement les enfants. Cette annonce, elle fait suite à la popularisation du No Kids. De plus en plus, on voit émerger le souhait de certains d'avoir des espaces sans enfants. On l'a encore vu récemment avec la SNCF et son offre optimum qui propose des espaces dans les trains, interdit aux moins de douze ans."
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Margaux Simon
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#enfants
-#sncf
-#société</description><guid isPermaLink="false">1pnnFn_3njE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/1pnnFn_3njE.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate></item><item><title>POURQUOI TOUT LE MONDE (ET SURTOUT LES MÉDIAS) ADORE LES FAITS DIVERS</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
-
-Meurtre, sang, et violence, les faits divers ont depuis longtemps fasciné les médias. Mais qu'est-ce qu'un fait divers ? Une rubrique méprisée réservée aux "chien écrasés" ? Un outil politique redoutable jouant sur les émotions pour défendre un agenda d'extrême droite ? Ou bien tout simplement une façon de réintroduire de l'émotion dans le récit de l'actualité ? Les faits divers sont probablement un peu tout ça et on vous propose de revenir sur leur histoire, leur fonctionnement, et leur production dans ce nouvel épisode de Contraste(s).
-
-Chroniqueurs : Ostpolitik, Modiie
-Montage : Camille Chastrusse
-Son : Baptiste Veilhan, Théo Duchesne
-Graphisme : Morgane Sabouret, Margaux Simon
-Production : Hicham Tragha
-Directeur du développement des collaborations extérieures : Mathias Enthoven
-Co-directrice de la rédaction : Soumaya Benaïssa
-Directeur de la publication : Denis Robert
-
-Le site : https://www.blast-info.fr/
-Facebook : https://www.facebook.com/blastofficiel
-Twitter : https://twitter.com/blast_france
-Instagram : https://www.instagram.com/blastofficiel/
-Mastodon : https://mamot.fr/web/@blast_info
-Peertube : https://video.blast-info.fr/
-Twitch : https://www.twitch.tv/blastinfo
-Bluesky : https://bsky.app/profile/blast-info.fr
-
-#médias
-#faitsdivers
-#société</description><guid isPermaLink="false">lOIv3IU2H7U</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/lOIv3IU2H7U.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate></item><item><title>RELATIONS INTERNATIONALES : POURQUOI PERSONNE N’EST D’ACCORD ?</title><description>Soutenez Blast,  média indépendant en accès libre grâce au soutien de ses abonnés : https://www.blast-info.fr/soutenir
+#NoraBussigny
+#Enquête</description><guid isPermaLink="false">1kaPI9bn-Mw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/1kaPI9bn-Mw.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate></item><item><title>RELATIONS INTERNATIONALES : POURQUOI PERSONNE N’EST D’ACCORD ?</title><description>Soutenez Blast,  média indépendant en accès libre grâce au soutien de ses abonnés : https://www.blast-info.fr/soutenir
 
 "-Les relations internationales, ce n’est pas quand vous revenez de votre Erasmus en Suède et que vous maintenez une correspondance avec Ingvar que vous avez rencontré à la fac de Stockholm
 -La définition de ce que sont les relations internationales en tant que matière, elle n’est pas très claire. un peu comme votre relation avec Ingvar."
@@ -389,16 +51,141 @@ Bluesky : https://bsky.app/profile/blast-info.fr
 
 #sociologie
 #international 
-#Contrastes</description><guid isPermaLink="false">LD1IfoWzC14</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/LD1IfoWzC14.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate></item><item><title>SOCIOLOGIE : UNE ARME POUR COMPRENDRE LE MONDE (ET NE PAS FINIR DE DROITE)</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+#Contrastes</description><guid isPermaLink="false">LD1IfoWzC14</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/LD1IfoWzC14.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate></item><item><title>POURQUOI TOUT LE MONDE (ET SURTOUT LES MÉDIAS) ADORE LES FAITS DIVERS</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
 
-Dans ce nouvel épisode de Contraste(s), Ost et Modiie abordent la méthodologie en sciences sociales avec un focus sur l'enquête de Nora Bussigny, journaliste pour Le Point et Franc-Tireur. Son livre Les nouveaux inquisiteurs (septembre 2023) explore en immersion sous une fausse identité, durant un an, les milieux militants. Elle révèle des pratiques intrigantes : réunions en non-mixité, autodiagnostics médicaux et réconfort mutuel. Selon Bussigny, ces milieux se révèlent souvent sectaires et intolérants, malgré leur discours prônant la tolérance.
+Meurtre, sang, et violence, les faits divers ont depuis longtemps fasciné les médias. Mais qu'est-ce qu'un fait divers ? Une rubrique méprisée réservée aux "chien écrasés" ? Un outil politique redoutable jouant sur les émotions pour défendre un agenda d'extrême droite ? Ou bien tout simplement une façon de réintroduire de l'émotion dans le récit de l'actualité ? Les faits divers sont probablement un peu tout ça et on vous propose de revenir sur leur histoire, leur fonctionnement, et leur production dans ce nouvel épisode de Contraste(s).
 
 Chroniqueurs : Ostpolitik, Modiie
 Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#médias
+#faitsdivers
+#société</description><guid isPermaLink="false">lOIv3IU2H7U</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/lOIv3IU2H7U.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate></item><item><title>POURQUOI TANT DE HAINE CONTRE LES ENFANTS ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+"Le 11 juin dernier, la Haute commissaire à L'enfance, Sarah El Haïry, a annoncé le lancement d'un label : Le choix des familles, une initiative visant à mettre en avant les hôtels, campings et restaurants qui accueillent et respectent les familles et plus particulièrement les enfants. Cette annonce, elle fait suite à la popularisation du No Kids. De plus en plus, on voit émerger le souhait de certains d'avoir des espaces sans enfants. On l'a encore vu récemment avec la SNCF et son offre optimum qui propose des espaces dans les trains, interdit aux moins de douze ans."
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#enfants
+#sncf
+#société</description><guid isPermaLink="false">1pnnFn_3njE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/1pnnFn_3njE.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate></item><item><title>MACRON - BARNIER : LA POLITIQUE EST-ELLE UNE AFFAIRE DE PROFESSIONNELS ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+Ça ressemble aux Portraits, ça a les présentateurs des Portraits, ça a le goût des Portraits, mais ce n'est pas les Portraits. Bienvenue dans Contraste(s), la nouvelle émission de Modiie et Ostpolitik. Leur but : vulgariser la sociologie et la science politique pour mieux comprendre notre société.
+Dans ce premier épisode, ils vont essayer de vous mettre de bonne humeur en commençant par parler de Michel Barnier et de Macron.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage et réalisation : Camille Chastrusse
 Son : Baptiste Veilhan
 Graphisme : Morgane Sabouret
 Production : Hicham Tragha
 Directeur des programmes : Mathias Enthoven
+Rédaction en chef : Soumaya Benaïssa
+Directeur de la rédaction : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Macron
+#Barnier
+#sciencepolitique</description><guid isPermaLink="false">9Cor6NP5qH4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/9Cor6NP5qH4.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate></item><item><title>FRANCE, USA, HONGRIE : ILLIBÉRALISME, DANGER POUR LES DÉMOCRATIES ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+L'illibéralisme désigne des régimes qui, bien qu'électifs, restreignent les libertés et droits fondamentaux au nom de la stabilité ou des valeurs nationales. Emmanuel Macron a employé ce terme pour dénoncer la Hongrie et l'ancien gouvernement polonais, mais certains critiquent aussi son usage en France, notamment avec le 49.3 pour la réforme des retraites. Trump, Bolsonaro et d'autres dirigeants sont également qualifiés d'illibéraux. On explore ce concept et les débats qu'il suscite dans ce nouvel épisode de Contraste(s), par Ost et Modiie.
+
+Journalistes : Ostpolitik, Modiie
+Réalisation et montage : Camille Chastrusse
+Son : Baptiste Veilhan
+Graphisme : Morgane Sabouret
+Production : Hicham Tragha
+Directeur des programmes : Mathias Enthoven
+Rédaction en chef : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Illibéralisme
+#Fascisme
+#Démocratie</description><guid isPermaLink="false">1uUevwWN_u0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/1uUevwWN_u0.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate></item><item><title>"IL Y A CEUX QUI RÉUSSISSENT ET CEUX QUI NE SONT RIEN"</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+Le 22 août dernier, Libération s'interrogeait sur le poids des héritages familiaux dans le sport, révélant que 70% des athlètes de haut niveau ont des parents sportifs. L'article cite des exemples comme Léon Marchand et les frères Lebrun, mettant en lumière l'impact de l'environnement familial. Ce constat fait débat, certains y voyant une remise en question du mérite individuel. Pourtant, cette réalité s'étend au-delà du sport : médecins, professeurs ou élèves de grandes écoles, les trajectoires familiales influencent largement les carrières.
+
+Pierre Bourdieu, sociologue influent, analyse ce phénomène dans ses travaux sur la reproduction sociale, notamment dans Les Héritiers. Il distingue différents types de capitaux (économique, culturel, social) pour expliquer pourquoi la société tend à reproduire les inégalités. Loin du mythe de l'ascenseur social, notre système fonctionnerait comme un "couloir social" qui perpétue les positions.
+
+Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Réalisation et montage : Camille Chastrusse
+Son : Baptiste Veilhan
+Graphisme : Morgane Sabouret
+Directeur des programmes : Hicham Tragha
+Rédaction en chef : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Bourdieu
+#Société
+#Sociologie</description><guid isPermaLink="false">Qcty61XGs2w</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/Qcty61XGs2w.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate></item><item><title>LES SOCIOLOGUES DE DROITE EXISTENT-ILS VRAIMENT ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+"Vous le savez, les sociologues sont tous de gauche.
+Ils sont hirsutes, ils sentent la beuh, ils vivent en Ardèche et ils se nourrissent exclusivement de jus détox
+- Mais dans l’épisode d’aujourd’hui, on s’est dit qu’on allait bousculer un peu cette idée reçue.
+- En effet, d’après notre enquête, il existerait des sociologues de droite, qui sont glabres, sentent le cassoulet et habitent en Vendée".
+Nouvel épisode de Contrastes sur Blast.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan
+Graphisme : Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
 Co-directrice de la rédaction : Soumaya Benaïssa
 Directeur de la publication : Denis Robert
 
@@ -411,5 +198,218 @@ Peertube : https://video.blast-info.fr/
 Twitch : https://www.twitch.tv/blastinfo
 
 #Sociologie
-#NoraBussigny
-#Enquête</description><guid isPermaLink="false">1kaPI9bn-Mw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/1kaPI9bn-Mw.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate></item></channel></rss>
+#Politique
+#Contrastes</description><guid isPermaLink="false">QU2CC7O4KQw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/QU2CC7O4KQw.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate></item><item><title>GENTRIFICATION : POURQUOI LES BOBOS VIENNENT VIVRE CHEZ LES PAUVRES ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+« Aujourd’hui, on va vous parler du concept de gentrification.
+Mais avant de se lancer dans le vif du sujet, faut peut être commencer par le définir ce sujet.
+La gentrification, à très gros traits, c’est quand des quartiers populaires s’embourgeoisent, et quand les pauvres en sont chassés.
+Si vous habitez dans une grande ville, vous avez forcément un exemple de gentrification en tête : La Croix rouge à Lyon, Montreuil en région parisienne etc »
+Nouvel épisode de Contrastes par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#gentrification
+#sociologie
+#quartiers</description><guid isPermaLink="false">cdOmvk26_o0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/cdOmvk26_o0.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate></item><item><title>COMMENT LE PANTOUFLAGE DÉTRUIT LA DÉMOCRATIE</title><description>Rejoignez-nous, devenez sociétaire : https://www.blast-info.fr/devenir-societaire
+
+"Alexis Kohler est parti après dix ans de bons et loyaux services à Macron. Mais ne vous en faites pas, il part vers de meilleurs horizons. Dans les prochaines semaines il rejoindra le groupe bancaire Société Générale. Et oui, la Société Générale : la banque, Jérôme Kerviel, tout ça quoi ! 
+Quand un homme au service de l'intérêt général se met à travailler pour une entreprise privée, c'est du pantouflage. Et c'est pas très compliqué de trouver des cas de pantouflage, dans les plus hautes sphères il y en a tout le temps. Je pense qu'avec cet exemple, vous avez une meilleure idée de ce qu'est le pantouflage. Mais question, d'où ça vient ? Et surtout, pourquoi ça a un nom aussi rigolo ?"
+
+Nouvel épisode de Contrastes par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Marion Plantier
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#Macron
+#Kohler
+#Pantouflage</description><guid isPermaLink="false">59OjZbGuoVI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/59OjZbGuoVI.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate></item><item><title>POURQUOI LES GENS NE SAVENT PAS VOTER ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+Aujourd'hui, on va vous parler du vote et on va vous parler de politisation. Et pour ça, on va s'intéresser à une branche particulière de la sociologie qui s'appelle la sociologie du vote. Le vote est tellement central dans nos systèmes politiques occidentaux qu'on a carrément une branche de la sociologie qui est dédiée à ça. 
+Il est même plus que central, il est presque sacré dans nos démocraties libérales. 
+Alors qu'en vrai, le vote c'est un peu nul. En termes d'action politique, de participation à la vie publique, le vote, c'est le degré zéro, peut-être le degré un. 
+Mais alors pourquoi c'est aussi important ? Pourquoi on vote ? On va essayer de vous apporter des éléments de réponse dans cet épisode.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#vote 
+#sociologie 
+#élections</description><guid isPermaLink="false">ChD7zN7FkAE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/ChD7zN7FkAE.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate></item><item><title>LA LUTTE DES CLASSES C’EST AUSSI DANS VOTRE ASSIETTE</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+Pour ce dernier épisode de cette première saison de Contrastes, on va vous parler de l'alimentation, parce que figurez-vous que ce que vous mangez, c'est aussi une construction sociale. L'alimentation, ça concerne tout le monde, tout le monde mange. Vous commencez à avoir l'habitude si vous regardez tous les épisodes de Contrastes, mais comme le reste, notre alimentation est située socialement, et c'est de ça dont on va vous parler aujourd'hui. Parce que, malgré son importance, l'alimentation, c'est un thème qui est assez peu abordé dans l'espace médiatique. Pourtant, c'est un sujet qui est étudié par les sciences sociales depuis les années 1900. Aujourd'hui, c'est carrément devenu un champ de la recherche à part entière : la sociologie de l'alimentation. Quand on parle du vote, c'est la sociologie du vote, quand on parle de l'alimentation, c'est la sociologie de l'alimentation.
+Ils sont forts pour trouver des noms.
+
+Nouvel épisode de Contrastes par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Thibault Inglebert
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#alimentation
+#sociologie
+#malbouffe</description><guid isPermaLink="false">RHIPGHG3KdA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/RHIPGHG3KdA.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate></item><item><title>MORT DES CENTRES-VILLES : LA FAUTE AUX KEBABS ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+La mort du centre des villes petites et moyennes est un problème politique en France depuis au moins les années 70. L'extrême droite instrumentalise cette situation pour diffuser un discours sur "les blancs des campagnes" délaissés par l'Etat, en opposition aux populations immigrées des grandes villes qui bénéficieraient de largesses. La situation est bien évidemment plus complexe. Entre la construction de centre commerciaux, l'évolution des population de ces centre et le déclin du petit commerce, la mort des centre-ville est liée à plusieurs facteurs très différents et à des évolutions sociales déjà anciennes. En tout cas, ce n'est pas la faute des Kébabs.
+
+Nouvel épisode de Contrastes par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Thibault Inglebert
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#centreville 
+#géographie 
+#desertification</description><guid isPermaLink="false">PuE2RdRwZCg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/PuE2RdRwZCg.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate></item><item><title>POURQUOI TOUT LE MONDE S'EN FOUT DES VIEUX ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+« Les vieux, ils sont de plus en plus nombreux. Et pourtant, on ne les entend pas trop, on ne les voit pas trop, sauf quand c’est des hommes politiques ou alors dans des pubs pour des monte-escaliers le mardi à 15H. Aujourd’hui, on va essayer de décaler un petit peu le regard sur la vieillesse pour vous parler de la vie des vieux et de leur place dans la société. Parce que oui, pour la plupart des gens, c’est pas travail, EHPAD, mort, il y a quand même quelques années entre la retraite et la perte totale d’autonomie. » Alors, pourquoi tout le monde s’en fout des vieux ?
+
+Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#sociologie
+#vieillesse
+#société</description><guid isPermaLink="false">8LamysnlmaQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/8LamysnlmaQ.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate></item><item><title>AVOIR UNE VOITURE, EST-CE FORCÉMENT DE DROITE ?</title><description>Soutenez Blast,  média indépendant en accès libre grâce au soutien de ses abonnés : https://www.blast-info.fr/soutenir
+
+"La voiture, le vroum. C'est un sujet passionnant pour les sociologues, parce qu'un simple objet qui nous permet de nous déplacer concentre plein de problématiques économiques et sociales. La voiture, c'est un objet très politique pour tout le monde.
+Plus largement, la voiture charrie tout un tas de représentations symboliques. Autrement dit, l'automobile est attachée à plusieurs traits sociaux dans l'imaginaire collectif."
+
+Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan, Théo Duchesne
+Graphisme : Morgane Sabouret, Margaux Simon
+Production : Hicham Tragha
+Directeur du développement des collaborations extérieures : Mathias Enthoven
+Co-directrice de la rédaction : Soumaya Benaïssa
+Directeur de la publication : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+Bluesky : https://bsky.app/profile/blast-info.fr
+
+#sociologie
+#voiture 
+#société</description><guid isPermaLink="false">tR6aujaUh_g</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/tR6aujaUh_g.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate></item><item><title>POURQUOI LE PATRONAT N'AIME PAS LES SOCIOLOGUES ?</title><description>Soutenez Blast, nouveau média indépendant : https://www.blast-info.fr/soutenir
+
+"Le travail, le fait de travailler, ça occupe quand même le quotidien de la grande majorité de la population française, à part les retraités. Soit vous travaillez, soit vous êtes étudiant et vous étudiez en vue de trouver un travail, soit vous êtes chômeur et vous êtes censé chercher du travail. Et pourtant, malgré son importance dans notre système capitaliste, le travail, on en parle peu ou mal dans les médias. Et c'est l'une des utilités de la sociologie. Elle permet de capter les évolutions du monde du travail sur le temps long. Oui, là on fait ce qu'on appelle de la socio-histoire, c'est à dire adopter une perspective sociologique sur des faits historiques."
+
+Nouvel épisode de Contraste(s), par Ostpolitik et Modiie.
+
+Chroniqueurs : Ostpolitik, Modiie
+Montage : Camille Chastrusse
+Son : Baptiste Veilhan
+Graphisme : Morgane Sabouret
+Production : Hicham Tragha
+Directeur des programmes : Mathias Enthoven
+Rédaction en chef : Soumaya Benaïssa
+Directeur de la rédaction : Denis Robert
+
+Le site : https://www.blast-info.fr/
+Facebook : https://www.facebook.com/blastofficiel
+Twitter : https://twitter.com/blast_france
+Instagram : https://www.instagram.com/blastofficiel/
+Mastodon : https://mamot.fr/web/@blast_info
+Peertube : https://video.blast-info.fr/
+Twitch : https://www.twitch.tv/blastinfo
+
+#Travail
+#Sociologie
+#Capitalisme</description><guid isPermaLink="false">VlnRnREgioY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/VlnRnREgioY.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate></item></channel></rss>
