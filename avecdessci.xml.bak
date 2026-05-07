@@ -1,63 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Avec des Sci - l'actu scientifique du mois</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/avec_des_sci.png</url><title>Avec des Sci - l'actu scientifique du mois</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sat, 11 Apr 2026 13:12:20 +0000</lastBuildDate><itunes:author>Sci+</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/avec_des_sci.png"/><item><title>Le bêtisier du 6 avril | Spécial Ulule</title><description>Animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Avec des Sci - l'actu scientifique du mois</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/avec_des_sci.png</url><title>Avec des Sci - l'actu scientifique du mois</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sun, 26 Apr 2026 13:18:28 +0000</lastBuildDate><itunes:author>Sci+</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/avec_des_sci.png"/><item><title>On sait ENFIN pourquoi les baskets couinent</title><description>Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
 
-SOUTENEZ L'ÉMISSION
-https://www.ulule.com/avecdessci/
+Le couinement des baskets sur les terrains de sport vient enfin d’être élucidé ; on pourrait entraîner ses poumons à ne plus réagir aux allergies saisonnières ; et un rapport sur le bonheur mondial aux résultats surprenants vient d’être publié. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
 
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
+Rendez-vous sur Ulule pour voir le grand débrief de la semaine (en accès gratuit) : https://fr.ulule.com/avecdessci/
 
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">tAbOkb1OlHI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/tAbOkb1OlHI.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Les actus photo du mois de mars | Spécial Ulule</title><description>Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-SOUTENEZ L'ÉMISSION
-https://www.ulule.com/avecdessci/
-
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">d2_VLnlXHag</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/d2_VLnlXHag.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Café et démence : ce que montre (vraiment) une étude sur 43 ans</title><description>La caféine protègerait le cerveau contre le déclin cognitif ; une méta-analyse dresse un tableau complet sur l'impact du bruit sur la vie des oiseaux ; des lichens colorent naturellement des fossiles de dinosaures en orange. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
-
-Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
-
-SOUTENEZ L'ÉMISSION
-https://www.ulule.com/avecdessci/
-
+Programme et sources
 00:00 Sommaire
-00:27 Actu mystère : indice 1
-01:07 L'actu c'est cool (mais on ne s'emballe pas)
-https://www.nature.com/articles/d41586-026-00409-y
-https://jamanetwork.com/journals/jama/article-abstract/2844764
-08:08 Actu mystère : indice 2
-08:45 L'actu wow !
-https://www.franceinfo.fr/environnement/biodiversite/le-bruit-affecte-fortement-les-oiseaux-et-leur-reproduction-selon-une-etude_7798286.html
-https://royalsocietypublishing.org/rspb/article/293/2064/20252521/480236/Trait-mediated-effects-of-anthropogenic-noise-on
-La vidéo de Vox sur la pollution sonore dans l’océan : https://www.youtube.com/watch?v=CrpkZkwTvu0
-13:51 Financement de l'émission
-14:24 Soutenez-nous sur Ulule :) https://www.ulule.com/avecdessci/
-15:59 Actu mystère : indice 3
-16:49 La photo du mois
-https://www.cell.com/current-biology/fulltext/S0960-9822(25)01206-0
-https://www.science.org/content/article/organism-turns-dino-bones-orange-making-them-easier-spot
-18:50 L'actu mystère
-https://www.nature.com/articles/s41591-026-04219-7
-https://www.nature.com/articles/d41586-026-00333-1
-21:41 Quoi voir ensuite
-La vidéo Scilabus sur l'impesanteur : https://youtu.be/iG6BQ6_kaEg?si=yeVDb3Zmdc4WWwr6
-Notre dernier épisode d'Avec des Sci : https://youtu.be/oO3aOlO0MR8?si=i1gwNDZw8kdKAlxU
+00:30 Actu mystère : indice 1
+01:00 L'actu wow
+https://www.youtube.com/watch?v=syVweYvqsz8&amp;
+https://www.youtube.com/watch?v=vwL1zUD1gyY
+https://www.nature.com/articles/s41586-026-10132-3
+https://ici.radio-canada.ca/nouvelle/2232466/grincement-souliers-plancher-explications
+https://phys.org/news/2026-03-sports-dont-science.html
+07:47 Actu mystère : indice 2
+08:13 L'actu c'est cool, mais on ne s'emballe pas
+https://www.pasteur.fr/fr/espace-presse/documents-presse/comment-microbes-protegent-allergie
+https://www.nature.com/articles/s41590-026-02439-0
+16:50 Votez pour la prochaine photo du mois sur Ulule !
+17:02 Financement de l'émission
+17:20 Soutenez-nous sur Ulule :) https://www.ulule.com/avecdessci/
+18:15 Actu mystère : indice 3
+18:43 L'actu hmm, c'est intéressant
+https://www.worldhappiness.report/ed/2026/
+https://ici.radio-canada.ca/nouvelle/2240338/canada-bonheur-rapport-mondial-bonheur-rang-finlande
+24:02 L'actu mystère
+https://www.nytimes.com/2026/03/11/science/falling-cat-problem.html
+https://anatomypubs.onlinelibrary.wiley.com/doi/10.1002/ar.70165
+26:30 Quoi voir ensuite
+La vidéo Scilabus sur le genou : https://youtu.be/ci2InLkUaf0?si=RjdQ5p3xmovWhqtG
+Notre dernier épisode d'Avec des Sci : https://youtu.be/osOWroq6jaM?si=EW8l2kKEn_ZnxFDE
 Les lives de revue scientifique de Thomas : https://www.twitch.tv/sciencesalacarte/
 
 ---
@@ -65,6 +38,9 @@ Les lives de revue scientifique de Thomas : https://www.twitch.tv/sciencesalacar
 Texte et animation : Viviane Lalande et Thomas Milan
 Montage : Marianne Lalande
 
+SOUTENEZ L'ÉMISSION
+https://www.ulule.com/avecdessci/
+
 LES LIVES DE THOMAS
 https://www.twitch.tv/sciencesalacarte/
 
@@ -74,7 +50,105 @@ https://kit.co/Scilabus/mon-kit
 Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
 
 Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">e5FPxLNktoc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-03/e5FPxLNktoc.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Être ivre sans alcool : le syndrôme d'auto-brasserie enfin compris</title><description>On peut être ivre à cause de son microbiote ; une carte inédite du dessous de la calotte glaciaire de l’Antarctique vient d’être révélée ; on a la preuve que les vaches utilisent des outils pour se gratter. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">G6AXdTCAqvg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/G6AXdTCAqvg.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Attention : Votre assistant d'écriture change votre façon de penser</title><description>Une étude sur l’intelligence artificielle révèle comment celle-ci peut influencer notre façon de penser ; une première étude mesure la pollution émise par les fusées qui reviennent sur Terre ; un robot totalement autonome vient d'être créé, mais cette fois-ci à l'échelle microscopique ! On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
+
+Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
+
+Programme et sources
+00:00 Sommaire
+00:42 Actu mystère : indice 1
+01:16 L'actu hmm, c'est intéressant
+https://www.scientificamerican.com/article/ai-autocomplete-doesnt-just-change-how-you-write-it-changes-how-you-think/
+https://www.science.org/doi/10.1126/sciadv.adw5578
+09:29 Actu mystère : indice 2
+09:49 L'actu wow !
+https://www.nature.com/articles/s43247-025-03154-8
+16:24 Financement de l'émission
+16:48 Soutenez-nous sur Ulule :) https://www.ulule.com/avecdessci/
+17:56 Mention spéciale : le prix Turing
+https://www.quantamagazine.org/quantum-cryptography-pioneers-win-turing-award-20260318/
+19:08 Actu mystère : indice 3
+19:35 La photo du mois
+https://www.sciencealert.com/the-worlds-smallest-programmable-robot-can-barely-be-seen
+https://www.science.org/doi/10.1126/scirobotics.adu8009
+https://www.sciencedaily.com/releases/2026/01/260105165815.htm
+https://www.youtube.com/watch?v=yQ2HT2xCmAU
+23:08 Votez pour la prochaine photo du mois sur Ulule !
+23:13 L'actu mystère
+https://ici.radio-canada.ca/nouvelle/2230721/menton-evolution-consequence-indirecte
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12854472/
+26:30 Quoi voir ensuite
+La vidéo Scilabus sur le genou : https://youtu.be/ci2InLkUaf0?si=RjdQ5p3xmovWhqtG
+Notre dernier épisode d'Avec des Sci : https://youtu.be/u5KKzoSEwJw?si=A3xLWmueXmumF91V
+Les lives de revue scientifique de Thomas : https://www.twitch.tv/sciencesalacarte/
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+SOUTENEZ L'ÉMISSION
+https://www.ulule.com/avecdessci/
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que Viviane propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">osOWroq6jaM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/osOWroq6jaM.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Le plastique nous rend-il malades ? Une étude choc</title><description>Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
+
+Un chiffre faramineux qui nous donne l'impact du plastique sur notre santé ; sur Mars, un rover a entendu de l’électricité ; un robot est capable de se faufiler dans des petits recoins, de ramper et même de nager. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
+
+Voici les actus scientifiques de [MOIS] 2026 :
+00:00 Sommaire
+00:34 Actu mystère : indice 1
+01:15 L'actu wow !
+https://www.lemonde.fr/planete/article/2026/01/27/le-cycle-de-vie-du-plastique-pourrait-doubler-les-annees-de-vie-perdues-d-ici-a-2040-alerte-the-lancet_6664267_3244.html
+https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00284-0/fulltext
+06:13 Votez pour la photo du mois
+06:27 Actu mystère : indice 2
+06:56 L'actu Hmm, c'est intéressant
+https://www.nature.com/articles/s41586-025-09736-y.epdf
+https://www.pourlascience.fr/sd/planetologie/des-eclairs-detectes-pour-la-premiere-fois-sur-mars-28612.php
+https://www.snexplores.org/article/listen-crackle-mars-lightning
+11:37 Financement de l'émission
+11:56 Soutenez-nous sur Ulule :) https://www.ulule.com/avecdessci/
+13:34 Actu mystère : indice 3
+14:18 La vidéo du mois
+https://www.science.org/content/article/watch-smiling-robot-walk-water
+https://www.science.org/doi/epdf/10.1126/sciadv.aea2831
+https://hi-tech.ua/en/boston-dynamics-showed-how-the-humanoid-robot-atlas-does-new-tricks/
+17:45 L'actu mystère
+https://desapublications.un.org/publications/world-urbanization-prospects-2025-summary-results
+https://www.newscientist.com/article/2504873-four-fifths-of-the-worlds-population-now-live-in-urban-areas/
+https://www.un.org/pl/node/236908
+22:31 Quoi voir ensuite
+La vidéo Scilabus sur l'impesanteur : https://youtu.be/iG6BQ6_kaEg?si=yeVDb3Zmdc4WWwr6
+Notre dernier épisode d'Avec des Sci : https://www.youtube.com/watch?v=e5FPxLNktoc&amp;t
+Les lives de revue scientifique de Thomas : https://www.twitch.tv/sciencesalacarte/
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+SOUTENEZ L'ÉMISSION
+https://www.ulule.com/avecdessci/
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">u5KKzoSEwJw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-03/u5KKzoSEwJw.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Être ivre sans alcool : le syndrôme d'auto-brasserie enfin compris</title><description>On peut être ivre à cause de son microbiote ; une carte inédite du dessous de la calotte glaciaire de l’Antarctique vient d’être révélée ; on a la preuve que les vaches utilisent des outils pour se gratter. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
 
 Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
 
@@ -120,7 +194,417 @@ https://kit.co/Scilabus/mon-kit
 Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
 
 Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">oO3aOlO0MR8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-02/oO3aOlO0MR8.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate></item><item><title>Et si les médicaments avaient un GPS ? [actu]</title><description>Cet épisode est en collaboration avec Québec Science. Retrouvez toutes les inventions de l'année et votez pour votre préférée ici : https://www.quebecscience.qc.ca/decouvertes2025/
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">oO3aOlO0MR8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-02/oO3aOlO0MR8.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate></item><item><title>TikTok et le cerveau : ce que disent vraiment 70 études</title><description>Cet épisode est en collaboration avec Québec Science. Retrouvez toutes les inventions de l'année et votez pour votre préférée ici : https://www.quebecscience.qc.ca/decouvertes2025/
+
+La recherche confirme nos craintes sur les effets des vidéos courtes sur notre bien-être ; les filtres de nos voitures utilisés pour mesurer l’antibiorésistance dans la population ; un pas de plus dans la recherche contre le cancer ; de la musique pour atténuer la douleur, mais seulement si elle est au bon rythme ; et enfin, comment vraiment faire fonctionner la protection du climat à l’échelle internationale. On vous donne les plus grandes actualités scientifiques du début du mois de février 2026, ainsi que les nouvelles les plus marquantes de l'année 2025, et comme toujours une actu mystère à deviner !
+
+SOUTENEZ L'ÉMISSION
+https://www.ulule.com/avecdessci/
+
+PROGRAMME ET SOURCES
+00:00 Sommaire
+00:49 Actu mystère : indice 1
+01:07 L'actu hmm... c'est intéressant
+https://psycnet.apa.org/fulltext/2026-89350-001.html
+09:47 Actu mystère : indice 2
+10:00 Présentation des avantages Ulule
+12:24 Les actus Québec Science
+https://www.quebecscience.qc.ca/decouvertes2025/
+12:54 Des parachutes en kirigami
+https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/parachute-papier-art-japonais/
+Notre épisode qui détaille cette actu : https://youtu.be/gmHifhu8fD8
+14:02 Des filtres de voitures pour mesurer notre antibiorésistance
+https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/bacteries-air-filtres-autos/
+15:30 Bloquer un interrupteur moléculaire du cancer
+https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/bloquer-interrupteur-moleculaire-cancer/
+17:25 Atténuer la douleur grâce au bon tempo musical
+https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/attenuer-douleur-tempo-musical/
+18:49 Le climat protégé grâce au commerce
+https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/climat-protection-commerce/
+20:23 L'actu mystère
+https://www.nature.com/articles/s41467-025-67400-5
+23:28 Quoi voir ensuite
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">Wo4-eE12bUA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Wo4-eE12bUA.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate></item><item><title>Ils ont percé un parachute et il marche mieux</title><description>Cette vidéo intègre une collaboration commerciale avec Université Côte d'Azur, sur un sujet propulsé par Play Azur Prod, pour mettre en lumière l’actualité sur le lien entre l’obésité et le cerveau dans le cadre du projet “Science avec et pour la société” SAPS Côte d’Azur, financé par l’Agence Nationale de la Recherche (ANR) porté par Université Côte d’Azur, l’Observatoire de la Côte d’Azur, le CNRS, l’INRAe, l’Inria et l’Inserm.
+Ce projet de recherche est mené par Dr Carole Rovère et financé par l’ANR. Pour en savoir plus : https://science-societe.univ-cotedazur.fr/biomedecine/les-liens-entre-obesite-et-cerveau
+--
+
+Voici les actus scientifiques de décembre 2025 :
+L’art japonais du kirigami nous permet de fabriquer de meilleurs parachutes à l'aide de papier et de coups de ciseaux ; une protéine est étudiée pour mieux comprendre le lien entre l’obésité et le cerveau ; et enfin, une histoire de coup d’état, d’usurpation d’identité et de matricide… Un cas réel et inédit observé dans une fourmilière.
+On vous présente les plus grandes actualités scientifiques du mois de décembre, ainsi qu'une section bonus à deviner !
+
+00:00 Sommaire
+00:54 Mystère : indice 1
+01:11 Des parachutes en kirigami
+https://www.nature.com/articles/s41586-025-09515-9
+https://www.polymtl.ca/carrefour-actualite/nouvelles/un-parachute-de-polytechnique-montreal-atterrit-dans-la-revue-nature
+05:59 Mystère : indice 2
+06:22 Un lien entre obésité et cerveau
+https://science-societe.univ-cotedazur.fr/biomedecine/les-liens-entre-obesite-et-cerveau
+11:05 Mystère : indice 3
+12:29 Un matricide chez des fourmis
+https://www.cell.com/current-biology/fulltext/S0960-9822(25)01207-2
+https://www.science.org/content/article/parasitic-ant-tricks-workers-killing-their-own-queen
+14:57 Mystère révélé
+23:45 Quoi voir ensuite
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+SOUTENEZ L'ÉMISSION
+https://ulule.com/scilabus
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">gmHifhu8fD8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/gmHifhu8fD8.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate></item><item><title>Ce que la SCIENCE dit sur la semaine de 4 jours [Avec des Sci]</title><description>La semaine de 4 jours mise à l'épreuve lors d'une méga étude qui l’a testée pendant 6 mois ; un vaccin par fil dentaire en cours de développement ; et enfin des images inédites du Soleil capturées par une sonde ultra proche. On vous donne les plus grandes actualités scientifiques du mois d'août, ainsi qu'une actu mystère bonus à deviner !
+
+Voici les actus scientifiques d'août 2025 :
+00:00 Sommaire
+00:53 Actu quiz : indice 1
+01:17 La semaine de 4 jours testée scientifiquement
+https://www.nature.com/articles/d41586-025-02295-2
+https://www.nature.com/articles/s41562-025-02262-x
+https://www.newscientist.com/article/2488976-four-day-working-week-may-boost-our-health-and-performance-at-work/
+07:36 Actu quiz : indice 2
+08:04 Un vaccin administré par fil dentaire
+https://www.science.org/content/article/engineers-transform-dental-floss-needle-free-vaccine
+https://www.livescience.com/health/medicine-drugs/scientists-gave-mice-flu-vaccines-by-flossing-their-tiny-teeth-and-it-worked
+https://www.nature.com/articles/s41551-025-01451-3
+16:17 L'émission a besoin de vos conseils
+17:32 Actu quiz : indice 3
+18:07 Des images inédites pour "toucher" le Soleil
+https://ici.radio-canada.ca/nouvelle/2179796/soleil-images-inedites-mission-parker
+https://www.sciencealert.com/nasa-reveals-the-closest-images-ever-taken-of-the-sun
+https://science.nasa.gov/mission/parker-solar-probe/
+https://science.nasa.gov/science-research/heliophysics/nasas-parker-solar-probe-snaps-closest-ever-images-to-sun/
+22:25 L'actu quiz
+https://ici.radio-canada.ca/nouvelle/2182823/eclair-record-mondial-meteorologie-etats-unis
+24:47 Quoi voir ensuite
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+SOUTENEZ L'ÉMISSION
+https://www.kisskissbankbank.com/fr/projects/scilabus
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">HUj_CrVG9u0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/HUj_CrVG9u0.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate></item><item><title>Ils ont "hacké" l’ADN d’un bébé pour le sauver !</title><description>Un bébé serait guéri d'une maladie rare après qu'on ait modifié une lettre de son ADN ; les poissons-clowns changent de taille pour résister à la température de l'eau ; des cacatoès utilisent des fontaines pour humains... On vous donne les plus grandes actualités scientifiques du mois de juin, ainsi qu'une actu mystère bonus à deviner !
+
+Voici les actus scientifiques de juin 2025 :
+00:00 Sommaire
+00:28 Actu mystère
+01:00 Actu c'est cool, mais on ne s'emballe pas
+https://www.nejm.org/doi/10.1056/NEJMoa2504747
+https://www.newscientist.com/article/2480365-baby-with-rare-disease-given-world-first-personal-crispr-gene-therapy/
+https://www.science.org/content/article/gene-editing-therapy-made-just-6-months-helps-baby-life-threatening-disease
+https://www.nature.com/articles/d41586-025-01496-z
+https://ici.radio-canada.ca/nouvelle/2165582/therapie-genique-crispr-cas9-traitement-bebe
+https://www.lemonde.fr/realites-biomedicales/article/2025/05/17/un-nourrisson-atteint-d-une-maladie-genetique-ultra-rare-recoit-un-traitement-personnalise-inedit_6606541_6579630.html
+10:43 Retour d'actu sur 23andme
+https://www.theverge.com/news/669548/23andme-bankruptcy-auction-regeneron-purchase
+https://www.boursorama.com/bourse/actualites/la-fondatrice-de-23andme-anne-wojcicki-remporte-l-offre-de-rachat-de-la-societe-de-tests-adn-en-faillite-31c67e22fb5fb25a40b7b8aa694265dd
+13:53 Message subliminal
+14:29 Actu wow
+https://www.lemonde.fr/sciences/article/2025/05/25/retrecir-pour-ne-pas-mourir-l-astuce-du-poisson-clown-face-au-rechauffement-climatique_6608362_1650684.html
+https://www.radiofrance.fr/franceinter/podcasts/planete-verte/planete-verte-du-vendredi-30-mai-2025-4364371
+https://www.nationalgeographic.fr/animaux/evolution-animale-pour-survivre-aux-vagues-de-chaleur-le-poisson-clown-rapetisse-changement-climatique-adaptation
+https://www.science.org/doi/10.1126/sciadv.adt7079
+20:02 Actu mignonne
+https://www.science.org/content/article/cockatoos-have-learned-operate-drinking-fountains-australia
+https://royalsocietypublishing.org/doi/10.1098/rsbl.2025.0010
+23:20 Actu mystère
+https://www.science.org/content/article/weapon-was-made-whale-carcass-nearly-20-000-years-ago
+https://www.nature.com/articles/s41467-025-59486-8
+25:19 Quoi voir ensuite
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+SOUTENEZ L'ÉMISSION
+https://www.kisskissbankbank.com/fr/projects/scilabus
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">OoZNlPyrqCU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/OoZNlPyrqCU.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Il s’injecte du venin depuis 10 ans… et ça marche ?! 🐍 [Avec des Sci]</title><description>Ce mois-ci, on parle de dernières actualités scientifiques particulièrement étonnantes : un homme qui s'est fait mordre par ses serpents pour développer sa tolérance, de nouvelles données sur les répercussions d'un accouchement sur le corps, une nouvelle couleur qui a été découverte (?) et enfin une actualité surprise qu'il vous faudra deviner au fil de l'émission ;)
+
+SOUTENIR L'ÉMISSION
+https://www.kisskissbankbank.com/fr/projects/scilabus
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+CHAPITRES
+00:00 Les actus scientifiques du mois
+00:47 L'objet du jour : indice 1
+00:59 L'actu wow : il s'injecte du venin pour s'immuniser
+07:55 L'objet du jour : indice 2
+08:21 L'actu cool mais on ne s'emballe pas : se remettre d'une grossesse
+12:07 L'objet du jour : indice 3
+12:33 L'actu ça alors : la découverte d'une nouvelle couleur
+17:57 L'objet du jour dévoilé
+22:07 Partagez Avec des sci !
+
+SOURCES
+Actualité sur le venin :
+https://www.science.org/content/article/he-injected-himself-venom-decades-can-his-antibodies-help-snakebite-victims
+https://www.nature.com/articles/d41586-025-01325-3
+https://www.newscientist.com/article/2478737-innovative-antivenom-may-work-against-the-worlds-deadliest-snakes/
+
+Actualité sur l’accouchement :
+https://www.nature.com/articles/d41586-025-00959-7
+https://www.science.org/doi/10.1126/sciadv.adr7922
+
+Actualité sur la nouvelle couleur :
+https://www.newscientist.com/article/2477068-new-colour-seen-for-the-first-time-by-tricking-the-eyes/
+https://www.science.org/content/article/superprecise-lasers-show-people-whole-new-color
+https://www.nature.com/articles/d41586-025-01252-3
+
+Actualité surprise / l'objet du jour :
+https://www.nature.com/articles/d41586-025-01214-9
+https://www.facebook.com/watch/?v=1378401923502801
+Sur l'écholocalisation humaine : https://www.nature.com/articles/d41586-025-00657-4</description><guid isPermaLink="false">kfjoQHQWZ4k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/kfjoQHQWZ4k.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate></item><item><title>Un nouveau type de cartilage découvert… en forme de papier bulle [Avec des Sci]</title><description>On a besoin de vous pour... partager cette vidéo ! 
+
+Cette émission d'actualité est tournée en LIVE et rediffusée par la suite. 
+
+La chaine de Thomas : https://www.twitch.tv/sciencesalacarte
+Les anciennes actus : https://www.youtube.com/playlist?list=PLdhqndoLhA_7a4ZmDFqLL5sCXx_V-EXCc
+
+SOUTENIR L'ÉMISSION
+Kiss Kiss Bank Bank : https://www.kisskissbankbank.com/fr/projects/scilabus
+Patreon : https://www.patreon.com/scilabus
+
+Les sources :
+NEWS- 1 cartilage
+https://cdn.mos.cms.futurecdn.net/xuhniEs4MqxR4kDT8mYqqX-970-80.jpg.webp
+https://www.ncbi.nlm.nih.gov/books/NBK532964/
+https://escholarship.org/content/qt0z5275h1/qt0z5275h1_noSplash_d450c71fe0002cb3d96571a7481c18a1.pdf?t=squujt
+https://fr.wikipedia.org/wiki/Franz_von_Leydig#/media/Fichier:Franz_Leydig.jpg
+https://www.science.org/doi/10.1126/science.ads9960 
+
+NEWS 2 - cerveau
+https://en.wikipedia.org/wiki/Pupillary_response#/media/File:Eye_dilate.gif
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9063564/
+https://www.nature.com/articles/d41586-024-01732-y
+https://www.nature.com/articles/s41586-024-08340-w
+
+NEWS 3 - fourmis
+https://www.science.org/content/article/ants-best-humans-test-collective-intelligence
+https://www.pnas.org/doi/10.1073/pnas.2414274121#supplementary-materials
+
+Chiffre du jour : 
+https://www.science.org/content/article/news-glance-longest-continuous-ice-core-formaldehyde-s-risks-and-building-africa-s
+https://ici.radio-canada.ca/nouvelle/2131566/antarctique-glace-extraction-carotte-climat
+https://www.beyondepica.eu/en/</description><guid isPermaLink="false">LX2C0ktt_pE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/LX2C0ktt_pE.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate></item><item><title>Sa voix est synthétique... mais les mots sont à elle [Avec des Sci]</title><description>AIDER LA CHAINE
+https://www.kisskissbankbank.com/fr/projects/scilabus
+
+La chaine Twitch de Thomas : www.twitch.com/sciencesalacarte
+
+Sources:
+Actualité sur la foudre sur l’arbre
+Shocker: This tropical tree thrives after being struck by lightning - Science
+How some tropical trees benefit from being struck by lightning: evidence for Dipteryx oleifera and other large-statured trees - New Phytologist  
+Le “Dipteryx oleifera”, cet arbre qui prospère grâce à la foudre - Courrier International
+
+Actualité sur l’implant cérébral
+Un implant cérébral traduit les pensées en paroles quasi instantanément - Radio-Canada 
+Brain implant translates thoughts to speech in an instant - Nature
+
+Actualité sur le test génétique
+23andMe plans to sell its huge genetic database: could science benefit? - Nature
+
+Actualité sur le requin
+Sharks... even more amazing than you realised - Université d’Auckland
+Unlikely pairing - Nature
+Rare sighting of a 'sharktopus' leaves onlookers stunned and puzzled - CBC
+
+---
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+00:00 Le programme
+01:00 Actu 1 : retrouver la voix
+09:38 Actu 2 : un arbre qui fait copain copain avec la foudre
+15:30 Actu 3 : le SHARKTOPUS
+18:15 Actu mystère !</description><guid isPermaLink="false">fOVMDCGOluY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/fOVMDCGOluY.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Peut-on vacciner le cerveau contre les fake news ? Oui. [actu avec des sci]</title><description>Un “vaccin” contre les fake news pour soutenir la démocratie ; la découverte de futurs antibiotiques ; et le noyau de Mars qui est peut-être complètement différent de ce que l’on croyait il y a à peine 2 ans. On vous donne les plus grandes actualités scientifiques du mois de septembre, ainsi qu'une actu mystère à deviner !
+
+Voici les actus scientifiques de septembre 2025 :
+00:00 Sommaire
+00:34 Actu quiz : indice 1
+00:54 Un “vaccin” contre les fake news
+https://www.science.org/content/article/trust-elections-rises-after-inoculations-meant-preempt-false-fraud-claims
+https://home.dartmouth.edu/news/2025/08/public-trust-elections-increases-clear-facts
+https://www.science.org/doi/full/10.1126/sciadv.adv3758
+16:06 Actu quiz : indice 2
+16:27 L'émission a besoin de votre soutien
+17:21 Découverte de futurs antibiotiques
+https://www.science.org/content/article/hot-springs-hardy-microbes-offer-new-source-antibiotics
+https://www.nature.com/articles/s41564-025-02061-0
+23:29 Actu quiz : indice 3
+23:55 Le coeur de Mars est incertain
+https://www.science.org/content/article/data-defunct-nasa-lander-paint-radical-new-picture-mars-s-interior
+https://www.science.org/content/article/it-s-hard-say-goodbye-quake-sensing-lander-dies-mars
+https://www.lemonde.fr/sciences/article/2025/09/04/une-mysterieuse-graine-solide-au-c-ur-de-mars_6638887_1650684.html
+27:55 L'actu quiz
+https://www.thetimes.com/uk/scotland/article/first-cultivated-truffle-on-bute-uncovered-by-researcher-wc9q2xhjx?utm_source=chatgpt.com
+https://www.stir.ac.uk/news/2025/september-2025-news/groundbreaking-first-truffle-cultivated-on-uk-island
+https://www.nature.com/articles/s41598-025-93116-z.epdf
+https://www.stir.ac.uk/news/2025/march-2025-news/dogs-prove-key-to-truffle-harvest-success-stirling-study-finds/ 
+https://www.bbc.com/news/articles/c4g0x2x3e00o 
+30:46 Quoi voir ensuite
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+SOUTENEZ L'ÉMISSION
+https://ulule.com/scilabus
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">vfuck6aLAUw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/vfuck6aLAUw.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Pourquoi les scientifiques font boire de l'alcool à des chauves souris ?</title><description>Des chauves-souris pompettes perdent les pédales ; visiter une maison hantée pourrait booster notre système immunitaire ; et l'on vient de découvrir la plus vieille momie au monde. On vous présente les plus grandes actualités scientifiques du mois d'octobre, ainsi qu'une actu mystère bonus à deviner !
+
+SOUTENEZ L'ÉMISSION
+https://ulule.com/scilabus
+
+Voici les actus scientifiques d'octobre 2025 :
+00:00 Sommaire
+00:36 Actu mystère - 1er indice
+00:49 L'effet de l'alcool sur les chauves-souris
+https://www.sciencedirect.com/science/article/abs/pii/S0376635710000446?via%3Dihub
+05:30 Top 3 des prix Ignobel 2025
+https://journals.sagepub.com/doi/10.1177/0269881117735687
+http://jidonline.org/article/S0022-202X%2815%2948386-1/pdf
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223447
+08:10 L'émission a besoin de vous
+https://ulule.com/scilabus
+09:27 Actu mystère - 2ème indice
+09:44 La peur boosterait notre système immunitaire
+https://www.sciencedirect.com/science/article/pii/S0889159124006780
+16:08 Actu mystère - 3ème indice
+16:47 Découverte d'une momie de 10 000 ans
+https://www.pnas.org/doi/10.1073/pnas.2515103122
+22:09 L'actu mystère
+https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196%2825%2900051-8/fulltext
+24:51 Quoi voir ensuite
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">BK3EPiVhVd0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/BK3EPiVhVd0.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate></item><item><title>Comment couper un oignon SANS verser de larme</title><description>Les scientifiques ont mis au point un tuto pour ne plus pleurer quand on coupe des oignons ; on vient de réparer des cordes vocales grâce à de l’impression 3D ; et une nouvelle étude sur l'impact des téléphones sur la santé mentale vient de sortir.
+Nous, c'est Viviane et Thomas, et on vous présente les plus grandes actualités scientifiques du mois de novembre, ainsi qu'une actu mystère bonus à deviner !
+
+Voici les actus scientifiques de novembre 2025 :
+00:00 Sommaire
+00:32 Actu mystère - 1er indice
+00:54 Couper les oignons sans pleurer
+https://www.pnas.org/doi/10.1073/pnas.2512779122 
+06:39 Actu mystère - 2ème indice
+06:58 Imprimer des cordes vocales en 3D
+https://www.cell.com/device/fulltext/S2666-9986(25)00286-8 
+12:20 Actu mystère - 3ème indice
+12:48 Smartphones et santé mentale
+https://www.pnas.org/doi/10.1073/pnas.2427311122
+21:04 Actu mystère
+https://www.nature.com/articles/s41467-025-63904-2
+25:00 Quoi voir ensuite
+
+Les dernières vidéos Scilabus à découvrir : 
+Les oreilles : https://youtu.be/BUOMAf548V0?si=DnJx_NzJ1j4qsC0M
+La lumière rouge : https://youtu.be/TGw5B0BCHFk?si=-j9vKjmKUQ8Ks5Ef
+
+---
+
+Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+SOUTENEZ L'ÉMISSION
+https://ulule.com/scilabus
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">1AYR91l0bAM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/1AYR91l0bAM.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Et si les médicaments avaient un GPS ? [actu]</title><description>Cet épisode est en collaboration avec Québec Science. Retrouvez toutes les inventions de l'année et votez pour votre préférée ici : https://www.quebecscience.qc.ca/decouvertes2025/
 
 Faire naviguer des billes de médicament dans le sang grâce à des champs magnétiques ; la découverte d'une libellule grosse comme la main ; un astéroïde qui nous force à repenser notre protection planétaire ; une nouvelle source de méthane découverte ; de nouveaux microprocesseurs pour réduire l’impact de l’IA sur les changement climatiques ; et faire du sport pour mieux procréer... On vous donne les plus grandes actualités scientifiques de ce mois de janvier 2026, ainsi que les nouvelles les plus marquantes de l'année 2025, et comme toujours une actu mystère à deviner !
 
@@ -173,417 +657,7 @@ https://kit.co/Scilabus/mon-kit
 Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
 
 Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">tJY0u4lvB6A</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/tJY0u4lvB6A.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate></item><item><title>Comment couper un oignon SANS verser de larme</title><description>Les scientifiques ont mis au point un tuto pour ne plus pleurer quand on coupe des oignons ; on vient de réparer des cordes vocales grâce à de l’impression 3D ; et une nouvelle étude sur l'impact des téléphones sur la santé mentale vient de sortir.
-Nous, c'est Viviane et Thomas, et on vous présente les plus grandes actualités scientifiques du mois de novembre, ainsi qu'une actu mystère bonus à deviner !
-
-Voici les actus scientifiques de novembre 2025 :
-00:00 Sommaire
-00:32 Actu mystère - 1er indice
-00:54 Couper les oignons sans pleurer
-https://www.pnas.org/doi/10.1073/pnas.2512779122 
-06:39 Actu mystère - 2ème indice
-06:58 Imprimer des cordes vocales en 3D
-https://www.cell.com/device/fulltext/S2666-9986(25)00286-8 
-12:20 Actu mystère - 3ème indice
-12:48 Smartphones et santé mentale
-https://www.pnas.org/doi/10.1073/pnas.2427311122
-21:04 Actu mystère
-https://www.nature.com/articles/s41467-025-63904-2
-25:00 Quoi voir ensuite
-
-Les dernières vidéos Scilabus à découvrir : 
-Les oreilles : https://youtu.be/BUOMAf548V0?si=DnJx_NzJ1j4qsC0M
-La lumière rouge : https://youtu.be/TGw5B0BCHFk?si=-j9vKjmKUQ8Ks5Ef
-
----
-
-Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-SOUTENEZ L'ÉMISSION
-https://ulule.com/scilabus
-
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">1AYR91l0bAM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/1AYR91l0bAM.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Pourquoi les scientifiques font boire de l'alcool à des chauves souris ?</title><description>Des chauves-souris pompettes perdent les pédales ; visiter une maison hantée pourrait booster notre système immunitaire ; et l'on vient de découvrir la plus vieille momie au monde. On vous présente les plus grandes actualités scientifiques du mois d'octobre, ainsi qu'une actu mystère bonus à deviner !
-
-SOUTENEZ L'ÉMISSION
-https://ulule.com/scilabus
-
-Voici les actus scientifiques d'octobre 2025 :
-00:00 Sommaire
-00:36 Actu mystère - 1er indice
-00:49 L'effet de l'alcool sur les chauves-souris
-https://www.sciencedirect.com/science/article/abs/pii/S0376635710000446?via%3Dihub
-05:30 Top 3 des prix Ignobel 2025
-https://journals.sagepub.com/doi/10.1177/0269881117735687
-http://jidonline.org/article/S0022-202X%2815%2948386-1/pdf
-https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223447
-08:10 L'émission a besoin de vous
-https://ulule.com/scilabus
-09:27 Actu mystère - 2ème indice
-09:44 La peur boosterait notre système immunitaire
-https://www.sciencedirect.com/science/article/pii/S0889159124006780
-16:08 Actu mystère - 3ème indice
-16:47 Découverte d'une momie de 10 000 ans
-https://www.pnas.org/doi/10.1073/pnas.2515103122
-22:09 L'actu mystère
-https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196%2825%2900051-8/fulltext
-24:51 Quoi voir ensuite
-
----
-
-Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">BK3EPiVhVd0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/BK3EPiVhVd0.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate></item><item><title>Peut-on vacciner le cerveau contre les fake news ? Oui. [actu avec des sci]</title><description>Un “vaccin” contre les fake news pour soutenir la démocratie ; la découverte de futurs antibiotiques ; et le noyau de Mars qui est peut-être complètement différent de ce que l’on croyait il y a à peine 2 ans. On vous donne les plus grandes actualités scientifiques du mois de septembre, ainsi qu'une actu mystère à deviner !
-
-Voici les actus scientifiques de septembre 2025 :
-00:00 Sommaire
-00:34 Actu quiz : indice 1
-00:54 Un “vaccin” contre les fake news
-https://www.science.org/content/article/trust-elections-rises-after-inoculations-meant-preempt-false-fraud-claims
-https://home.dartmouth.edu/news/2025/08/public-trust-elections-increases-clear-facts
-https://www.science.org/doi/full/10.1126/sciadv.adv3758
-16:06 Actu quiz : indice 2
-16:27 L'émission a besoin de votre soutien
-17:21 Découverte de futurs antibiotiques
-https://www.science.org/content/article/hot-springs-hardy-microbes-offer-new-source-antibiotics
-https://www.nature.com/articles/s41564-025-02061-0
-23:29 Actu quiz : indice 3
-23:55 Le coeur de Mars est incertain
-https://www.science.org/content/article/data-defunct-nasa-lander-paint-radical-new-picture-mars-s-interior
-https://www.science.org/content/article/it-s-hard-say-goodbye-quake-sensing-lander-dies-mars
-https://www.lemonde.fr/sciences/article/2025/09/04/une-mysterieuse-graine-solide-au-c-ur-de-mars_6638887_1650684.html
-27:55 L'actu quiz
-https://www.thetimes.com/uk/scotland/article/first-cultivated-truffle-on-bute-uncovered-by-researcher-wc9q2xhjx?utm_source=chatgpt.com
-https://www.stir.ac.uk/news/2025/september-2025-news/groundbreaking-first-truffle-cultivated-on-uk-island
-https://www.nature.com/articles/s41598-025-93116-z.epdf
-https://www.stir.ac.uk/news/2025/march-2025-news/dogs-prove-key-to-truffle-harvest-success-stirling-study-finds/ 
-https://www.bbc.com/news/articles/c4g0x2x3e00o 
-30:46 Quoi voir ensuite
-
----
-
-Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-SOUTENEZ L'ÉMISSION
-https://ulule.com/scilabus
-
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">vfuck6aLAUw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/vfuck6aLAUw.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Sa voix est synthétique... mais les mots sont à elle [Avec des Sci]</title><description>AIDER LA CHAINE
-https://www.kisskissbankbank.com/fr/projects/scilabus
-
-La chaine Twitch de Thomas : www.twitch.com/sciencesalacarte
-
-Sources:
-Actualité sur la foudre sur l’arbre
-Shocker: This tropical tree thrives after being struck by lightning - Science
-How some tropical trees benefit from being struck by lightning: evidence for Dipteryx oleifera and other large-statured trees - New Phytologist  
-Le “Dipteryx oleifera”, cet arbre qui prospère grâce à la foudre - Courrier International
-
-Actualité sur l’implant cérébral
-Un implant cérébral traduit les pensées en paroles quasi instantanément - Radio-Canada 
-Brain implant translates thoughts to speech in an instant - Nature
-
-Actualité sur le test génétique
-23andMe plans to sell its huge genetic database: could science benefit? - Nature
-
-Actualité sur le requin
-Sharks... even more amazing than you realised - Université d’Auckland
-Unlikely pairing - Nature
-Rare sighting of a 'sharktopus' leaves onlookers stunned and puzzled - CBC
-
----
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-00:00 Le programme
-01:00 Actu 1 : retrouver la voix
-09:38 Actu 2 : un arbre qui fait copain copain avec la foudre
-15:30 Actu 3 : le SHARKTOPUS
-18:15 Actu mystère !</description><guid isPermaLink="false">fOVMDCGOluY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/fOVMDCGOluY.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Un nouveau type de cartilage découvert… en forme de papier bulle [Avec des Sci]</title><description>On a besoin de vous pour... partager cette vidéo ! 
-
-Cette émission d'actualité est tournée en LIVE et rediffusée par la suite. 
-
-La chaine de Thomas : https://www.twitch.tv/sciencesalacarte
-Les anciennes actus : https://www.youtube.com/playlist?list=PLdhqndoLhA_7a4ZmDFqLL5sCXx_V-EXCc
-
-SOUTENIR L'ÉMISSION
-Kiss Kiss Bank Bank : https://www.kisskissbankbank.com/fr/projects/scilabus
-Patreon : https://www.patreon.com/scilabus
-
-Les sources :
-NEWS- 1 cartilage
-https://cdn.mos.cms.futurecdn.net/xuhniEs4MqxR4kDT8mYqqX-970-80.jpg.webp
-https://www.ncbi.nlm.nih.gov/books/NBK532964/
-https://escholarship.org/content/qt0z5275h1/qt0z5275h1_noSplash_d450c71fe0002cb3d96571a7481c18a1.pdf?t=squujt
-https://fr.wikipedia.org/wiki/Franz_von_Leydig#/media/Fichier:Franz_Leydig.jpg
-https://www.science.org/doi/10.1126/science.ads9960 
-
-NEWS 2 - cerveau
-https://en.wikipedia.org/wiki/Pupillary_response#/media/File:Eye_dilate.gif
-https://pmc.ncbi.nlm.nih.gov/articles/PMC9063564/
-https://www.nature.com/articles/d41586-024-01732-y
-https://www.nature.com/articles/s41586-024-08340-w
-
-NEWS 3 - fourmis
-https://www.science.org/content/article/ants-best-humans-test-collective-intelligence
-https://www.pnas.org/doi/10.1073/pnas.2414274121#supplementary-materials
-
-Chiffre du jour : 
-https://www.science.org/content/article/news-glance-longest-continuous-ice-core-formaldehyde-s-risks-and-building-africa-s
-https://ici.radio-canada.ca/nouvelle/2131566/antarctique-glace-extraction-carotte-climat
-https://www.beyondepica.eu/en/</description><guid isPermaLink="false">LX2C0ktt_pE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/LX2C0ktt_pE.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate></item><item><title>Il s’injecte du venin depuis 10 ans… et ça marche ?! 🐍 [Avec des Sci]</title><description>Ce mois-ci, on parle de dernières actualités scientifiques particulièrement étonnantes : un homme qui s'est fait mordre par ses serpents pour développer sa tolérance, de nouvelles données sur les répercussions d'un accouchement sur le corps, une nouvelle couleur qui a été découverte (?) et enfin une actualité surprise qu'il vous faudra deviner au fil de l'émission ;)
-
-SOUTENIR L'ÉMISSION
-https://www.kisskissbankbank.com/fr/projects/scilabus
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-CHAPITRES
-00:00 Les actus scientifiques du mois
-00:47 L'objet du jour : indice 1
-00:59 L'actu wow : il s'injecte du venin pour s'immuniser
-07:55 L'objet du jour : indice 2
-08:21 L'actu cool mais on ne s'emballe pas : se remettre d'une grossesse
-12:07 L'objet du jour : indice 3
-12:33 L'actu ça alors : la découverte d'une nouvelle couleur
-17:57 L'objet du jour dévoilé
-22:07 Partagez Avec des sci !
-
-SOURCES
-Actualité sur le venin :
-https://www.science.org/content/article/he-injected-himself-venom-decades-can-his-antibodies-help-snakebite-victims
-https://www.nature.com/articles/d41586-025-01325-3
-https://www.newscientist.com/article/2478737-innovative-antivenom-may-work-against-the-worlds-deadliest-snakes/
-
-Actualité sur l’accouchement :
-https://www.nature.com/articles/d41586-025-00959-7
-https://www.science.org/doi/10.1126/sciadv.adr7922
-
-Actualité sur la nouvelle couleur :
-https://www.newscientist.com/article/2477068-new-colour-seen-for-the-first-time-by-tricking-the-eyes/
-https://www.science.org/content/article/superprecise-lasers-show-people-whole-new-color
-https://www.nature.com/articles/d41586-025-01252-3
-
-Actualité surprise / l'objet du jour :
-https://www.nature.com/articles/d41586-025-01214-9
-https://www.facebook.com/watch/?v=1378401923502801
-Sur l'écholocalisation humaine : https://www.nature.com/articles/d41586-025-00657-4</description><guid isPermaLink="false">kfjoQHQWZ4k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/kfjoQHQWZ4k.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate></item><item><title>Ils ont "hacké" l’ADN d’un bébé pour le sauver !</title><description>Un bébé serait guéri d'une maladie rare après qu'on ait modifié une lettre de son ADN ; les poissons-clowns changent de taille pour résister à la température de l'eau ; des cacatoès utilisent des fontaines pour humains... On vous donne les plus grandes actualités scientifiques du mois de juin, ainsi qu'une actu mystère bonus à deviner !
-
-Voici les actus scientifiques de juin 2025 :
-00:00 Sommaire
-00:28 Actu mystère
-01:00 Actu c'est cool, mais on ne s'emballe pas
-https://www.nejm.org/doi/10.1056/NEJMoa2504747
-https://www.newscientist.com/article/2480365-baby-with-rare-disease-given-world-first-personal-crispr-gene-therapy/
-https://www.science.org/content/article/gene-editing-therapy-made-just-6-months-helps-baby-life-threatening-disease
-https://www.nature.com/articles/d41586-025-01496-z
-https://ici.radio-canada.ca/nouvelle/2165582/therapie-genique-crispr-cas9-traitement-bebe
-https://www.lemonde.fr/realites-biomedicales/article/2025/05/17/un-nourrisson-atteint-d-une-maladie-genetique-ultra-rare-recoit-un-traitement-personnalise-inedit_6606541_6579630.html
-10:43 Retour d'actu sur 23andme
-https://www.theverge.com/news/669548/23andme-bankruptcy-auction-regeneron-purchase
-https://www.boursorama.com/bourse/actualites/la-fondatrice-de-23andme-anne-wojcicki-remporte-l-offre-de-rachat-de-la-societe-de-tests-adn-en-faillite-31c67e22fb5fb25a40b7b8aa694265dd
-13:53 Message subliminal
-14:29 Actu wow
-https://www.lemonde.fr/sciences/article/2025/05/25/retrecir-pour-ne-pas-mourir-l-astuce-du-poisson-clown-face-au-rechauffement-climatique_6608362_1650684.html
-https://www.radiofrance.fr/franceinter/podcasts/planete-verte/planete-verte-du-vendredi-30-mai-2025-4364371
-https://www.nationalgeographic.fr/animaux/evolution-animale-pour-survivre-aux-vagues-de-chaleur-le-poisson-clown-rapetisse-changement-climatique-adaptation
-https://www.science.org/doi/10.1126/sciadv.adt7079
-20:02 Actu mignonne
-https://www.science.org/content/article/cockatoos-have-learned-operate-drinking-fountains-australia
-https://royalsocietypublishing.org/doi/10.1098/rsbl.2025.0010
-23:20 Actu mystère
-https://www.science.org/content/article/weapon-was-made-whale-carcass-nearly-20-000-years-ago
-https://www.nature.com/articles/s41467-025-59486-8
-25:19 Quoi voir ensuite
-
----
-
-Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-SOUTENEZ L'ÉMISSION
-https://www.kisskissbankbank.com/fr/projects/scilabus
-
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">OoZNlPyrqCU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/OoZNlPyrqCU.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Ce que la SCIENCE dit sur la semaine de 4 jours [Avec des Sci]</title><description>La semaine de 4 jours mise à l'épreuve lors d'une méga étude qui l’a testée pendant 6 mois ; un vaccin par fil dentaire en cours de développement ; et enfin des images inédites du Soleil capturées par une sonde ultra proche. On vous donne les plus grandes actualités scientifiques du mois d'août, ainsi qu'une actu mystère bonus à deviner !
-
-Voici les actus scientifiques d'août 2025 :
-00:00 Sommaire
-00:53 Actu quiz : indice 1
-01:17 La semaine de 4 jours testée scientifiquement
-https://www.nature.com/articles/d41586-025-02295-2
-https://www.nature.com/articles/s41562-025-02262-x
-https://www.newscientist.com/article/2488976-four-day-working-week-may-boost-our-health-and-performance-at-work/
-07:36 Actu quiz : indice 2
-08:04 Un vaccin administré par fil dentaire
-https://www.science.org/content/article/engineers-transform-dental-floss-needle-free-vaccine
-https://www.livescience.com/health/medicine-drugs/scientists-gave-mice-flu-vaccines-by-flossing-their-tiny-teeth-and-it-worked
-https://www.nature.com/articles/s41551-025-01451-3
-16:17 L'émission a besoin de vos conseils
-17:32 Actu quiz : indice 3
-18:07 Des images inédites pour "toucher" le Soleil
-https://ici.radio-canada.ca/nouvelle/2179796/soleil-images-inedites-mission-parker
-https://www.sciencealert.com/nasa-reveals-the-closest-images-ever-taken-of-the-sun
-https://science.nasa.gov/mission/parker-solar-probe/
-https://science.nasa.gov/science-research/heliophysics/nasas-parker-solar-probe-snaps-closest-ever-images-to-sun/
-22:25 L'actu quiz
-https://ici.radio-canada.ca/nouvelle/2182823/eclair-record-mondial-meteorologie-etats-unis
-24:47 Quoi voir ensuite
-
----
-
-Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-SOUTENEZ L'ÉMISSION
-https://www.kisskissbankbank.com/fr/projects/scilabus
-
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">HUj_CrVG9u0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/HUj_CrVG9u0.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate></item><item><title>Ils ont percé un parachute et il marche mieux</title><description>Cette vidéo intègre une collaboration commerciale avec Université Côte d'Azur, sur un sujet propulsé par Play Azur Prod, pour mettre en lumière l’actualité sur le lien entre l’obésité et le cerveau dans le cadre du projet “Science avec et pour la société” SAPS Côte d’Azur, financé par l’Agence Nationale de la Recherche (ANR) porté par Université Côte d’Azur, l’Observatoire de la Côte d’Azur, le CNRS, l’INRAe, l’Inria et l’Inserm.
-Ce projet de recherche est mené par Dr Carole Rovère et financé par l’ANR. Pour en savoir plus : https://science-societe.univ-cotedazur.fr/biomedecine/les-liens-entre-obesite-et-cerveau
---
-
-Voici les actus scientifiques de décembre 2025 :
-L’art japonais du kirigami nous permet de fabriquer de meilleurs parachutes à l'aide de papier et de coups de ciseaux ; une protéine est étudiée pour mieux comprendre le lien entre l’obésité et le cerveau ; et enfin, une histoire de coup d’état, d’usurpation d’identité et de matricide… Un cas réel et inédit observé dans une fourmilière.
-On vous présente les plus grandes actualités scientifiques du mois de décembre, ainsi qu'une section bonus à deviner !
-
-00:00 Sommaire
-00:54 Mystère : indice 1
-01:11 Des parachutes en kirigami
-https://www.nature.com/articles/s41586-025-09515-9
-https://www.polymtl.ca/carrefour-actualite/nouvelles/un-parachute-de-polytechnique-montreal-atterrit-dans-la-revue-nature
-05:59 Mystère : indice 2
-06:22 Un lien entre obésité et cerveau
-https://science-societe.univ-cotedazur.fr/biomedecine/les-liens-entre-obesite-et-cerveau
-11:05 Mystère : indice 3
-12:29 Un matricide chez des fourmis
-https://www.cell.com/current-biology/fulltext/S0960-9822(25)01207-2
-https://www.science.org/content/article/parasitic-ant-tricks-workers-killing-their-own-queen
-14:57 Mystère révélé
-23:45 Quoi voir ensuite
-
----
-
-Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-SOUTENEZ L'ÉMISSION
-https://ulule.com/scilabus
-
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">gmHifhu8fD8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/gmHifhu8fD8.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate></item><item><title>TikTok et le cerveau : ce que disent vraiment 70 études</title><description>Cet épisode est en collaboration avec Québec Science. Retrouvez toutes les inventions de l'année et votez pour votre préférée ici : https://www.quebecscience.qc.ca/decouvertes2025/
-
-La recherche confirme nos craintes sur les effets des vidéos courtes sur notre bien-être ; les filtres de nos voitures utilisés pour mesurer l’antibiorésistance dans la population ; un pas de plus dans la recherche contre le cancer ; de la musique pour atténuer la douleur, mais seulement si elle est au bon rythme ; et enfin, comment vraiment faire fonctionner la protection du climat à l’échelle internationale. On vous donne les plus grandes actualités scientifiques du début du mois de février 2026, ainsi que les nouvelles les plus marquantes de l'année 2025, et comme toujours une actu mystère à deviner !
-
-SOUTENEZ L'ÉMISSION
-https://www.ulule.com/avecdessci/
-
-PROGRAMME ET SOURCES
-00:00 Sommaire
-00:49 Actu mystère : indice 1
-01:07 L'actu hmm... c'est intéressant
-https://psycnet.apa.org/fulltext/2026-89350-001.html
-09:47 Actu mystère : indice 2
-10:00 Présentation des avantages Ulule
-12:24 Les actus Québec Science
-https://www.quebecscience.qc.ca/decouvertes2025/
-12:54 Des parachutes en kirigami
-https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/parachute-papier-art-japonais/
-Notre épisode qui détaille cette actu : https://youtu.be/gmHifhu8fD8
-14:02 Des filtres de voitures pour mesurer notre antibiorésistance
-https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/bacteries-air-filtres-autos/
-15:30 Bloquer un interrupteur moléculaire du cancer
-https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/bloquer-interrupteur-moleculaire-cancer/
-17:25 Atténuer la douleur grâce au bon tempo musical
-https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/attenuer-douleur-tempo-musical/
-18:49 Le climat protégé grâce au commerce
-https://www.quebecscience.qc.ca/sciences/les-10-decouvertes-de-2025/climat-protection-commerce/
-20:23 L'actu mystère
-https://www.nature.com/articles/s41467-025-67400-5
-23:28 Quoi voir ensuite
-
----
-
-Texte et animation : Viviane Lalande et Thomas Milan
-Montage : Marianne Lalande
-
-LES LIVES DE THOMAS
-https://www.twitch.tv/sciencesalacarte/
-
-MON MATÉRIEL
-https://kit.co/Scilabus/mon-kit
-
-Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
-
-Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">Wo4-eE12bUA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/Wo4-eE12bUA.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate></item><item><title>Être ivre sans alcool : le syndrôme d'auto-brasserie enfin compris</title><description>On peut être ivre à cause de son microbiote ; une carte inédite du dessous de la calotte glaciaire de l’Antarctique vient d’être révélée ; on a la preuve que les vaches utilisent des outils pour se gratter. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">tJY0u4lvB6A</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/audio-storage/tJY0u4lvB6A.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate></item><item><title>Être ivre sans alcool : le syndrôme d'auto-brasserie enfin compris</title><description>On peut être ivre à cause de son microbiote ; une carte inédite du dessous de la calotte glaciaire de l’Antarctique vient d’être révélée ; on a la preuve que les vaches utilisent des outils pour se gratter. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
 
 Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
 
@@ -629,41 +703,52 @@ https://kit.co/Scilabus/mon-kit
 Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
 
 Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">oO3aOlO0MR8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-02/oO3aOlO0MR8.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate></item><item><title>Le plastique nous rend-il malades ? Une étude choc</title><description>Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">oO3aOlO0MR8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-02/oO3aOlO0MR8.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate></item><item><title>Café et démence : ce que montre (vraiment) une étude sur 43 ans</title><description>La caféine protègerait le cerveau contre le déclin cognitif ; une méta-analyse dresse un tableau complet sur l'impact du bruit sur la vie des oiseaux ; des lichens colorent naturellement des fossiles de dinosaures en orange. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
 
-Un chiffre faramineux qui nous donne l'impact du plastique sur notre santé ; sur Mars, un rover a entendu de l’électricité ; un robot est capable de se faufiler dans des petits recoins, de ramper et même de nager. On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
+Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
 
-Voici les actus scientifiques de [MOIS] 2026 :
+SOUTENEZ L'ÉMISSION
+https://www.ulule.com/avecdessci/
+
 00:00 Sommaire
-00:34 Actu mystère : indice 1
-01:15 L'actu wow !
-https://www.lemonde.fr/planete/article/2026/01/27/le-cycle-de-vie-du-plastique-pourrait-doubler-les-annees-de-vie-perdues-d-ici-a-2040-alerte-the-lancet_6664267_3244.html
-https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00284-0/fulltext
-06:13 Votez pour la photo du mois
-06:27 Actu mystère : indice 2
-06:56 L'actu Hmm, c'est intéressant
-https://www.nature.com/articles/s41586-025-09736-y.epdf
-https://www.pourlascience.fr/sd/planetologie/des-eclairs-detectes-pour-la-premiere-fois-sur-mars-28612.php
-https://www.snexplores.org/article/listen-crackle-mars-lightning
-11:37 Financement de l'émission
-11:56 Soutenez-nous sur Ulule :) https://www.ulule.com/avecdessci/
-13:34 Actu mystère : indice 3
-14:18 La vidéo du mois
-https://www.science.org/content/article/watch-smiling-robot-walk-water
-https://www.science.org/doi/epdf/10.1126/sciadv.aea2831
-https://hi-tech.ua/en/boston-dynamics-showed-how-the-humanoid-robot-atlas-does-new-tricks/
-17:45 L'actu mystère
-https://desapublications.un.org/publications/world-urbanization-prospects-2025-summary-results
-https://www.newscientist.com/article/2504873-four-fifths-of-the-worlds-population-now-live-in-urban-areas/
-https://www.un.org/pl/node/236908
-22:31 Quoi voir ensuite
+00:27 Actu mystère : indice 1
+01:07 L'actu c'est cool (mais on ne s'emballe pas)
+https://www.nature.com/articles/d41586-026-00409-y
+https://jamanetwork.com/journals/jama/article-abstract/2844764
+08:08 Actu mystère : indice 2
+08:45 L'actu wow !
+https://www.franceinfo.fr/environnement/biodiversite/le-bruit-affecte-fortement-les-oiseaux-et-leur-reproduction-selon-une-etude_7798286.html
+https://royalsocietypublishing.org/rspb/article/293/2064/20252521/480236/Trait-mediated-effects-of-anthropogenic-noise-on
+La vidéo de Vox sur la pollution sonore dans l’océan : https://www.youtube.com/watch?v=CrpkZkwTvu0
+13:51 Financement de l'émission
+14:24 Soutenez-nous sur Ulule :) https://www.ulule.com/avecdessci/
+15:59 Actu mystère : indice 3
+16:49 La photo du mois
+https://www.cell.com/current-biology/fulltext/S0960-9822(25)01206-0
+https://www.science.org/content/article/organism-turns-dino-bones-orange-making-them-easier-spot
+18:50 L'actu mystère
+https://www.nature.com/articles/s41591-026-04219-7
+https://www.nature.com/articles/d41586-026-00333-1
+21:41 Quoi voir ensuite
 La vidéo Scilabus sur l'impesanteur : https://youtu.be/iG6BQ6_kaEg?si=yeVDb3Zmdc4WWwr6
-Notre dernier épisode d'Avec des Sci : https://www.youtube.com/watch?v=e5FPxLNktoc&amp;t
+Notre dernier épisode d'Avec des Sci : https://youtu.be/oO3aOlO0MR8?si=i1gwNDZw8kdKAlxU
 Les lives de revue scientifique de Thomas : https://www.twitch.tv/sciencesalacarte/
 
 ---
 
 Texte et animation : Viviane Lalande et Thomas Milan
+Montage : Marianne Lalande
+
+LES LIVES DE THOMAS
+https://www.twitch.tv/sciencesalacarte/
+
+MON MATÉRIEL
+https://kit.co/Scilabus/mon-kit
+
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
+
+Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">e5FPxLNktoc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-03/e5FPxLNktoc.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Les actus photo du mois de mars | Spécial Ulule</title><description>Texte et animation : Viviane Lalande et Thomas Milan
 Montage : Marianne Lalande
 
 SOUTENEZ L'ÉMISSION
@@ -678,41 +763,7 @@ https://kit.co/Scilabus/mon-kit
 Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
 
 Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">u5KKzoSEwJw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-03/u5KKzoSEwJw.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Attention : Votre assistant d'écriture change votre façon de penser</title><description>Une étude sur l’intelligence artificielle révèle comment celle-ci peut influencer notre façon de penser ; une première étude mesure la pollution émise par les fusées qui reviennent sur Terre ; un robot totalement autonome vient d'être créé, mais cette fois-ci à l'échelle microscopique ! On vous présente les plus grandes actualités scientifiques du moment, et comme toujours une actu mystère à deviner !
-
-Cet épisode est financé par STUP Media. Retrouvez-les ici : https://stup.media/
-
-Programme et sources
-00:00 Sommaire
-00:42 Actu mystère : indice 1
-01:16 L'actu hmm, c'est intéressant
-https://www.scientificamerican.com/article/ai-autocomplete-doesnt-just-change-how-you-write-it-changes-how-you-think/
-https://www.science.org/doi/10.1126/sciadv.adw5578
-09:29 Actu mystère : indice 2
-09:49 L'actu wow !
-https://www.nature.com/articles/s43247-025-03154-8
-16:24 Financement de l'émission
-16:48 Soutenez-nous sur Ulule :) https://www.ulule.com/avecdessci/
-17:56 Mention spéciale : le prix Turing
-https://www.quantamagazine.org/quantum-cryptography-pioneers-win-turing-award-20260318/
-19:08 Actu mystère : indice 3
-19:35 La photo du mois
-https://www.sciencealert.com/the-worlds-smallest-programmable-robot-can-barely-be-seen
-https://www.science.org/doi/10.1126/scirobotics.adu8009
-https://www.sciencedaily.com/releases/2026/01/260105165815.htm
-https://www.youtube.com/watch?v=yQ2HT2xCmAU
-23:08 Votez pour la prochaine photo du mois sur Ulule !
-23:13 L'actu mystère
-https://ici.radio-canada.ca/nouvelle/2230721/menton-evolution-consequence-indirecte
-https://pmc.ncbi.nlm.nih.gov/articles/PMC12854472/
-26:30 Quoi voir ensuite
-La vidéo Scilabus sur le genou : https://youtu.be/ci2InLkUaf0?si=RjdQ5p3xmovWhqtG
-Notre dernier épisode d'Avec des Sci : https://youtu.be/u5KKzoSEwJw?si=A3xLWmueXmumF91V
-Les lives de revue scientifique de Thomas : https://www.twitch.tv/sciencesalacarte/
-
----
-
-Texte et animation : Viviane Lalande et Thomas Milan
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">d2_VLnlXHag</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/d2_VLnlXHag.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Le bêtisier du 6 avril | Spécial Ulule</title><description>Animation : Viviane Lalande et Thomas Milan
 Montage : Marianne Lalande
 
 SOUTENEZ L'ÉMISSION
@@ -724,7 +775,7 @@ https://www.twitch.tv/sciencesalacarte/
 MON MATÉRIEL
 https://kit.co/Scilabus/mon-kit
 
-Besoin de conseils en vulgarisation ? Voici les formations que Viviane propose : https://www.scilabus.com/formations
+Besoin de conseils en vulgarisation ? Voici les formations que je propose : https://www.scilabus.com/formations
 
 Rejoindre le Discord Sci+ : https://discord.gg/gm2yKwg5k2
-Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">osOWroq6jaM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/osOWroq6jaM.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate></item></channel></rss>
+Ma chaîne de vulgarisation scientifique : http://www.youtube.com/scilabus</description><guid isPermaLink="false">tAbOkb1OlHI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-04/tAbOkb1OlHI.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate></item></channel></rss>
