@@ -145,5 +145,13 @@
         "podcast_author": "BLAST, Le souffle de l'info",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/débauche.png", 
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+    {
+    "filename": "temps_pluriels.xml",
+        "url": "https://youtube.com/playlist?list=PLobKp26TrHHDEdWQZlOKwzYXyWiB0NLn1", 
+        "podcast_name": "TEMPS PLURIELS",
+        "podcast_author": "Temps Pluriels",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/temps_pluriels.png", 
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
