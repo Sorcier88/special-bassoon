@@ -112,8 +112,14 @@
         "url": "https://youtube.com/playlist?list=PLAUm9TsAe7fBYZkKQByirhPovWa34JUAX", 
         "podcast_name": "POPulaire",
         "podcast_author": "Bolchegeek",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bolchegeek.jpg"
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bolchegeek.jpg",
+        "comment": "Playlist de Bolchegeek"
     }, 
+    {
+        "filename": "populaire.xml",
+        "url": "https://youtube.com/playlist?list=PLOCADcFbqUJ8epF9CzVeUqFRP0UfJY15m", 
+        "comment": "Playlist de l'Humanité"
+    },
     {
         "filename": "hardisk_les_news.xml",
         "url": "https://youtube.com/playlist?list=PLV8d03a7dTWwgjH-zoirpYNrSEqTKXynR", 
