@@ -1,60 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TEMPS PLURIELS</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Temps pluriels est un projet collaboratif créé par les étudiant·es en Master 2 de sociologie, disponible en podcast et sur YouTube. À travers une série de cinq épisodes, nous explorons une question centrale : comment le temps façonne-t-il nos rapports sociaux et politiques ?  De l'attente suspendue des demandeurs d'asile au temps carcéral marqué par les inégalités de classe, en passant par l'effacement des frontières entre vie académique et sphère privée, Temps pluriels déconstruit l'idé</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/temps_pluriels.png</url><title>TEMPS PLURIELS</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Mon, 29 Jun 2026 21:59:19 +0000</lastBuildDate><itunes:author>Temps Pluriels</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/temps_pluriels.png"/><item><title>TEMPS PLURIELS - Introduction</title><description>Quel temps habitons-nous vraiment ? Entre l'accélération des flux d'information et le sentiment paradoxal que rien ne change vraiment, les sociétés contemporaines semblent traversées par une profonde asynchronicité des temporalités. Cette série de podcasts n'interroge pas le Temps avec un grand T, mais les façons dont les individus vivent le temps au quotidien — dans le travail, le corps, le politique, l'enfermement. À travers trois prismes complémentaires — la continuité, la rupture, la suspension —, elle explore ce que signifie habiter le XXIe siècle quand les repères temporels collectifs se heurtent plutôt qu'ils ne se superposent. Du stage étudiant aux politiques migratoires de l'ère Trump, en passant par l'expérience carcérale, chaque épisode donne à entendre des temporalités singulières qui résistent aux grands récits, et révèlent, dans leurs décalages mêmes, quelque chose d'essentiel sur notre rapport au temps présent. Voilà pour l'abstract du podcast.
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TEMPS PLURIELS</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Temps pluriels est un projet collaboratif créé par les étudiant·es en Master 2 de sociologie, disponible en podcast et sur YouTube. À travers une série de cinq épisodes, nous explorons une question centrale : comment le temps façonne-t-il nos rapports sociaux et politiques ?  De l'attente suspendue des demandeurs d'asile au temps carcéral marqué par les inégalités de classe, en passant par l'effacement des frontières entre vie académique et sphère privée, Temps pluriels déconstruit l'idé</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/temps_pluriels.png</url><title>TEMPS PLURIELS</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Tue, 30 Jun 2026 08:13:08 +0000</lastBuildDate><itunes:author>Temps Pluriels</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/temps_pluriels.png"/><item><title>TEMPS PLURIELS - Conclusion</title><description>Au cours de ce podcast, nous avons parcouru le temps sous le prisme de la sociologie à travers divers approches. Dans ce dernier épisode, revenons sur les trois axes centraux de notre recherche afin d’en tirer une vue d’ensemble et proposer quelques ouverture à la réflexion et au prolongement de notre recherche sur les temps pluriels.
 
-Cet épisode vous est présenté par : Camille Aussedat
-
-Illustrations &amp; logo : Juliette Biston
-Musique : Pulsebox</description><guid isPermaLink="false">lrgCkEwO00k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/lrgCkEwO00k.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 1 partie 1 : la continuité du temps</title><description>Nous vous proposons ici de parler du milieu de la recherche depuis nos expériences de stages.  Nous utiliserons le concept de “l'institution gourmande” (Fusulier et Del Rio, 2013) pour parler de l’université.
-Nous parlerons également des conditions matérielles qui nous ont permis de nous inscrire dans le temps des continuités et de ne pas avoir de rupture à proprement parler. Zerubavel (1979) explique que la flexibilité des horaires présents chez les travailleurs à statut élevé brouille la distinction entre vie privée et vie publique. 
-Nous parlerons également d’une forme d’accélération dans le milieu de la recherche et d’une forme d’injonction à la productivité (Fusulier et Del Rio, 2013) que nous avons pu observer sur nos lieux de stage respectifs.
-
-Cet épisode vous est présenté par : Zoé Ernaelsten et Aurore Duquesne
+Cet épisode vous est présenté par : Léonie Jeannée
 
 Illustrations &amp; logo : Juliette Biston
-Musique : Pulsebox</description><guid isPermaLink="false">HjEhO3TdCs4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/HjEhO3TdCs4.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 2 partie 1 : la continuité du temps</title><description>Dans la deuxième partie de ce premier épisode de podcast "Le temps algorithmique" consacré à la continuité, nous analysons l'arrivée de l'intelligence artificielle et de l’uberisation à travers le prisme d'une sociologie du temps et du travail. 
-
-Contrairement aux discours qui les présentent comme des révolutions disruptives, nous montrons qu'elles s'inscrivent dans la continuité de logiques historiques déjà présentes dans le capitalisme industriel : rationalisation, contrôle du travail et intensification des rythmes. À partir des travaux de Boltanski et Chiapello (1999), Carbonell (2022 ; 2025) ou encore Casilli (2019) et bien d'autres chercheur·es, nous mettons en évidence la manière dont les technologies numériques prolongent le taylorisme à travers le management algorithmique et la fragmentation des tâches. Nous questionnons également la promesse de flexibilité et d'autonomie associée à l'IA et aux plateformes, en montrant qu'elle masque souvent une disponibilité permanente et une porosité croissante entre temps de travail et temps privé. Nous considérons aussi les nouvelles inégalités temporelles produites par ces dispositifs, entre ceux qui gagnent du temps et ceux dont le travail invisible permet ces gains. 
-
-Plus largement, ce travail de vulgarisation cherche à démontrer que la sociologie du temps constitue un outil pertinent pour comprendre des phénomènes médiatiques contemporains et les évolutions actuelles du monde du travail.
-
-Cet episode vous est présenté par : Iris Wirard et Héloise Van Hout
-
-Jingle : Mathieu Rosania 
-Samples : BBC Sound Effects
-Illustrations &amp; logo : Juliette Biston</description><guid isPermaLink="false">j8QzgW45ajU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/j8QzgW45ajU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 1 partie 2 : la rupture du temps</title><description>Dans cette troisième partie, nous développons à travers ce podcast la rupture que produit Donald Trump avec le temps en politique. 
-
-En effet, il impose de nouveaux rythmes dans ses actions et ses communications qui dépasse la capacité de réaction des institutions démocratiques. Cet audio mobilise des travaux de Hartmut Rosa, Nils Brunsson et plusieurs autres auteurs, il montre que Trump transforme la vitesse en outil de pouvoir via une accélération médiatique mais aussi des décisions vues comme impulsives par exemple. Cette dynamique crée une tension entre l’urgence permanente qu’il met en scène et la temporalité lente, délibérative, propre aux démocraties. L’épisode offre une réflexion sur des stratégies de saturation / de chaos calculé pour reconfigurer les rapports de force et fragilise les contre pouvoirs. 
-
-Accessible et analytique, le podcast invite à réfléchir à ce que la politique devient lorsque la vitesse devient une méthode de gouvernement.
-
-Cet episode vous est présenté par : Nicolas Dejardin et Célia Ait Cherif
-
-Illustrations &amp; logo : Juliette Biston
-Musique : Pulsebox</description><guid isPermaLink="false">ww5HAutkpmo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/ww5HAutkpmo.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 2 partie 2 : la rupture du temps</title><description>Dans cette seconde partie du volet Rupture, nous souhaitons porter attention aux récents agissements de la police ICE (Immigration and Customs Enforcement) aux États-Unis, créée en 2001 et au budget renforcé considérablement par Trump. 
-
-Nous resituons les évènements d’actualité qui ont donné un coup de projecteur à ICE en 2025 et 2026, dont les personnes (d’apparence) Latino sont largement les cibles. On parle d’ailleurs de profilage racial étant donné que les « illegal aliens » recherché·es peuvent être interpellé·es sur base de leur apparence, leur accent ou leur job. 
-
-Le déroulé des arrestations et des déportations révèle d’après nous un triangle biopolitique – chronopolitique – nécropolitique, inspiré des travaux respectifs de Michel Foucault, Georges Wallis et Achille Mbembe. En effet, le pouvoir en place utilise la cassure de la temporalité du quotidien, le déplacement et l’attente incertaine comme outil biopolitique contre ces clandestin·es présumé·es. En s’autorisant à abattre, les agents ICE maintiennent toute une frange de la population dans un état d’urgence permanent qui bouleverse les temporalités individuelles et collectives et provoque une désynchronisation du care entre proches. 
-
-L’irruption d’ICE fait aussi entrer les individus dans une temporalité de clandestinité qui restreint les liens sociaux faibles (voisin·es, collègues, etc.) pour se préserver. Finalement, cette rupture de la temporalité quotidienne amène un temps suspendu, ce sur quoi nos collègues du troisième volet se sont ensuite penchés.
-
-Cet épisode vous est présenté par : Myrtille Daune, Alyssa Evens et Juliette Biston
-
-Jingle : Mathieu Rosania 
-Samples : BBC Sound Effects
-Illustrations &amp; logo : Juliette Biston</description><guid isPermaLink="false">Cpnvh9TEXQU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/Cpnvh9TEXQU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 1 partie 3 : la suspension du temps</title><description>Dans ce cinquième épisode, nous allons aborder la question de la temporalité dans le parcours des demandeurs d’asile.
-
-Depuis l’été dernier, le gouvernement Arizona, par le biais de sa réforme sur l’immigration, instaure des mesures plus strictes pour les demandeurs d’asile en Belgique. 
-
-Cet épisode plonge dans l’expérience temporelle des demandeurs d’asile face à l’administration publique qui détient un pouvoir de vie ou de mort sociale pour le demandeur d’asile. La procédure de régularisation impose un temps frénétique aux demandeurs d’asile car ils sont sommés à être disponibles tout le temps et répondre rapidement à la demande de
-l’administration publique.  
-
-Parfois, c’est un temps plus lent marqué par l’ennui et l’attente interminable d’une décision finale et fatale relative à l’obtention des papiers qui s’impose aux demandeurs d’asile. Comment les demandeurs d’asile vivent l’attente des procédures d’asile ? C’est ce que nous tenterons de comprendre dans ce podcast.
-
-Cet épisode vous est présenté par : Ibrahim Moulila et Samantha Briot
-
-Jingle : Mathieu Rosania
-Illustrations &amp; logo : Juliette Biston</description><guid isPermaLink="false">8nmCHmUCVsA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/8nmCHmUCVsA.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 2 partie 3 : la suspension du temps</title><description>Dans ce dernier podcast consacré au temps suspendu, quoi de plus pertinent que d’évoquer la prison ? 
+Musique : Pulsebox</description><guid isPermaLink="false">fECKkWsd5p0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/fECKkWsd5p0.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 2 partie 3 : la suspension du temps</title><description>Dans ce dernier podcast consacré au temps suspendu, quoi de plus pertinent que d’évoquer la prison ? 
 
 Ce lieu où le temps ne s’écoule plus de manière ordinaire, mais semble figé, cadenassé dans une forme d’immobilisme imposé. Qui plus est, ce temps suspendu est inéquitablement réparti. Toutes les personnes ayant commis un crime ne passent pas nécessairement par la case prison. Le cas de Nicolas Sarkozy constitue d’ailleurs une exception qui confirme la règle et sert de fil rouge à cet épisode. Lui qui n’a purgé que vingt et un jours de détention s’indigne, alors que la durée moyenne d’incarcération se situe entre 11,7 et 12,5 mois en France, et entre 6,9 et 9,9 mois en Belgique. 
 
@@ -66,9 +16,59 @@ Cet episode vous est présenté par : Clarrise De Loneux, Mathieu Rosania et Cé
 
 Jingle : Mathieu Rosania 
 Samples : BBC Sound Effects
-Illustrations &amp; logo : Juliette Biston</description><guid isPermaLink="false">LqTZd7zixn0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/LqTZd7zixn0.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Conclusion</title><description>Au cours de ce podcast, nous avons parcouru le temps sous le prisme de la sociologie à travers divers approches. Dans ce dernier épisode, revenons sur les trois axes centraux de notre recherche afin d’en tirer une vue d’ensemble et proposer quelques ouverture à la réflexion et au prolongement de notre recherche sur les temps pluriels.
+Illustrations &amp; logo : Juliette Biston</description><guid isPermaLink="false">LqTZd7zixn0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/LqTZd7zixn0.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 1 partie 3 : la suspension du temps</title><description>Dans ce cinquième épisode, nous allons aborder la question de la temporalité dans le parcours des demandeurs d’asile.
 
-Cet épisode vous est présenté par : Léonie Jeannée
+Depuis l’été dernier, le gouvernement Arizona, par le biais de sa réforme sur l’immigration, instaure des mesures plus strictes pour les demandeurs d’asile en Belgique. 
+
+Cet épisode plonge dans l’expérience temporelle des demandeurs d’asile face à l’administration publique qui détient un pouvoir de vie ou de mort sociale pour le demandeur d’asile. La procédure de régularisation impose un temps frénétique aux demandeurs d’asile car ils sont sommés à être disponibles tout le temps et répondre rapidement à la demande de
+l’administration publique.  
+
+Parfois, c’est un temps plus lent marqué par l’ennui et l’attente interminable d’une décision finale et fatale relative à l’obtention des papiers qui s’impose aux demandeurs d’asile. Comment les demandeurs d’asile vivent l’attente des procédures d’asile ? C’est ce que nous tenterons de comprendre dans ce podcast.
+
+Cet épisode vous est présenté par : Ibrahim Moulila et Samantha Briot
+
+Jingle : Mathieu Rosania
+Illustrations &amp; logo : Juliette Biston</description><guid isPermaLink="false">8nmCHmUCVsA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/8nmCHmUCVsA.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 2 partie 2 : la rupture du temps</title><description>Dans cette seconde partie du volet Rupture, nous souhaitons porter attention aux récents agissements de la police ICE (Immigration and Customs Enforcement) aux États-Unis, créée en 2001 et au budget renforcé considérablement par Trump. 
+
+Nous resituons les évènements d’actualité qui ont donné un coup de projecteur à ICE en 2025 et 2026, dont les personnes (d’apparence) Latino sont largement les cibles. On parle d’ailleurs de profilage racial étant donné que les « illegal aliens » recherché·es peuvent être interpellé·es sur base de leur apparence, leur accent ou leur job. 
+
+Le déroulé des arrestations et des déportations révèle d’après nous un triangle biopolitique – chronopolitique – nécropolitique, inspiré des travaux respectifs de Michel Foucault, Georges Wallis et Achille Mbembe. En effet, le pouvoir en place utilise la cassure de la temporalité du quotidien, le déplacement et l’attente incertaine comme outil biopolitique contre ces clandestin·es présumé·es. En s’autorisant à abattre, les agents ICE maintiennent toute une frange de la population dans un état d’urgence permanent qui bouleverse les temporalités individuelles et collectives et provoque une désynchronisation du care entre proches. 
+
+L’irruption d’ICE fait aussi entrer les individus dans une temporalité de clandestinité qui restreint les liens sociaux faibles (voisin·es, collègues, etc.) pour se préserver. Finalement, cette rupture de la temporalité quotidienne amène un temps suspendu, ce sur quoi nos collègues du troisième volet se sont ensuite penchés.
+
+Cet épisode vous est présenté par : Myrtille Daune, Alyssa Evens et Juliette Biston
+
+Jingle : Mathieu Rosania 
+Samples : BBC Sound Effects
+Illustrations &amp; logo : Juliette Biston</description><guid isPermaLink="false">Cpnvh9TEXQU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/Cpnvh9TEXQU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 1 partie 2 : la rupture du temps</title><description>Dans cette troisième partie, nous développons à travers ce podcast la rupture que produit Donald Trump avec le temps en politique. 
+
+En effet, il impose de nouveaux rythmes dans ses actions et ses communications qui dépasse la capacité de réaction des institutions démocratiques. Cet audio mobilise des travaux de Hartmut Rosa, Nils Brunsson et plusieurs autres auteurs, il montre que Trump transforme la vitesse en outil de pouvoir via une accélération médiatique mais aussi des décisions vues comme impulsives par exemple. Cette dynamique crée une tension entre l’urgence permanente qu’il met en scène et la temporalité lente, délibérative, propre aux démocraties. L’épisode offre une réflexion sur des stratégies de saturation / de chaos calculé pour reconfigurer les rapports de force et fragilise les contre pouvoirs. 
+
+Accessible et analytique, le podcast invite à réfléchir à ce que la politique devient lorsque la vitesse devient une méthode de gouvernement.
+
+Cet episode vous est présenté par : Nicolas Dejardin et Célia Ait Cherif
 
 Illustrations &amp; logo : Juliette Biston
-Musique : Pulsebox</description><guid isPermaLink="false">fECKkWsd5p0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/fECKkWsd5p0.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate></item></channel></rss>
+Musique : Pulsebox</description><guid isPermaLink="false">ww5HAutkpmo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/ww5HAutkpmo.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 2 partie 1 : la continuité du temps</title><description>Dans la deuxième partie de ce premier épisode de podcast "Le temps algorithmique" consacré à la continuité, nous analysons l'arrivée de l'intelligence artificielle et de l’uberisation à travers le prisme d'une sociologie du temps et du travail. 
+
+Contrairement aux discours qui les présentent comme des révolutions disruptives, nous montrons qu'elles s'inscrivent dans la continuité de logiques historiques déjà présentes dans le capitalisme industriel : rationalisation, contrôle du travail et intensification des rythmes. À partir des travaux de Boltanski et Chiapello (1999), Carbonell (2022 ; 2025) ou encore Casilli (2019) et bien d'autres chercheur·es, nous mettons en évidence la manière dont les technologies numériques prolongent le taylorisme à travers le management algorithmique et la fragmentation des tâches. Nous questionnons également la promesse de flexibilité et d'autonomie associée à l'IA et aux plateformes, en montrant qu'elle masque souvent une disponibilité permanente et une porosité croissante entre temps de travail et temps privé. Nous considérons aussi les nouvelles inégalités temporelles produites par ces dispositifs, entre ceux qui gagnent du temps et ceux dont le travail invisible permet ces gains. 
+
+Plus largement, ce travail de vulgarisation cherche à démontrer que la sociologie du temps constitue un outil pertinent pour comprendre des phénomènes médiatiques contemporains et les évolutions actuelles du monde du travail.
+
+Cet episode vous est présenté par : Iris Wirard et Héloise Van Hout
+
+Jingle : Mathieu Rosania 
+Samples : BBC Sound Effects
+Illustrations &amp; logo : Juliette Biston</description><guid isPermaLink="false">j8QzgW45ajU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/j8QzgW45ajU.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Episode 1 partie 1 : la continuité du temps</title><description>Nous vous proposons ici de parler du milieu de la recherche depuis nos expériences de stages.  Nous utiliserons le concept de “l'institution gourmande” (Fusulier et Del Rio, 2013) pour parler de l’université.
+Nous parlerons également des conditions matérielles qui nous ont permis de nous inscrire dans le temps des continuités et de ne pas avoir de rupture à proprement parler. Zerubavel (1979) explique que la flexibilité des horaires présents chez les travailleurs à statut élevé brouille la distinction entre vie privée et vie publique. 
+Nous parlerons également d’une forme d’accélération dans le milieu de la recherche et d’une forme d’injonction à la productivité (Fusulier et Del Rio, 2013) que nous avons pu observer sur nos lieux de stage respectifs.
+
+Cet épisode vous est présenté par : Zoé Ernaelsten et Aurore Duquesne
+
+Illustrations &amp; logo : Juliette Biston
+Musique : Pulsebox</description><guid isPermaLink="false">HjEhO3TdCs4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/HjEhO3TdCs4.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item><item><title>TEMPS PLURIELS - Introduction</title><description>Quel temps habitons-nous vraiment ? Entre l'accélération des flux d'information et le sentiment paradoxal que rien ne change vraiment, les sociétés contemporaines semblent traversées par une profonde asynchronicité des temporalités. Cette série de podcasts n'interroge pas le Temps avec un grand T, mais les façons dont les individus vivent le temps au quotidien — dans le travail, le corps, le politique, l'enfermement. À travers trois prismes complémentaires — la continuité, la rupture, la suspension —, elle explore ce que signifie habiter le XXIe siècle quand les repères temporels collectifs se heurtent plutôt qu'ils ne se superposent. Du stage étudiant aux politiques migratoires de l'ère Trump, en passant par l'expérience carcérale, chaque épisode donne à entendre des temporalités singulières qui résistent aux grands récits, et révèlent, dans leurs décalages mêmes, quelque chose d'essentiel sur notre rapport au temps présent. Voilà pour l'abstract du podcast.
+
+Cet épisode vous est présenté par : Camille Aussedat
+
+Illustrations &amp; logo : Juliette Biston
+Musique : Pulsebox</description><guid isPermaLink="false">lrgCkEwO00k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-05/lrgCkEwO00k.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate></item></channel></rss>
