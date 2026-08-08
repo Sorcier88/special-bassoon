@@ -176,6 +176,14 @@
         "podcast_name": "La Quête Secondaire",
         "podcast_author": "La Quête Secondaire",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/la_quete_secondaire.png", 
+        "sponsorblock_categories": "sponsor,selfpromo"
+    }, 
+    {
+    "filename": "m_enfin.xml",
+        "url": "https://www.youtube.com/@MenfinMedia/videos", 
+        "podcast_name": "M'enfin",
+        "podcast_author": "M'enfin Média",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/m_enfin.png", 
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
