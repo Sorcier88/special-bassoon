@@ -168,5 +168,12 @@
         "podcast_author": "M'enfin Média",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/m_enfin.png", 
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+    {
+    "filename": "yaplusdesaisons.xml",
+        "url": "https://youtube.com/playlist?list=PLLEpjcN0WK5GD0QUk_3s95TQpIu2RLx6W", 
+        "podcast_name": "Y'a plus de saisons",
+        "podcast_author": "Binge Audio",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/yaplusdesaisons.jpg"
     }
 ]
