@@ -1,17 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>M'enfin</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Média indépendant de gauche
-🎬🎤🎙️🖥️</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/m_enfin.png</url><title>M'enfin</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Thu, 27 Aug 2026 15:24:03 +0000</lastBuildDate><itunes:author>M'enfin Média</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/m_enfin.png"/><item><title>L’EXTRÊME DROITE INTERNATIONALE, LE CORDON SANITAIRE ET LE MR : Quand le bleu vire au brun #2</title><description>Cette vidéo est le deuxième épisode de notre série dédiée à la dérive du Mouvement Réformateur. Dedans, nous abordons d'abord les relations que le parti entretient avec la nouvelle internationale fasciste. Nous traitons ensuite de la question du cordon sanitaire, et particulièrement des nombreuses violations de celui-ci par le MR.
-
-Lien vers le premier épisode : https://youtu.be/4XF15WK8l_4
-
-#politique #belgique #media 
-
-Timecodes:
-00:00 : Introduction
-00:45 : Connivences avec l'extrême droite internationale
-07:47 : Le cordon sanitaire, principe démocratique partagé ?
-10:22 : Le MR et l'extrême droite médiatique
-16:22 : Des recrues pas comme les autres...</description><guid isPermaLink="false">9YDsQXcFQCY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/9YDsQXcFQCY.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate></item><item><title>LA STRATÉGIE DANGEREUSE DU MR : Quand le bleu vire au brun #1</title><description>Voici la première partie de notre première série vidéo pour M'enfin Média : "Quand le bleu vire au brun : analyse de la dérive du Mouvement Réformateur". 
+🎬🎤🎙️🖥️</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/m_enfin.png</url><title>M'enfin</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Fri, 28 Aug 2026 04:20:08 +0000</lastBuildDate><itunes:author>M'enfin Média</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/m_enfin.png"/><item><title>LA STRATÉGIE DANGEREUSE DU MR : Quand le bleu vire au brun #1</title><description>Voici la première partie de notre première série vidéo pour M'enfin Média : "Quand le bleu vire au brun : analyse de la dérive du Mouvement Réformateur". 
 
 Dedans, nous traitons de la stratégie du MR d'occuper tout le terrain politique de droite, ainsi que deux de ses outils qu'il mobilise dans la bataille culturelle contre la gauche : le Centre Jean Gol et 21News.
 
@@ -25,4 +14,15 @@ Timecodes :
 10:25 La stratégie du MR
 17:25 Le Centre Jean Gol
 25:05 21News
-33:16 GÈNÉRIC</description><guid isPermaLink="false">4XF15WK8l_4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/4XF15WK8l_4.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate></item></channel></rss>
+33:16 GÈNÉRIC</description><guid isPermaLink="false">4XF15WK8l_4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/4XF15WK8l_4.mp3" length="0" type="audio/mpeg"/><pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate></item><item><title>L’EXTRÊME DROITE INTERNATIONALE, LE CORDON SANITAIRE ET LE MR : Quand le bleu vire au brun #2</title><description>Cette vidéo est le deuxième épisode de notre série dédiée à la dérive du Mouvement Réformateur. Dedans, nous abordons d'abord les relations que le parti entretient avec la nouvelle internationale fasciste. Nous traitons ensuite de la question du cordon sanitaire, et particulièrement des nombreuses violations de celui-ci par le MR.
+
+Lien vers le premier épisode : https://youtu.be/4XF15WK8l_4
+
+#politique #belgique #media 
+
+Timecodes:
+00:00 : Introduction
+00:45 : Connivences avec l'extrême droite internationale
+07:47 : Le cordon sanitaire, principe démocratique partagé ?
+10:22 : Le MR et l'extrême droite médiatique
+16:22 : Des recrues pas comme les autres...</description><guid isPermaLink="false">9YDsQXcFQCY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/9YDsQXcFQCY.mp3" length="0" type="audio/mpeg"/><pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate></item></channel></rss>
