@@ -19,75 +19,75 @@ uses: actions/checkout@v4
 with:
 fetch-depth: 0
 
-  # STREAMING_CHUNK: Configuration de Python
-  - name: Setup Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: '3.10'
-      
-  # STREAMING_CHUNK: Installation des dépendances système
-  - name: Install System Dependencies & Tor
-    run: |
-      sudo apt-get update
-      sudo apt-get install -y ffmpeg tor net-tools
-
-  # STREAMING_CHUNK: Installation des librairies Python
-  - name: Install Python Libraries
-    run: |
-      python -m pip install --upgrade pip
-      pip install --no-cache-dir -r requirements.txt --upgrade
-      pip install --no-cache-dir --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.zip
-
-  # STREAMING_CHUNK: Configuration et lancement de Tor
-  - name: Configure Tor (Open Control)
-    run: |
-      sudo service tor stop || true
-      
-      sudo bash -c 'cat > /etc/tor/torrc << EOF
-      SocksPort 9050
-      ControlPort 9051
-      CookieAuthentication 0
-      HashedControlPassword ""
-      Log notice stdout
-      DataDirectory /var/lib/tor
-      RunAsDaemon 1
-      EOF'
-      
-      sudo chown -R debian-tor:debian-tor /var/lib/tor
-      sudo chmod 700 /var/lib/tor
-      
-      sudo service tor start
-      
-      echo "Démarrage de Tor... (Pause de sécurité 45s)"
-      sleep 45
-      
-      if ! sudo netstat -tuln | grep ':9051'; then
-        echo "ERREUR FATALE: Le port 9051 n'est pas ouvert !"
-        sudo cat /var/log/syslog | grep Tor | tail -n 20
-        exit 1
-      fi
-      
-      echo "Test de connexion Tor (IP Initiale)..."
-      curl -s --socks5 127.0.0.1:9050 https://api.ipify.org || echo "Attention: Tor lent au démarrage."
-
-  # STREAMING_CHUNK: Exécution du script de podcast
-  - name: Run Script via Tor
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      YOUTUBE_PROXY: "socks5://127.0.0.1:9050"
-    run: python podcast_gen.py
+# STREAMING_CHUNK: Configuration de Python
+- name: Setup Python
+  uses: actions/setup-python@v5
+  with:
+    python-version: '3.10'
     
-  # STREAMING_CHUNK: Commit et push des changements
-  - name: Commit and Push Changes
-    if: always() 
-    run: |
-      git config --global user.name 'Bot'
-      git config --global user.email 'bot@noreply.github.com'
-      git add .
-      if git diff --staged --quiet; then
-        echo "Rien à commiter."
-      else
-        git commit -m "Update RSS and Logs"
-        git pull --rebase origin main
-        git push
-      fi
+# STREAMING_CHUNK: Installation des dépendances système
+- name: Install System Dependencies & Tor
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y ffmpeg tor net-tools
+
+# STREAMING_CHUNK: Installation des librairies Python
+- name: Install Python Libraries
+  run: |
+    python -m pip install --upgrade pip
+    pip install --no-cache-dir -r requirements.txt --upgrade
+    pip install --no-cache-dir --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.zip
+
+# STREAMING_CHUNK: Configuration et lancement de Tor
+- name: Configure Tor (Open Control)
+  run: |
+    sudo service tor stop || true
+    
+    sudo bash -c 'cat > /etc/tor/torrc << EOF
+    SocksPort 9050
+    ControlPort 9051
+    CookieAuthentication 0
+    HashedControlPassword ""
+    Log notice stdout
+    DataDirectory /var/lib/tor
+    RunAsDaemon 1
+    EOF'
+    
+    sudo chown -R debian-tor:debian-tor /var/lib/tor
+    sudo chmod 700 /var/lib/tor
+    
+    sudo service tor start
+    
+    echo "Démarrage de Tor... (Pause de sécurité 45s)"
+    sleep 45
+    
+    if ! sudo netstat -tuln | grep ':9051'; then
+      echo "ERREUR FATALE: Le port 9051 n'est pas ouvert !"
+      sudo cat /var/log/syslog | grep Tor | tail -n 20
+      exit 1
+    fi
+    
+    echo "Test de connexion Tor (IP Initiale)..."
+    curl -s --socks5 127.0.0.1:9050 https://api.ipify.org || echo "Attention: Tor lent au démarrage."
+
+# STREAMING_CHUNK: Exécution du script de podcast
+- name: Run Script via Tor
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    YOUTUBE_PROXY: "socks5://127.0.0.1:9050"
+  run: python podcast_gen.py
+  
+# STREAMING_CHUNK: Commit et push des changements
+- name: Commit and Push Changes
+  if: always() 
+  run: |
+    git config --global user.name 'Bot'
+    git config --global user.email 'bot@noreply.github.com'
+    git add .
+    if git diff --staged --quiet; then
+      echo "Rien à commiter."
+    else
+      git commit -m "Update RSS and Logs"
+      git pull --rebase origin main
+      git push
+    fi
