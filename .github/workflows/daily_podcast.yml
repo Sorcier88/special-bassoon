@@ -4,7 +4,7 @@ on:
   schedule:
     # Heures UTC : 4h, 12h, 20h
     - cron: '0 4,12,20 * * *'
-workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
   contents: write
