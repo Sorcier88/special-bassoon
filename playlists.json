@@ -180,7 +180,7 @@
         "url": "https://youtube.com/playlist?list=PLJ6RDhT0IVEBCeus2-GMf91D-NFS-HlMR", 
         "podcast_name": "Êtes-vous des M... ?",
         "podcast_author": "Cyrus North",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/cyrusnorth.jpg"
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/cyrusnorth.jpg",
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     },
     {
@@ -188,7 +188,7 @@
         "url": "https://youtube.com/playlist?list=PLBb7kq5kkekjf1oRYFC-_sYMOcnT9nenP", 
         "podcast_name": "Walibi Report, le podcast",
         "podcast_author": "Walibi Report",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/walibireportpodcast.jpg"
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/walibireportpodcast.jpg",
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }, 
     {
@@ -196,7 +196,7 @@
         "url": "https://youtube.com/playlist?list=PLCwXWOyIR22tmC-6_qGK1jg-OiwSlVuSw", 
         "podcast_name": "Est-il vrai que ... ?",
         "podcast_author": "ARTE",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/est-ilvraique.jpg"
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/est-ilvraique.jpg",
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
