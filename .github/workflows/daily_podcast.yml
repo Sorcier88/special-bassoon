@@ -1,13 +1,13 @@
 name: Update Podcasts (Tor Complete)
 
 on:
-schedule:
-# Heures UTC : 4h, 12h, 20h
-- cron: '0 4,12,20 * * *'
+  schedule:
+    # Heures UTC : 4h, 12h, 20h
+    - cron: '0 4,12,20 * * *'
 workflow_dispatch:
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
   build:
@@ -15,9 +15,9 @@ jobs:
     steps:
     # STREAMING_CHUNK: Checkout du code
     - name: Checkout code
-    uses: actions/checkout@v4
-    with:
-      fetch-depth: 0
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     
     # STREAMING_CHUNK: Configuration de Python
     - name: Setup Python
