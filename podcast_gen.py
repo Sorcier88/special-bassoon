@@ -1,7 +1,6 @@
 import os
 import json
 import datetime
-import yt_dlp
 import time
 import glob
 import random
@@ -9,6 +8,7 @@ import shutil
 import subprocess
 import requests
 import xml.etree.ElementTree as ET
+import yt_dlp
 from github import Github
 from feedgen.feed import FeedGenerator
 from stem import Signal
@@ -199,7 +199,7 @@ def recover_entries_from_xml(filename, fg):
 
 def run():
     try:
-        print("--- Démarrage du script (VERSION V16 - FIX FILENAME FLAG) ---")
+        print("--- Démarrage du script (VERSION V17 - DEPENDENCY FIX) ---")
         
         for k in ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy']:
             if k in os.environ: del os.environ[k]
@@ -372,5 +372,3 @@ def run():
 
 if __name__ == "__main__":
     run()
-
-
