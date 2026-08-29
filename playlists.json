@@ -146,14 +146,6 @@
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     },
     {
-    "filename": "temps_pluriels.xml",
-        "url": "https://youtube.com/playlist?list=PLobKp26TrHHDEdWQZlOKwzYXyWiB0NLn1", 
-        "podcast_name": "TEMPS PLURIELS",
-        "podcast_author": "Temps Pluriels",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/temps_pluriels.png", 
-        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
-    }, 
-    {
     "filename": "la_quete_secondaire.xml",
         "url": "https://www.youtube.com/@laquetesecondairejdr/videos", 
         "podcast_name": "La Quête Secondaire",
@@ -175,5 +167,36 @@
         "podcast_name": "Y'a plus de saisons",
         "podcast_author": "Binge Audio",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/yaplusdesaisons.jpg"
+    },
+    {
+    "filename": "legitimedefense.xml",
+        "url": "https://youtube.com/playlist?list=PLv1KZC6gJTFmrg2ipoA0xk6wFbpPj3NgU", 
+        "podcast_name": "LÉGITIME DÉFENSE",
+        "podcast_author": "BLAST, Le souffle de l'info",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/legitimedefense.png"
+    },
+    {
+    "filename": "etesvousdesmerdes.xml",
+        "url": "https://youtube.com/playlist?list=PLJ6RDhT0IVEBCeus2-GMf91D-NFS-HlMR", 
+        "podcast_name": "Êtes-vous des M... ?",
+        "podcast_author": "Cyrus North",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/cyrusnorth.jpg"
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+    {
+    "filename": "walibireport.xml",
+        "url": "https://youtube.com/playlist?list=PLBb7kq5kkekjf1oRYFC-_sYMOcnT9nenP", 
+        "podcast_name": "Walibi Report, le podcast",
+        "podcast_author": "Walibi Report",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/walibireportpodcast.jpg"
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    }, 
+    {
+    "filename": "est-ilvraique.xml",
+        "url": "https://youtube.com/playlist?list=PLCwXWOyIR22tmC-6_qGK1jg-OiwSlVuSw", 
+        "podcast_name": "Est-il vrai que ... ?",
+        "podcast_author": "ARTE",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/est-ilvraique.jpg"
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
