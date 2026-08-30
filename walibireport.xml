@@ -1,97 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Walibi Report, le podcast</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/walibireportpodcast.jpg</url><title>Walibi Report, le podcast</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sat, 29 Aug 2026 23:07:05 +0000</lastBuildDate><itunes:author>Walibi Report</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/walibireportpodcast.jpg"/><item><title>Walibi Report, le Podcast S1HS</title><description>Épisode hors-série de Walibi Report, le Podcast !
-
-Au sommaire, un retour détaillé sur le Backstage Tour 2024.
-
-Retrouvez-nous sur Facebook et Instagram !
-
-Bonne écoute !</description><guid isPermaLink="false">aPKAtQ2rPTQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/aPKAtQ2rPTQ.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S1E3</title><description>Troisième épisode de Walibi Report, le Podcast !
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Walibi Report, le podcast</title><link>https://github.com/Sorcier88/special-bassoon</link><description>Generated Feed</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/walibireportpodcast.jpg</url><title>Walibi Report, le podcast</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Sun, 30 Aug 2026 10:03:27 +0000</lastBuildDate><itunes:author>Walibi Report</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/walibireportpodcast.jpg"/><item><title>Walibi Report, le Podcast S1E1</title><description>Premier épisode de Walibi Report, le Podcast !
 
 Au sommaire :
 
-  •  Invité : Loïc d'Air Time News
-  •  Dossier : Les saisons 2023 (Summer Nights, Halloween Walibi &amp; Walibi Winter)
-  •  Speedy Actus
-    
-Retrouvez-nous sur Facebook et Instagram !
-
-Bonne écoute !</description><guid isPermaLink="false">gCmZDaCIT30</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/gCmZDaCIT30.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S2E1</title><description>Premier épisode de la deuxième saison de Walibi Report, le Podcast !
-
-Au sommaire :
-
-  •  Dossier : Ce qui a changé en 2024
-  •  Focus : Notre TOP 3 des attractions du parc
-
-Retrouvez-nous sur Facebook et Instagram !
-
-Bonne écoute !</description><guid isPermaLink="false">LMZS2kNAysY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/LMZS2kNAysY.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S2E2</title><description>Deuxième épisode de la deuxième saison de Walibi Report, le Podcast !
-
-Au sommaire :
-
-  •  Dossier : Retour sur les Summer Days
-  •  Focus : Au-dessus des palissades (gossips autour de Dock World et d'Ibilaw)
-  •  Speedy Actus
-
-Erratum : il s'agit bien de la marque Seat et non Fiat...
-
-Retrouvez-nous sur Facebook et Instagram !
-
-Bonne écoute !</description><guid isPermaLink="false">uYDG4Kd3Bl0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/uYDG4Kd3Bl0.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S2E3</title><description>Troisième épisode de la deuxième saison de Walibi Report, le Podcast !
-
-Au sommaire :
-
-  •  Invité : Jérôme de Pull the yellow strap
-  •  Dossier : Walibi Winter  
-  •  Focus : Walibi Pass Event  
+  •  Présentation du podcast et de l'équipe
+  •  Dossier : Silverton
+  •  Focus : Walibi Report
   •  Speedy Actus
 
 Retrouvez-nous sur Facebook et Instagram !
 
-Bonne écoute !</description><guid isPermaLink="false">OekJKjhvQwg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/OekJKjhvQwg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S3E1</title><description>Premier épisode de la troisième saison de Walibi Report, le Podcast !
+Bonne écoute !</description><guid isPermaLink="false">81Mg994ahd4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/81Mg994ahd4.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S1E2</title><description>Deuxième épisode de Walibi Report, le Podcast !
 
 Au sommaire :
 
-  •  Invité : Jean Yop
-  •  Dossier : Dock World
+  •  Dossier : Les nouveaux toboggans d'Aqualibi
+  •  Focus : Vertigo
   •  Speedy Actus
 
 Retrouvez-nous sur Facebook et Instagram !
 
-Bonne écoute !</description><guid isPermaLink="false">x7TyCqHr5yw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/x7TyCqHr5yw.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S3E2</title><description>Deuxième épisode de la troisième saison de Walibi Report, le Podcast !
-
-Au sommaire :
-
-  •  Invités : ADEX
-  •  Dossier : Retour sur les 50 ans
-  •  Focus : L'offre Food à Walibi
-  •  Speedy Actus
-
-Retrouvez-nous sur Facebook, Instagram, TikTok et Youtube !
-
-Bonne écoute !</description><guid isPermaLink="false">7P4WkOEv_iU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/7P4WkOEv_iU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S3HS</title><description>Épisode hors-série de Walibi Report, le Podcast !
-
-Au sommaire, un super quiz "50 ans, 50 questions" avec de prestigieux invités :
-
-  •  Eparcurien, de Rien que d'y penser
-  •  Guillaume, de La file d'attente
-  •  Thony, de Just dream it
-  •  Jérôme, de Pull the yellow strap 
-
-Retrouvez-nous sur Facebook, Instagram, YouTube et TikTok !
-
-Bonne écoute !</description><guid isPermaLink="false">wCTCoH5mXS8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/wCTCoH5mXS8.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S3E3</title><description>Troisième épisode de la troisième saison de Walibi Report, le Podcast !
+Bonne écoute !</description><guid isPermaLink="false">_uUIcjkeOj8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/_uUIcjkeOj8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S4E2</title><description>Deuxième épisode de la quatrième saison de Walibi Report, le Podcast !
 
 
 Au sommaire :
 
-  •  Invité : Noam (alias Célestine)
-  •  Dossier : Retour sur Ibilaw 2025
-  •  Focus : Être Scare Actor à Ibilaw
+  •  Invité : Guillaume de La File d'Attente
+  •  Dossier : Le futur Festival World
+  •  Focus : Les autres annonces du Pass Event 2026
 
 Retrouvez-nous sur Facebook, Instagram, TikTok et Youtube !
 
 
-Bonne écoute !</description><guid isPermaLink="false">qhLnuuGZ_-4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/qhLnuuGZ_-4.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S4E1</title><description>Premier épisode de la quatrième saison de Walibi Report, le Podcast !
+Bonne écoute !</description><guid isPermaLink="false">MTm94EgmYWA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/MTm94EgmYWA.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S4E1</title><description>Premier épisode de la quatrième saison de Walibi Report, le Podcast !
 
 
 Au sommaire :
@@ -103,4 +44,96 @@ Au sommaire :
 Retrouvez-nous sur Facebook, Instagram, TikTok et Youtube !
 
 
-Bonne écoute !</description><guid isPermaLink="false">L_tZdP56rpM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/L_tZdP56rpM.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate></item></channel></rss>
+Bonne écoute !</description><guid isPermaLink="false">L_tZdP56rpM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/L_tZdP56rpM.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S3E3</title><description>Troisième épisode de la troisième saison de Walibi Report, le Podcast !
+
+
+Au sommaire :
+
+  •  Invité : Noam (alias Célestine)
+  •  Dossier : Retour sur Ibilaw 2025
+  •  Focus : Être Scare Actor à Ibilaw
+
+Retrouvez-nous sur Facebook, Instagram, TikTok et Youtube !
+
+
+Bonne écoute !</description><guid isPermaLink="false">qhLnuuGZ_-4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/qhLnuuGZ_-4.mp3" length="0" type="audio/mpeg"/><pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S3HS</title><description>Épisode hors-série de Walibi Report, le Podcast !
+
+Au sommaire, un super quiz "50 ans, 50 questions" avec de prestigieux invités :
+
+  •  Eparcurien, de Rien que d'y penser
+  •  Guillaume, de La file d'attente
+  •  Thony, de Just dream it
+  •  Jérôme, de Pull the yellow strap 
+
+Retrouvez-nous sur Facebook, Instagram, YouTube et TikTok !
+
+Bonne écoute !</description><guid isPermaLink="false">wCTCoH5mXS8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/wCTCoH5mXS8.mp3" length="0" type="audio/mpeg"/><pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S3E2</title><description>Deuxième épisode de la troisième saison de Walibi Report, le Podcast !
+
+Au sommaire :
+
+  •  Invités : ADEX
+  •  Dossier : Retour sur les 50 ans
+  •  Focus : L'offre Food à Walibi
+  •  Speedy Actus
+
+Retrouvez-nous sur Facebook, Instagram, TikTok et Youtube !
+
+Bonne écoute !</description><guid isPermaLink="false">7P4WkOEv_iU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/7P4WkOEv_iU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S3E1</title><description>Premier épisode de la troisième saison de Walibi Report, le Podcast !
+
+Au sommaire :
+
+  •  Invité : Jean Yop
+  •  Dossier : Dock World
+  •  Speedy Actus
+
+Retrouvez-nous sur Facebook et Instagram !
+
+Bonne écoute !</description><guid isPermaLink="false">x7TyCqHr5yw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/x7TyCqHr5yw.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S2E3</title><description>Troisième épisode de la deuxième saison de Walibi Report, le Podcast !
+
+Au sommaire :
+
+  •  Invité : Jérôme de Pull the yellow strap
+  •  Dossier : Walibi Winter  
+  •  Focus : Walibi Pass Event  
+  •  Speedy Actus
+
+Retrouvez-nous sur Facebook et Instagram !
+
+Bonne écoute !</description><guid isPermaLink="false">OekJKjhvQwg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/OekJKjhvQwg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S2E2</title><description>Deuxième épisode de la deuxième saison de Walibi Report, le Podcast !
+
+Au sommaire :
+
+  •  Dossier : Retour sur les Summer Days
+  •  Focus : Au-dessus des palissades (gossips autour de Dock World et d'Ibilaw)
+  •  Speedy Actus
+
+Erratum : il s'agit bien de la marque Seat et non Fiat...
+
+Retrouvez-nous sur Facebook et Instagram !
+
+Bonne écoute !</description><guid isPermaLink="false">uYDG4Kd3Bl0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/uYDG4Kd3Bl0.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S2E1</title><description>Premier épisode de la deuxième saison de Walibi Report, le Podcast !
+
+Au sommaire :
+
+  •  Dossier : Ce qui a changé en 2024
+  •  Focus : Notre TOP 3 des attractions du parc
+
+Retrouvez-nous sur Facebook et Instagram !
+
+Bonne écoute !</description><guid isPermaLink="false">LMZS2kNAysY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/LMZS2kNAysY.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S1E3</title><description>Troisième épisode de Walibi Report, le Podcast !
+
+Au sommaire :
+
+  •  Invité : Loïc d'Air Time News
+  •  Dossier : Les saisons 2023 (Summer Nights, Halloween Walibi &amp; Walibi Winter)
+  •  Speedy Actus
+    
+Retrouvez-nous sur Facebook et Instagram !
+
+Bonne écoute !</description><guid isPermaLink="false">gCmZDaCIT30</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/gCmZDaCIT30.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Walibi Report, le Podcast S1HS</title><description>Épisode hors-série de Walibi Report, le Podcast !
+
+Au sommaire, un retour détaillé sur le Backstage Tour 2024.
+
+Retrouvez-nous sur Facebook et Instagram !
+
+Bonne écoute !</description><guid isPermaLink="false">aPKAtQ2rPTQ</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/aPKAtQ2rPTQ.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate></item></channel></rss>
