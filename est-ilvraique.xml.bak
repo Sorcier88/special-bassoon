@@ -1,80 +1,986 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Est-il vrai que ... ?</title><link>https://github.com/Sorcier88/special-bassoon</link><description>La démocratie est-elle née en Grèce ? La peste fut-elle la pire épidémie ? Travaillions-nous plus avant ? Le rendez-vous d’Histoire « Est-il vrai que ... ? » remet en question nos certitudes et dévoile les histoires cachées derrière l'Histoire, loin de l’eurocentrisme et des clichés persistants.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/est-ilvraique.jpg</url><title>Est-il vrai que ... ?</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Mon, 31 Aug 2026 10:46:25 +0000</lastBuildDate><itunes:author>ARTE</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/est-ilvraique.jpg"/><item><title>La propriété collective mène toujours à l’échec ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 22/10/2026&#13;
-"Ce qui appartient à tout le monde est voué à l'échec" disait Garrett Hardin en 1968 dans la Tragédie des biens communs. Depuis, cette idée marque l'image de ressources gérées collectivement et surexploitées par l’Homme. Et pour cause : personne n'en assume la responsabilité. Mais que dit l'histoire ? La propriété collective n'est-elle pas finalement la cible d'un mythe construit par ses détracteurs ?&#13;
-#arte #propriété #question 
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Est-il vrai que ... ?</title><link>https://github.com/Sorcier88/special-bassoon</link><description>La démocratie est-elle née en Grèce ? La peste fut-elle la pire épidémie ? Travaillions-nous plus avant ? Le rendez-vous d’Histoire « Est-il vrai que ... ? » remet en question nos certitudes et dévoile les histoires cachées derrière l'Histoire, loin de l’eurocentrisme et des clichés persistants.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/est-ilvraique.jpg</url><title>Est-il vrai que ... ?</title><link>https://github.com/Sorcier88/special-bassoon</link></image><lastBuildDate>Mon, 31 Aug 2026 19:03:58 +0000</lastBuildDate><itunes:author>ARTE</itunes:author><itunes:image href="https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/est-ilvraique.jpg"/><item><title>Les vraies origines de la démocratie | Est-il vrai que...?  | ARTE</title><description>Documentaire historique disponible jusqu'au 31/10/2028
+#histoire #documentaire #arte 
+La démocratie est aujourd'hui omniprésente, mais que représente-t-elle réellement ? Si la participation politique existait déjà dans l'Athènes antique, elle restait limitée. Des sociétés indigènes comme celle des Haudenosaunee pratiquaient des formes de gouvernance basées sur le consensus. La démocratie n'est-elle peut-être pas une exportation occidentale, mais un phénomène mondial ?&#13;
+&#13;
+Plus de la moitié de l'humanité vit en démocratie au XXIe siècle : un héritage qui, selon les leçons des livres d'école, nous vient d'Athènes, son agora et sa colline Pnyx, où étaient votées les lois de la cité. Pourtant, un regard éclairé révèle combien cette démocratie antique s’avérait en réalité loin de nos fonctionnements politiques modernes. Quelque 90% de la société athénienne, femmes, non-citoyens ou esclaves, étaient ainsi tenus à l'écart de toute décision. Quant au système de démocratie directe et par tirage au sort, il a été abandonné par nos sociétés contemporaines. A contrario, historiens et spécialistes invitent, aidés par une riche mise en animation des concepts et des mythes, à identifier que les correspondances ne sont pas là où notre culture générale incline à les placer. Ainsi, de nombreux systèmes proches de nos démocraties sont observables en d'autres lieux et à d'autres époques. Comme chez le peuple Haudenosaunee ("peuple aux longues maisons", signe déjà de lieux de rencontres collectifs), plus connu sous le nom d'Iroquois, dont la capacité à délibérer, incluant tous les acteurs de leur société, loin de toute notion d'exclusion ou de patriarcat, se rapproche de nos modes de gouvernance occidentaux, voire les dépasse en modernité. Une plongée passionnante aux origines de la démocratie.&#13;
+&#13;
+---
 
-Les biens communs en Angleterre au début de l'ère moderne :
-Common Rights in Land in England, 1475-1839 Gregory Clark and Anthony Clark January, 2001 https://faculty.econ.ucdavis.edu/faculty/gclark/papers/commons.pdf
+SOURCES
 
-Les « enclosures » entre le 13e et le 18e siècle :
-J. R. Wordie, The Chronology of English Enclosure. https://2024.sci-hub.st/6491/80a7012a274f736768c44722378ea6ee/wordie1983.pdf
+Tribu des Onondagas/ Haudenosaunee :
+La tribu des Onondagas (https://www.onondaganation.org) est l'un des cinq membres fondateurs de la confédération Haudenosaunee. Dans la métaphore des Haudenosaunee, toutes leurs nations forment ensemble une grande maison longue traditionnelle. Chaque nation est comme un feu (foyer) à l'intérieur de la maison, ils sont séparés mais reliés sous un même toit. Le chef de maison, les Onondagas, garde le feu (foyer) central.
+ 
+Le nom anglais de Joagquisho est Oren Lyons : https://en.wikipedia.org/wiki/Oren_Lyons
+Michelle Schenandoah : https://www.indigenous-concepts.com/michelle-schenandoah
+ 
+La plus ancienne étude ethnographique sur les Haudenosaunee - Lewis Henry Morgan : « The League of the Ho-dé-no-sau-nee, or Iroquois » (1851). La description des rapports de propriété qui y figure a servi de base à l'ouvrage de Friedrich Engels « L'Origine de la famille, de la propriété privée et de l'État » (1884).
+  
+Influence des Haudenosaunee sur la constitution et la fondation des États-Unis - Oren Lyon (Hg.) : « Exiled in the Land of the Free »  (https://archive.org/details/exiledinlandoffr00oren_0/page/n7/mode/2up) 
+ 
+Thomas Wagner : « Irokesen und Demokratie » (2004) (https://lit-verlag.de/isbn/978-3-8258-6845-1/)
+ 
+ 
+Démocratie : 
+David Stasavage : « The Decline and Rise of Democracy » (2020) (https://press.princeton.edu/books/hardcover/9780691177465/the-decline-and-rise-of-democracy)
+ 
+Le développement des démocraties à partir d'exemples historiques : 
 
-La prétendue « Tragédie des biens communs » et la critique de celle-ci :
-Garrett Hardin, The Tragedy of the Commons https://www.garretthardinsociety.org/articles_pdf/tragedy_of_the_commons.pdf
-Elinor Ostrom, Governing the Commons (1990)
-http://digamoo.free.fr/ostrom1990.pdf
+David Van Reybrouck : « Against Elections: The Case for Democracy » (https://www.penguinrandomhouse.com/books/645360/against-elections-by-david-van-reybrouck/)
 
-Les systèmes collectifs dans la société maya avant la colonisation :
-Étude de l'université d'Alabama (2019) https://anthropology.ua.edu/wp-content/uploads/2019/04/LeCount-et-al.-2019-land_tenure.pdf
-Organisation sociale des Quiché, documentée par Diego Vásquez Monterroso (espagnol) https://plazapublica.com.gt/guatemala-desigual/informacion/consensuar-antes-que-imponer-asi-se-organizan-los-kiche-occidentales
-
-Les biens communs (Commons) en Italie :
-Manifeste des biens communs (2016)
-https://www.prodocs.org/wp-content/uploads/2016/12/1.7-Un-MANIFESTO-per-i-beni-comuni_Mattei.pdf
-What are Common Goods (Beni Comuni)? Pictures from the Italian Debate, UFMG Law Review
-https://www.direito.ufmg.br/revista/index.php/revista/article/view/1828/1731
+---
  
 Chapitrage :
 00:00 – Introduction
-00:59 – La propriété collective en Union soviétique
-01:38 – Les biens communs au Moyen Âge
-03:28 – Les enclosures : les clôtures autour de la propriété
-05:48 – La tragédie des biens communs
-07:36 – Les biens communs dans les Alpes suisses
-11:42 – Des peuples sans notion de propriété
-17:17 – La lutte politique pour les biens communs
-17:52 – La destruction de l'identité : les écoles résidentielles au Canada
-23:00 – Perspectives
+01:25 – La démocratie en Grèce antique
+07:03 – Qui sont les vrais inventeurs de la démocratie ? 
+15:00 – Les multiples visages des premières démocraties
+22:05 – Perspectives : repenser la démocratie
+
+---
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">MdfvIHWuvX8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/MdfvIHWuvX8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que les pâtes viennent d'Italie ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 29/10/2026
-Les pâtes ! Elles ont conquis toutes les cuisines du monde. Mais sont-elles vraiment originaires d’Italie ? De la Chine ancienne à l’Italie du 19e siècle en passant par le Moyen-Âge et New York, partons à la recherche de la véritable origine des premières pâtes italiennes. En tous cas, une chose est sûre : à travers le monde et les époques, la nourriture demeure un sujet éminemment politique.&#13;
-#cuisine #histoire #arte 
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">8--k_gV0P5k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/8--k_gV0P5k.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate></item><item><title>Avons-nous toujours cru aux dieux ? | Est-il vrai que...? | ARTE</title><description>Depuis la préhistoire, les humains expriment leur foi : des rituels aux dieux, puis aux règles morales. La religion offrait soutien et repères, parfois même un avantage évolutif. Mais dans un monde qui s’éloigne de la transcendance, que reste-t-il pour nourrir le sens et la quête spirituelle ?&#13;
+&#13;
+Est-il vrai que... ? Le nouveau format pour démystifier l'Histoire
+La démocratie est-elle née en Grèce ? La peste fut-elle la pire épidémie ? Travaillions-nous plus avant ? Le rendez-vous d’Histoire « Est-il vrai que ... ? » remet en question nos certitudes et dévoile les histoires cachées derrière l'Histoire, loin de l’eurocentrisme et des clichés persistants.
+
+La playlist des épisodes 🔎 https://youtube.com/playlist?list=PLCwXWOyIR22tmC-6_qGK1jg-OiwSlVuSw&amp;si=T4Z5PaVmz3Rmz2Rk
+---
+
+SOURCES
+ Edward Burnett Tylor (1832–1917) – Fondateur de l'anthropologie sociale
+« Primitive Culture » (1871) 
+Travaux ethnologiques préliminaires de l'époque :
+Volume 1 (https://www.gutenberg.org/ebooks/70458)
+Volume 2 (https://www.gutenberg.org/ebooks/70484)
+Animisme :
+Introduction – Graham Harvey : « Animism. Respecting the Living World » (2005) (https://cup.columbia.edu/book/animism/9780231137003)
+ 
+La diversité des cultures animistes – Graham Harvey : « The Handbook of Contemporary Animism » (2013) (https://www.taylorfrancis.com/books/edit/10.4324/9781315728964/handbook-contemporary-animism-graham-harvey) 
+ 
+Hervey C. Peoples (2016) : « Hunter-Gatherers and the Origins of Religion » (https://doi.org/10.1007/s12110-016-9260-0)
+ 
+Genevieve von Petzinger (2017) : « The First Signs » (https://www.simonandschuster.com/books/The-First-Signs/Genevieve-von-Petzinger/9781476785509)
+ 
+Résumé de leurs résultats sous forme de TedTalk : https://www.ted.com/talks/genevieve_von_petzinger_why_are_these_32_symbols_found_in_ancient_caves_all_over_europe?subtitle=en&amp;geo=de
+ 
+Ina Wunn : Wunn/Urban/Klein (2015) : « Götter – Gene – Genesis. Die Biologie der Religionsentstehung » (https://link.springer.com/book/10.1007/978-3-642-55332-5)
+ 
+
+Fouilles protohistoriques :
+Goebekli Tepe : Podcast Zeitzeichen de WDR5 (https://www1.wdr.de/mediathek/audio/zeitzeichen/audio-goebekli-tepe-ein-social-hub-der-jungsteinzeit-100.html)
+ 
+Çatalhöyük, « erste Großsiedlung der Menschheit » : Terra X (https://www.zdf.de/dokumentation/terra-x/catalhoeyuek-erste-grosssiedlung-der-menschheit-creative-commons-100.html) 
+ 
+---
+
+Chapitrage :
+00:00 – Introduction
+01:53 – Animisme
+07:58 – L’archéologie derrière l’animisme
+11:28 – Origines de l’animisme
+17:12 – Quand la moralité s’ajoute
+21:33 – Conclusion
+
+Documentaire historique disponible jusqu'au 31/05/2030
+#spiritualité #documentaire #histoire #arte 
+---
+
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Instagram : https://www.instagram.com/artefr
+TikTok : https://www.tiktok.com/@artefr/
+Twitch : https://www.twitch.tv/artefr
+Bluesky : https://bsky.app/profile/artefr.bsky.social
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">0OAn6-vsmOo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/0OAn6-vsmOo.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate></item><item><title>Le savoir du monde a-t-il brûlé à Alexandrie ? | Est-il vrai que...? | ARTE</title><description>La bibliothèque d'Alexandrie était considérée comme le trésor du savoir et sa perte montre à quel point il peut être fragile. Qu’il s’agisse de manuscrits anciens ou de données numériques, la transmission du savoir dépend moins du support que de notre capacité à en faire un lien vivant entre passé, présent et futur.&#13;
+
+Est-il vrai que... ? Le nouveau format pour démystifier l'Histoire
+La démocratie est-elle née en Grèce ? La peste fut-elle la pire épidémie ? Travaillions-nous plus avant ? Le rendez-vous d’Histoire « Est-il vrai que ... ? » remet en question nos certitudes et dévoile les histoires cachées derrière l'Histoire, loin de l’eurocentrisme et des clichés persistants.
+
+La playlist des épisodes 🔎 https://youtube.com/playlist?list=PLCwXWOyIR22tmC-6_qGK1jg-OiwSlVuSw&amp;si=T4Z5PaVmz3Rmz2Rk
+---
+
+SOURCES:
+ La consommation d’informations aujourd’hui – Roger Bohn et James Short (2009) :
+« How Much Information ? » (https://group47.com/HMI_2009_ConsumerReport_Dec9_2009.pdf)
+ 
+La construction d’Alexandrie :
+http://archiv.ub.uni-heidelberg.de/propylaeumdok/1245/1/Mueller_Roemer_Alexander_der_Grosse_2012.pdf
+Réalisations techniques d’Alexandrie :
+K. D. White (1984) : « Greek and Roman Technology »
+B. T. Newberg (2018) : « An Ancient Industrial Revolution (almost) » (Podcast : https://deadideas.net/2018/11/25/steampunk-rome-i-an-ancient-industrial-revolution-almost-roman-history/)
+ 
+Bibliotheca Alexandrina aujourd'hui :
+https://www.bibalex.org/en/default
+ 
+L'importance de la bibliothèque (Podcast avec le protagoniste Simon Goldhill) – BBC (2009) :
+« In Our Time : The Library of Alexandria » (https://www.bbc.co.uk/programmes/b00j0q53)
+ 
+Les mythes autour de la bibliothèque :
+Spencer McDaniel (2019) : « Misconceptions of the Library of Alexandria » (https://talesoftimesforgotten.com/2019/07/03/misconceptions-about-the-library-of-alexandria/)
+Open University : https://www.open.edu/openlearn/history-the-arts/library-alexandria/content-section-0?intro=1
+ 
+Formes de transmission des connaissances : https://www.britannica.com/topic/oral-tradition
+
+Histoire des Pléiades – Ray Norris/ Barnaby Norris :
+« Why are there Seven Sisters? » in « Advancing Cultural Astronomy » (2021), Springer
+ 
+---
+
+Chapitrage :
+00:00 – Introduction
+03:58 – Naufrage de la bibliothèque
+06:58 – Le savoir antique voyage à travers le monde
+14:03 – Traditions orales du savoir
+23:04 – Perspectives
+
+---&#13;
+Documentaire historique disponible jusqu'au 31/05/2030
+#antiquité #histoire #arte 
+
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Instagram : https://www.instagram.com/artefr
+TikTok : https://www.tiktok.com/@artefr/
+Twitch : https://www.twitch.tv/artefr
+Bluesky : https://bsky.app/profile/artefr.bsky.social
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">-McJd8nRck4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/-McJd8nRck4.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que les frontières sont aussi anciennes que l'humanité ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 10/12/2026
+250 000 kilomètres de frontières jalonnent aujourd'hui notre monde. Même sur les cartes le plus anciennes, elles sont omniprésentes. Depuis quand les frontières existent-elles et à quoi ressemblaient-elles autrefois ? Des avant-postes romains le long du limes, la zone frontière de l’Empire romain, à l'espace Schengen, en passant par le mur de Berlin et les conflits frontaliers de notre époque, un voyage aux origines de l’un des débats de société les plus brûlants.&#13;
+#frontières #histoire #arte 
+---
+SOURCES
+Intervenants : 
+Manlio Graziano: „What is a border?” (2018).
+William Walters: “Mapping Schengenland: denaturalizing the border” (2002).
+Marie-Carmen Smynerlis: „Migration et frontiers: une brève histoire du passeport” (2023).
+  
+Naissance du passeport :
+John Tropey: „The invention of the passport – Surveillance, Citizenship and State” (1999).
+ Stefan Zweig :  “Le monde d’hier” (1942).
+ 
+Autres informations :
+Max-Planck-Gesellschaft: “Warfare may explain differences in social structures in chimpanzees and bonobos ” (2017).
+ 
+Littérature supplémentaire :
+Center for Border Studies: “Border Gallery”.
+ 
+Steffen Mau: “Sortiermaschinen. Die Neuerfindung der Grenzen im 21. Jahrhundert“ (2021).
+ 
+Tim Marshall: „Divided -  Why we are living in an age of walls” (2018).
+
+Gideon Biger: Encyclopedia of International Boundaries (1995)
+---
+Chapitrage
+
+00:00 - Introduction
+01:40 - Les frontières chez les grands singes
+05:44 - Les frontières comme symbole de pouvoir : le limes
+08:22 - Les frontières au Moyen Âge
+11:47 - La nation et ses frontières
+13:44 - Le colonialisme comme machine à fabriquer des frontières
+18:15 - Les frontières dans le rapport de force mondial
+22:59 - Perspectives
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">E_p6Ml-9HwI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/E_p6Ml-9HwI.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu’autrefois les migrations n’étaient pas aussi nombreuses ? | Est-il vrai que... | ARTE</title><description>Disponible jusqu'au 17/12/2026
+La migration apparaît aujourd'hui comme un phénomène sans précédent. Pourtant, un regard sur l'histoire le montre : l’Homme s’est toujours déplacé, et ce dans une plus grande mesure que nous ne le pensons souvent. Depuis Homo sapiens et Néandertal aux légionnaires romains, des vagues d'émigration vers l'Amérique du Nord et de la Partition des Indes au programme Bracero aux États-Unis, un voyage au cœur de l’un des débats de société les plus controversés du moment.&#13;
+#migration #histoire #arte 
+---
+La migration d’Homo sapiens :
+https://www.mpg.de/11322546/homo-sapiens-ist-aelter-als-gedacht#:~:text=Die%20Funde%20sind%20rund%20300.000,%E2%80%9C 
+
+https://www.archaeologie-online.de/nachrichten/homo-sapiens-zog-frueher-aus-afrika-aus-als-bisher-angenommen-2514/
+
+Les découvertes sur le site de Ranis
+https://www.mpg.de/21458955/0126-evan-homo-sapiens-erreichte-das-noerdliche-europa-schon-vor-45-150495-x#:~:text=Der%20moderne%20Mensch%20erreichte%20das%20n%C3%B6rdliche%20Europa%20schon%20vor%2045.000%20Jahren&amp;text=Ein%20internationales%20Forschungsteam%20berichtet%20%C3%BCber,der%20Ilsenh%C3%B6hle%20in%20Ranis%2C%20Th%C3%BCringen.
+
+La partition de l’Inde
+https://www.bpb.de/themen/asien/indien/44402/die-teilung-britisch-indiens-1947/
+https://ed.ted.com/lessons/why-was-india-split-into-two-countries-haimanti-roy
+
+Le programme Bracero
+https://guides-loc-gov.translate.goog/latinx-civil-rights/bracero-program?_x_tr_sl=en&amp;_x_tr_tl=de&amp;_x_tr_hl=de&amp;_x_tr_pto=sge#:~:text=An%20executive%20order%20called%20the,on%20short%2Dterm%20labor%20contracts 
+
+Hein de Haas: “How Migration Really Works”, 2024
+Hein de Haas: “22 MYHTEN DER MIGRATION”
+https://www.bpb.de/themen/migration-integration/dossier-migration/
+https://www.zeit.de/kultur/2025-02/hein-de-haas-migrationspolitik-gefluechtete-gesetze 
+https://www.youtube.com/watch?v=H2_s1eGIkaE
+
+---
+
+Chapitrage :
+
+00:00 - La migration : un phénomène de notre temps ?
+01:03 - Homo Migrans : comment le mouvement a façonné l'homme
+04:33 - De Rome à l'industrialisation : la migration comme moteur de l'histoire
+06:53 - Frontières, nations et nouvelles exclusions
+08:13 - Migration forcée : la partition de l'Inde en 1947 et le Pakistan
+13:43 - Migration de travail : le programme Bracero aux Etats-Unis
+17:40 - Chiffres, perceptions et mythes de la migration
+21:10 - La migration, une constante de la condition humaine
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">R39EikLlXR4</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/R39EikLlXR4.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que la chasse aux sorcières commence dès le Moyen Âge ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 21/01/2027
+Des dizaines de milliers de femmes, surtout, ont été accusées de sorcellerie et exécutées en Europe. Pourquoi ? Retour aux origines de la chasse aux sorcières à travers la démonologie chrétienne, qui a créé une image féminine de la sorcellerie et le système judiciaire des débuts de l’ère moderne, en passant par des épisodes climatiques. Le constat : la peur et la croyance ont nourri une persécution de masse dont les traces persistent encore aujourd’hui.&#13;
+#sorcière #histoire #arte 
 
 ---
 SOURCES
-Intervenants et ouvrages : 
-Françoise Sabban 
-„A Scientific Controversy in China over the Origins of Noodles“ (2012) (https://cecmc.hypotheses.org/7663). 
-Silvano Serventi (2011):  „La pasta: Storia e cultura di un cibo universale.“
-Alberto Grandi
-Article de presse Les échos : « La gastronomie italienne n’est-elle qu’une supercherie » : https://www.lesechos.fr/weekend/gastronomie-vins/la-gastronomie-italienne-nest-elle-quune-supercherie-2125754
-Daniele Soffiati (2024) :  „La cucina italiana non esiste, Bugie e falsi miti sui prodotti e i piatti cosiddetti tipici“.
-Nunzio Russo (2019) :  „Il Romanzo della Pasta Italiana. Una storia lunga novecento anni.“ (https://nunziorusso.it/category/il-romanzo-della-pasta-italiana/).
+Une introduction au sujet de la chasse aux sorcières :
+Behringer, Wolfgang: Hexen. Glaube, Verfolgung, Vermarktung, 2009.
+Gibson, Marion: Witchcraft: A History in Thirteen Trials
+02:00
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276872
+03:20 und 04:10
+Kelkar, Govind: „Witch Hunting as Women Hunting in Early Modern Europe“, in: Waddell, Marc A.: Magic, Science, and Religion in Early Modern Europe, 2020
+07:30
+Opitz-Belakhal, Claudia: Böse Weiber. Wissen und Geschlecht in der frühneuzeitlichen Dämonologie, 2017
+10:10
+Kallestrup, Louise Nyholm: Agents of Witchcraft in Early Modern Italy and Denmark,  2016
+14:09
+Behringer Wolfgang: „Weather, Hunger and Fear: Origins of the European Witch-Hunts in Climate, Society and Mentality“, 1995
+17:50
+Cohen, Stanley: Folk Devils and Moral Panics, 1972
+20:36
+Federici, Silvia: Caliban et la sorcière : Femmes, corps et accumulation primitive, 2014
 
-Fabio Parasecoli (2022) :  „Gastronativism: Food, Identity, Politics“ (https://www.jstor.org/stable/10.7312/para20206).
-
-La nourriture et l'identité italienne :
-Pellegrino Artusi (1891):  „La scienza in cucina e l‘arte die mangiare bene.“
-Die Zeit (2003):  „Wie Pellegrino Artusis Kochbuch 1891 zur heimlichen Gründungsakte der italienischen Nation wurde“ (https://www.zeit.de/2003/50/A-Kochbuch_N) (allemand)
-Massimo Montanari (2013):   „L‘identitá italiana in cucina.“
-
-Des plats et ingrédients spécifiques :
-Luca Cesari (2021):  „Storia della pasta in dieci piatti. Dai tortellini alla carbonara.“
-William Alexander (2022):  „Ten Tomatoes that changed the World: A History.“
+---
 
 Chapitrage :
-00:00 – Introduction : les nouilles, patrimoine culturel de l'Italie
-01:38 – Les nouilles dans la Chine ancienne
-05:58 – La Sicile comme plaque tournante : les Arabes apportent les pâtes en Europe
-09:07 – Du plat de luxe au produit de masse : les pâtes en Italie et aux Etats-Unis
-13:28 – Aux États-Unis, la cuisine italienne est réinventée : sauce tomate, boulettes de viande &amp; Co.
-17:01 – Après-guerre et tourisme : comment les pâtes sont devenues un hit mondial
-20:33 – Politique, populisme et mondialisation : à qui "appartiennent" les pâtes ?
+
+00:00 - Introduction
+01:00 - La réalité magique de l'époque pré-moderne
+03:54 - Les femmes dans le collimateur de la persécution
+05:00 - Le maître à penser des chasses aux sorcières
+06:54 - Démonologie et misogynie
+09:03 - L'État moderne et la sorcière archaïque
+12:41 - L'imprimerie alimente les premières fakenews
+13:36 - Le climat, cause de la chasse aux sorcières
+15:30 - Les procès de Salem comme panique morale
+20:16 - La chasse aux sorcières comme féminicide
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">UYm91G3i_tw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/UYm91G3i_tw.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que seule la soie transitait par la route de la soie ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 18/02/2027
+La légendaire Route de la soie a relié la Chine à l'Europe pendant plus de 1500 ans. Sacs à main italiens, montres suisses, voitures allemandes... Le monde aime le luxe. Mais pendant longtemps, les symboles de statut social les plus précieux ne venaient pas d'Europe, mais d’Asie. Sans les échanges culturels et matériels permis par la Route de la soie, l'essor européen tel que nous le connaissons n'aurait peut-être pas été possible.&#13;
+#histoire #commerce #arte 
+
+---
+SOURCES
+Ouvrages de base sur la Route de la Soie (en allemand et en anglais)
+
+Peter Frankopan: Licht aus dem Osten. Eine neue Geschichte der Welt, Berlin 2015
+
+Peter Frankopan: The Silk Roads. A New History of the World, in: Keynote im Einstein Forum 2017 (VIDEO): https://www.youtube.com/watch?v=hAZZoMWx9nw
+
+Varie Hansen: The Silk Road. A News History, Oxford 2012.
+
+L'isolement de l'Europe occidentale au Moyen Âge
+Mona Naggar: Venturing into the Darkness of Europe, in: Qantara.de 2005.
+https://qantara.de/en/article/barbarians-north-venturing-darkness-europe?utm
+
+Rudi Matthee: Europe - Persian Image of, in: Encyclopaedia Iranica, 2013.
+https://www.iranicaonline.org/articles/europe-persian-image-of/
+
+Développements de l'histoire militaire en Europe
+Bert S. Hall: Weapons and Warfare in Renaissance Europe: Gunpowder, Technology, and Tactics, Baltimore 1997.
+
+L'histoire expliquée simplement (ouvrages en allemand et en anglais) :
+ Der Krieg und die Armeen im Mittelalter - Teil 2, in: Barbarusbooks 2025.
+https://www.barbarusbooks.de/2025/03/31/der-krieg-und-die-armeen-im-mittelalter-teil-2/
+
+Kenneth Chase: Firearms: A Global History to 1700, Cambridge 2003.
+L'origine du zéro et ses conséquences
+Ulrich von Schwerin: Wie die Null nach Europa kam: In der Antike strahlte Indiens Kultur weit über das Land hinaus, in: NZZ 2025.
+https://www.nzz.ch/feuilleton/der-historiker-dalrymple-ueber-indiens-kulturellen-einfluss-in-der-antike-ld.1861653
+
+---
+
+Chapitrage :
+00:00 - La Route de la Soie : une ancienne autoroute du luxe ?
+01:05 - D'où vient le nom de la Route de la Soie ?
+03:32 - Le luxe fait tourner le commerce
+04:25 - Rien ne va plus en province. L'Europe occidentale est économiquement en marge.
+08:01 - Xi'an - la capitale secrète du monde
+09:47 - Quelles étaient les principales marchandises de la Route de la Soie ?
+13:09 - La poudre noire - le “changement” historique
+16:08 - Quel est le rapport entre la Route de la Soie et le zéro ?
+19:00 - L'essor tardif de l'Europe
+22:11 - L'héritage actuel de la Route de la Soie
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">ADDiV49a-bo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/ADDiV49a-bo.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu’il y avait moins de violence dans le passé ? | ARTE</title><description>Disponible jusqu'au 25/02/2027 
+Guerres, attentats terroristes, tueries : notre monde semble aujourd'hui plus violent que jamais. Mais que nous dit la science de l’évolution de la violence au cours de l’histoire? Des conflits préhistoriques aux guerres mondiales, la violence ne suit pas une tendance linéaire. Mais il se peut qu'elle en dise long sur la société dans laquelle elle prend naissance.&#13;
+
+---
+SOURCES
+Wolfgang Knöbl: “Gewalt und andere Widrigkeiten. Vom Tanz mit einem schwierigen Begriff.” In: Die Gegenwart der Gewalt und die Macht der Aufklärung (2023)
+
+Steven Pinker: The Better Angels Of our Nature (2011)
+https://stevenpinker.com/publications/better-angels-our-nature
+
+Siniša Malešević: ”Forms of Brutality: Towards a Historical Sociology of Violence” 
+European Journal of Social Theory 2013
+
+Siniša Malešević: “Why Humans Fight. The Social Dynamics of Close-Range Violence” (2022)
+https://www.researchgate.net/profile/Sinisa-Malesevic-2/publication/363982313_Why_Humans_Fight_The_Social_Dynamics_of_Close-Range_Violence/links/633fcf7e9cb4fe44f30c1b00/Why-Humans-Fight-The-Social-Dynamics-of-Close-Range-Violence.pdf
+
+Linda Fibiger (&amp; Meaghan Dyer): “Understanding blunt force trauma and violence in Neolithic Europe: the first experiments using a skin-skull-brain model and the Thames Beater” 
+Antiquity Publications Ltd, 2017
+https://www.cambridge.org/core/journals/antiquity/article/understanding-blunt-force-trauma-and-violence-in-neolithic-europe-the-first-experiments-using-a-skinskullbrain-model-and-the-thames-beater/021170E064757BBF7BF3E1870044A60B
+
+Linda Fibiger (&amp; MacKenzie Downing): “An experimental investigation of sharp force skeletal trauma with replica Bronze Age weapons
+Journal of Archaeological Science: Report 2017
+https://www.researchgate.net/publication/312456873_An_experimental_investigation_of_sharp_force_skeletal_trauma_with_replica_Bronze_Age_weapons
+https://www.pure.ed.ac.uk/ws/files/30053647/Downing_and_Fibiger_Pure.pdf
+
+Linda Fibiger and Rebecca C. Redfern: “Trauma and Past Lives” 2024
+https://www.research.ed.ac.uk/en/publications/trauma-and-past-lives/
+
+---
+
+Chapitrage :
+
+00:00 - Introduction
+01:09 - Qu'est-ce que la violence ?
+03:11 - Est-ce que ça s'améliore ?
+09:09 - Est-ce que ça se complique ?
+16:10 - Que pouvons-nous savoir ?
+19:35 - La violence aujourd'hui
+20:45 - Conclusion
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">eCGmbzc2kT0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/eCGmbzc2kT0.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu'autrefois il y avait beaucoup moins de paperasse ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 04/03/2027 
+Des montagnes de documents, des règles tatillonnes, un langage difficile à comprendre - la bureaucratie agace. Pourtant, l’histoire montre que partout où naissent des civilisations humaines, une forme de bureaucratie se développe. Cet épisode s’intéresse aux origines de la bureaucratie et à la manière dont elle influence la réalité des gens depuis des millénaires. Est-il vraiment utile de la combattre ?&#13;
+#bureaucratie #histoire #arte 
+
+Photo de la miniature par Mariann Szőke sur Pixabay
+
+---
+SOURCES
+L'administration des Incas a fonctionné complètement sans écriture jusqu'à sa fin au 16e siècle :
+https://www.cambridge.org/core/books/abs/empires-and-bureaucracy-in-world-history/bureaucracy-without-alphabetic-writing-governing-the-inca-empire-c14381532/3DAA011E54C0D3588014EE784B6516FD
+
+Texte de loi "Miroir des femmes" (entre 1340 et 1000 av. J.-C.) :
+https://recherche.smb.museum/detail/1742990/mittelassyrische-gesetzestafel
+
+Avant l'unification, la Chine était un enchevêtrement d'empires individuels. Qin Shi Huang Di a conquis tous les empires et s'est proclamé premier empereur de Chine :
+https://www.thehistoryreader.com/world-history/the-first-emperor-and-the-unification-of-china
+
+Pendant des siècles, les "analectes" de Confucius ont fait partie de l'examen des fonctionnaires en Chine :
+https://www.gutenberg.org/ebooks/3330
+
+Bhavani Raman a présenté les résultats de ses recherches sur la bureaucratie comme instrument de répression en Inde sous la domination britannique dans son livre "Document Raj" :
+https://press.uchicago.edu/ucp/books/book/chicago/D/bo13657793.html
+
+Dès son premier ouvrage sur le sujet, "In Praise of bureaucracy", paru en 2000, Paul Du Gay a soutenu que nous avons bien plus besoin de bureaucraties que nous ne le pensons souvent :
+https://api.pageplace.de/preview/DT0400.9781446264447_A24015768/preview-9781446264447_A24015768.pdf
+
+---
+
+Chapitrage :
+00:00 - Introduction
+01:21 - Les tablettes d'argile mésopotamiennes
+05:40 - L'ordre chinois
+11:00 – Un instrument de domination britannique
+16:26 – Les “tronçonneuses” modernes
+19:56 - Conclusion
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">Id6LJrfoqHU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/Id6LJrfoqHU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que les Bavarois ne portent que des tenues folkloriques ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 15/04/2027
+Les traditions semblent très anciennes, mais beaucoup sont inventées, dictées par la politique ou façonnées par le tourisme moderne. De la Bavière à la Géorgie en passant par la France, certaines traditions créent une identité, assurent le pouvoir ou génèrent une communauté. Mais, si les traditions sont inventées, pourquoi ne pas en imaginer de nouvelles nous-mêmes ?&#13;
+#tradition #histoire #arte 
+
+Correction:
+22:45 Ici, une carte du monde est visible, sur laquelle l’Ukraine est colorée. Cependant, la Crimée y manque à tort. La Crimée – tout comme le Donbass – appartient au regard du droit international à l’Ukraine et aurait dû être indiquée en conséquence.
+
+SOURCES
+
+Littérature complémentaire et liens : 
+
+L'émergence des nations : Anne-Marie (2001)Thiesse: La création des identités nationales : Europe XVIIIe-XXe siècle. 
+
+Anderson, Benedict (1996): Zur Erfindung der Nation.
+
+Histoire du costume traditionnel : Elsbeth Wallnöfer (2024): How to wear a Dirndl. (K)eine Gebrauchsanleitung. 
+
+L'actualité politique et le costume traditionnel: Elsbeth Wallnöfer (2021): Tracht. Macht. Politik.
+
+La théorie des traditions inventées : Erick Hobsbawm und Terence Ranger (1983). The Invention of Tradition
+
+L’invention de traditions à Majorque :
+Antoni Vives Riera (2020): Festive traditions and tourism in Mallorca: Ludic transgressions and the disruption of otherness https://journals.sagepub.com/doi/abs/10.1177/1468797619873058
+
+L’invention de la Mucada :
+Riera, Antoni Vives (2020): Festive traditions and tourism in Mallorca: Ludic transgressions and the disruption of otherness (https://journals.sagepub.com/doi/abs/10.1177/1468797619873058)
+
+Nils Marvin Schulz (2013): Die georgische Supra als Tradition im Kontext des Nationalismus. https://www.thalia.de/shop/home/artikeldetails/A1030743549
+
+Carolyn Hamilton (1998): Terrific Majesty: The Powers of Shaka Zulu in the Making of a Modern Nation
+
+Danse hula :
+Noenoe K. Silva,(2004): Aloha Betrayed: Native Hawaiian Resistance to American Colonialism https://www.dukeupress.edu/aloha-betrayed 
+Sasha D. Pack 2007: Tourism and Political Change in Francos Spain
+https://www.researchgate.net/publication/304729465_Tourism_and_Political_Change_in_Franco's_Spain
+
+Chapitrage :
+00:00 : Introduction 
+01:18 : Les origines de l'Oktoberfest et de la Bavière 
+04:23 : Traditions et tourisme 
+07:10 : Fête de la ville La Mucada à Sineu 
+10:03 : Les traditions et l'émergence des nations 
+14:03 : Les traditions comme idéologie 
+17:28 : La Géorgie et la quête d' identité
+20:33 : Les traditions comme arme
+
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">djbXt-VGVk8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/djbXt-VGVk8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Hitler a-t-il inventé l'autoroute ? | Est-il vrai que...? | ARTE</title><description>Documentaire historique disponible jusqu'au 31/05/2030
+Spoiler : Hitler n'a pas inventé l'autoroute, c'est un mythe de la propagande nazie ! Un regard sur l'histoire montre que la propagande se nourrit de la vérité mais aussi d'omissions habiles. Des rois de l'Antiquité à la publicité moderne en passant par les affiches de la Seconde Guerre mondiale : comment fonctionne la propagande et la reconnaissons-nous mieux aujourd'hui qu'hier ?&#13;
+
+---
+
+SOURCES
+La propagande nazie a prétendu qu’Hitler avait inventé l’autoroute et que celle-ci avait permis de vaincre le chômage de masse. Ces deux affirmations sont fausses. Mais ce qui est vrai est que, au total, 3855 km d’autoroute ont été construits.
+Voir à ce sujet : Conrad Kunze (2022) : « Deutschland als Autobahn. Eine Kulturgeschichte von Männlichkeit, Moderne und Nationalismus ». PDF : https://www.transcript-verlag.de/978-3-8376-5943-6/deutschland-als-autobahn/?number=978-3-8394-5943-0
+Voir aussi : Wolfgang Wippermann (2008) : « Autobahn zum Mutterkreuz. Historikerstreit der schweigenden Mehrheit. »
+ 
+Edward Bernays (1928) : « Propaganda » (Propagande (livre) — Wikipédia).
+ 
+Sur les campagnes d’Edward Bernays : https://www.geo.de/wissen/weltgeschichte/edward-bernays-und-seine-verblueffenden-pr-tricks-34354568.html)
+Une efficacité controversée : https://monde-diplomatique.de/artikel/!5746263).
+ 
+La bataille de la Somme : https://www.nam.ac.uk/explore/battle-somme.
+ 
+Les camps de concentration britanniques pendant la guerre des Boers et leur différence avec les camps allemands :
+https://www.welt.de/geschichte/article156204714/Was-britische-KZs-von-deutschen-unterschied.html
+ 
+Le contexte de la propagande de la guerre en Irak : https://www.newyorker.com/news/daily-comment/colin-powells-fateful-moment, https://www.spiegel.de/politik/ausland/uno-sicherheitsrat-powell-bedauert-irak-rede-a-373779.html
+ 
+Le « modèle de propagande » selon Noah Chomsky :
+Noam Chomsky/Edward S. Herman (1988) : « Manufacturing Constent »
+ 
+À propos de la phrase de Steve Bannon « Flood the Zone with shit » :
+https://www.vox.com/policy-and-politics/2020/1/16/20991816/impeachment-trial-trump-bannon-misinformation
+
+---
+ 
+Chapitrage :
+00:00 – Introduction : le mythe de l’autoroute, un succès de propagande
+03:06 – Le fonctionnement de la propagande
+10:03 – La propagande et la guerre
+17:18 – Mensonges de guerre : guerres d’Irak
+19:09 – Le rôle de la presse
+23:28 – Perspectives
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">q-dcuv2LK-k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/q-dcuv2LK-k.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate></item><item><title>Les canons de beauté restent-ils éternels ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 03/09/2026
+La beauté a marqué nos pensées et nos sentiments de l'Antiquité à nos jours. Qui trouvons-nous beau ? Et pourquoi ? Bien que de nombreuses cultures partagent une vision similaire des critères de beauté, on constate tout de même une immense diversité. Mais un modèle persiste : la beauté et le pouvoir sont intimement liés.&#13;
+#beauté #documentaire #arte 
+
+---
+SOURCES
+Spécialistes dans cet épisode :
+
+David Perrett (2010): „In Your Face: The new science of human attraction“
+Eleanor Janega (2023): „Die ideale Frau. Wie uns mittelalterliche Vorstellungen von Weiblichkeit noch heute prägen“
+Johannes Krause, Joel Binckli, Ulrich Rosar (Hg.) (2022): „Soziale Wirkung physischer Attraktivität. Eine Einführung“
+Afua Hirsch (2023): „Decolonising my Body. A Radical Exploration of Rituals and Beauty“
+
+Art et science :
+
+Joachim Schummer (2006): „Symmetrie und Schönheit in Kunst und Wissenschaft“
+Anjan Chatterjee (2016): „How Your Brain Decides What Is Beautiful“ (https://www.ted.com/talks/anjan_chatterjee_how_your_brain_decides_what_is_beautiful?language=en)
+Nancy Etcoff (2000): „Survival of the Prettiest: The Science of Beauty“
+
+Le pouvoir au féminin :
+
+Gabriele Lebek (2012): „Schönheit, Macht und Religion: Nofretete als weibliches Gegenstück des Pharaos“ (https://www.jstor.org/stable/44476184)
+Tracy Adams (2024): „The Myth of the Coquettish Anne Boleyn“ (https://www.tandfonline.com/doi/full/10.1080/14629712.2024.2419326?scroll=top&amp;needAccess=true)
+
+Colonialisme et idéaux de beauté :
+
+H. Gene Blocker (2001): „Non-Western Aesthetics as a Colonial Invention“ (https://www.jstor.org/stable/3333782)
+Huberta Jackson-Lowman (2014): „An Analysis of the Impact of Eurocentric Concepts of Beauty on the Lives of Afrikan American Women“ (https://www.researchgate.net/publication/277709452_An_Analysis_of_the_Impact_of_Eurocentric_Concepts_of_Beauty_on_the_Lives_of_Afrikan_American_Women)
+Integrated African Health Observatory &amp; WHO (2021): „Skin Bleaching in Africa … a public health problem“ (https://www.studocu.com/row/document/university-of-zambia/public-administration/skin-bleaching-in-africa-regional-fact-sheet-nov23/97770208)
+
+ 
+Chapitrage :
+
+00:00 – Introduction
+02:29 – Attirance : biologie ou culture ?
+08:33 – Le pouvoir de la beauté
+16:24 – Les idéaux de beauté comme instrument de pouvoir et de libération postcoloniale
+22:33 – Perspectives
+---
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">isXOS9txpmg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/isXOS9txpmg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Avons-nous toujours pratiqué la chirurgie ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 10/09/2026
+La césarienne, une intervention devenue courante mais autrefois presque toujours une condamnation à mort pour la mère. Jusqu'au 19e siècle, cette opération était considérée comme le dernier recours lorsque la vie de la mère ne pouvait de toute façon plus être sauvée. Il est peu probable que Jules César soit venu au monde de cette manière, et pourtant, le mythe perdure encore aujourd'hui.&#13;
+#médecine #histoire #arte 
+
+---
+SOURCES
+
+Généralités :
+Volker Lehmann (2006) : „Der Kayserliche Schnitt: Die Geschichte einer Operation“
+Volker Lehmann (2006) : “Der Kayserliche Schnitt: Die Geschichte einer Operation”
+Colin Salter (2023) : „The anatomist’s library“
+Fernand Leroy (2002) : „Histoire de naître“
+Arnold van de Laar (2024): „Sous le scalpel - Une histoire de la chirurgie en 29 opérations remarquables”
+Marguerite Zimmer (2008) : “Histoire de l'anesthésie - Méthodes et techniques au XIXe siècle”
+Ludwig Braun (1997): „Illustrierte Geschichte der Anästhesie“
+
+En détail :
+Anatomie, antisepsie et anesthésie
+- Lewis Dartnell (2014): „The Knowledge: How to Rebuild Our World from Scratch“
+-H. von Staden (1992): „The Discovery of the Body“ (https://pubmed.ncbi.nlm.nih.gov/1285450/)
+Position de l'Église sur la dissection du corps humain :
+
+Vesalius als Begründer der modernen Anatomie – Sanjib Kumar Ghosh, Ashutosh Kumar (2019): „The Rich Heritage of Anatomical Texts During Renaissance and Thereafter“ (https://pmc.ncbi.nlm.nih.gov/articles/PMC6952681)
+
+Jakob Nufer und der Kaiserschnitt: „ Cesarean Section – A Brief History“ (https://www.nlm.nih.gov/exhibition/cesarean/part1.html)
+
+Théorie des germes et hygiène selon Semmelweis et Pasteur :
+
+- Irvine Loudon (2013): „Ignaz Phillip Semmelweis' studies of death in childbirth“ (https://pmc.ncbi.nlm.nih.gov/articles/PMC3807776)
+- N.N.: „Germ Theory“ (https://healthandthepeople.ncl.ac.uk/germ-theory/)
+
+La césarienne en Ouganda
+– Peter M. Dunn (1999): „Robert Felkin and Caesarean delivery in Central Africa“ (https://www.researchgate.net/publication/13086451_Robert_Felkin_MD_1853-1926_and_Caesarean_delivery_in_Central_Africa_1879)
+
+---
+
+Chapitrage :
+00:00 – Introduction
+01:06 – Césarienne, mortalité et les trois „A“
+03:23 – Anatomie : histoire de la science du corps et de la chirurgie
+11:20 – Antisepsie : découverte des germes
+14:30 – Histoire de l’anesthésie
+18:54 – Des méthodes chirurgicales avancées en Ouganda
+22:44 – Conclusion
+
+&#13;&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">E01Xfi8gLLg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/E01Xfi8gLLg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Les gens du Moyen Âge étaient-ils tous des platistes ? | Est-il vrai qu...? | ARTE</title><description>Disponible jusqu'au 09/10/2030
+L'idée d'une Terre plate aurait perduré au Moyen-Âge, jusqu'à ce que Christophe Colomb découvre l'Amérique lors de son voyage vers les Indes. Mais qu'est-ce que cela prouvait exactement ? Et pourquoi y a-t-il encore aujourd'hui des gens qui croient en une Terre plate ? Indépendamment de ce que nous pensons savoir, il n'est jamais facile de se défaire de ses convictions ...&#13;
+#astronomie #histoire #arte 
+&#13;
+---
+SOURCES
+
+Christine Garwood (2008) : « Flat Earth – The History of an Infamous Idea »  (https://www.goodreads.com/book/show/2443546.Flat_Earth).
+Circonférence de la Terre :
+L'expérience d'Eratosthène est désormais reproduite et recalculée chaque année par les écoliers du monde entier. (https://eratosthenes.ea.gr/). 
+Explication de l'expérience : Ératosthène — Wikipédia
+Christophe Colomb :
+Jeffrey Burton Russell (1991) : « Inventing the Flat Earth. Columbus and Modern Historians »  
+(https://www.goodreads.com/book/show/1907.Inventing_the_Flat_Earth?ref=nav_sb_ss_1_31).
+Washington Irving (1828) : « A History of the Life and Voyages of Christopher Columbus ».
+Galilée :
+Christopher M. Graney (2008) : « But Still, It Moves: Tides, Stellar Parallax, and Galileo’s Commitment to the Copernican Theory ».
+Galilée : « Dialog über die zwei hauptsächlichen Weltsysteme ». Édité par Jürgen Renn et Matthias Schemmel, Berlin 2001.
+Débat à Oxford sur la critique de l'Église catholique à l'égard de la théorie de l'évolution – J. R. Lucas, (1979) : « Wilberforce and Huxley: A Legendary Encounter ». The Historical Journal, 22(2), p. 313–330.
+Explication de la parallaxe : Parallaxe — Wikipédia
+Lee McIntyre (2021) : « How to Talk to a Science Denier: Conversations with Flat Earthers, Climate Deniers, and Others Who Defy Reason ».
+Thomas Bayes (1763) : « An Essay towards solving a Problem in the Doctrine of Chances ». Philosophical Transactions of the Royal Society of London.
+---
+ 
+Chapitrage :
+00:00 – Introduction
+01:34 – Les premières preuves de la forme sphérique de la Terre
+05:55 – Comment le mythe de la Terre plate est-il inventé ?
+08:43 – Galilée et le globe terrestre
+14:58 – Parallaxe : les fanatiques de la Terre plate au XIXe siècle
+17:39 – Les théories contemporaines de la Terre plate et leur relation avec la science
+22:48 – Conclusion
+
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">s2ogHDYKOJc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/s2ogHDYKOJc.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu’autrefois nous parlions tous la même langue ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 26/11/2026
+L'invention la plus importante de l'histoire de l'humanité n'est pas la machine à vapeur ou l'agriculture, et encore moins le smartphone. L'invention la plus importante est celle qui a rendu tout cela possible : le langage. Mais d'où vient-il, comment fait-il de nous ce que nous sommes et pourquoi parlons-nous aujourd'hui autant de langues, ou en parlons-nous trop peu ?&#13;
+#linguistique #histoire #arte 
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">cuHl3T36EX8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/cuHl3T36EX8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que l'eau ne devient potable qu’à l'époque moderne ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 17/07/2027
+L'eau potable est considérée comme un progrès de la modernité. Mais les êtres humains auraient-ils pu survivre si, autrefois, l’eau avait été systématiquement impropre à la consommation ? De l’Antiquité à nos jours, il apparaît que ce n’est pas seulement la technologie qui est déterminante, mais aussi la manière dont les sociétés organisent l’eau et pour qui. L’eau n’est pas qu'une question de nature, mais c'est aussi une question de pouvoir et d’inégalité.&#13;
+#eau #histoire #arte 
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">1D1XcgnxqQA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/1D1XcgnxqQA.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate></item><item><title>Les messages cryptés ont-ils modifié l’histoire ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 17/06/2027
+Du cryptogramme de César à la machine Enigma, des intrigues de la Renaissance à nos paiements en ligne, l'art d'encoder et de décrypter les informations a évolué au fil des siècles. Guerres, conspirations, révolutions : la science secrète de la cryptologie a marqué l'histoire bien plus qu'on pourrait l'imaginer.&#13;
+#cryptologie #histoire #arte 
+
+Sources principales :
+« The Codebreakers » de David Kahn :
+https://simonsingh.net/books/the-code-book/
+« The Code Book » de Simon Singh :
+https://www.abebooks.co.uk/book-search/title/the-codebreakers/author/david-kahn/
+Concernant l'impact du décryptage d'ENIGMA sur le déroulement de la Seconde Guerre mondiale : https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=1283&amp;context=younghistorians
+Sur les sources relatives au code César :
+https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Gellius/17*.html
+Sur le chiffrement par substitution :
+https://www.arcsi.fr/doc/How-Mathematics-Spread-and-Transformed-Cryptographic-Activities-MJDR-PG.pdf
+À propos de la cryptologie abbasside :
+https://www.tandfonline.com/doi/full/10.1080/23311983.2023.2196842#abstract
+À propos de Marie Stuart et de sa correspondance secrète :
+https://www.imdb.com/title/tt38525423/
+
+Chapitrage :
+0:00:00 — Signes secrets : les débuts de la cryptographie
+0:01:12 — De Sparte à Rome : les premiers codes et leur pouvoir
+0:04:14 — Bagdad et Al-Kindi : la naissance de la cryptanalyse
+0:07:46 — La guerre des codes en Europe : rois, espions et trahison
+0:11:53 — Enigma et la Seconde Guerre mondiale : la bataille du décryptage 0:18:17 — Des clés numériques aux ordinateurs quantiques : l'avenir de la cryptographie
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">FvVvYVyTpl8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/FvVvYVyTpl8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate></item><item><title>Les ultra-riches rendent-ils le monde meilleur ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 03/06/2027
+Faire du monde un endroit meilleur avec des milliards : la philanthropie est considérée comme une grande histoire à succès. Cet épisode s'intéresse au pouvoir de création des donateurs super riches et à comment ils peuvent intervenir en profondeur dans les structures sociales. Entre progrès et influence : qu'est-ce que cela a signifié pour les sociétés ? Et pour la démocratie ?&#13;
+#capitalisme  #finance #arte 
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">w1RT9_qqXV8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/w1RT9_qqXV8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que nous avons toujours été accros au sucre ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 27/05/2027 
+Le sucre n'a pas toujours été omniprésent : ce n'est que depuis environ 2.500 ans que l'être humain le cristallise et l'expédie à travers le monde. D'un luxe rare, il est devenu un produit de masse mondial, étroitement lié à l'histoire du colonialisme et du capitalisme. Mais d'où vient notre goût pour le sucré et quelles en sont les conséquences aujourd'hui encore ?&#13;
+#sucre #santé #arte 
+
+SOURCES
+
+Ulbe Bosma a écrit une histoire détaillée du sucre dans son livre :
+ “The World of Sugar. How the Sweet Stuff Transformed Our Politics, Health, and Environment over 2,000 Years” (2023)”  https://www.hup.harvard.edu/books/9780674279391
+Résumé ici : https://time.com/6329462/history-sugar/
+
+Allan Souza Queiroz se penche ici sur le livre d'Ulbe Bosma : https://www.cambridge.org/core/journals/international-review-of-social-history/article/who-moves-the-sugar-frontier-a-comment-on-the-world-of-sugar-how-the-sweet-stuff-transformed-our-politics-health-and-environment-over-2000-years-by-ulbe-bosma/040920B4056CA27A74D86953CE78FBD4
+
+Pour en savoir plus sur les formes modernes d'esclavage dans les Caraïbes, cliquez ici : https://www.antitraffickingreview.org/index.php/atrjournal/article/view/263/252 
+
+Pourquoi l'Organisation mondiale de la santé recommande-t-elle de réduire la consommation de sucre ? : https://www.who.int/news/item/04-03-2015-who-calls-on-countries-to-reduce-sugars-intake-among-adults-and-children
+
+
+Chapitrage :
+
+00:00 - Introduction 
+03:22 - Le sucre se cristallise 
+05:46 - Le cruel modèle des plantations 
+11:38 - La betterave sucrière d'Europe 
+13:33 - La servitude contractuelle plutôt que l'esclavage 
+17:39 - L'épidémie de sucre
+21:06 - Perspectives
+
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">vKPj4x8pW4A</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/vKPj4x8pW4A.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que l'écart entre riches et pauvres est à son apogée ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 20/05/2027
+Les plus riches sont-ils aujourd'hui plus riches que jamais ? Cet épisode montre comment l'écart entre les riches et les pauvres s'est développé au fil des millénaires : des premiers États au commerce mondialisé et à la politique néolibérale, en passant par la traite des esclaves et l'industrialisation. Comment les riches sont-ils devenus de plus en plus riches ? Et peut-on inverser la tendance ?&#13;
+&#13;
+#inégalités #richesse #arte 
+
+SOURCES
+Thomas Piketty a marqué la recherche sur les inégalités de ces dernières décennies et son œuvre a largement contribué à lancer le débat sur la concentration croissante des richesses.
+- Piketty, T. (2013) : “Le Capital au XXI e siècle” https://de.wikipedia.org/wiki/Das_Kapital_im_21._Jahrhundert 
+- Piketty, T. (2021): “Une brève histoire de l'égalité” https://www.bpb.de/shop/buecher/schriftenreihe/520036/eine-kurze-geschichte-der-gleichheit/ 
+
+L'anthropologue David Graeber et l'archéologue David Wengrow tentent de réécrire l'histoire de l'inégalité. Ils s'attaquent aux mythes sur l'origine des inégalités sociales et économiques.
+- Graeber, D. &amp; Wengrow, D. (2021): “The Dawn of Everything” https://www.goodreads.com/de/book/show/56269264-the-dawn-of-everything
+
+Luke Kemp décrit comment les sociétés se forment et se désagrègent. Il établit un lien central entre la stabilité et l'inégalité au sein des sociétés. Walter Scheidel fait de même : l'inégalité ne se réduit sensiblement que lors de catastrophes.
+- Kemp, L. (2025): “Goliath’s Curse” https://www.penguin.co.uk/authors/282747/luke-kemp 
+- Scheidel, W. (2017): “The Great Leveler” https://www.jstor.org/stable/jj.22679822 
+
+La politologue Martyna Linartas décrit comment les paradigmes économiques façonnent les sociétés et comment les décisions politiques peuvent influencer l'évolution des inégalités économiques.
+- Linartas, M. (2025) Unverdiente Ungleichheit https://www.bpb.de/shop/buecher/schriftenreihe/573995/unverdiente-ungleichheit/ 
+
+
+Chapitrage :
+
+00:00 - Introduction : Les inégalités aujourd'hui : n'ont-elles jamais été aussi grandes ? 
+01:25 - Les premières sociétés : égalité ou premières hiérarchies ? 
+03:12 - Sédentarisation et inégalité 
+06:31 - Teotihuacán et les empires : comment l'inégalité varie ? 
+09:10 - Pouvoir, impôts et fortune héritée
+11:23 - Industrialisation, colonialisme et inégalités mondiales
+17:04 - Des crises au capital : pourquoi l'inégalité continue-t-elle de croître aujourd'hui ?
+
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">lQw95ETLcwc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/lQw95ETLcwc.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que Christophe Colomb a été le premier à traverser un océan ? | ARTE</title><description>Disponible jusqu'au 08/04/2027
+Aujourd'hui encore, Christophe Colomb est considéré comme la première personne à avoir traversé un océan. Pourtant, l'archéologie, la génétique et les mémoires autochtones racontent une autre histoire : les Polynésiens, les Vikings et même les premiers humains ont atteint des continents lointains bien avant lui. Pourquoi nous souvenons-nous de Christophe Colomb mais pas d'eux ?&#13;
+
+---
+SOURCES
+ Littérature complémentaire et liens :
+
+David Abulafia (2021): “The Boundless Sea: A Human History of the Oceans.” Allen Lane 2019)
+
+David Lewis’ Buch “We, the Navigators. The Ancient Art of Landfinding in the Pacific” considéré comme la pierre angulaire de l'étude moderne de la navigation polynésienne : https://en.wikipedia.org/wiki/We,_the_Navigators
+
+Le Film “THE NAVIGATORS – Pathfinders Of The Pacific” au sujet de Mao Piailug et des Hokulea : https://www.youtube.com/watch?v=uxgUjyqN7FU
+
+Le musée consacré au Kon-Tiki et Thor Heyerdahl :
+https://www.kon-tiki.no/en/home
+
+Description et histoire de L'Anse aux Meadows:
+https://parks.canada.ca/lhn-nhs/nl/meadows
+
+Angela Schottenhammer: “Die Zheng-He-Expeditionen im Lichte ihrer ideologischen Interpretationen – inklusive einiger Bemerkungen zur Rolle von Gewalt in Geschichte und Gegenwart”
+https://www.academia.edu/57356684/Die_Zheng_He_Expeditionen_im_Lichte_ihrer_ideologischen_Interpretationen_inklusive_einiger_Bemerkungen_zur_Rolle_von_Gewalt_in_Geschichte_und_Gegenwart
+
+---
+
+Chapitrage :
+
+00:00 - Introduction
+01:22 - La Polynésie
+03:34 - Kon-Tiki
+05:51 - Les connaissances anciennes
+08:56 - Terre-Neuve
+12:54 - La Chine
+18:36 - Christophe Colomb
+22:43 - Conclusion
+
+#navigation #histoire #arte 
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">3kIiw8r50Aw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/3kIiw8r50Aw.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que l'humain a toujours cherché à planer ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 01/04/2027
+Le vertige de la drogue est-il un phénomène récent, né dans une société avide de plaisirs qui ne connaît plus de limites ? La découverte d'artefacts datant de plusieurs milliers d'années suscite des doutes. L'exaltation semble avoir été utilisée dans de nombreuses cultures pour des prises de conscience spirituelles et des rituels conviviaux. Alors pourquoi la plupart des drogues sont-elles interdites aujourd'hui ?&#13;
+
+---
+SOURCES
+Les premières “cultures de drogues” de l’humanité
+Mike Jay: High Society: Mind-Altering Drugs in History and Culture
+, 2012.
+https://www.abebooks.de/9780500289105/High-Society-Mind-Altering-Drugs-History-0500289107/plp?cm_sp=plped-_-1-_-image
+
+Les cultures prémodernes de la drogue en Europe
+Gunther Hirschfelder, Manuel Trummer: Bier - Die ersten 13.000 Jahre, 2022.
+https://www.herder.de/wissen/shop/p8/86524-bier-kartonierte-ausgabe
+
+Révolution des cultures occidentales de la drogue à l'époque moderne
+Bundeszentrale für politische Bildung (bpb): Eine unendliche Geschichte. Von Menschen und Drogen. Essay, vom 27.11.20.
+https://www.bpb.de/shop/zeitschriften/apuz/rausch-und-drogen-2020/321814/eine-unendliche-geschichte
+Mike Jay: Psychonauts - Drugs and the Making of the Modern Mind, 2023.
+https://zabriskie.de/en/products/psychonauts
+Criminalisation des drogues aux 19e et 20e siècles
+Helena Barop: Der große Rausch - Warum Drogen kriminalisiert werden. Eine globale Geschichte vom 19. Jahrhundert bis heute, 2023.
+https://www.bpb.de/shop/buecher/schriftenreihe/569723/der-grosse-rausch
+New York Times (NYT): Secret Tapes Reveal Nixon’s Views on Marijuana, vom 08.10.24.
+https://www.youtube.com/watch?v=RAxzha2nbkA
+Les drogues du “marché blanc” et la crise des opioïdes
+David Herzberg: White Market Drugs: Big Pharma and the Hidden History of Addiction in America, 2020.
+https://press.uchicago.edu/ucp/books/book/chicago/W/bo58927880.html
+Helena Hansen, Jules Netherland und David Herzberg: Whiteout - How Racial Capitalism Changed the Color of Opioids in America, 2023.
+https://www.ucpress.edu/books/whiteout/hardcover
+
+---
+
+Chapitrage
+00:00 Introduction
+01:23 Les drogues, les Romains et la Sibérie
+02:45 Les premières cultures chamaniques de la drogue en Amérique du Sud
+06:38 Pourquoi l'alcool est devenu la principale drogue en Europe
+10:27 Les nouvelles drogues révolutionnent la culture de l'ivresse en Europe
+14:46 Criminalisation des drogues
+19:50 Médicaments : drogues légales pour les Blancs
+22:50 Perspectives
+
+
+#spiritualité #histoire #arte 
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">UJd8CKMxF3o</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/UJd8CKMxF3o.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Le chien, de l'animal de travail au compagnon de vie | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 25/03/2027
+Le chien est considéré comme le meilleur ami de l'homme. Mais à quand remonte vraiment cette relation et comment est-elle née ? Cet épisode s'intéresse à comment l'homme et le chien vivent ensemble depuis plus de 15 000 ans, comment ils se sont influencés mutuellement et pourquoi le chien n'est devenu un animal domestique que tardivement. Une histoire de proximité, de pouvoir et de domestication réciproque.&#13;
+#chien #science #arte 
+
+---
+Sources
+Ce que signifie la domestication, comment les animaux domestiqués et non domestiqués se distinguent :
+Kathryn A. Lord, Greger Larson, Robin G. Alibi, Elinor K. Karlsson: A Universally Applicable Definition for Domestication. In PNAS 2025 Vol 122 No 22. 
+Online verfügbar: https://www.pnas.org/doi/10.1073/pnas.2413207122 
+
+Différences et points communs entre le loup et le chien :
+
+Friederike Range und Sarah Marshall-Pescini: Comparing wolves and dogs: current status and implications for human ‘self-domestication’ 2022. https://doi.org/10.1016/j.tics.2022.01.003
+
+Sur la relation complexe entre l'homme et l'animal (en allemand) :
+
+Marcel Sebastian in “Streicheln oder Schlachten”, Kösel 2022
+
+Sur la symbolique du berger allemand sous le national-socialisme :
+
+Aaron Skabelund: Breeding Racism: The Imperial Battlefields of the “German” Shepherd Dog. 2008. 
+https://www.animalsandsociety.org/wp-content/uploads/2016/06/skabelund.pdf 
+
+Étude japonaise sur l'apparence similaire des chiens et de leurs propriétaires :
+
+Sadahiko Nakajima, Mariko Yamamoto &amp; Natsumi Yoshimoto (2009) Dogs Look Like Their Owners: Replications with Racially Homogenous Owner Portraits, In: Anthrozoös, 22:2, 173-181
+https://doi.org/10.2752/175303709X434194 
+
+Sur l'approche de "l'intelligence artificielle" en tant qu'espèce :
+
+Spyridon Stelios &amp; Georgios Sakellariou: Towards Artificial Wildlife: Speciesism and Intelligent Machines. De Ethica (2025) 8.4:43–56
+https://doi.org/10.3384/de-ethica.2001-8819.258443 
+
+chapitrage :
+
+00:00 Introduction
+02:00 Tout commence avec le loup
+04:46 La domestication précoce
+08:55 Les chiens dans l'art et la culture
+10:13 Animal domestique de la bourgeoisie
+11:47 Race et élevage
+13:55 Le chien devient une star de cinéma
+14:54 Aujourd'hui : plus proche que jamais
+16:06 Iran : Les chiens, un enjeu politique
+19:07 Pourquoi ne mangeons-nous pas de chiens ?
+20:14 La domestication, un processus réciproque
+22:43 Perspectives
+---
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">qljrDxRMZjE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/qljrDxRMZjE.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Le commerce mondial est-il du vol ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 18/03/2027
+Le commerce mondial rime-t-il avec prospérité ou n’est-il qu'un système d’oppression et de dépendance? De la pensée mercantiliste aux stratégies protectionnistes des États émergents en passant par le libre-échange, cet épisode montre comment les structures de pouvoir historiques, les accords commerciaux inégaux et les zones spéciales dans les pays du Sud décident des gagnants et des perdants.&#13;
+#capitalisme #histoire #arte 
+
+---
+Sources
+Recherche sur la pauvreté : le seuil de pauvreté global et la classe moyenne :
+Max Roser:  The short history of global living conditions and why it matters that we know it, veröffentlicht online at OurWorldinData.org (2016).
+https://ourworldindata.org/a-history-of-global-living-conditions#article 
+Sur le commerce de l'argent et les guerres de l'opium (en allemand) :
+Richard Hemmer, Daniel Meßner: Podcast - Geschichten aus der Geschichte 34: Tee, Silber und Rauschmittel
+https://www.geschichte.fm/podcast/zs34/ 
+Sur la United Fruit Company et les guerres de la banane :
+Mathilde Damoisel: La loi de la banane, Dokumentarfilm, (2017).
+Sur l'OMC et son blocage (en allemand) :
+Gabriel Felbermayr, Martin Braml: Der Freihandel hat fertig (2024).
+https://www.thalia.de/shop/home/artikeldetails/A1071595638 
+Sur le programme structurel néolibéral au Costa Rica :
+Luis Paulino Vargas Solís: El proyecto neoliberal en Costa Rica (1984–2024). Orígenes, implantación y evolución. Revista Espiga, 23(48), 1–30, (2024).
+https://www.researchgate.net/publication/383561031_El_proyecto_neoliberal_en_Costa_Rica_1984-2024_Origenes_implantacion_y_evolucion 
+Sur les accords de partenariat économique entre l'UE et l'Afrique :
+Austrian Foundation for Development Research: The economic and social effects of the Economic Partnership Agreements on selected African countries. ÖFSE Research Report (2017).
+https://www.oefse.at/fileadmin/content/Downloads/Publikationen/Studien/7_EPA_Study.pdf
+
+Chapitrage :
+00:00 - Introduction
+01:27 - Commerce mondial et prospérité
+02:47 - Théorie économique
+06:08 - Le commerce de l'argent et les guerres de l'opium
+12:14 - La politique douanière américaine au 19e siècle.
+14:05 - Guerres de la banane en Amérique centrale
+17:23 - La coopération commerciale après la Seconde Guerre mondiale
+18:32 - Le néolibéralisme
+
 
 ---
 &#13;
@@ -84,9 +990,93 @@ Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnH
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">D4Yx8Tiej-8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/D4Yx8Tiej-8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Femmes et hommes n'ont-ils jamais été égaux ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 05/11/2026
-Des femmes vikings à l'Islande et la grande grève des femmes en 1975, en passant par les premières colonies humaines, la société était peut-être plus égalitaire que nous le pensons. Certains pensent même qu'il existait autrefois un matriarcat. De fait, il existe des cultures dans lesquelles les femmes ont le pouvoir, comme chez les Moso en Chine. Alors, pourquoi le patriarcat s'est-il imposé ?&#13;
-#égalité #documentaire #arte 
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">4T0dPEx6bDY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/4T0dPEx6bDY.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que la morale a mis fin à l'esclavage ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 11/03/2027
+Pendant des siècles, l’esclavage a été un pilier central de l’économie mondiale. Au moment même où l’on érigeait la «liberté, l’égalité et la fraternité» en principes fondateurs en Europe, les empires coloniaux maintenaient des millions de personnes en servitude dans des plantations outre-Atlantique ou ailleurs. Qu’est-ce qui est vraiment à l'origine de l’effondrement de ce système ?&#13;
+#esclavage #colonialisme #arte 
+&#13;
+---
+SOURCES
+Equal Justice Initiative: The Transatlantic Slave Trade 
+Rapport librement accessible sur la traite négrière transatlantique, son déroulement historique dévastateur, ses conséquences sur la société et l'économie jusqu'à nos jours : 
+https://eji.org/wp-content/uploads/2005/11/transatlantic-report-PDF-web.pdf 
+
+African Voices on Slavery and the Slave Trade
+https://assets.cambridge.org/97805211/45268/frontmatter/9780521145268_frontmatter.pdf 
+
+Jennifer L. Morgan (2004): Laboring Women: Reproduction and Gender in New World Slavery
+https://archive.org/details/laboringwomenrep0000morg/page/n7/mode/2up 
+
+Vincent Brown – Tacky's Revolt: The Story of an Atlantic Slave War (Harvard University Press, 2020)
+https://www.jstor.org/stable/j.ctv2d8qwr4
+
+Eric Williams: Capitalism and Slavery (1944)
+https://glc.yale.edu/sites/default/files/pdf/capatlism_and_slavery.pdf
+
+Essai de Patrick Rael: „The United States Was Late to End Slavery“
+https://www.historynewsnetwork.org/article/the-united-states-was-late-to-end-slavery 
+
+Global Estimates of Modern Slavery: Forced Labour and Forced Marriage (2022)
+Rapport conjoint de l'OIT, Walk Free et l'OIM.
+https://www.ilo.org/publications/major-publications/global-estimates-modern-slavery-forced-labour-and-forced-marriage 
+
+Walk Free: Global Slavery Index – Données par pays, secteurs, profils de risque :
+https://www.walkfree.org/global-slavery-index/ 
+
+---
+
+Chapitrage :
+
+00:00 - Introduction
+03:04 - Naissance du commerce triangulaire
+06:27 - Mémoire africaine
+08:56 - Les femmes asservies
+10:45 - Résistance et rébellion
+13:42 - L'abolitionnisme
+16:57 - La libération pour des raisons économiques ?
+19:25 - Abraham Lincoln et la guerre civile
+22:47 - L'oppression malgré la libération
+
+
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
+
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">tQtTz9ZLS_c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/tQtTz9ZLS_c.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu’autrefois nous vivions en harmonie avec la nature ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 03/12/2026
+Dans le monde de technologie, d’urbanisation et de consommation qu’est le nôtre, nous façonnons la nature comme aucune autre espèce ne le fait. Mais notre relation avec la nature était-elle vraiment harmonieuse autrefois ? Du siècle des Lumières à l'industrialisation, de l'invention du parc national au mouvement climatique mondial, l’histoire mouvementée de notre rapport à la nature.&#13;
+#histoire #nature #arte 
+
+----
+SOURCES
+Ouvrages sur le sujet :
+
+Gaia Vince : Adventures in the anthropocene. A journey to the heart of the planet we made (Milkweed Editions 2014)
+Frauke Fischer, Was hat die Mücke je für uns getan? (Oekom 2020)
+https://www.oekom.de/buch/was-hat-die-muecke-je-fuer-uns-getan-9783962382094
+Christopher Lloyd, What on Earth Happened? From the Big Bang to the Present Day (Bloomsbury 2008)
+Bernhard Lang / Christof Mauch, Wie der Mensch die Erde verändert (Frederking &amp; Thaler 2024)
+En allemand :
+Der Mensch gehört zur Natur – und verändert sie 
+https://www.bpb.de/themen/politisches-system/politik-einfach-fuer-alle/332663/der-mensch-gehoert-zur-natur-und-veraendert-sie/
+300.000 Jahre alter Elefant aus Schöningen
+https://www.archaeologie-online.de/nachrichten/300-000-jahre-alter-elefant-aus-schoeningen-fast-vollstaendig-erhalten-4639/
+Zur Unvereinbarkeit von Mensch und Natur. Wider die Harmonievorstellungen
+https://philosophike.de/2021/12/zur-unvereinbarkeit-von-mensch-und-natur-wider-die-harmonievorstellungen
+Kipppunkte und ihre Folgen für die Menschheit
+https://www.germanwatch.org/de/blog/kipppunkte-und-ihre-folgen-fuer-die-menschliche-sicherheit 
+
+---
+
+Chapitrage :
+
+00:03 – Introduction
+01:32 - Le rapport à la nature à l'âge de pierre
+05:51 - L'homme commence à dominer la nature
+11:53 - De la révolution industrielle à l'exploitation totale ?
+14:36 - Les traditions de la Bolivie en harmonie avec la nature ?
+23:53 - Perspectives
+
 &#13;
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
@@ -94,27 +1084,7 @@ Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnH
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">fio_au0v8dM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/fio_au0v8dM.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que nous avons toujours fait grève ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 12/11/2026
-De l’Egypte ancienne à aujourd’hui, retour sur l’histoire du plus ancien outil de résistance collective : la grève. Né des injustices et des transformations du travail, renforcé par les développements technologiques et l’industrialisation, ce mode de protestation a façonné nos sociétés et conquis des droits essentiels, de la semaine de 40 heures à la protection sociale.&#13;
-#grève #histoire #arte 
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">AJjPqlU3NvI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/AJjPqlU3NvI.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Les agents secrets, des humains sans conscience ? | Est-il vrai que...? | ARTE</title><description>Documentaire disponible jusqu'au 19/11/2026
-De l'Empire romain à la guerre froide, de "l'agent Sonya" à la course à l'armement numérique, les espions influencent depuis des siècles les guerres, les bouleversements politiques et la culture populaire. Qu'est-ce qui peut pousser quelqu’un à vivre dans l’ombre ? L'aventure, l'idéologie ou la soif de pouvoir ?&#13;
-#espionage #histoire #arte 
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">rQVahW2EjAg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/rQVahW2EjAg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate></item><item><title>La peste, la plus grande épidémie de tous les temps ? | Est-il vrai que...? | ARTE</title><description>La peste a décimé l'Europe, bouleversant l'ordre social. En Amérique, les maladies importées après 1492 ont provoqué une extinction massive des populations indigènes. De simples agents pathogènes ont parfois plus influencé l’histoire que les humains eux-mêmes. Que nous réserve la prochaine pandémie, et saurons-nous mieux y faire face ?&#13;
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">dvtrBup93lo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/dvtrBup93lo.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate></item><item><title>La peste, la plus grande épidémie de tous les temps ? | Est-il vrai que...? | ARTE</title><description>La peste a décimé l'Europe, bouleversant l'ordre social. En Amérique, les maladies importées après 1492 ont provoqué une extinction massive des populations indigènes. De simples agents pathogènes ont parfois plus influencé l’histoire que les humains eux-mêmes. Que nous réserve la prochaine pandémie, et saurons-nous mieux y faire face ?&#13;
 &#13;
 La grande peste du Moyen Âge est souvent considérée comme la pire épidémie de tous les temps. Mais comment le mesurer ? Au XIVe siècle, la "mort noire" décime plus de la moitié de la population européenne, ébranlant profondément l'ordre féodal médiéval et posant les bases de la Réforme et du capitalisme moderne. En 1492, Christophe Colomb importe en Amérique quantité d'agents pathogènes mortels pour les habitants non immunisés du Nouveau Monde. En quelques décennies, jusqu'à 90 % de la population indigène est emportée – la plus grande catastrophe démographique de l'histoire de l'humanité. Au lendemain de la Grande Guerre, de 1918 à 1920, la grippe espagnole, plus meurtrière encore, tue entre 50 millions et 100 millions de personnes. Dévastateur à la fin du siècle dernier, le sida hisse la santé au rang de cause mondiale et bouscule les préjugés. Quant au virus du Covid-19, en un an, il se propage sur tous les continents, conséquence de l'accélération exponentielle de la mobilité humaine, et met la planète à l'arrêt. Aujourd'hui, le réchauffement climatique contribue aussi à la prolifération de maladies infectieuses portées par les moustiques. Des paramètres qui pourraient précipiter une nouvelle – et peut-être plus grave encore – pandémie.
 
@@ -170,40 +1140,9 @@ Instagram : https://www.instagram.com/artefr
 TikTok : https://www.tiktok.com/@artefr/
 Twitch : https://www.twitch.tv/artefr
 Bluesky : https://bsky.app/profile/artefr.bsky.social
-Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">DjTX2VBtMWk</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/DjTX2VBtMWk.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu’autrefois nous vivions en harmonie avec la nature ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 03/12/2026
-Dans le monde de technologie, d’urbanisation et de consommation qu’est le nôtre, nous façonnons la nature comme aucune autre espèce ne le fait. Mais notre relation avec la nature était-elle vraiment harmonieuse autrefois ? Du siècle des Lumières à l'industrialisation, de l'invention du parc national au mouvement climatique mondial, l’histoire mouvementée de notre rapport à la nature.&#13;
-#histoire #nature #arte 
-
-----
-SOURCES
-Ouvrages sur le sujet :
-
-Gaia Vince : Adventures in the anthropocene. A journey to the heart of the planet we made (Milkweed Editions 2014)
-Frauke Fischer, Was hat die Mücke je für uns getan? (Oekom 2020)
-https://www.oekom.de/buch/was-hat-die-muecke-je-fuer-uns-getan-9783962382094
-Christopher Lloyd, What on Earth Happened? From the Big Bang to the Present Day (Bloomsbury 2008)
-Bernhard Lang / Christof Mauch, Wie der Mensch die Erde verändert (Frederking &amp; Thaler 2024)
-En allemand :
-Der Mensch gehört zur Natur – und verändert sie 
-https://www.bpb.de/themen/politisches-system/politik-einfach-fuer-alle/332663/der-mensch-gehoert-zur-natur-und-veraendert-sie/
-300.000 Jahre alter Elefant aus Schöningen
-https://www.archaeologie-online.de/nachrichten/300-000-jahre-alter-elefant-aus-schoeningen-fast-vollstaendig-erhalten-4639/
-Zur Unvereinbarkeit von Mensch und Natur. Wider die Harmonievorstellungen
-https://philosophike.de/2021/12/zur-unvereinbarkeit-von-mensch-und-natur-wider-die-harmonievorstellungen
-Kipppunkte und ihre Folgen für die Menschheit
-https://www.germanwatch.org/de/blog/kipppunkte-und-ihre-folgen-fuer-die-menschliche-sicherheit 
-
----
-
-Chapitrage :
-
-00:03 – Introduction
-01:32 - Le rapport à la nature à l'âge de pierre
-05:51 - L'homme commence à dominer la nature
-11:53 - De la révolution industrielle à l'exploitation totale ?
-14:36 - Les traditions de la Bolivie en harmonie avec la nature ?
-23:53 - Perspectives
-
+Facebook : http://www.facebook.com/artetv</description><guid isPermaLink="false">DjTX2VBtMWk</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/DjTX2VBtMWk.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Les agents secrets, des humains sans conscience ? | Est-il vrai que...? | ARTE</title><description>Documentaire disponible jusqu'au 19/11/2026
+De l'Empire romain à la guerre froide, de "l'agent Sonya" à la course à l'armement numérique, les espions influencent depuis des siècles les guerres, les bouleversements politiques et la culture populaire. Qu'est-ce qui peut pousser quelqu’un à vivre dans l’ombre ? L'aventure, l'idéologie ou la soif de pouvoir ?&#13;
+#espionage #histoire #arte 
 &#13;
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
@@ -211,95 +1150,9 @@ Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnH
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">dvtrBup93lo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/dvtrBup93lo.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que la morale a mis fin à l'esclavage ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 11/03/2027
-Pendant des siècles, l’esclavage a été un pilier central de l’économie mondiale. Au moment même où l’on érigeait la «liberté, l’égalité et la fraternité» en principes fondateurs en Europe, les empires coloniaux maintenaient des millions de personnes en servitude dans des plantations outre-Atlantique ou ailleurs. Qu’est-ce qui est vraiment à l'origine de l’effondrement de ce système ?&#13;
-#esclavage #colonialisme #arte 
-&#13;
----
-SOURCES
-Equal Justice Initiative: The Transatlantic Slave Trade 
-Rapport librement accessible sur la traite négrière transatlantique, son déroulement historique dévastateur, ses conséquences sur la société et l'économie jusqu'à nos jours : 
-https://eji.org/wp-content/uploads/2005/11/transatlantic-report-PDF-web.pdf 
-
-African Voices on Slavery and the Slave Trade
-https://assets.cambridge.org/97805211/45268/frontmatter/9780521145268_frontmatter.pdf 
-
-Jennifer L. Morgan (2004): Laboring Women: Reproduction and Gender in New World Slavery
-https://archive.org/details/laboringwomenrep0000morg/page/n7/mode/2up 
-
-Vincent Brown – Tacky's Revolt: The Story of an Atlantic Slave War (Harvard University Press, 2020)
-https://www.jstor.org/stable/j.ctv2d8qwr4
-
-Eric Williams: Capitalism and Slavery (1944)
-https://glc.yale.edu/sites/default/files/pdf/capatlism_and_slavery.pdf
-
-Essai de Patrick Rael: „The United States Was Late to End Slavery“
-https://www.historynewsnetwork.org/article/the-united-states-was-late-to-end-slavery 
-
-Global Estimates of Modern Slavery: Forced Labour and Forced Marriage (2022)
-Rapport conjoint de l'OIT, Walk Free et l'OIM.
-https://www.ilo.org/publications/major-publications/global-estimates-modern-slavery-forced-labour-and-forced-marriage 
-
-Walk Free: Global Slavery Index – Données par pays, secteurs, profils de risque :
-https://www.walkfree.org/global-slavery-index/ 
-
----
-
-Chapitrage :
-
-00:00 - Introduction
-03:04 - Naissance du commerce triangulaire
-06:27 - Mémoire africaine
-08:56 - Les femmes asservies
-10:45 - Résistance et rébellion
-13:42 - L'abolitionnisme
-16:57 - La libération pour des raisons économiques ?
-19:25 - Abraham Lincoln et la guerre civile
-22:47 - L'oppression malgré la libération
-
-
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">tQtTz9ZLS_c</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/tQtTz9ZLS_c.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Le commerce mondial est-il du vol ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 18/03/2027
-Le commerce mondial rime-t-il avec prospérité ou n’est-il qu'un système d’oppression et de dépendance? De la pensée mercantiliste aux stratégies protectionnistes des États émergents en passant par le libre-échange, cet épisode montre comment les structures de pouvoir historiques, les accords commerciaux inégaux et les zones spéciales dans les pays du Sud décident des gagnants et des perdants.&#13;
-#capitalisme #histoire #arte 
-
----
-Sources
-Recherche sur la pauvreté : le seuil de pauvreté global et la classe moyenne :
-Max Roser:  The short history of global living conditions and why it matters that we know it, veröffentlicht online at OurWorldinData.org (2016).
-https://ourworldindata.org/a-history-of-global-living-conditions#article 
-Sur le commerce de l'argent et les guerres de l'opium (en allemand) :
-Richard Hemmer, Daniel Meßner: Podcast - Geschichten aus der Geschichte 34: Tee, Silber und Rauschmittel
-https://www.geschichte.fm/podcast/zs34/ 
-Sur la United Fruit Company et les guerres de la banane :
-Mathilde Damoisel: La loi de la banane, Dokumentarfilm, (2017).
-Sur l'OMC et son blocage (en allemand) :
-Gabriel Felbermayr, Martin Braml: Der Freihandel hat fertig (2024).
-https://www.thalia.de/shop/home/artikeldetails/A1071595638 
-Sur le programme structurel néolibéral au Costa Rica :
-Luis Paulino Vargas Solís: El proyecto neoliberal en Costa Rica (1984–2024). Orígenes, implantación y evolución. Revista Espiga, 23(48), 1–30, (2024).
-https://www.researchgate.net/publication/383561031_El_proyecto_neoliberal_en_Costa_Rica_1984-2024_Origenes_implantacion_y_evolucion 
-Sur les accords de partenariat économique entre l'UE et l'Afrique :
-Austrian Foundation for Development Research: The economic and social effects of the Economic Partnership Agreements on selected African countries. ÖFSE Research Report (2017).
-https://www.oefse.at/fileadmin/content/Downloads/Publikationen/Studien/7_EPA_Study.pdf
-
-Chapitrage :
-00:00 - Introduction
-01:27 - Commerce mondial et prospérité
-02:47 - Théorie économique
-06:08 - Le commerce de l'argent et les guerres de l'opium
-12:14 - La politique douanière américaine au 19e siècle.
-14:05 - Guerres de la banane en Amérique centrale
-17:23 - La coopération commerciale après la Seconde Guerre mondiale
-18:32 - Le néolibéralisme
-
-
----
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">rQVahW2EjAg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/rQVahW2EjAg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que nous avons toujours fait grève ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 12/11/2026
+De l’Egypte ancienne à aujourd’hui, retour sur l’histoire du plus ancien outil de résistance collective : la grève. Né des injustices et des transformations du travail, renforcé par les développements technologiques et l’industrialisation, ce mode de protestation a façonné nos sociétés et conquis des droits essentiels, de la semaine de 40 heures à la protection sociale.&#13;
+#grève #histoire #arte 
 &#13;
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
@@ -307,54 +1160,9 @@ Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnH
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">4T0dPEx6bDY</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/4T0dPEx6bDY.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Le chien, de l'animal de travail au compagnon de vie | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 25/03/2027
-Le chien est considéré comme le meilleur ami de l'homme. Mais à quand remonte vraiment cette relation et comment est-elle née ? Cet épisode s'intéresse à comment l'homme et le chien vivent ensemble depuis plus de 15 000 ans, comment ils se sont influencés mutuellement et pourquoi le chien n'est devenu un animal domestique que tardivement. Une histoire de proximité, de pouvoir et de domestication réciproque.&#13;
-#chien #science #arte 
-
----
-Sources
-Ce que signifie la domestication, comment les animaux domestiqués et non domestiqués se distinguent :
-Kathryn A. Lord, Greger Larson, Robin G. Alibi, Elinor K. Karlsson: A Universally Applicable Definition for Domestication. In PNAS 2025 Vol 122 No 22. 
-Online verfügbar: https://www.pnas.org/doi/10.1073/pnas.2413207122 
-
-Différences et points communs entre le loup et le chien :
-
-Friederike Range und Sarah Marshall-Pescini: Comparing wolves and dogs: current status and implications for human ‘self-domestication’ 2022. https://doi.org/10.1016/j.tics.2022.01.003
-
-Sur la relation complexe entre l'homme et l'animal (en allemand) :
-
-Marcel Sebastian in “Streicheln oder Schlachten”, Kösel 2022
-
-Sur la symbolique du berger allemand sous le national-socialisme :
-
-Aaron Skabelund: Breeding Racism: The Imperial Battlefields of the “German” Shepherd Dog. 2008. 
-https://www.animalsandsociety.org/wp-content/uploads/2016/06/skabelund.pdf 
-
-Étude japonaise sur l'apparence similaire des chiens et de leurs propriétaires :
-
-Sadahiko Nakajima, Mariko Yamamoto &amp; Natsumi Yoshimoto (2009) Dogs Look Like Their Owners: Replications with Racially Homogenous Owner Portraits, In: Anthrozoös, 22:2, 173-181
-https://doi.org/10.2752/175303709X434194 
-
-Sur l'approche de "l'intelligence artificielle" en tant qu'espèce :
-
-Spyridon Stelios &amp; Georgios Sakellariou: Towards Artificial Wildlife: Speciesism and Intelligent Machines. De Ethica (2025) 8.4:43–56
-https://doi.org/10.3384/de-ethica.2001-8819.258443 
-
-chapitrage :
-
-00:00 Introduction
-02:00 Tout commence avec le loup
-04:46 La domestication précoce
-08:55 Les chiens dans l'art et la culture
-10:13 Animal domestique de la bourgeoisie
-11:47 Race et élevage
-13:55 Le chien devient une star de cinéma
-14:54 Aujourd'hui : plus proche que jamais
-16:06 Iran : Les chiens, un enjeu politique
-19:07 Pourquoi ne mangeons-nous pas de chiens ?
-20:14 La domestication, un processus réciproque
-22:43 Perspectives
----
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">AJjPqlU3NvI</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/AJjPqlU3NvI.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Femmes et hommes n'ont-ils jamais été égaux ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 05/11/2026
+Des femmes vikings à l'Islande et la grande grève des femmes en 1975, en passant par les premières colonies humaines, la société était peut-être plus égalitaire que nous le pensons. Certains pensent même qu'il existait autrefois un matriarcat. De fait, il existe des cultures dans lesquelles les femmes ont le pouvoir, comme chez les Moso en Chine. Alors, pourquoi le patriarcat s'est-il imposé ?&#13;
+#égalité #documentaire #arte 
 &#13;
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
@@ -362,655 +1170,89 @@ Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnH
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">qljrDxRMZjE</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/qljrDxRMZjE.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que l'humain a toujours cherché à planer ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 01/04/2027
-Le vertige de la drogue est-il un phénomène récent, né dans une société avide de plaisirs qui ne connaît plus de limites ? La découverte d'artefacts datant de plusieurs milliers d'années suscite des doutes. L'exaltation semble avoir été utilisée dans de nombreuses cultures pour des prises de conscience spirituelles et des rituels conviviaux. Alors pourquoi la plupart des drogues sont-elles interdites aujourd'hui ?&#13;
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">fio_au0v8dM</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/fio_au0v8dM.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que les pâtes viennent d'Italie ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 29/10/2026
+Les pâtes ! Elles ont conquis toutes les cuisines du monde. Mais sont-elles vraiment originaires d’Italie ? De la Chine ancienne à l’Italie du 19e siècle en passant par le Moyen-Âge et New York, partons à la recherche de la véritable origine des premières pâtes italiennes. En tous cas, une chose est sûre : à travers le monde et les époques, la nourriture demeure un sujet éminemment politique.&#13;
+#cuisine #histoire #arte 
 
 ---
 SOURCES
-Les premières “cultures de drogues” de l’humanité
-Mike Jay: High Society: Mind-Altering Drugs in History and Culture
-, 2012.
-https://www.abebooks.de/9780500289105/High-Society-Mind-Altering-Drugs-History-0500289107/plp?cm_sp=plped-_-1-_-image
+Intervenants et ouvrages : 
+Françoise Sabban 
+„A Scientific Controversy in China over the Origins of Noodles“ (2012) (https://cecmc.hypotheses.org/7663). 
+Silvano Serventi (2011):  „La pasta: Storia e cultura di un cibo universale.“
+Alberto Grandi
+Article de presse Les échos : « La gastronomie italienne n’est-elle qu’une supercherie » : https://www.lesechos.fr/weekend/gastronomie-vins/la-gastronomie-italienne-nest-elle-quune-supercherie-2125754
+Daniele Soffiati (2024) :  „La cucina italiana non esiste, Bugie e falsi miti sui prodotti e i piatti cosiddetti tipici“.
+Nunzio Russo (2019) :  „Il Romanzo della Pasta Italiana. Una storia lunga novecento anni.“ (https://nunziorusso.it/category/il-romanzo-della-pasta-italiana/).
 
-Les cultures prémodernes de la drogue en Europe
-Gunther Hirschfelder, Manuel Trummer: Bier - Die ersten 13.000 Jahre, 2022.
-https://www.herder.de/wissen/shop/p8/86524-bier-kartonierte-ausgabe
+Fabio Parasecoli (2022) :  „Gastronativism: Food, Identity, Politics“ (https://www.jstor.org/stable/10.7312/para20206).
 
-Révolution des cultures occidentales de la drogue à l'époque moderne
-Bundeszentrale für politische Bildung (bpb): Eine unendliche Geschichte. Von Menschen und Drogen. Essay, vom 27.11.20.
-https://www.bpb.de/shop/zeitschriften/apuz/rausch-und-drogen-2020/321814/eine-unendliche-geschichte
-Mike Jay: Psychonauts - Drugs and the Making of the Modern Mind, 2023.
-https://zabriskie.de/en/products/psychonauts
-Criminalisation des drogues aux 19e et 20e siècles
-Helena Barop: Der große Rausch - Warum Drogen kriminalisiert werden. Eine globale Geschichte vom 19. Jahrhundert bis heute, 2023.
-https://www.bpb.de/shop/buecher/schriftenreihe/569723/der-grosse-rausch
-New York Times (NYT): Secret Tapes Reveal Nixon’s Views on Marijuana, vom 08.10.24.
-https://www.youtube.com/watch?v=RAxzha2nbkA
-Les drogues du “marché blanc” et la crise des opioïdes
-David Herzberg: White Market Drugs: Big Pharma and the Hidden History of Addiction in America, 2020.
-https://press.uchicago.edu/ucp/books/book/chicago/W/bo58927880.html
-Helena Hansen, Jules Netherland und David Herzberg: Whiteout - How Racial Capitalism Changed the Color of Opioids in America, 2023.
-https://www.ucpress.edu/books/whiteout/hardcover
+La nourriture et l'identité italienne :
+Pellegrino Artusi (1891):  „La scienza in cucina e l‘arte die mangiare bene.“
+Die Zeit (2003):  „Wie Pellegrino Artusis Kochbuch 1891 zur heimlichen Gründungsakte der italienischen Nation wurde“ (https://www.zeit.de/2003/50/A-Kochbuch_N) (allemand)
+Massimo Montanari (2013):   „L‘identitá italiana in cucina.“
 
----
-
-Chapitrage
-00:00 Introduction
-01:23 Les drogues, les Romains et la Sibérie
-02:45 Les premières cultures chamaniques de la drogue en Amérique du Sud
-06:38 Pourquoi l'alcool est devenu la principale drogue en Europe
-10:27 Les nouvelles drogues révolutionnent la culture de l'ivresse en Europe
-14:46 Criminalisation des drogues
-19:50 Médicaments : drogues légales pour les Blancs
-22:50 Perspectives
-
-
-#spiritualité #histoire #arte 
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">UJd8CKMxF3o</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/UJd8CKMxF3o.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que Christophe Colomb a été le premier à traverser un océan ? | ARTE</title><description>Disponible jusqu'au 08/04/2027
-Aujourd'hui encore, Christophe Colomb est considéré comme la première personne à avoir traversé un océan. Pourtant, l'archéologie, la génétique et les mémoires autochtones racontent une autre histoire : les Polynésiens, les Vikings et même les premiers humains ont atteint des continents lointains bien avant lui. Pourquoi nous souvenons-nous de Christophe Colomb mais pas d'eux ?&#13;
-
----
-SOURCES
- Littérature complémentaire et liens :
-
-David Abulafia (2021): “The Boundless Sea: A Human History of the Oceans.” Allen Lane 2019)
-
-David Lewis’ Buch “We, the Navigators. The Ancient Art of Landfinding in the Pacific” considéré comme la pierre angulaire de l'étude moderne de la navigation polynésienne : https://en.wikipedia.org/wiki/We,_the_Navigators
-
-Le Film “THE NAVIGATORS – Pathfinders Of The Pacific” au sujet de Mao Piailug et des Hokulea : https://www.youtube.com/watch?v=uxgUjyqN7FU
-
-Le musée consacré au Kon-Tiki et Thor Heyerdahl :
-https://www.kon-tiki.no/en/home
-
-Description et histoire de L'Anse aux Meadows:
-https://parks.canada.ca/lhn-nhs/nl/meadows
-
-Angela Schottenhammer: “Die Zheng-He-Expeditionen im Lichte ihrer ideologischen Interpretationen – inklusive einiger Bemerkungen zur Rolle von Gewalt in Geschichte und Gegenwart”
-https://www.academia.edu/57356684/Die_Zheng_He_Expeditionen_im_Lichte_ihrer_ideologischen_Interpretationen_inklusive_einiger_Bemerkungen_zur_Rolle_von_Gewalt_in_Geschichte_und_Gegenwart
-
----
+Des plats et ingrédients spécifiques :
+Luca Cesari (2021):  „Storia della pasta in dieci piatti. Dai tortellini alla carbonara.“
+William Alexander (2022):  „Ten Tomatoes that changed the World: A History.“
 
 Chapitrage :
+00:00 – Introduction : les nouilles, patrimoine culturel de l'Italie
+01:38 – Les nouilles dans la Chine ancienne
+05:58 – La Sicile comme plaque tournante : les Arabes apportent les pâtes en Europe
+09:07 – Du plat de luxe au produit de masse : les pâtes en Italie et aux Etats-Unis
+13:28 – Aux États-Unis, la cuisine italienne est réinventée : sauce tomate, boulettes de viande &amp; Co.
+17:01 – Après-guerre et tourisme : comment les pâtes sont devenues un hit mondial
+20:33 – Politique, populisme et mondialisation : à qui "appartiennent" les pâtes ?
 
-00:00 - Introduction
-01:22 - La Polynésie
-03:34 - Kon-Tiki
-05:51 - Les connaissances anciennes
-08:56 - Terre-Neuve
-12:54 - La Chine
-18:36 - Christophe Colomb
-22:43 - Conclusion
-
-#navigation #histoire #arte 
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">3kIiw8r50Aw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/3kIiw8r50Aw.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que l'écart entre riches et pauvres est à son apogée ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 20/05/2027
-Les plus riches sont-ils aujourd'hui plus riches que jamais ? Cet épisode montre comment l'écart entre les riches et les pauvres s'est développé au fil des millénaires : des premiers États au commerce mondialisé et à la politique néolibérale, en passant par la traite des esclaves et l'industrialisation. Comment les riches sont-ils devenus de plus en plus riches ? Et peut-on inverser la tendance ?&#13;
-&#13;
-#inégalités #richesse #arte 
-
-SOURCES
-Thomas Piketty a marqué la recherche sur les inégalités de ces dernières décennies et son œuvre a largement contribué à lancer le débat sur la concentration croissante des richesses.
-- Piketty, T. (2013) : “Le Capital au XXI e siècle” https://de.wikipedia.org/wiki/Das_Kapital_im_21._Jahrhundert 
-- Piketty, T. (2021): “Une brève histoire de l'égalité” https://www.bpb.de/shop/buecher/schriftenreihe/520036/eine-kurze-geschichte-der-gleichheit/ 
-
-L'anthropologue David Graeber et l'archéologue David Wengrow tentent de réécrire l'histoire de l'inégalité. Ils s'attaquent aux mythes sur l'origine des inégalités sociales et économiques.
-- Graeber, D. &amp; Wengrow, D. (2021): “The Dawn of Everything” https://www.goodreads.com/de/book/show/56269264-the-dawn-of-everything
-
-Luke Kemp décrit comment les sociétés se forment et se désagrègent. Il établit un lien central entre la stabilité et l'inégalité au sein des sociétés. Walter Scheidel fait de même : l'inégalité ne se réduit sensiblement que lors de catastrophes.
-- Kemp, L. (2025): “Goliath’s Curse” https://www.penguin.co.uk/authors/282747/luke-kemp 
-- Scheidel, W. (2017): “The Great Leveler” https://www.jstor.org/stable/jj.22679822 
-
-La politologue Martyna Linartas décrit comment les paradigmes économiques façonnent les sociétés et comment les décisions politiques peuvent influencer l'évolution des inégalités économiques.
-- Linartas, M. (2025) Unverdiente Ungleichheit https://www.bpb.de/shop/buecher/schriftenreihe/573995/unverdiente-ungleichheit/ 
-
-
-Chapitrage :
-
-00:00 - Introduction : Les inégalités aujourd'hui : n'ont-elles jamais été aussi grandes ? 
-01:25 - Les premières sociétés : égalité ou premières hiérarchies ? 
-03:12 - Sédentarisation et inégalité 
-06:31 - Teotihuacán et les empires : comment l'inégalité varie ? 
-09:10 - Pouvoir, impôts et fortune héritée
-11:23 - Industrialisation, colonialisme et inégalités mondiales
-17:04 - Des crises au capital : pourquoi l'inégalité continue-t-elle de croître aujourd'hui ?
-
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">lQw95ETLcwc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/lQw95ETLcwc.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que nous avons toujours été accros au sucre ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 27/05/2027 
-Le sucre n'a pas toujours été omniprésent : ce n'est que depuis environ 2.500 ans que l'être humain le cristallise et l'expédie à travers le monde. D'un luxe rare, il est devenu un produit de masse mondial, étroitement lié à l'histoire du colonialisme et du capitalisme. Mais d'où vient notre goût pour le sucré et quelles en sont les conséquences aujourd'hui encore ?&#13;
-#sucre #santé #arte 
-
-SOURCES
-
-Ulbe Bosma a écrit une histoire détaillée du sucre dans son livre :
- “The World of Sugar. How the Sweet Stuff Transformed Our Politics, Health, and Environment over 2,000 Years” (2023)”  https://www.hup.harvard.edu/books/9780674279391
-Résumé ici : https://time.com/6329462/history-sugar/
-
-Allan Souza Queiroz se penche ici sur le livre d'Ulbe Bosma : https://www.cambridge.org/core/journals/international-review-of-social-history/article/who-moves-the-sugar-frontier-a-comment-on-the-world-of-sugar-how-the-sweet-stuff-transformed-our-politics-health-and-environment-over-2000-years-by-ulbe-bosma/040920B4056CA27A74D86953CE78FBD4
-
-Pour en savoir plus sur les formes modernes d'esclavage dans les Caraïbes, cliquez ici : https://www.antitraffickingreview.org/index.php/atrjournal/article/view/263/252 
-
-Pourquoi l'Organisation mondiale de la santé recommande-t-elle de réduire la consommation de sucre ? : https://www.who.int/news/item/04-03-2015-who-calls-on-countries-to-reduce-sugars-intake-among-adults-and-children
-
-
-Chapitrage :
-
-00:00 - Introduction 
-03:22 - Le sucre se cristallise 
-05:46 - Le cruel modèle des plantations 
-11:38 - La betterave sucrière d'Europe 
-13:33 - La servitude contractuelle plutôt que l'esclavage 
-17:39 - L'épidémie de sucre
-21:06 - Perspectives
-
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">vKPj4x8pW4A</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/vKPj4x8pW4A.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate></item><item><title>Les ultra-riches rendent-ils le monde meilleur ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 03/06/2027
-Faire du monde un endroit meilleur avec des milliards : la philanthropie est considérée comme une grande histoire à succès. Cet épisode s'intéresse au pouvoir de création des donateurs super riches et à comment ils peuvent intervenir en profondeur dans les structures sociales. Entre progrès et influence : qu'est-ce que cela a signifié pour les sociétés ? Et pour la démocratie ?&#13;
-#capitalisme  #finance #arte 
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">w1RT9_qqXV8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/w1RT9_qqXV8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate></item><item><title>Les messages cryptés ont-ils modifié l’histoire ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 17/06/2027
-Du cryptogramme de César à la machine Enigma, des intrigues de la Renaissance à nos paiements en ligne, l'art d'encoder et de décrypter les informations a évolué au fil des siècles. Guerres, conspirations, révolutions : la science secrète de la cryptologie a marqué l'histoire bien plus qu'on pourrait l'imaginer.&#13;
-#cryptologie #histoire #arte 
-
-Sources principales :
-« The Codebreakers » de David Kahn :
-https://simonsingh.net/books/the-code-book/
-« The Code Book » de Simon Singh :
-https://www.abebooks.co.uk/book-search/title/the-codebreakers/author/david-kahn/
-Concernant l'impact du décryptage d'ENIGMA sur le déroulement de la Seconde Guerre mondiale : https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=1283&amp;context=younghistorians
-Sur les sources relatives au code César :
-https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Gellius/17*.html
-Sur le chiffrement par substitution :
-https://www.arcsi.fr/doc/How-Mathematics-Spread-and-Transformed-Cryptographic-Activities-MJDR-PG.pdf
-À propos de la cryptologie abbasside :
-https://www.tandfonline.com/doi/full/10.1080/23311983.2023.2196842#abstract
-À propos de Marie Stuart et de sa correspondance secrète :
-https://www.imdb.com/title/tt38525423/
-
-Chapitrage :
-0:00:00 — Signes secrets : les débuts de la cryptographie
-0:01:12 — De Sparte à Rome : les premiers codes et leur pouvoir
-0:04:14 — Bagdad et Al-Kindi : la naissance de la cryptanalyse
-0:07:46 — La guerre des codes en Europe : rois, espions et trahison
-0:11:53 — Enigma et la Seconde Guerre mondiale : la bataille du décryptage 0:18:17 — Des clés numériques aux ordinateurs quantiques : l'avenir de la cryptographie
-
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">FvVvYVyTpl8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/FvVvYVyTpl8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que l'eau ne devient potable qu’à l'époque moderne ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 17/07/2027
-L'eau potable est considérée comme un progrès de la modernité. Mais les êtres humains auraient-ils pu survivre si, autrefois, l’eau avait été systématiquement impropre à la consommation ? De l’Antiquité à nos jours, il apparaît que ce n’est pas seulement la technologie qui est déterminante, mais aussi la manière dont les sociétés organisent l’eau et pour qui. L’eau n’est pas qu'une question de nature, mais c'est aussi une question de pouvoir et d’inégalité.&#13;
-#eau #histoire #arte 
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">1D1XcgnxqQA</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/1D1XcgnxqQA.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu’autrefois nous parlions tous la même langue ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 26/11/2026
-L'invention la plus importante de l'histoire de l'humanité n'est pas la machine à vapeur ou l'agriculture, et encore moins le smartphone. L'invention la plus importante est celle qui a rendu tout cela possible : le langage. Mais d'où vient-il, comment fait-il de nous ce que nous sommes et pourquoi parlons-nous aujourd'hui autant de langues, ou en parlons-nous trop peu ?&#13;
-#linguistique #histoire #arte 
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">cuHl3T36EX8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/cuHl3T36EX8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate></item><item><title>Les gens du Moyen Âge étaient-ils tous des platistes ? | Est-il vrai qu...? | ARTE</title><description>Disponible jusqu'au 09/10/2030
-L'idée d'une Terre plate aurait perduré au Moyen-Âge, jusqu'à ce que Christophe Colomb découvre l'Amérique lors de son voyage vers les Indes. Mais qu'est-ce que cela prouvait exactement ? Et pourquoi y a-t-il encore aujourd'hui des gens qui croient en une Terre plate ? Indépendamment de ce que nous pensons savoir, il n'est jamais facile de se défaire de ses convictions ...&#13;
-#astronomie #histoire #arte 
-&#13;
 ---
-SOURCES
+&#13;
+&#13;
+Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
-Christine Garwood (2008) : « Flat Earth – The History of an Infamous Idea »  (https://www.goodreads.com/book/show/2443546.Flat_Earth).
-Circonférence de la Terre :
-L'expérience d'Eratosthène est désormais reproduite et recalculée chaque année par les écoliers du monde entier. (https://eratosthenes.ea.gr/). 
-Explication de l'expérience : Ératosthène — Wikipédia
-Christophe Colomb :
-Jeffrey Burton Russell (1991) : « Inventing the Flat Earth. Columbus and Modern Historians »  
-(https://www.goodreads.com/book/show/1907.Inventing_the_Flat_Earth?ref=nav_sb_ss_1_31).
-Washington Irving (1828) : « A History of the Life and Voyages of Christopher Columbus ».
-Galilée :
-Christopher M. Graney (2008) : « But Still, It Moves: Tides, Stellar Parallax, and Galileo’s Commitment to the Copernican Theory ».
-Galilée : « Dialog über die zwei hauptsächlichen Weltsysteme ». Édité par Jürgen Renn et Matthias Schemmel, Berlin 2001.
-Débat à Oxford sur la critique de l'Église catholique à l'égard de la théorie de l'évolution – J. R. Lucas, (1979) : « Wilberforce and Huxley: A Legendary Encounter ». The Historical Journal, 22(2), p. 313–330.
-Explication de la parallaxe : Parallaxe — Wikipédia
-Lee McIntyre (2021) : « How to Talk to a Science Denier: Conversations with Flat Earthers, Climate Deniers, and Others Who Defy Reason ».
-Thomas Bayes (1763) : « An Essay towards solving a Problem in the Doctrine of Chances ». Philosophical Transactions of the Royal Society of London.
----
+Suivez-nous sur les réseaux !
+Facebook : http://www.facebook.com/artetv
+Twitter : http://www.twitter.com/artefr
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">D4Yx8Tiej-8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/D4Yx8Tiej-8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate></item><item><title>La propriété collective mène toujours à l’échec ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 22/10/2026&#13;
+"Ce qui appartient à tout le monde est voué à l'échec" disait Garrett Hardin en 1968 dans la Tragédie des biens communs. Depuis, cette idée marque l'image de ressources gérées collectivement et surexploitées par l’Homme. Et pour cause : personne n'en assume la responsabilité. Mais que dit l'histoire ? La propriété collective n'est-elle pas finalement la cible d'un mythe construit par ses détracteurs ?&#13;
+#arte #propriété #question 
+
+Les biens communs en Angleterre au début de l'ère moderne :
+Common Rights in Land in England, 1475-1839 Gregory Clark and Anthony Clark January, 2001 https://faculty.econ.ucdavis.edu/faculty/gclark/papers/commons.pdf
+
+Les « enclosures » entre le 13e et le 18e siècle :
+J. R. Wordie, The Chronology of English Enclosure. https://2024.sci-hub.st/6491/80a7012a274f736768c44722378ea6ee/wordie1983.pdf
+
+La prétendue « Tragédie des biens communs » et la critique de celle-ci :
+Garrett Hardin, The Tragedy of the Commons https://www.garretthardinsociety.org/articles_pdf/tragedy_of_the_commons.pdf
+Elinor Ostrom, Governing the Commons (1990)
+http://digamoo.free.fr/ostrom1990.pdf
+
+Les systèmes collectifs dans la société maya avant la colonisation :
+Étude de l'université d'Alabama (2019) https://anthropology.ua.edu/wp-content/uploads/2019/04/LeCount-et-al.-2019-land_tenure.pdf
+Organisation sociale des Quiché, documentée par Diego Vásquez Monterroso (espagnol) https://plazapublica.com.gt/guatemala-desigual/informacion/consensuar-antes-que-imponer-asi-se-organizan-los-kiche-occidentales
+
+Les biens communs (Commons) en Italie :
+Manifeste des biens communs (2016)
+https://www.prodocs.org/wp-content/uploads/2016/12/1.7-Un-MANIFESTO-per-i-beni-comuni_Mattei.pdf
+What are Common Goods (Beni Comuni)? Pictures from the Italian Debate, UFMG Law Review
+https://www.direito.ufmg.br/revista/index.php/revista/article/view/1828/1731
  
 Chapitrage :
 00:00 – Introduction
-01:34 – Les premières preuves de la forme sphérique de la Terre
-05:55 – Comment le mythe de la Terre plate est-il inventé ?
-08:43 – Galilée et le globe terrestre
-14:58 – Parallaxe : les fanatiques de la Terre plate au XIXe siècle
-17:39 – Les théories contemporaines de la Terre plate et leur relation avec la science
-22:48 – Conclusion
-
+00:59 – La propriété collective en Union soviétique
+01:38 – Les biens communs au Moyen Âge
+03:28 – Les enclosures : les clôtures autour de la propriété
+05:48 – La tragédie des biens communs
+07:36 – Les biens communs dans les Alpes suisses
+11:42 – Des peuples sans notion de propriété
+17:17 – La lutte politique pour les biens communs
+17:52 – La destruction de l'identité : les écoles résidentielles au Canada
+23:00 – Perspectives
 &#13;
 Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
 
 Suivez-nous sur les réseaux !
 Facebook : http://www.facebook.com/artetv
 Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">s2ogHDYKOJc</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/s2ogHDYKOJc.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Avons-nous toujours pratiqué la chirurgie ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 10/09/2026
-La césarienne, une intervention devenue courante mais autrefois presque toujours une condamnation à mort pour la mère. Jusqu'au 19e siècle, cette opération était considérée comme le dernier recours lorsque la vie de la mère ne pouvait de toute façon plus être sauvée. Il est peu probable que Jules César soit venu au monde de cette manière, et pourtant, le mythe perdure encore aujourd'hui.&#13;
-#médecine #histoire #arte 
-
----
-SOURCES
-
-Généralités :
-Volker Lehmann (2006) : „Der Kayserliche Schnitt: Die Geschichte einer Operation“
-Volker Lehmann (2006) : “Der Kayserliche Schnitt: Die Geschichte einer Operation”
-Colin Salter (2023) : „The anatomist’s library“
-Fernand Leroy (2002) : „Histoire de naître“
-Arnold van de Laar (2024): „Sous le scalpel - Une histoire de la chirurgie en 29 opérations remarquables”
-Marguerite Zimmer (2008) : “Histoire de l'anesthésie - Méthodes et techniques au XIXe siècle”
-Ludwig Braun (1997): „Illustrierte Geschichte der Anästhesie“
-
-En détail :
-Anatomie, antisepsie et anesthésie
-- Lewis Dartnell (2014): „The Knowledge: How to Rebuild Our World from Scratch“
--H. von Staden (1992): „The Discovery of the Body“ (https://pubmed.ncbi.nlm.nih.gov/1285450/)
-Position de l'Église sur la dissection du corps humain :
-
-Vesalius als Begründer der modernen Anatomie – Sanjib Kumar Ghosh, Ashutosh Kumar (2019): „The Rich Heritage of Anatomical Texts During Renaissance and Thereafter“ (https://pmc.ncbi.nlm.nih.gov/articles/PMC6952681)
-
-Jakob Nufer und der Kaiserschnitt: „ Cesarean Section – A Brief History“ (https://www.nlm.nih.gov/exhibition/cesarean/part1.html)
-
-Théorie des germes et hygiène selon Semmelweis et Pasteur :
-
-- Irvine Loudon (2013): „Ignaz Phillip Semmelweis' studies of death in childbirth“ (https://pmc.ncbi.nlm.nih.gov/articles/PMC3807776)
-- N.N.: „Germ Theory“ (https://healthandthepeople.ncl.ac.uk/germ-theory/)
-
-La césarienne en Ouganda
-– Peter M. Dunn (1999): „Robert Felkin and Caesarean delivery in Central Africa“ (https://www.researchgate.net/publication/13086451_Robert_Felkin_MD_1853-1926_and_Caesarean_delivery_in_Central_Africa_1879)
-
----
-
-Chapitrage :
-00:00 – Introduction
-01:06 – Césarienne, mortalité et les trois „A“
-03:23 – Anatomie : histoire de la science du corps et de la chirurgie
-11:20 – Antisepsie : découverte des germes
-14:30 – Histoire de l’anesthésie
-18:54 – Des méthodes chirurgicales avancées en Ouganda
-22:44 – Conclusion
-
-&#13;&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">E01Xfi8gLLg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/E01Xfi8gLLg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Les canons de beauté restent-ils éternels ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 03/09/2026
-La beauté a marqué nos pensées et nos sentiments de l'Antiquité à nos jours. Qui trouvons-nous beau ? Et pourquoi ? Bien que de nombreuses cultures partagent une vision similaire des critères de beauté, on constate tout de même une immense diversité. Mais un modèle persiste : la beauté et le pouvoir sont intimement liés.&#13;
-#beauté #documentaire #arte 
-
----
-SOURCES
-Spécialistes dans cet épisode :
-
-David Perrett (2010): „In Your Face: The new science of human attraction“
-Eleanor Janega (2023): „Die ideale Frau. Wie uns mittelalterliche Vorstellungen von Weiblichkeit noch heute prägen“
-Johannes Krause, Joel Binckli, Ulrich Rosar (Hg.) (2022): „Soziale Wirkung physischer Attraktivität. Eine Einführung“
-Afua Hirsch (2023): „Decolonising my Body. A Radical Exploration of Rituals and Beauty“
-
-Art et science :
-
-Joachim Schummer (2006): „Symmetrie und Schönheit in Kunst und Wissenschaft“
-Anjan Chatterjee (2016): „How Your Brain Decides What Is Beautiful“ (https://www.ted.com/talks/anjan_chatterjee_how_your_brain_decides_what_is_beautiful?language=en)
-Nancy Etcoff (2000): „Survival of the Prettiest: The Science of Beauty“
-
-Le pouvoir au féminin :
-
-Gabriele Lebek (2012): „Schönheit, Macht und Religion: Nofretete als weibliches Gegenstück des Pharaos“ (https://www.jstor.org/stable/44476184)
-Tracy Adams (2024): „The Myth of the Coquettish Anne Boleyn“ (https://www.tandfonline.com/doi/full/10.1080/14629712.2024.2419326?scroll=top&amp;needAccess=true)
-
-Colonialisme et idéaux de beauté :
-
-H. Gene Blocker (2001): „Non-Western Aesthetics as a Colonial Invention“ (https://www.jstor.org/stable/3333782)
-Huberta Jackson-Lowman (2014): „An Analysis of the Impact of Eurocentric Concepts of Beauty on the Lives of Afrikan American Women“ (https://www.researchgate.net/publication/277709452_An_Analysis_of_the_Impact_of_Eurocentric_Concepts_of_Beauty_on_the_Lives_of_Afrikan_American_Women)
-Integrated African Health Observatory &amp; WHO (2021): „Skin Bleaching in Africa … a public health problem“ (https://www.studocu.com/row/document/university-of-zambia/public-administration/skin-bleaching-in-africa-regional-fact-sheet-nov23/97770208)
-
- 
-Chapitrage :
-
-00:00 – Introduction
-02:29 – Attirance : biologie ou culture ?
-08:33 – Le pouvoir de la beauté
-16:24 – Les idéaux de beauté comme instrument de pouvoir et de libération postcoloniale
-22:33 – Perspectives
----
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">isXOS9txpmg</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/isXOS9txpmg.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate></item><item><title>Hitler a-t-il inventé l'autoroute ? | Est-il vrai que...? | ARTE</title><description>Documentaire historique disponible jusqu'au 31/05/2030
-Spoiler : Hitler n'a pas inventé l'autoroute, c'est un mythe de la propagande nazie ! Un regard sur l'histoire montre que la propagande se nourrit de la vérité mais aussi d'omissions habiles. Des rois de l'Antiquité à la publicité moderne en passant par les affiches de la Seconde Guerre mondiale : comment fonctionne la propagande et la reconnaissons-nous mieux aujourd'hui qu'hier ?&#13;
-
----
-
-SOURCES
-La propagande nazie a prétendu qu’Hitler avait inventé l’autoroute et que celle-ci avait permis de vaincre le chômage de masse. Ces deux affirmations sont fausses. Mais ce qui est vrai est que, au total, 3855 km d’autoroute ont été construits.
-Voir à ce sujet : Conrad Kunze (2022) : « Deutschland als Autobahn. Eine Kulturgeschichte von Männlichkeit, Moderne und Nationalismus ». PDF : https://www.transcript-verlag.de/978-3-8376-5943-6/deutschland-als-autobahn/?number=978-3-8394-5943-0
-Voir aussi : Wolfgang Wippermann (2008) : « Autobahn zum Mutterkreuz. Historikerstreit der schweigenden Mehrheit. »
- 
-Edward Bernays (1928) : « Propaganda » (Propagande (livre) — Wikipédia).
- 
-Sur les campagnes d’Edward Bernays : https://www.geo.de/wissen/weltgeschichte/edward-bernays-und-seine-verblueffenden-pr-tricks-34354568.html)
-Une efficacité controversée : https://monde-diplomatique.de/artikel/!5746263).
- 
-La bataille de la Somme : https://www.nam.ac.uk/explore/battle-somme.
- 
-Les camps de concentration britanniques pendant la guerre des Boers et leur différence avec les camps allemands :
-https://www.welt.de/geschichte/article156204714/Was-britische-KZs-von-deutschen-unterschied.html
- 
-Le contexte de la propagande de la guerre en Irak : https://www.newyorker.com/news/daily-comment/colin-powells-fateful-moment, https://www.spiegel.de/politik/ausland/uno-sicherheitsrat-powell-bedauert-irak-rede-a-373779.html
- 
-Le « modèle de propagande » selon Noah Chomsky :
-Noam Chomsky/Edward S. Herman (1988) : « Manufacturing Constent »
- 
-À propos de la phrase de Steve Bannon « Flood the Zone with shit » :
-https://www.vox.com/policy-and-politics/2020/1/16/20991816/impeachment-trial-trump-bannon-misinformation
-
----
- 
-Chapitrage :
-00:00 – Introduction : le mythe de l’autoroute, un succès de propagande
-03:06 – Le fonctionnement de la propagande
-10:03 – La propagande et la guerre
-17:18 – Mensonges de guerre : guerres d’Irak
-19:09 – Le rôle de la presse
-23:28 – Perspectives
-
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">q-dcuv2LK-k</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/q-dcuv2LK-k.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que les Bavarois ne portent que des tenues folkloriques ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 15/04/2027
-Les traditions semblent très anciennes, mais beaucoup sont inventées, dictées par la politique ou façonnées par le tourisme moderne. De la Bavière à la Géorgie en passant par la France, certaines traditions créent une identité, assurent le pouvoir ou génèrent une communauté. Mais, si les traditions sont inventées, pourquoi ne pas en imaginer de nouvelles nous-mêmes ?&#13;
-#tradition #histoire #arte 
-
-Correction:
-22:45 Ici, une carte du monde est visible, sur laquelle l’Ukraine est colorée. Cependant, la Crimée y manque à tort. La Crimée – tout comme le Donbass – appartient au regard du droit international à l’Ukraine et aurait dû être indiquée en conséquence.
-
-SOURCES
-
-Littérature complémentaire et liens : 
-
-L'émergence des nations : Anne-Marie (2001)Thiesse: La création des identités nationales : Europe XVIIIe-XXe siècle. 
-
-Anderson, Benedict (1996): Zur Erfindung der Nation.
-
-Histoire du costume traditionnel : Elsbeth Wallnöfer (2024): How to wear a Dirndl. (K)eine Gebrauchsanleitung. 
-
-L'actualité politique et le costume traditionnel: Elsbeth Wallnöfer (2021): Tracht. Macht. Politik.
-
-La théorie des traditions inventées : Erick Hobsbawm und Terence Ranger (1983). The Invention of Tradition
-
-L’invention de traditions à Majorque :
-Antoni Vives Riera (2020): Festive traditions and tourism in Mallorca: Ludic transgressions and the disruption of otherness https://journals.sagepub.com/doi/abs/10.1177/1468797619873058
-
-L’invention de la Mucada :
-Riera, Antoni Vives (2020): Festive traditions and tourism in Mallorca: Ludic transgressions and the disruption of otherness (https://journals.sagepub.com/doi/abs/10.1177/1468797619873058)
-
-Nils Marvin Schulz (2013): Die georgische Supra als Tradition im Kontext des Nationalismus. https://www.thalia.de/shop/home/artikeldetails/A1030743549
-
-Carolyn Hamilton (1998): Terrific Majesty: The Powers of Shaka Zulu in the Making of a Modern Nation
-
-Danse hula :
-Noenoe K. Silva,(2004): Aloha Betrayed: Native Hawaiian Resistance to American Colonialism https://www.dukeupress.edu/aloha-betrayed 
-Sasha D. Pack 2007: Tourism and Political Change in Francos Spain
-https://www.researchgate.net/publication/304729465_Tourism_and_Political_Change_in_Franco's_Spain
-
-Chapitrage :
-00:00 : Introduction 
-01:18 : Les origines de l'Oktoberfest et de la Bavière 
-04:23 : Traditions et tourisme 
-07:10 : Fête de la ville La Mucada à Sineu 
-10:03 : Les traditions et l'émergence des nations 
-14:03 : Les traditions comme idéologie 
-17:28 : La Géorgie et la quête d' identité
-20:33 : Les traditions comme arme
-
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">djbXt-VGVk8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/djbXt-VGVk8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu'autrefois il y avait beaucoup moins de paperasse ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 04/03/2027 
-Des montagnes de documents, des règles tatillonnes, un langage difficile à comprendre - la bureaucratie agace. Pourtant, l’histoire montre que partout où naissent des civilisations humaines, une forme de bureaucratie se développe. Cet épisode s’intéresse aux origines de la bureaucratie et à la manière dont elle influence la réalité des gens depuis des millénaires. Est-il vraiment utile de la combattre ?&#13;
-#bureaucratie #histoire #arte 
-
-Photo de la miniature par Mariann Szőke sur Pixabay
-
----
-SOURCES
-L'administration des Incas a fonctionné complètement sans écriture jusqu'à sa fin au 16e siècle :
-https://www.cambridge.org/core/books/abs/empires-and-bureaucracy-in-world-history/bureaucracy-without-alphabetic-writing-governing-the-inca-empire-c14381532/3DAA011E54C0D3588014EE784B6516FD
-
-Texte de loi "Miroir des femmes" (entre 1340 et 1000 av. J.-C.) :
-https://recherche.smb.museum/detail/1742990/mittelassyrische-gesetzestafel
-
-Avant l'unification, la Chine était un enchevêtrement d'empires individuels. Qin Shi Huang Di a conquis tous les empires et s'est proclamé premier empereur de Chine :
-https://www.thehistoryreader.com/world-history/the-first-emperor-and-the-unification-of-china
-
-Pendant des siècles, les "analectes" de Confucius ont fait partie de l'examen des fonctionnaires en Chine :
-https://www.gutenberg.org/ebooks/3330
-
-Bhavani Raman a présenté les résultats de ses recherches sur la bureaucratie comme instrument de répression en Inde sous la domination britannique dans son livre "Document Raj" :
-https://press.uchicago.edu/ucp/books/book/chicago/D/bo13657793.html
-
-Dès son premier ouvrage sur le sujet, "In Praise of bureaucracy", paru en 2000, Paul Du Gay a soutenu que nous avons bien plus besoin de bureaucraties que nous ne le pensons souvent :
-https://api.pageplace.de/preview/DT0400.9781446264447_A24015768/preview-9781446264447_A24015768.pdf
-
----
-
-Chapitrage :
-00:00 - Introduction
-01:21 - Les tablettes d'argile mésopotamiennes
-05:40 - L'ordre chinois
-11:00 – Un instrument de domination britannique
-16:26 – Les “tronçonneuses” modernes
-19:56 - Conclusion
-
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">Id6LJrfoqHU</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/Id6LJrfoqHU.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai qu’il y avait moins de violence dans le passé ? | ARTE</title><description>Disponible jusqu'au 25/02/2027 
-Guerres, attentats terroristes, tueries : notre monde semble aujourd'hui plus violent que jamais. Mais que nous dit la science de l’évolution de la violence au cours de l’histoire? Des conflits préhistoriques aux guerres mondiales, la violence ne suit pas une tendance linéaire. Mais il se peut qu'elle en dise long sur la société dans laquelle elle prend naissance.&#13;
-
----
-SOURCES
-Wolfgang Knöbl: “Gewalt und andere Widrigkeiten. Vom Tanz mit einem schwierigen Begriff.” In: Die Gegenwart der Gewalt und die Macht der Aufklärung (2023)
-
-Steven Pinker: The Better Angels Of our Nature (2011)
-https://stevenpinker.com/publications/better-angels-our-nature
-
-Siniša Malešević: ”Forms of Brutality: Towards a Historical Sociology of Violence” 
-European Journal of Social Theory 2013
-
-Siniša Malešević: “Why Humans Fight. The Social Dynamics of Close-Range Violence” (2022)
-https://www.researchgate.net/profile/Sinisa-Malesevic-2/publication/363982313_Why_Humans_Fight_The_Social_Dynamics_of_Close-Range_Violence/links/633fcf7e9cb4fe44f30c1b00/Why-Humans-Fight-The-Social-Dynamics-of-Close-Range-Violence.pdf
-
-Linda Fibiger (&amp; Meaghan Dyer): “Understanding blunt force trauma and violence in Neolithic Europe: the first experiments using a skin-skull-brain model and the Thames Beater” 
-Antiquity Publications Ltd, 2017
-https://www.cambridge.org/core/journals/antiquity/article/understanding-blunt-force-trauma-and-violence-in-neolithic-europe-the-first-experiments-using-a-skinskullbrain-model-and-the-thames-beater/021170E064757BBF7BF3E1870044A60B
-
-Linda Fibiger (&amp; MacKenzie Downing): “An experimental investigation of sharp force skeletal trauma with replica Bronze Age weapons
-Journal of Archaeological Science: Report 2017
-https://www.researchgate.net/publication/312456873_An_experimental_investigation_of_sharp_force_skeletal_trauma_with_replica_Bronze_Age_weapons
-https://www.pure.ed.ac.uk/ws/files/30053647/Downing_and_Fibiger_Pure.pdf
-
-Linda Fibiger and Rebecca C. Redfern: “Trauma and Past Lives” 2024
-https://www.research.ed.ac.uk/en/publications/trauma-and-past-lives/
-
----
-
-Chapitrage :
-
-00:00 - Introduction
-01:09 - Qu'est-ce que la violence ?
-03:11 - Est-ce que ça s'améliore ?
-09:09 - Est-ce que ça se complique ?
-16:10 - Que pouvons-nous savoir ?
-19:35 - La violence aujourd'hui
-20:45 - Conclusion
-
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">eCGmbzc2kT0</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/eCGmbzc2kT0.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que seule la soie transitait par la route de la soie ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 18/02/2027
-La légendaire Route de la soie a relié la Chine à l'Europe pendant plus de 1500 ans. Sacs à main italiens, montres suisses, voitures allemandes... Le monde aime le luxe. Mais pendant longtemps, les symboles de statut social les plus précieux ne venaient pas d'Europe, mais d’Asie. Sans les échanges culturels et matériels permis par la Route de la soie, l'essor européen tel que nous le connaissons n'aurait peut-être pas été possible.&#13;
-#histoire #commerce #arte 
-
----
-SOURCES
-Ouvrages de base sur la Route de la Soie (en allemand et en anglais)
-
-Peter Frankopan: Licht aus dem Osten. Eine neue Geschichte der Welt, Berlin 2015
-
-Peter Frankopan: The Silk Roads. A New History of the World, in: Keynote im Einstein Forum 2017 (VIDEO): https://www.youtube.com/watch?v=hAZZoMWx9nw
-
-Varie Hansen: The Silk Road. A News History, Oxford 2012.
-
-L'isolement de l'Europe occidentale au Moyen Âge
-Mona Naggar: Venturing into the Darkness of Europe, in: Qantara.de 2005.
-https://qantara.de/en/article/barbarians-north-venturing-darkness-europe?utm
-
-Rudi Matthee: Europe - Persian Image of, in: Encyclopaedia Iranica, 2013.
-https://www.iranicaonline.org/articles/europe-persian-image-of/
-
-Développements de l'histoire militaire en Europe
-Bert S. Hall: Weapons and Warfare in Renaissance Europe: Gunpowder, Technology, and Tactics, Baltimore 1997.
-
-L'histoire expliquée simplement (ouvrages en allemand et en anglais) :
- Der Krieg und die Armeen im Mittelalter - Teil 2, in: Barbarusbooks 2025.
-https://www.barbarusbooks.de/2025/03/31/der-krieg-und-die-armeen-im-mittelalter-teil-2/
-
-Kenneth Chase: Firearms: A Global History to 1700, Cambridge 2003.
-L'origine du zéro et ses conséquences
-Ulrich von Schwerin: Wie die Null nach Europa kam: In der Antike strahlte Indiens Kultur weit über das Land hinaus, in: NZZ 2025.
-https://www.nzz.ch/feuilleton/der-historiker-dalrymple-ueber-indiens-kulturellen-einfluss-in-der-antike-ld.1861653
-
----
-
-Chapitrage :
-00:00 - La Route de la Soie : une ancienne autoroute du luxe ?
-01:05 - D'où vient le nom de la Route de la Soie ?
-03:32 - Le luxe fait tourner le commerce
-04:25 - Rien ne va plus en province. L'Europe occidentale est économiquement en marge.
-08:01 - Xi'an - la capitale secrète du monde
-09:47 - Quelles étaient les principales marchandises de la Route de la Soie ?
-13:09 - La poudre noire - le “changement” historique
-16:08 - Quel est le rapport entre la Route de la Soie et le zéro ?
-19:00 - L'essor tardif de l'Europe
-22:11 - L'héritage actuel de la Route de la Soie
-
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">ADDiV49a-bo</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/ADDiV49a-bo.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate></item><item><title>Est-il vrai que la chasse aux sorcières commence dès le Moyen Âge ? | Est-il vrai que...? | ARTE</title><description>Disponible jusqu'au 21/01/2027
-Des dizaines de milliers de femmes, surtout, ont été accusées de sorcellerie et exécutées en Europe. Pourquoi ? Retour aux origines de la chasse aux sorcières à travers la démonologie chrétienne, qui a créé une image féminine de la sorcellerie et le système judiciaire des débuts de l’ère moderne, en passant par des épisodes climatiques. Le constat : la peur et la croyance ont nourri une persécution de masse dont les traces persistent encore aujourd’hui.&#13;
-#sorcière #histoire #arte 
-
----
-SOURCES
-Une introduction au sujet de la chasse aux sorcières :
-Behringer, Wolfgang: Hexen. Glaube, Verfolgung, Vermarktung, 2009.
-Gibson, Marion: Witchcraft: A History in Thirteen Trials
-02:00
-https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276872
-03:20 und 04:10
-Kelkar, Govind: „Witch Hunting as Women Hunting in Early Modern Europe“, in: Waddell, Marc A.: Magic, Science, and Religion in Early Modern Europe, 2020
-07:30
-Opitz-Belakhal, Claudia: Böse Weiber. Wissen und Geschlecht in der frühneuzeitlichen Dämonologie, 2017
-10:10
-Kallestrup, Louise Nyholm: Agents of Witchcraft in Early Modern Italy and Denmark,  2016
-14:09
-Behringer Wolfgang: „Weather, Hunger and Fear: Origins of the European Witch-Hunts in Climate, Society and Mentality“, 1995
-17:50
-Cohen, Stanley: Folk Devils and Moral Panics, 1972
-20:36
-Federici, Silvia: Caliban et la sorcière : Femmes, corps et accumulation primitive, 2014
-
----
-
-Chapitrage :
-
-00:00 - Introduction
-01:00 - La réalité magique de l'époque pré-moderne
-03:54 - Les femmes dans le collimateur de la persécution
-05:00 - Le maître à penser des chasses aux sorcières
-06:54 - Démonologie et misogynie
-09:03 - L'État moderne et la sorcière archaïque
-12:41 - L'imprimerie alimente les premières fakenews
-13:36 - Le climat, cause de la chasse aux sorcières
-15:30 - Les procès de Salem comme panique morale
-20:16 - La chasse aux sorcières comme féminicide
-
-&#13;
-&#13;
-Abonnez-vous à la chaîne ARTE https://www.youtube.com/channel/UCwI-JbGNsojunnHbFAc0M4Q/?sub_confirmation=1
-
-Suivez-nous sur les réseaux !
-Facebook : http://www.facebook.com/artetv
-Twitter : http://www.twitter.com/artefr
-Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">UYm91G3i_tw</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/UYm91G3i_tw.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate></item></channel></rss>
+Instagram : https://www.instagram.com/artefr</description><guid isPermaLink="false">MdfvIHWuvX8</guid><enclosure url="https://github.com/Sorcier88/special-bassoon/releases/download/storage-2026-08/MdfvIHWuvX8.mp3" length="0" type="audio/mpeg"/><pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate></item></channel></rss>
