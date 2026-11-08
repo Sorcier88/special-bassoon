@@ -193,5 +193,13 @@
         "podcast_author": "SUPERFLAME",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/le_calendrier_d'avant_la_fin_des temps.png",
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    },
+    {
+    "filename": "pic_au_vent_ne_répond_plus.xml",
+        "url": "https://youtube.com/playlist?list=PLAuSIrNQ0B2-95RrL_gflOIJuqiSb6uAE", 
+        "podcast_name": "Pic au Vent ne répond plus",
+        "podcast_author": "SUPERFLAME",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/pic_au_vent_ne_répond_plus.png",
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
