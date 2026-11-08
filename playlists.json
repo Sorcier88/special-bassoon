@@ -73,7 +73,7 @@
     {
 "filename": "argent_magique.xml",
         "url": "https://youtube.com/playlist?list=PLzzeaLH6aE_FdaD6A5ctQnyuVd31O5i8A", 
-        "comment": "Saison 2 d'Argent magique"
+        "comment": "Saison 2 et suivantes d'Argent magique"
     }, 
     {
     "filename": "critique_a_chaud.xml",
@@ -99,19 +99,6 @@
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/euroguessr.png",
         "force_tor" : true, 
         "tor_exit_nodes": "BE,FR,DE,LU"
-    },
-    {
-        "filename": "populaire.xml",
-        "url": "https://youtube.com/playlist?list=PLAUm9TsAe7fBYZkKQByirhPovWa34JUAX", 
-        "podcast_name": "POPulaire",
-        "podcast_author": "Bolchegeek",
-        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/bolchegeek.jpg",
-        "comment": "Playlist de Bolchegeek"
-    }, 
-    {
-        "filename": "populaire.xml",
-        "url": "https://youtube.com/playlist?list=PLOCADcFbqUJ8epF9CzVeUqFRP0UfJY15m", 
-        "comment": "Playlist de l'Humanité"
     },
     {
         "filename": "hardisk_les_news.xml",
@@ -197,6 +184,14 @@
         "podcast_name": "Est-il vrai que ... ?",
         "podcast_author": "ARTE",
         "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/est-ilvraique.jpg",
+        "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
+    }, 
+    {
+    "filename": "le_calendrier_d'avant_la_fin_des temps.xml",
+        "url": "https://youtube.com/playlist?list=PLAuSIrNQ0B289MaHl4GGOperJWt-fCx5s", 
+        "podcast_name": "Le Calendrier d'avant la fin des temps",
+        "podcast_author": "SUPERFLAME",
+        "cover_image": "https://raw.githubusercontent.com/Sorcier88/special-bassoon/refs/heads/main/cover/le_calendrier_d'avant_la_fin_des temps.png",
         "sponsorblock_categories": "sponsor,intro,outro,selfpromo"
     }
 ]
